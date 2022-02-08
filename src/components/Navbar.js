@@ -7,18 +7,18 @@ import './Navbar.css';
 const Navbar = () => {
 
   const [click, setClick] = useState(false);
-  const [open, setOpen] = useState(false);
-
   const myRef = useRef();
+  const myRef2 = useRef();
 
   const handleClick = () => setClick(!click);
-  const handleOpen = () => setOpen(!open);
+
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (!myRef?.current?.contains(event.target)) {
-        setClick(false);
-        setOpen(false);
+      if ((!myRef?.current?.contains(event.target)) && (!myRef2?.current?.contains(event.target))) {
+        setIsOpen(false);
       };
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -32,21 +32,21 @@ const Navbar = () => {
                 <div className='profile-icon'></div>
                 <h1 className='name'>ANNA LE</h1>
               </Link>
-              <div className={open ? 'mobile-icon-open' : 'mobile-icon'} onClick={() => {
+              <div className={isOpen ? 'mobile-icon-open' : 'mobile-icon'} ref={myRef2} onClick={() => {
                   handleClick();
-                  handleOpen();
+                  toggle();
                 }}> 
                 <FaBars /> 
               </div>
-              <ul className={click ? 'nav-menu active' : 'nav-menu'} ref={myRef}>
-                <li className='nav-item' onClick={handleClick}>
+              <ul className={isOpen ? 'nav-menu active' : 'nav-menu'} ref={myRef}>
+                <li className='nav-item' onClick={toggle}>
                   <Link to='/experience' className='link'>Experience</Link>
                 </li>
-                <li className='nav-item' onClick={handleClick}>
+                <li className='nav-item' onClick={toggle}>
                   <Link to='/Design' className='link'>Design</Link>
                 </li>
-                <li className='nav-item' onClick={handleClick}>
-                <Link to='/about' className='link'>About</Link>
+                <li className='nav-item' onClick={toggle}>
+                  <Link to='/about' className='link'>About</Link>
                 </li>
               </ul>
             </div>

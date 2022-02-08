@@ -76,9 +76,14 @@
         width: 90%;
     }
 
+    .title {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
     .prj-description {
         font-size: 1.2em;
-        line-height: 1.3em;
+        line-height: 1.4em;
     }
 
     .prj-image-container {
