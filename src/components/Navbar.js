@@ -5,15 +5,13 @@ import './Navbar.css';
 
 
 const Navbar = () => {
-
-  const [click, setClick] = useState(false);
   const myRef = useRef();
   const myRef2 = useRef();
 
-  const handleClick = () => setClick(!click);
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -32,20 +30,17 @@ const Navbar = () => {
                 <div className='profile-icon'></div>
                 <h1 className='name'>ANNA LE</h1>
               </Link>
-              <div className={isOpen ? 'mobile-icon-open' : 'mobile-icon'} ref={myRef2} onClick={() => {
-                  handleClick();
-                  toggle();
-                }}> 
+              <div className={isOpen ? 'mobile-icon-open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>
                 <FaBars /> 
               </div>
               <ul className={isOpen ? 'nav-menu active' : 'nav-menu'} ref={myRef}>
-                <li className='nav-item' onClick={toggle}>
+                <li className='nav-item' onClick={closeMenu}>
                   <Link to='/experience' className='link'>Experience</Link>
                 </li>
-                <li className='nav-item' onClick={toggle}>
+                <li className='nav-item' onClick={closeMenu}>
                   <Link to='/Design' className='link'>Design</Link>
                 </li>
-                <li className='nav-item' onClick={toggle}>
+                <li className='nav-item' onClick={closeMenu}>
                   <Link to='/about' className='link'>About</Link>
                 </li>
               </ul>
