@@ -7,18 +7,21 @@ import './Navbar.css';
 const Navbar = () => {
 
   const [click, setClick] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const myRef = useRef();
 
   const handleClick = () => setClick(!click);
+  const handleOpen = () => setOpen(!open);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!myRef?.current?.contains(event.target)) {
         setClick(false);
+        setOpen(false);
       };
     };
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
   }, [myRef]);
 
   return (
@@ -29,7 +32,12 @@ const Navbar = () => {
                 <div className='profile-icon'></div>
                 <h1 className='name'>ANNA LE</h1>
               </Link>
-              <div className='mobile-icon' onClick={handleClick}> <FaBars /> </div>
+              <div className={open ? 'mobile-icon-open' : 'mobile-icon'} onClick={() => {
+                  handleClick();
+                  handleOpen();
+                }}> 
+                <FaBars /> 
+              </div>
               <ul className={click ? 'nav-menu active' : 'nav-menu'} ref={myRef}>
                 <li className='nav-item' onClick={handleClick}>
                   <Link to='/experience' className='link'>Experience</Link>

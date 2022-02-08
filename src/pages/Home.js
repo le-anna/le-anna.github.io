@@ -10,7 +10,7 @@ const Home = () => {
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
         <ProjectOverview type='Work' title='Choices' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
-        <ProjectOverview type='Shadowing' title='Mental Health App' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        <ProjectOverview type='Shadowing Program' title='Mental Health App' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
   </div>
   
