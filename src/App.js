@@ -11,7 +11,6 @@ const App = () => {
   return (
     <div>
         <Navbar/>
-        {/* <Home/> */}
         <Routes>
           <Route path='/' exact element={<Home />}/>
           <Route path='/Design' element={<Design/>} />
