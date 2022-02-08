@@ -6,8 +6,14 @@ const Home = () => {
   return (
     <div className='Home'>
         <Landing/>
-        <ProjectOverview/>
+        <ProjectOverview type='Work' title='CaSMM' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
+        <ProjectOverview type='Work' title='Choices' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
+        <ProjectOverview type='Shadowing' title='Mental Health App' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
   </div>
+  
   );
 };
 

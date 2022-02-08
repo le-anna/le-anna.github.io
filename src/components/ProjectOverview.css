@@ -1,5 +1,95 @@
 
 .project-overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     background-color: #DCEEFB;
-    height: 60vh;
+    height: 50vh;
 }
+
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.prj-info-container {
+    width: 40%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+
+.prj-description {
+    font-size: 20px;
+}
+
+.prj-image-container {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 30vh;
+}
+
+.prj-image {
+    width:20vw;
+    height: 30vh;
+    background-color: rgb(214, 213, 213);
+}
+
+/* @keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .prj-image {
+        animation: wipe-enter;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+  } */
+
+@media screen and (max-width: 960px) {
+
+    .project-overview {
+        display: flex;
+        height: auto;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .prj-info-container {
+        width: 90%;
+    }
+
+    .prj-description {
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
+
+    .prj-image-container {
+        width: 50vw;
+        height: 25vh;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .prj-image {
+        height: 100%;
+        width: 100%;
+    }
+
+  }

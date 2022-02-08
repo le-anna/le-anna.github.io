@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 .navbar {
     position: sticky;
     width: 100%;
@@ -26,6 +28,7 @@
 }
 
 .name {
+    font-family: 'Gloria Hallelujah', cursive;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 5px;

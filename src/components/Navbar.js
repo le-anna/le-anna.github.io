@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className='navbar-container'>
               <Link to='/' className='nav-profile-container'>
                 <div className='profile-icon'></div>
-                <h1 className='name'>Anna Le</h1>
+                <h1 className='name'>ANNA LE</h1>
               </Link>
               <div className='mobile-icon' onClick={handleClick}> <FaBars /> </div>
               <ul className={click ? 'nav-menu active' : 'nav-menu'} ref={myRef}>
