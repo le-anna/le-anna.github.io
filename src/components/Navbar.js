@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, AiOutlineCloseCircle } from 'react-icons/fa';
 import './Navbar.css';
+import Profile from '../assets/profile.jpg'
 
 
 const Navbar = () => {
@@ -27,7 +28,8 @@ const Navbar = () => {
         <nav className='navbar'>
             <div className='navbar-container'>
               <Link to='/' className='nav-profile-container'>
-                <div className='profile-icon'></div>
+                {/* <div className='profile-icon'></div> */}
+                <img src={Profile} className='profile-icon'/>
                 <h1 className='name'>ANNA LE</h1>
               </Link>
               <div className={isOpen ? 'mobile-icon-open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>

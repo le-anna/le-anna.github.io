@@ -1,6 +1,7 @@
 import React from 'react';
 import './Landing.css';
 import StarSvg from '../assets/stars.svg';
+import Drawing from '../assets/drawing.PNG'
 
 const Landing = () => {
 
@@ -11,7 +12,7 @@ const Landing = () => {
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <div className='image-container'>
               <img src={StarSvg} className='stars'/>
-              <div className='photo'></div>
+              <img src={Drawing} className='photo'/>
             </div>
         </div>
     </div>
