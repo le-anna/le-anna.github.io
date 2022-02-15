@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, AiOutlineCloseCircle } from 'react-icons/fa';
+import { FaBars, FaAngleDown } from 'react-icons/fa';
 import './Navbar.css';
 import Profile from '../assets/profile.jpg'
+import Dropdown from './Dropdown';
 
 
 const Navbar = () => {
   const myRef = useRef();
   const myRef2 = useRef();
 
-
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+  const [dropdown, setDropdown] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -23,12 +24,29 @@ const Navbar = () => {
     document.addEventListener('mousedown', handleClickOutside);
   }, [myRef]);
 
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+
   return (
     <div>
         <nav className='navbar'>
             <div className='navbar-container'>
               <Link to='/' className='nav-profile-container'>
-                {/* <div className='profile-icon'></div> */}
                 <img src={Profile} className='profile-icon'/>
                 <h1 className='name'>ANNA LE</h1>
               </Link>
@@ -36,11 +54,24 @@ const Navbar = () => {
                 <FaBars /> 
               </div>
               <ul className={isOpen ? 'nav-menu active' : 'nav-menu'} ref={myRef}>
-                <li className='nav-item' onClick={closeMenu}>
-                  <Link to='/experience' className='link'>Experience</Link>
+                <li className='nav-item' onClick={closeMenu} 
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}>
+                  <Link to='/experience' className='link'> 
+                    Experiences <FaAngleDown className='caret-down' /> 
+                  </Link>
+                  {dropdown && <Dropdown />}
                 </li>
+                
+                <li className='experience-item' onClick={closeMenu}>
+                  <Link to='/CaSMM' className='link'>CaSMM</Link>
+                </li>
+                <li className='experience-item' onClick={closeMenu}>
+                  <Link to='/MentalHealthAPp' className='link'>Mental Health App</Link>
+                </li>
+
                 <li className='nav-item' onClick={closeMenu}>
-                  <Link to='/Design' className='link'>Design</Link>
+                  <Link to='/Design' className='link'>UI Designs</Link>
                 </li>
                 <li className='nav-item' onClick={closeMenu}>
                   <Link to='/about' className='link'>About</Link>

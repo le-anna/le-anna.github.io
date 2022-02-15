@@ -7,11 +7,11 @@ const Home = () => {
     <div className='Home'>
         <Landing/>
         <ProjectOverview type='Work' title='CaSMM' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua' link='/CASMM'/>
         <ProjectOverview type='Work' title='Choices' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua' link='/'/>
         <ProjectOverview type='Shadowing Program' title='Mental Health App' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'/>
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua' link='/MentalHealthApp'/>
   </div>
   
   );

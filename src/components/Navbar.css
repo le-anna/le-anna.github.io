@@ -7,8 +7,6 @@
     left: 0px;
     top: 0px;
     z-index: 100;
-
-    /* background: #FFFFFF; */
 }
 
 .navbar-container {
@@ -84,7 +82,11 @@
 }
 
 .nav-item:hover {
-    color: rgba(255, 174, 108, 0.2);
+  color: rgba(255, 174, 108, 0.2);
+}
+
+.experience-item {
+  display: none;
 }
 
 @media screen and (max-width: 960px) {
@@ -126,6 +128,7 @@
       }
 
       .nav-item .link {
+        font-weight: 500;
         margin: 0px; 
         display: block; 
         width: 100%; 
@@ -151,5 +154,11 @@
         font-size: 1.8rem;
         cursor: pointer;
         color: #DCEEFB;
+      }
+
+      .experience-item {
+        margin-left: 20px;
+        display: block;
+        line-height: 24px;
       }
 }

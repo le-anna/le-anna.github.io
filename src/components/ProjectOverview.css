@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 .project-overview {
     display: flex;
@@ -36,9 +37,48 @@
 }
 
 .prj-image {
-    width:20vw;
-    height: 30vh;
-    background-color: rgb(214, 213, 213);
+    width: 250px;
+    height: 250px;
+    background-color: rgb(235, 233, 233);
+}
+
+
+.prj-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:  rgb(255, 186, 36);
+    /* background-color: red; */
+}
+
+.arrow-btn {
+    /* background-color: yellow; */
+    font-size: 20px;
+}
+
+.prj-button {
+    margin-left: 2px;
+    width: 100px;
+    border: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 20px;
+    font-weight: 600;
+    color:  rgb(255, 186, 36);
+    text-align: left;
+    text-decoration: none;
+    /* background-color: green; */
+}
+
+.prj-link-container:hover .prj-button {
+    color: rgba(255, 174, 108, 0.5);
+    cursor: pointer;
+}
+
+.prj-link-container:hover .arrow-btn {
+    color: rgba(255, 174, 108, 0.5);
+    cursor: pointer;
 }
 
 /* @keyframes wipe-enter {
@@ -86,9 +126,21 @@
         line-height: 1.4em;
     }
 
+    .prj-button {
+        background-color: transparent;
+        padding-left: 0;
+        text-align: left;
+        color: rgba(255, 174, 108, 0.8);
+        font-weight: 800;
+    }
+
+    .prj-button:hover {
+        color: rgba(255, 174, 108, 0.5);
+    }
+
     .prj-image-container {
-        width: 50vw;
-        height: 25vh;
+        width: 250px;
+        height: 250px;
         margin-top: 20px;
         margin-bottom: 10px;
     }
