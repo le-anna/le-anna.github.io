@@ -12,6 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 90%;
+    width: 90%;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -25,13 +27,15 @@
 }
 
 .prj-description {
-    font-size: 20px;
+    width: 90%;
+    font-size: 18px;
     line-height: 28px;
 }
 
 .prj-image-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 40%;
     height: 30vh;
 }
@@ -42,16 +46,11 @@
     background-color: rgb(235, 233, 233);
 }
 
-
 .prj-link-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: fit-content;
-}
-
-.arrow-btn {
-    font-size: 20px;
 }
 
 .prj-button {
@@ -75,23 +74,6 @@
     transform: scale(0.8); 
     cursor: pointer;
 }
-
-/* @keyframes wipe-enter {
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .prj-image {
-        animation: wipe-enter;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    }
-  } */
 
 @media screen and (max-width: 960px) {
 
@@ -123,18 +105,6 @@
         font-size: 1.2em;
         line-height: 1.4em;
     }
-/* 
-    .prj-button {
-        background-color: transparent;
-        padding-left: 0;
-        text-align: left;
-        color: rgba(255, 174, 108, 0.8);
-        font-weight: 800;
-    }
-
-    .prj-button:hover {
-        color: rgba(255, 174, 108, 0.5);
-    } */
 
     .prj-image-container {
         width: 250px;

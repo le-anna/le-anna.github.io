@@ -62,7 +62,11 @@ const Navbar = () => {
                   </div>
                   {dropdown && <Dropdown />}
                 </li>
-                
+
+                {/* experience dropdown items */}
+                <li className='experience-item' onClick={closeMenu}>
+                  <Link to='/Choices' className='link'>Choices</Link>
+                </li>
                 <li className='experience-item' onClick={closeMenu}>
                   <Link to='/CaSMM' className='link'>CaSMM</Link>
                 </li>
@@ -74,7 +78,7 @@ const Navbar = () => {
                   <Link to='/Design' className='link'>UI Designs</Link>
                 </li>
                 <li className='nav-item' onClick={closeMenu}>
-                  <Link to='/about' className='link'>About</Link>
+                  <Link to='/About' className='link'>About</Link>
                 </li>
               </ul>
             </div>

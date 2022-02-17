@@ -6,6 +6,7 @@ import About from './pages/About';
 import Design from './pages/Design';
 import CASMM from './components/CASMM';
 import MentalHealthApp from './components/MHA';
+import Choices from './components/Choices';
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route exact path='/Design' element={<Design/>} />
           <Route exact path='/About' element={<About/>} />
           <Route exact path='/CASMM' element={<CASMM/>} />
+          <Route exact path='/Choices' element={<Choices/>} />
           <Route exact path='/MentalHealthApp' element={<MentalHealthApp/>} />
       </Routes>
     </div>
