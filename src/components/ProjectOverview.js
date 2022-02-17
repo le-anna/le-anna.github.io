@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ProjectOverview.css'
-import { FaLongArrowAltRight } from 'react-icons/fa';
 
 const ProjectOverview = ({title, type, description, link}) => {
 
@@ -15,7 +14,6 @@ const ProjectOverview = ({title, type, description, link}) => {
           <p className='prj-description'>{description}</p>
           <div className ='prj-link-container'>
             <Link to={link} className='prj-button'>Read More</Link>
-            <FaLongArrowAltRight className='arrow-btn' />
           </div>
         </div>
         <div className='prj-image-container'>

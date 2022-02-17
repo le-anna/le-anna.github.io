@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 .project-overview {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: #DCEEFB;
+    background-color: #deebfd;
     height: 50vh;
 }
 
@@ -22,6 +21,7 @@
     display: flex;
     align-items: left;
     flex-direction: column;
+    color: #000;
 }
 
 .prj-description {
@@ -47,37 +47,32 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    color:  rgb(255, 186, 36);
-    /* background-color: red; */
+    width: fit-content;
 }
 
 .arrow-btn {
-    /* background-color: yellow; */
     font-size: 20px;
 }
 
 .prj-button {
-    margin-left: 2px;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 0px;
+    width: 150px;
+    height: 34px;
     border: none;
-    font-family: 'Gloria Hallelujah', cursive;
     font-size: 18px;
-    background-color: transparent;
-    border-radius: 20px;
-    font-weight: 600;
-    color:  rgb(255, 186, 36);
+    font-weight: 500;
+    border-radius: 4px;
+    color: #000;
+    background-color: #f8ebb2;
     text-align: left;
     text-decoration: none;
-    /* background-color: green; */
 }
 
 .prj-link-container:hover .prj-button {
-    color: rgba(255, 174, 108, 0.5);
-    cursor: pointer;
-}
-
-.prj-link-container:hover .arrow-btn {
-    color: rgba(255, 174, 108, 0.5);
+    transform: scale(0.8); 
     cursor: pointer;
 }
 
@@ -113,7 +108,10 @@
     }
 
     .prj-info-container {
+        display: flex;
+        align-items: center;
         width: 90%;
+        text-align: center;
     }
 
     .title {
@@ -125,7 +123,7 @@
         font-size: 1.2em;
         line-height: 1.4em;
     }
-
+/* 
     .prj-button {
         background-color: transparent;
         padding-left: 0;
@@ -136,7 +134,7 @@
 
     .prj-button:hover {
         color: rgba(255, 174, 108, 0.5);
-    }
+    } */
 
     .prj-image-container {
         width: 250px;

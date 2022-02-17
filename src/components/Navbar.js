@@ -57,9 +57,9 @@ const Navbar = () => {
                 <li className='nav-item' onClick={closeMenu} 
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}>
-                  <Link to='/experience' className='link'> 
+                  <div className='link'> 
                     Experiences <FaAngleDown className='caret-down' /> 
-                  </Link>
+                  </div>
                   {dropdown && <Dropdown />}
                 </li>
                 
