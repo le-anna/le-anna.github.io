@@ -21,7 +21,7 @@
     position: absolute;
     font-size: 70px;
     margin-bottom: 20px;
-    animation-duration: 8s;
+    animation-duration: 4s;
     animation-name: slidein;
     animation-iteration-count: infinite;
 }

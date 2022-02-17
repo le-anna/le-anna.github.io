@@ -4,6 +4,17 @@
     margin: 30px 120px;
 }
 
+.design-title {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+/* slidein animation located in MHA.css */
+
 .design-info {
     padding: 10px 0px;
     font-size: 18px;
@@ -38,5 +49,19 @@
 
     .experience-link { 
         font-size: 14px;
+    }
+
+    @keyframes slidein-mobile {
+        0% { margin-left: 25%; }
+        25% { margin-left: -25%; }
+        50% { margin-left: 25%; }
+        75% { margin-left: -25%; }
+        100% { margin-left: 25%; }
+      }
+
+    .design-title {
+        font-size: 30px;
+        animation-duration: 8;
+        animation-name: slidein-mobile;
     }
 }
