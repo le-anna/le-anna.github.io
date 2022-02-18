@@ -13,6 +13,7 @@ import pg5img3 from '../assets/CASMM/5-3.png'
 import pg6img1 from '../assets/CASMM/6-1.png'
 import pg6img2 from '../assets/CASMM/6-2.png'
 import './CASMM.css'
+import GoToTop from './GoToTop'
 
 const CASMM = () => {
 
@@ -181,7 +182,7 @@ const CASMM = () => {
           </div>
         </div>
       </div>
-       
+      <GoToTop />
     </div>
   )
 }

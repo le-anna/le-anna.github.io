@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectOverview from '../components/ProjectOverview';
 import Landing from '../components/Landing';
+import GoToTop from '../components/GoToTop'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <ProjectOverview type='Work' title='Choices' description='Designing the website for 
                 Choices, an educational platform for individuals with Sickle Cell Disease or Traits to 
                 learn' link='/Choices'/>
+        <GoToTop />
   </div>
   
   );

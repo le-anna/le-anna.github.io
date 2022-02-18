@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Gallery from 'react-photo-gallery';
 import { photos } from '../components/Photos.js';
 import './Design.css'
+import GoToTop from '../components/GoToTop'
 
 const Design = () => {
   const BasicRows = () => <Gallery photos={photos} />;
@@ -15,7 +15,8 @@ const Design = () => {
     <div className='design-gallery'>
       <BasicRows />
     </div>
-  </div>;
+    <GoToTop />
+  </div>
 };
 
 export default Design;
