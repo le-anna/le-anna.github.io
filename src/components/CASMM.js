@@ -1,14 +1,17 @@
 import React from 'react'
 import $ from 'jquery'
 import Logo from '../assets/CASMM/casmm_logo.png'
+import arrow from '../assets/CASMM/arrow.png'
 import pg2img1 from '../assets/CASMM/2-1.png'
 import pg3img1 from '../assets/CASMM/3-1.png'
 import pg3img2 from '../assets/CASMM/3-2.png'
-import Three from '../assets/CASMM/3.png'
-import Four from '../assets/CASMM/4.png'
-import Five from '../assets/CASMM/5.png'
-import Six from '../assets/CASMM/6.png'
-import Seven from '../assets/CASMM/7.png'
+import pg4img1 from '../assets/CASMM/4-1.png'
+import pg4img2 from '../assets/CASMM/4-2.png'
+import pg5img1 from '../assets/CASMM/5-1.png'
+import pg5img2 from '../assets/CASMM/5-2.png'
+import pg5img3 from '../assets/CASMM/5-3.png'
+import pg6img1 from '../assets/CASMM/6-1.png'
+import pg6img2 from '../assets/CASMM/6-2.png'
 import './CASMM.css'
 
 const CASMM = () => {
@@ -124,20 +127,61 @@ const CASMM = () => {
                     <img src={pg3img2} className='casmm-info-img-2'/>
                     <p>Inital Color Scheme</p>
                   </div>
-                
                 </ul>
             </div>
             <img src={pg3img1} className='casmm-info-img'/>
           </div>
         </div>
       </div>
+
+      <div className='casmm-yellow'>
+        <div className='casmm-content-container-pg4'>
+          <p className='animation-element slide-left casmm-title'>Requirements</p>
+          <div className='animation-element slide-left note'><strong>Some features the Principle Investigator wanted to maintain
+            in the new design</strong></div>
+          <div className='animation-element slide-left pg4img-container'>
+            <img src={pg4img1} className='pg4img'/>
+            <p className='pg4img-text'>Example of a modular layout; components are encased in a white background</p>
+          </div>
+          <div className='animation-element slide-left pg4img-container'>
+            <p className='pg4img-text'>Keep the blue subheading and make consistent across all of the views</p>
+            <img src={pg4img2} className='pg4img'/>
+          </div>
+        </div>
+      </div>
+
+      <div className='casmm-yellow'>
+        <div className='casmm-content-container-pg4'>
+          <p className='animation-element slide-left casmm-title'>Mentor View Before & After</p>
+          <div className='animation-element slide-left pg4img-container'>
+            <img src={pg5img1} className='pg4img'/> 
+            <p className='pg4img-text'>This was the Mentor view before any changes were made and the new style applied</p>
+          </div>
+          <div className='animation-element slide-left pg4img-container'>
+            <p className='pg4img-text'>This is  the redesign after a new style guide was created</p>
+            <img src={pg5img2} className='pg4img'/>
+          </div>
+          <div className='animation-element slide-left pg4img-container'>
+            <img src={pg5img3} className='pg4img'/>
+            <p className='pg4img-text'>Clickable top right button that changes color on hover</p>
+          </div>
+        </div>
+      </div>
        
-       {/* <img src={Two} className='CASMM-img'/>
-       <img src={Three} className='CASMM-img'/>
-       <img src={Four} className='CASMM-img'/>
-       <img src={Five} className='CASMM-img'/>
-       <img src={Six} className='CASMM-img'/>
-       <img src={Seven} className='CASMM-img'/> */}
+      <div className='casmm-yellow'>
+        <div className='casmm-content-container-pg4'>
+          <p className='animation-element slide-left casmm-title'>Roster View Before & After</p>
+          <div className='animation-element slide-left pg4img-container'>
+            <img src={pg6img1} className='pg4img'/>
+            <p className='pg4img-text'>This was the Roster view before any changes were made and the new style applied</p>
+          </div>
+          <div className='animation-element slide-left pg4img-container'>
+            <p className='pg4img-text'>This is  the redesign after a new style guide was created</p>
+            <img src={pg6img2} className='pg4img'/>
+          </div>
+        </div>
+      </div>
+       
     </div>
   )
 }
