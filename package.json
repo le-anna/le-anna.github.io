@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "homepage": "https://le-anna.github.io/portfolio",
   "private": true,
-  "engines": {
-    "node": "16.x"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
@@ -26,8 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
