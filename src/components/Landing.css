@@ -103,9 +103,9 @@
     .stars {
         position: absolute;
         font-family: 'Gloria Hallelujah', cursive;
-        font-size: 60px;
+        font-size: 14vh;
         right: 0px;
-        top: -10px;
+        top: -1vh;
         color: rgb(214, 214, 47);
     }
     

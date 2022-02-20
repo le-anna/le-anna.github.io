@@ -1,12 +1,12 @@
 export const MenuItems = [
+  {
+    title: 'Choices',
+    path: '/Choices',
+    cName: 'dropdown-link'
+   },
     {
       title: 'CaSMM',
       path: '/CASMM',
-      cName: 'dropdown-link'
-    },
-    {
-      title: 'Choices',
-      path: '/',
       cName: 'dropdown-link'
     },
     {

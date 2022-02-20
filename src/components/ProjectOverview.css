@@ -26,24 +26,29 @@
     color: #000;
 }
 
+.prj-role {
+    font-weight: 500;
+    font-size: 3vh;
+}
+
 .prj-description {
     width: 90%;
     font-size: 18px;
     line-height: 28px;
+    padding: 1vh 0;
 }
 
 .prj-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 30%;
     height: 30vh;
 }
 
-.prj-image {
-    width: 250px;
-    height: 250px;
-    background-color: rgb(235, 233, 233);
+.prj-img {
+    width: 50%;
+    height: auto;
 }
 
 .prj-link-container {
@@ -107,15 +112,15 @@
     }
 
     .prj-image-container {
-        width: 250px;
-        height: 250px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        width: 80%;
+        margin: 6vh;
     }
 
-    .prj-image {
-        height: 100%;
-        width: 100%;
+    .prj-img {
+        width: 80%;
+        
     }
 
   }

@@ -123,14 +123,14 @@
   font-size: 3vh;
 }
 
+.tech-item {
+  text-align: center;
+  width: 14vw;
+}
+
 .list {
   line-height: 4vh;
   list-style: none;
-}
-
-.tech-item {
-  margin: 0 2vw;
-  text-align: center;
 }
 
 .title-container {
@@ -251,12 +251,13 @@
       display: flex;
       flex-direction: column;
       font-size: 3vh;
-      
+
     }
 
     .tech-item {
       margin: 1vh 2vw;
       text-align: left;
+      width: 100%;
     }
 
     .list {
@@ -267,5 +268,10 @@
       display: flex;
       flex-direction: column;
       float: left;
+    }
+
+    .mha-pg6-img {
+        width: 80%;
+        padding-left: 80px;
     }
   }

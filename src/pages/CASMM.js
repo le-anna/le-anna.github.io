@@ -13,51 +13,43 @@ import pg5img3 from '../assets/CASMM/5-3.png'
 import pg6img1 from '../assets/CASMM/6-1.png'
 import pg6img2 from '../assets/CASMM/6-2.png'
 import './CASMM.css'
-import GoToTop from './GoToTop'
+import GoToTop from '../components/GoToTop'
 
 const CASMM = () => {
 
-  /*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
-  $(document).ready(function() {
+    // https://codepen.io/simoncodrington/pen/Mwgqqd for animation
+    $(document).ready(function() {
 
-  //window and animation items
-  var animation_elements = $.find('.animation-element');
-  var web_window = $(window);
-
-  //check to see if any animation containers are currently in view
-  function check_if_in_view() {
-    //get current window information
-    var window_height = web_window.height();
-    var window_top_position = web_window.scrollTop();
-    var window_bottom_position = (window_top_position + window_height);
-
-    //iterate through elements to see if its in view
-    $.each(animation_elements, function() {
-
-      //get the element sinformation
-      var element = $(this);
-      var element_height = $(element).outerHeight();
-      var element_top_position = $(element).offset().top;
-      var element_bottom_position = (element_top_position + element_height);
-
-      //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
-      if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-        element.addClass('in-view');
-      } else {
-        element.removeClass('in-view');
+      var animation_elements = $.find('.animation-element');
+      var web_window = $(window);
+    
+      function check_if_in_view() {
+        var window_height = web_window.height();
+        var window_top_position = web_window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+    
+        $.each(animation_elements, function() {
+          var element = $(this);
+          var element_height = $(element).outerHeight();
+          var element_top_position = $(element).offset().top;
+          var element_bottom_position = (element_top_position + element_height);
+    
+          if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+            element.addClass('in-view');
+          } else {
+            element.removeClass('in-view');
+          }
+        });
+    
       }
+    
+      $(window).on('scroll resize', function() {
+          check_if_in_view()
+        })
+
+      $(window).trigger('scroll');
+    
     });
-
-  }
-
-  //on or scroll, detect elements in view
-  $(window).on('scroll resize', function() {
-      check_if_in_view()
-    })
-    //trigger our scroll event on initial load
-  $(window).trigger('scroll');
-
-});
 
   return (
     <div className='casmm'>
@@ -66,9 +58,9 @@ const CASMM = () => {
         <div className='casmm-one-description'>
           <p>
             Collaborating in the development of a block-based programming environment 
-            at the University of Florida's Engaging Learning Lab.
+            at the University of Florida's Engaging Learning Lab
           <br/><br/>
-            Showcasing the UX/UI improvements that I contributed to the project.
+            Showcasing some of the UX/UI improvements that I contributed to the project
           <br/> <br/>
             https://casmm.org
           </p> <br/>
@@ -93,13 +85,13 @@ const CASMM = () => {
                 <li>Researchers</li>
               </ul>
               <br/>
-              <p> <strong>Technologies used</strong></p>
+              <p> <strong>Frontend technologies used</strong></p>
               <ul className='ul'>
                 <li>React.js and CSS (.less)</li>
               </ul>
               <br/>
               <p className='animation-element slide-left casmm-title'>Role</p>
-              <p>Undergraduate Frontend Developer</p>
+              <p className='role-description'>Frontend Developer</p>
             </div>
             <img src={pg2img1} className='casmm-info-img'/>
           </div>
@@ -114,7 +106,7 @@ const CASMM = () => {
             <div className='casmm-text-container'>
               <p><strong>Overview</strong></p>
                 <ul className='ul'>
-                  <li>Initially, CaSMM was primarily focused on the functionality.</li>
+                  <li>Initially, CaSMM was primarily focused on the functionality</li>
                 </ul>
                 <br/>
                 <p> <strong>Issues</strong></p>

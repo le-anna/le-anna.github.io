@@ -4,9 +4,9 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Design from './pages/Design';
-import CASMM from './components/CASMM';
-import MentalHealthApp from './components/MHA';
-import Choices from './components/Choices';
+import CASMM from './pages/CASMM';
+import MentalHealthApp from './pages/MHA';
+import Choices from './pages/Choices';
 
 
 

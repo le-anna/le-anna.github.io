@@ -17,18 +17,8 @@
 
 .design-info {
     padding: 10px 0px;
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.experience-link {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    color: rgb(255, 186, 36);
-    padding-left: 5px;
+    font-size: 3vh;
+    line-height: 4vh;
 }
 
 .experience-link:hover {

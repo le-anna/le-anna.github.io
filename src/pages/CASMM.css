@@ -111,23 +111,27 @@
 
 .animation-element.slide-left.pg4img-container {
     display: flex;
-    align-items: left;
+    justify-content: center;
     width: 100%;
     height: 40%;
     margin: 4vh 0;
 }
 
-
 .pg4img {
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
 .pg4img-text {
     display: flex;
     align-items: center;
-    margin: 0 6vw;
+    width: 30%;
+    margin: 0 2vw;
     font-size: 3vh;
+}
+
+.role-description {
+    margin-top: 1vh;
 }
 
 .animation-element.slide-left.casmm-title {
@@ -193,9 +197,10 @@ strong {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 2vh;
-        line-height: 3vh;
-        height: 70vh;
+        font-size: 3vh;
+        line-height: 4vh;
+        height: 10%;
+        padding: 6vh 0;
     }
 
     .casmm-landing .casmm-one-description {
@@ -212,9 +217,14 @@ strong {
         height: fit-content;
     }
 
+    .animation-element.slide-left.casmm-title {
+        height: fit-content;
+        line-height: 8vh;
+    }
+
     .casmm-text-container {
-        font-size: 2vh;
-        line-height: 3vh;
+        font-size: 3vh;
+        line-height: 4vh;
         width: 100%;
         margin-top: 0;
     }
@@ -225,7 +235,7 @@ strong {
         align-items: center;
         font-size: 3vh;
         float: left;
-        line-height: 4.5vh;
+        line-height: 4vh;
         width: 100%;
       }
 
@@ -255,13 +265,19 @@ strong {
     .pg4img-text {
         display: flex;
         align-items: center;
+        text-align: center;
+        width: 90%;
         margin: 0;
         font-size: 3vh;
     }
 
     .pg4img {
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 2vh 0;
+    }
+
+    .role-description {
+        margin-top: 2vh;
     }
   }
