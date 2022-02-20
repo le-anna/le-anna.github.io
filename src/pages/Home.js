@@ -14,8 +14,10 @@ const Home = () => {
                 learn' link='/Choices' img='Choices'/>
         <ProjectOverview type='Work' title='CaSMM' role='Frontend Developer' description='Re-designed the interface for CaSMM, a block-based
                 programming environment for K-12 students to learn how to code Arduinos' link='/CASMM' img='CASMM'/>
+         <ProjectOverview type='Hackathon' title='RetroFi' role='Team Member' description='Won Capital One category for development of retro-themed
+                financial application at SwampHacks (University of Florida)' link='retrofi' img='retrofi'/>
         <ProjectOverview type='Shadowing Program' role='Mentee'  title='Mental Health App' description='Developed Mental Health App with  Opie Software
-                through the Women in Computer Science Engineering (WiCSE) Shadowing Program' link='/MentalHealthApp' img='MHA'/>
+                through the Women in Computer Science & Engineering (WiCSE) Shadowing Program' link='/MentalHealthApp' img='MHA'/>
         
         <GoToTop />
   </div>

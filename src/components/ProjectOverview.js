@@ -3,22 +3,10 @@ import { Link } from 'react-router-dom';
 import './ProjectOverview.css'
 import CASMM from '../assets/CASMM/casmm_logo.png'
 import MHA from '../assets/MHA/MHA.png'
+import retrofi from '../assets/retrofi.png'
 
 const ProjectOverview = ({title, role, type, description, link, img}) => {
-  const [casmm, setCasmm] = useState(false);
-  const [mha, setMha] = useState(false);
-  const [choices, setChoices] = useState(false);
 
-
-  const checkImg = () => {
-    if (img == 'CASMM') {
-      setCasmm(true);
-    } else if (img == 'MHA') {
-      setMha(true);
-    } else if (img == 'Choices') {
-      setChoices(true);
-    }
-  }
 
   return (
     <div className='project-overview'>
@@ -29,13 +17,18 @@ const ProjectOverview = ({title, role, type, description, link, img}) => {
           <p className='prj-role'>{role}</p>
           <p className='prj-description'>{description}</p>
           <div className ='prj-link-container'>
-            <Link to={link} className='prj-button'>Read More</Link>
+            {
+              link === 'retrofi' ? <a href='https://devpost.com/software/retrofi' className='prj-button'>Link</a> :
+              <Link to={link} className='prj-button'>Read More</Link>
+            }
           </div>
         </div>
         <div className='prj-image-container'>
           {
             img === 'CASMM' ? <img src={CASMM} className='prj-img'/> : 
-            img === 'MHA' ? <img src={MHA} className='prj-img'/> : null
+            img === 'retrofi' ? <img src={retrofi} className='prj-img'/> : 
+            img === 'MHA' ? <img src={MHA} className='prj-img'/> : 
+            <div className='choices-status'>Currently in UX design process</div>
           }
         </div>
       </div>

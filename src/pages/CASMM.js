@@ -61,12 +61,9 @@ const CASMM = () => {
             at the University of Florida's Engaging Learning Lab
           <br/><br/>
             Showcasing some of the UX/UI improvements that I contributed to the project
-          <br/> <br/>
-            https://casmm.org
           </p> <br/>
         </div>
       </div>
-      <div className='br'/>
       <div className='casmm-blue'>
         <div className='casmm-content-container'>
           <p className='animation-element slide-left casmm-title'>Description</p>

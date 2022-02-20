@@ -131,7 +131,7 @@ const MHA = () => {
           </div>
           <div className='animation-element slide-left mha-info-container'>
             <p>
-            The Mental Health App was developed through the Women in Computer Engineering (WiCSE) Shadowing Programing. 
+            The Mental Health App was developed through the Women in Computer Science & Engineering (WiCSE) Shadowing Programing. 
             As part of the program, students are paired with an industry professional to create a project; in this case, a mentor from Opie Software.
             <br/><br/>
             The idea was to develop a full-stack application that allows users to track the progression of their mental health through daily logs and statistics.

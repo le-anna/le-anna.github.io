@@ -47,8 +47,12 @@
 }
 
 .prj-img {
-    width: 50%;
+    width: 80%;
     height: auto;
+}
+
+.choices-status {
+    text-align: center;
 }
 
 .prj-link-container {
