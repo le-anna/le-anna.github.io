@@ -17,8 +17,8 @@
 
 .design-info {
     padding: 10px 0px;
-    font-size: 3vh;
-    line-height: 4vh;
+    font-size: 18px;
+    line-height: 26px;
 }
 
 .experience-link:hover {
@@ -33,13 +33,10 @@
 
     .design-info {
         padding: 10px 0px;
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 26px;
     }
 
-    .experience-link { 
-        font-size: 14px;
-    }
 
     @keyframes slidein-mobile {
         0% { margin-left: 25%; }
@@ -50,7 +47,7 @@
       }
 
     .design-title {
-        font-size: 30px;
+        font-size: 24px;
         animation-duration: 8;
         animation-name: slidein-mobile;
     }

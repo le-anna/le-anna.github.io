@@ -143,6 +143,7 @@ const MHA = () => {
       <div className='mha-green'>
         <div className='mha-green-content-container'>
           <p className='animation-element slide-left mha-title'>Technologies</p>
+          <br/>
           <div className='animation-element slide-left mha-container-pg6'>
             <div className='tech-container'>
               <ul className='tech-item'> 
@@ -216,7 +217,7 @@ const MHA = () => {
                 </ul>
                 <br/><br/>
                 <p className='animation-element slide-left mha-title'>Accomplishments</p>
-                <br/>
+                 <br/>
                 <ul className='ul'>
                   <li>First full stack application</li>
                   <li>Improved design skills and developed interest in frontend work</li>

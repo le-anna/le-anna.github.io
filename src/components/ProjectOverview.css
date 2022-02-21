@@ -110,9 +110,14 @@
         margin-bottom: 5px;
     }
 
+    .prj-role {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
     .prj-description {
-        font-size: 1.2em;
-        line-height: 1.4em;
+        font-size: 18px;
+        line-height: 26px;
     }
 
     .prj-image-container {
