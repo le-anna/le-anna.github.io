@@ -23,8 +23,7 @@ const About = () => {
             much attention is given to developing optimal UX solutions. I am also a Coordinator in the Peggy Borum 
             Ketogenic Therapy Lab, in which I am creating website content and a style guide for the software.
             <br/><br/> 
-            I have taken a UX design course, and I am currently taking a Human-Computer Interaction course to learn more 
-            about this area in the field.
+            I have taken a UX design course, and I am currently taking a Human-Computer Interaction course.
             <br/><br/> 
             <strong>Interests:</strong> wireframing, prototyping, style guides, UX design, frontend development
             <br/><br/> 

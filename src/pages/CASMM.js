@@ -12,7 +12,7 @@ import pg5img2 from '../assets/CASMM/5-2.png'
 import pg5img3 from '../assets/CASMM/5-3.png'
 import pg6img1 from '../assets/CASMM/6-1.png'
 import pg6img2 from '../assets/CASMM/6-2.png'
-import './CASMM.css'
+import './CASMM.scss'
 import GoToTop from '../components/GoToTop'
 
 const CASMM = () => {
@@ -53,17 +53,22 @@ const CASMM = () => {
 
   return (
     <div className='casmm'>
+
       <div className='casmm-landing'>
         <img src={Logo} className='logo'/>
         <div className='casmm-one-description'>
           <p>
-            Collaborating in the development of a block-based programming environment 
-            at the University of Florida's Engaging Learning Lab
+            Collaborate in the development of a block-based programming environment 
+            for K-12 students to learn how to code Arduinos
           <br/><br/>
             Showcasing some of the UX/UI improvements that I contributed to the project
-          </p> <br/>
+            <br/><br/>
+            https://www.casmm.org/
+          </p>   
+          <br/>
         </div>
       </div>
+
       <div className='casmm-blue'>
         <div className='casmm-content-container'>
           <p className='animation-element slide-left casmm-title'>Description</p>
@@ -71,7 +76,7 @@ const CASMM = () => {
             <br/>
             <div className='casmm-text-container'>
               <p>CaSMM is developed by the University of Florida and Texas A&M with support from 
-                the National Science Foundation
+                the National Science Foundation 
               </p>
               <br/>
               <p><strong>Users consist of</strong></p>
@@ -131,10 +136,10 @@ const CASMM = () => {
             in the new design</strong></div>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg4img1} className='pg4img'/>
-            <p className='pg4img-text'>Example of a modular layout; components are encased in a white background</p>
+            <p className='pg4img-text'>Keep modular layout (components encased in a white background)</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
-            <p className='pg4img-text'>Keep the blue subheading and make consistent across all of the views</p>
+            <p className='pg4img-text'>Keep the blue subheading and make consistent across all the views</p>
             <img src={pg4img2} className='pg4img'/>
           </div>
         </div>
@@ -145,15 +150,17 @@ const CASMM = () => {
           <p className='animation-element slide-left casmm-title'>Mentor View Before & After</p>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg5img1} className='pg4img'/> 
-            <p className='pg4img-text'>This was the Mentor view before any changes were made and the new style applied</p>
+            <p className='pg4img-text'>This was the Mentor view before any changes were made; the white box represents a classroom while 
+              the grey box is a button.</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
-            <p className='pg4img-text'>This is  the redesign after a new style guide was created</p>
+            <p className='pg4img-text'>The card was redesigned to allow Mentors to quickly find the information they need. The Join Code and number
+              of students are more visible, making it easier to read.</p>
             <img src={pg5img2} className='pg4img'/>
           </div>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg5img3} className='pg4img'/>
-            <p className='pg4img-text'>Clickable top right button that changes color on hover</p>
+            <p className='pg4img-text'>The Join Code was also implemented into a button to provide more access for Mentors.</p>
           </div>
         </div>
       </div>
@@ -163,10 +170,10 @@ const CASMM = () => {
           <p className='animation-element slide-left casmm-title'>Roster View Before & After</p>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg6img1} className='pg4img'/>
-            <p className='pg4img-text'>This was the Roster view before any changes were made and the new style applied</p>
+            <p className='pg4img-text'>The Roster view contains a grid of cards containing information for each student.</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
-            <p className='pg4img-text'>This is  the redesign after a new style guide was created</p>
+            <p className='pg4img-text'>The redesign improved the responsiveness of the page and the layout of the information.</p>
             <img src={pg6img2} className='pg4img'/>
           </div>
         </div>

@@ -5,11 +5,6 @@
     width: 100%;
 }
 
-.casmm-img {
-    width: 100%;
-    height: 100%;
-}
-
 .casmm-landing {
     display: flex;
     flex-direction: row;
@@ -20,26 +15,26 @@
     color: #fff;
     font-size: 3vh;
     line-height: 4.5vh;
-}
 
-.casmm-landing .casmm-one-description {
-    width: 40%;
-    margin: 0px 0px 0px 2vw;
-}
+    .casmm-one-description {
+        width: 40%;
+        margin: 0px 0px 0px 2vw;
+    }
 
-.casmm-landing .casmm-img {
-    width: 100%;
-    height: 100%;
-}
+    .casmm-img {
+        width: 100%;
+        height: 100%;
+    }
 
-.casmm-landing .logo {
-    width: 30%;
-    height: auto;
-    left: 14vw;
-    animation-duration: 3s;
-    animation-name: bounce;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    .logo {
+        width: 30%;
+        height: auto;
+        left: 14vw;
+        animation-duration: 3s;
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
 }
 
 .casmm-blue {
@@ -71,67 +66,30 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 3vh;
     float: left;
-    line-height: 4.5vh;
+    font-size: 2.5vh;
+    line-height: 4vh;
+
+    .casmm-text-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    
+    .casmm-info-img {
+        width: 30%;
+        height: 20%;
+    }
   }
 
-.casmm-text-container {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-
-.casmm-info-img {
-    width: 30%;
-    height: 20%;
-}
-
 .casmm-info-img-2 {
-    width: 100%;
-    height: auto;      }
-
-
-.casmm-color-container {
-    width: 40%;
-   text-align: center;
-}
-
-
-.casmm-content-container-pg4 {
-    display: flex;
-    flex-direction: column;
-    margin: 10vh 6vw;
-    height: fit-content;
-}
-
-.animation-element.slide-left.note {
-    font-size: 3vh;
-}
-
-.animation-element.slide-left.pg4img-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 40%;
-    margin: 4vh 0;
-}
-
-.pg4img {
-    width: 60%;
-    height: auto;
-}
-
-.pg4img-text {
-    display: flex;
-    align-items: center;
     width: 30%;
-    margin: 0 2vw;
-    font-size: 3vh;
-}
+    height: auto;    
 
-.role-description {
-    margin-top: 1vh;
+    .casmm-color-container {
+        width: 100%;
+       text-align: center;
+    }
 }
 
 .animation-element.slide-left.casmm-title {
@@ -140,6 +98,43 @@
     float: left;
     padding-bottom: 2vh;
   }
+
+
+.casmm-content-container-pg4 {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 6vw;
+    height: fit-content;
+
+    .animation-element.slide-left.note {
+        font-size: 2.5vh;
+    }
+
+    .animation-element.slide-left.pg4img-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 40%;
+        margin: 4vh 0;
+    
+        .pg4img {
+            width: 60%;
+            height: auto;
+        }
+        
+        .pg4img-text {
+            display: flex;
+            align-items: center;
+            width: 30%;
+            margin: 0 2vw;
+            font-size: 2.5vh;
+        }
+    }
+}
+
+.role-description {
+    margin-top: 1vh;
+}
 
 .ul {
     margin-left: 40px;
@@ -202,17 +197,18 @@ strong {
         line-height: 26px;
         height: 10%;
         padding: 6vh 0;
+
+        .casmm-one-description {
+            width: 70%;
+        }
+
+        .logo {
+            width: 50%;
+            height: auto;
+            margin: 4vh 0;
+        }
     }
 
-    .casmm-landing .casmm-one-description {
-        width: 70%;
-    }
-
-    .casmm-landing .logo {
-        width: 50%;
-        height: auto;
-        margin: 4vh 0;
-    }
 
     .casmm-blue {
         height: fit-content;
@@ -222,64 +218,69 @@ strong {
         font-size: 24px;
     }
 
-    .casmm-text-container {
-        font-size: 18px;
-        line-height: 26px;
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .animation-element.slide-left.casmm-info-container{
+    .animation-element.slide-left.casmm-info-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
         font-size: 18px;
         line-height: 26px;
         float: left;
         width: 100%;
-      }
-
-      .casmm-info-img {
-          width: 80%;
-          height: auto;
-          margin: 6vh 0;
-      }
-
-     .casmm-info-img-2 {
-          width: 50%;
-          height: auto;      
-    }
-
-    .casmm-color-container {
-        width: 100%;
-    }
-
-    .pg4img-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 40%;
-    }
-
-    .animation-element.slide-left.note {
+        
+      .casmm-text-container {
         font-size: 18px;
         line-height: 26px;
-    }
-
-    .pg4img-text {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        width: 90%;
-        margin: 0;
-        font-size: 18px;
-    }
-
-    .pg4img {
         width: 100%;
-        height: auto;
-        margin: 2vh 0;
+        }
+
+        .casmm-info-img {
+            width: 80%;
+            height: auto;
+            margin: 6vh 0;
+        }
+  
+       .casmm-info-img-2 {
+            width: 50%;
+            height: auto;    
+            
+            .casmm-color-container {
+              width: 100%;
+          }
+        }
+    }
+
+    .casmm-content-container-pg4 {
+        display: flex;
+        flex-direction: column;
+        margin: 10vh 6vw;
+        height: fit-content;
+    
+        .animation-element.slide-left.note {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    
+        .animation-element.slide-left.pg4img-container {
+            display: flex;
+        flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 40%;
+            
+            .pg4img {
+                width: 100%;
+                height: auto;
+                margin: 2vh 0;
+            }
+            
+            .pg4img-text {
+                display: flex;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                margin: 0;
+                font-size: 18px;
+            }
+        }
     }
 
     .role-description {

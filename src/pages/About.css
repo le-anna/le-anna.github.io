@@ -19,8 +19,8 @@
 
 .about-description {
     margin: 2vh 0vw;
-    font-size: 3vh;
-    line-height: 4.5vh;
+    font-size: 2.5vh;
+    line-height: 4vh;
 }
 
 @media screen and (max-width: 960px) {

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: #deebfd;
+    background-color: #5e699e;
     height: 50vh;
 }
 
@@ -23,7 +23,7 @@
     display: flex;
     align-items: left;
     flex-direction: column;
-    color: #000;
+    color: #fff;
 }
 
 .prj-role {
@@ -53,6 +53,7 @@
 
 .choices-status {
     text-align: center;
+    color: #fff;
 }
 
 .prj-link-container {
@@ -73,8 +74,8 @@
     font-size: 18px;
     font-weight: 500;
     border-radius: 4px;
-    color: #000;
-    background-color: #f8ebb2;
+    color: #fff;
+    background-color: #F39E9E;
     text-align: left;
     text-decoration: none;
 }

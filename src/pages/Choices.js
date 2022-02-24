@@ -6,7 +6,7 @@ const Choices = () => {
   return (
     <div className='choices'>
         <br/>
-        <p>Choices is currently a work in progress. In the meantime, please check out my other works!</p>
+        <p>Choices is in progress. In the meantime, please check out my other works!</p>
         <GoToTop />
     </div>
   )

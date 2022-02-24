@@ -12,7 +12,7 @@ import pg6img1 from '../assets/MHA/6-1.png'
 import pg7img1 from '../assets/MHA/7-1.png'
 import pg7img2 from '../assets/MHA/7-2.png'
 import One from '../assets/MHA/1.png'
-import './MHA.css'
+import './MHA.scss'
 import GoToTop from '../components/GoToTop'
 
 const MHA = () => {

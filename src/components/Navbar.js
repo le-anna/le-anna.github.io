@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaAngleDown } from 'react-icons/fa';
-import './Navbar.css';
+import './Navbar.scss';
 import Profile from '../assets/profile.jpg'
 import Dropdown from './Dropdown';
 
@@ -47,7 +47,7 @@ const Navbar = () => {
         <nav className='navbar'>
             <div className='navbar-container'>
               <Link to='/' className='nav-profile-container'>
-                <img src={Profile} className='profile-icon'/>
+                <img src={Profile} className='icon'/>
                 <h1 className='name'>ANNA LE</h1>
               </Link>
               <div className={isOpen ? 'mobile-icon-open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>
