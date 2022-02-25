@@ -1,7 +1,7 @@
 import React from 'react';
 import './Landing.scss';
 import StarSvg from '../assets/stars.svg';
-import Drawing from '../assets/drawing.png'
+import Drawing from '../assets/drawing.PNG'
 
 const Landing = () => {
 
