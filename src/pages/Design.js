@@ -1,7 +1,7 @@
 import React from 'react';
 import Gallery from 'react-photo-gallery';
 import { photos } from '../components/Photos.js';
-import './Design.css'
+import './Design.scss'
 import GoToTop from '../components/GoToTop'
 
 const Design = () => {

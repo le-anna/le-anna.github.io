@@ -13,18 +13,12 @@
     animation-iteration-count: infinite;
 }
 
-/* slidein animation located in MHA.css */
-
 .design-info {
     padding: 10px 0px;
     font-size: 2.5vh;
     line-height: 4vh;
 }
 
-.experience-link:hover {
-    color: rgba(255, 174, 108, 0.5);
-    cursor: pointer;
-}
 
 @media screen and (max-width: 960px) { 
     .design {
@@ -36,7 +30,6 @@
         font-size: 18px;
         line-height: 26px;
     }
-
 
     @keyframes slidein-mobile {
         0% { margin-left: 25%; }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Landing.css';
+import './Landing.scss';
 import StarSvg from '../assets/stars.svg';
 import Drawing from '../assets/drawing.png'
 
