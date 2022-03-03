@@ -1,7 +1,6 @@
 import React from 'react'
 import $ from 'jquery'
 import Logo from '../assets/CASMM/casmm_logo.png'
-import arrow from '../assets/CASMM/arrow.png'
 import pg2img1 from '../assets/CASMM/2-1.png'
 import pg3img1 from '../assets/CASMM/3-1.png'
 import pg3img2 from '../assets/CASMM/3-2.png'

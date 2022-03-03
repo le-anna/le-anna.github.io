@@ -1,11 +1,13 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 .project-overview {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: #d1d2f7;
+    background-color: #DEEBFD;
     height: 50vh;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .project-container {
@@ -29,6 +31,10 @@
 .prj-role {
     font-weight: 500;
     font-size: 3vh;
+}
+
+.title {
+   font-weight: 600;
 }
 
 .prj-description {
@@ -74,8 +80,8 @@
     font-size: 18px;
     font-weight: 500;
     border-radius: 4px;
-    color: #fff;
-    background-color: #F39E9E;
+    color: #000;
+    background-color: #F8EBB2;
     text-align: left;
     text-decoration: none;
 }
@@ -123,14 +129,14 @@
 
     .prj-image-container {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         width: 80%;
         margin: 6vh;
     }
 
     .prj-img {
-        width: 80%;
-        
+        width: 100%;
     }
 
   }

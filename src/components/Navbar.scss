@@ -68,12 +68,11 @@
     list-style-type: none;
 
     &:hover {
-      background-color: #f39e9e5e;
+      background-color: #F8EBB2;
       border-radius: 4px;
     }
 
     .link {
-      font-family: Montserrat;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
@@ -109,7 +108,7 @@
       margin-top: 10px;
   
       &:hover {
-        background-color: #f39e9e5e;
+        background-color: #F8EBB2;
       }
   
       .link {
@@ -171,7 +170,7 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #d1d2f7;
+    background-color: #DEEBFD;
   }
 
 }

@@ -3,7 +3,6 @@ import $ from 'jquery'
 import pg2img1 from '../assets/MHA/2-1.png'
 import pg3img1 from '../assets/MHA/3-1.png'
 import pg3img2 from '../assets/MHA/3-2.png'
-import pg4img1 from '../assets/MHA/4-1.png'
 import pg4img2 from '../assets/MHA/4-2.png'
 import pg5img1 from '../assets/MHA/5-1.png'
 import pg5img2 from '../assets/MHA/5-2.png'
@@ -69,7 +68,9 @@ const MHA = () => {
                 <li className='li'>Search</li>
               </ul>
             </div>
-            <img src={pg2img1} className='mha-info-img'/>
+            <div className='mha-right-container' >
+              <img src={pg2img1} className='mha-right-img'/>
+            </div>
           </div>
         </div>
       </div>
@@ -100,7 +101,6 @@ const MHA = () => {
                 Functionalities include the ability to view a line graph of selected moods and a bar graph of multiple selected moods. </p>
             </div>
             <div className='mha-right-container' >
-              <img src={pg4img1} className='mha-right-img'/>
               <img src={pg4img2} className='mha-right-img'/>
             </div>
           </div>

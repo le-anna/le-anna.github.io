@@ -71,7 +71,7 @@ const Navbar = () => {
                   <Link to='/CaSMM' className='link'>CaSMM</Link>
                 </li>
                 <li className='experience-item' onClick={closeMenu}>
-                  <Link to='/MentalHealthAPp' className='link'>Mental Health App</Link>
+                  <Link to='/MentalHealthApp' className='link'>Mental Health App</Link>
                 </li>
 
                 <li className='nav-item' onClick={closeMenu}>

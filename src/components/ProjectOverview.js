@@ -1,7 +1,7 @@
 import {React, useState} from 'react';
 import { Link } from 'react-router-dom';
 import './ProjectOverview.css'
-import CASMM from '../assets/CASMM/casmm_logo.png'
+import CASMM from '../assets/CASMM/casmm.png'
 import MHA from '../assets/MHA/MHA.png'
 import retrofi from '../assets/retrofi.png'
 
