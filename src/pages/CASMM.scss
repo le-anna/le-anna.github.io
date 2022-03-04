@@ -124,7 +124,8 @@
             box-shadow:  5px 5px 5px #50505080;
 
             &:hover {
-                transform: rotate(-5deg); 
+                animation: headShake;
+                animation-duration: 2s;
             }
         }
         
@@ -157,6 +158,7 @@
 
         &:hover {
             color: #F8EBB2;
+            transform: scale(1.2);
         }
     }
 }
@@ -272,5 +274,10 @@
 
     .role-description {
         margin-top: 2vh;
+    }
+
+    .next-btn-container {
+        text-align: center;
+        margin: 4vw 0;
     }
   }

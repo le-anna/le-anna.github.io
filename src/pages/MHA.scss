@@ -97,6 +97,16 @@
       animation-duration: 1s;
     }
   }
+
+  .mha-right-img-product {
+    margin: 0 1vh;
+    width: 100%;
+    height: 100%;
+    &:hover {
+      animation: tada;
+      animation-duration: 1s;
+    }
+  }
 }
 
 .mha-info-img {
@@ -240,6 +250,14 @@
       .mha-pg6-img {
         width: 100%;
         padding-left: 20px;
+        &:hover {
+          animation: none;
+        }
       }
+    }
+
+    .next-btn-container {
+      text-align: center;
+      margin: 4vw 0;
     }
   }

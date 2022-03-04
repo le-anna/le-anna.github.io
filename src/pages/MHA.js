@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import 'animate.css'
 import Home from '../assets/MHA/Home.png'
+import MHAPreview from '../assets/MHA/MHA.png'
 import AddEntry from '../assets/MHA/AddEntry.png'
 import AddEntry2 from '../assets/MHA/AddEntry2.png'
 import ViewEntry from '../assets/MHA/ViewEntry.png'
@@ -155,7 +156,7 @@ const MHA = () => {
             The Mental Health App was developed through the Women in Computer Science & Engineering (WiCSE) Shadowing Programing. 
             As part of the program, students are paired with an industry professional to create a project; in this case, a mentor from Opie Software.
             <br/><br/>
-            The idea was to develop a full-stack application that allows users to track the progression of their mental health through daily logs and statistics.
+            The inspiration for the project was to develop a full-stack application that allows users to track the progression of their mental health through daily logs and statistics.
             </p>
           </div>
         </div>
@@ -204,13 +205,13 @@ const MHA = () => {
         <div className='mha-content-container'>
           <div className='animation-element slide-left mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title'>Initial Concept Problem</p>
+              <p className='animation-element slide-left mha-title'>Midpoint Project Status</p>
               <br/>
-              <p><strong>Problem with initial design</strong></p>
+              <p><strong>Initial design problems</strong></p>
                 <ul className='ul'>
-                  <li>The app was not visually appealing due to singular color.</li>
+                  <li>The app was not visually appealing due to use of a singular color.</li>
                   <li>Components (dropdown and input) are not consistent.</li>
-                  <li>Overall design not welcoming despite being a Mental Health App (needs to feel warmer).</li>
+                  <li>Overall design was not welcoming despite being a Mental Health App (needs to feel warmer).</li>
                 </ul>
                 <br/>
                 <p> <strong>Goals for next steps</strong></p>
@@ -223,6 +224,19 @@ const MHA = () => {
             <div className='mha-right-container' >
               <img src={InitialDesign} className='mha-right-img'/>
               <img src={InitialDesign2} className='mha-right-img'/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='mha-blue'>
+        <div className='mha-content-container'>
+          <div className='animation-element slide-left mha-info-container'>
+            <div className='mha-left-container'>
+              <p className='animation-element slide-left mha-title'>The Final Product</p>
+            </div>
+            <div className='mha-right-container' >
+              <img src={MHAPreview} className='mha-right-img-product'/>
             </div>
           </div>
         </div>

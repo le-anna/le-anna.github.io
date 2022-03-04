@@ -112,14 +112,14 @@ const CASMM = () => {
             <div className='casmm-text-container'>
                 <p> <strong>Issues</strong></p>
                 <ul className='ul'>
-                  <li>Color palette was monotonous and lacked a vibrant accent color.</li>
+                  <li>Color palette was monotonous and lacked an accent color.</li>
                   <li>Buttons were gray and did not stand out against other features, making it difficult to identify as a button.</li>
-                  <li>Components were simple shapes, causing them to be not engaging.</li>
-                  <li>There was a of responsiveness among pages and components (overlapping).</li>
+                  <li>Components were simple shapes.</li>
+                  <li>There was a lack of responsiveness among components, resulting in overlap.</li>
                   <br/>
                   <div className='casmm-color-container'>
                     <img src={pg3img2} className='casmm-info-img-2'/>
-                    <p>Inital Color Scheme</p>
+                    <p>Inital Color Palette</p>
                   </div>
                 </ul>
             </div>
@@ -150,12 +150,11 @@ const CASMM = () => {
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg5img1} className='pg4img'/> 
             <p className='pg4img-text'>BEFORE: This was the Mentor view before any changes were made to the design. The afforance
-              for the buttons is poor. The grey color and shape is not consistent with other applications, making it difficult to distinguish 
-              and its functionality ambiguous. The text within the box is also small and not readable.</p>
+              for the buttons is poor. The grey color and rectangular shape of the button is not consistent with other designs found in other applications, making its functionality ambiguous. The text within the box is also small and not readable.</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
-            <p className='pg4img-text'>AFTER: The card was redesigned to improve readability, so Mentors can quickly find the information they need with the
-              content being divided into sections. The accessibility was also improved, as Mentors can now click on the Join Code, a popup to display the code itself, and locate the button with more ease.</p>
+            <p className='pg4img-text'>AFTER: The card was redesigned to improve readability. The content was divided up into sections, allowing Mentors to  quickly find the information they need. The accessibility was also improved, as Mentors can now click on the Join Code (a popup to display the code in classrooms for students) 
+              instead of having to click on the View button to access it on another page.</p>
             <img src={pg5img2} className='pg4img'/>
           </div>
           <div className='animation-element slide-left pg4img-container'>
@@ -170,15 +169,14 @@ const CASMM = () => {
           <p className='animation-element slide-left casmm-title'>Solution: Roster View</p>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg6img1} className='pg4img'/>
-            <p className='pg4img-text'>BEFORE: The Roster view contains a grid of cards containing information for each student. As observed from the image,
-              the Roster view share a similar issue with the Mentor view in regard to the buttons: difficult to distinguish. In this case,
-              the cards are not responsive, causing the overlap which makes the button indecipherable and inaccessible. Content is small, making
-              it hard to locate information.</p>
+            <p className='pg4img-text'>BEFORE: The Roster view contains a grid of cards with information for each student. As observed from the image,
+              the Roster view share a similar issue with the Mentor view in regard to the buttons: poor affordance. The cards are also not responsive in this case, 
+              causing the overlap which makes the button text indecipherable.</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
             <p className='pg4img-text'>AFTER: The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
             with the yellow to represent the header (this usually include the icon and name). The size of the icon 
-            was also increased, allowing Mentors to distinguish the animal associated better. </p>
+            was also increased, allowing Mentors to identify the image better. </p>
             <img src={pg6img2} className='pg4img'/>
           </div>
         </div>
