@@ -1,5 +1,7 @@
 import React from 'react'
 import $ from 'jquery'
+import { Link } from 'react-router-dom';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
 import Logo from '../assets/CASMM/casmm_logo.png'
 import pg2img1 from '../assets/CASMM/2-1.png'
 import pg3img1 from '../assets/CASMM/3-1.png'
@@ -108,17 +110,12 @@ const CASMM = () => {
           <div className='animation-element slide-left casmm-info-container'>
             <br/>
             <div className='casmm-text-container'>
-              <p><strong>Overview</strong></p>
-                <ul className='ul'>
-                  <li>CaSMM was primarily focused on curating the functionality of the application.</li>
-                </ul>
-                <br/>
                 <p> <strong>Issues</strong></p>
                 <ul className='ul'>
-                  <li>Color palette was monotonous and lacked a vibrant accent color</li>
-                  <li>Buttons were gray and did not stand out against other features, making it difficult to identify as a button</li>
-                  <li>Components were simple shapes, causing them to be unengaging</li>
-                  <li>Lack of responsiveness among pages and components (overlapping)</li>
+                  <li>Color palette was monotonous and lacked a vibrant accent color.</li>
+                  <li>Buttons were gray and did not stand out against other features, making it difficult to identify as a button.</li>
+                  <li>Components were simple shapes, causing them to be not engaging.</li>
+                  <li>There was a of responsiveness among pages and components (overlapping).</li>
                   <br/>
                   <div className='casmm-color-container'>
                     <img src={pg3img2} className='casmm-info-img-2'/>
@@ -185,6 +182,9 @@ const CASMM = () => {
             <img src={pg6img2} className='pg4img'/>
           </div>
         </div>
+      </div>
+      <div className='next-btn-container'>
+         <Link to='/MentalHealthApp' className='link'> Click to view my next experience: Mental Health App <FaArrowAltCircleRight/></Link>
       </div>
       <GoToTop />
     </div>

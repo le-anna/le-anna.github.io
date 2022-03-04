@@ -1,5 +1,8 @@
 import React from 'react'
 import $ from 'jquery'
+import { Link } from 'react-router-dom';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
+import 'animate.css'
 import Home from '../assets/MHA/Home.png'
 import AddEntry from '../assets/MHA/AddEntry.png'
 import AddEntry2 from '../assets/MHA/AddEntry2.png'
@@ -165,7 +168,7 @@ const MHA = () => {
           <div className='animation-element slide-left mha-container-pg6'>
             <div className='tech-container'>
               <ul className='tech-item'> 
-                  <p><strong>Languages</strong></p>
+                  <h3><strong>Languages</strong></h3>
                   <div className='list'>
                     <li>JavaScript</li>
                     <li>Java</li>
@@ -173,13 +176,13 @@ const MHA = () => {
                   </div>
               </ul>
               <ul className='tech-item'> 
-                  <p><strong>Frontend</strong></p>
+                  <h3><strong>Frontend</strong></h3>
                   <div className='list'>
                     <li>React Native</li>
                   </div>
               </ul>
               <ul className='tech-item'> 
-                  <p><strong>Backend</strong></p>
+                  <h3><strong>Backend</strong></h3>
                   <div className='list'>
                     <li>Spring Boot</li>
                     <li>Hibernate</li>
@@ -205,15 +208,15 @@ const MHA = () => {
               <br/>
               <p><strong>Problem with initial design</strong></p>
                 <ul className='ul'>
-                  <li>Not visually appealing due to singular color</li>
-                  <li>Components (dropdown and input) are not consistent</li>
-                  <li>Overall design not welcoming despite being a Mental Health App (needs to feel warmer)</li>
+                  <li>The app was not visually appealing due to singular color.</li>
+                  <li>Components (dropdown and input) are not consistent.</li>
+                  <li>Overall design not welcoming despite being a Mental Health App (needs to feel warmer).</li>
                 </ul>
                 <br/>
-                <p> <strong>Goal for next steps</strong></p>
+                <p> <strong>Goals for next steps</strong></p>
                 <ul className='ul'>
-                  <li>Work with more challenging colors</li>
-                  <li>Improve interface design and make app appear less cold (darker colors)</li>
+                  <li>Work with more challenging colors.</li>
+                  <li>Improve interface design and make app appear less cold (darker colors).</li>
                   <br/>
                 </ul>
             </div>
@@ -232,25 +235,26 @@ const MHA = () => {
               <p className='animation-element slide-left mha-title'>Challenges in the beginning</p>
               <br/>
                 <ul className='ul'>
-                  <li>No prior experience with frontend development and designing apps (daunting at first)</li>
-                  <li>Have not developed a full-stack application before and new to technologies</li>
+                  <li>No prior experience with frontend development and designing apps (daunting at first).</li>
+                  <li>Have not created a full-stack application before and new to the technologies used.</li>
                 </ul>
                 <br/><br/>
                 <p className='animation-element slide-left mha-title'>Accomplishments at the end</p>
                  <br/>
                 <ul className='ul'>
-                  <li>First full stack application</li>
-                  <li>Improved design skills and developed an interest in frontend work</li>
-                  <li>Presented final product to company members at Opie Software</li>
+                  <li>Developed full stack application.</li>
+                  <li>Improved design skills and developed an interest in frontend work.</li>
+                  <li>Presented final product to company members at Opie Software.</li>
                   <br/>
                 </ul>
             </div>
-            <div className='mha-right-container' >
-            </div>
+            <div className='mha-right-container'></div>
           </div>
         </div>
       </div>
-
+      <div className='next-btn-container'>
+         <Link to='/CaSMM' className='link'> Click to view my next experience: CaSMM <FaArrowAltCircleRight/></Link>
+      </div>
       <GoToTop />
     </div>
   )

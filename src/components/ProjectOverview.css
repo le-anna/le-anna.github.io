@@ -8,9 +8,10 @@
     background-color: #DEEBFD;
     height: 50vh;
     font-family: 'Source Code Pro', monospace;
+    padding: 2vw 0;
 }
 
-.project-container {
+.animation-element.slide-left.project-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,8 +88,10 @@
 }
 
 .prj-link-container:hover .prj-button {
-    transform: scale(0.8); 
+    /* transform: scale(0.8);  */
     cursor: pointer;
+    animation: rubberBand;
+    animation-duration: 1s;
 }
 
 @media screen and (max-width: 960px) {
