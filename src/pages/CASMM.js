@@ -74,15 +74,18 @@ const CASMM = () => {
           <div className='animation-element slide-left casmm-info-container'>
             <br/>
             <div className='casmm-text-container'>
-              <p>CaSMM is developed by the University of Florida and Texas A&M with support from 
-                the National Science Foundation 
+              <p>
+                Date: April 2021 - Present
+                <br/><br/>
+                CaSMM is developed by the University of Florida and Texas A&M with support from 
+                the National Science Foundation and is currently undergoing testing/research in classrooms.
               </p>
               <br/>
               <p><strong>Users consist of</strong></p>
               <ul className='ul'>
                 <li>5th and 6th graders</li>
-                <li>Content Creators: individuals developing the learning content</li>
-                <li>Mentors: individuals teaching the lessons</li>
+                <li>Content Creators: develop the learning content</li>
+                <li>Mentors: teach the content</li>
                 <li>Researchers</li>
               </ul>
               <br/>
@@ -107,15 +110,15 @@ const CASMM = () => {
             <div className='casmm-text-container'>
               <p><strong>Overview</strong></p>
                 <ul className='ul'>
-                  <li>Initially, CaSMM was primarily focused on the functionality</li>
+                  <li>CaSMM was primarily focused on curating the functionality of the application.</li>
                 </ul>
                 <br/>
                 <p> <strong>Issues</strong></p>
                 <ul className='ul'>
-                  <li>Initial color scheme was flat </li>
-                  <li>Buttons were grey and did not stand out</li>
-                  <li>Components were simple shapes and not dynamic</li>
-                  <li>Lack of responsiveness among pages and components</li>
+                  <li>Color palette was monotonous and lacked a vibrant accent color</li>
+                  <li>Buttons were gray and did not stand out against other features, making it difficult to identify as a button</li>
+                  <li>Components were simple shapes, causing them to be unengaging</li>
+                  <li>Lack of responsiveness among pages and components (overlapping)</li>
                   <br/>
                   <div className='casmm-color-container'>
                     <img src={pg3img2} className='casmm-info-img-2'/>
@@ -131,14 +134,14 @@ const CASMM = () => {
       <div className='casmm-yellow'>
         <div className='casmm-content-container-pg4'>
           <p className='animation-element slide-left casmm-title'>Requirements</p>
-          <div className='animation-element slide-left note'><strong>Some features the Principle Investigator wanted to maintain
-            in the new design</strong></div>
+          <div className='animation-element slide-left note'><strong>Some features from the original design that 
+            the Principle Investigator wanted to maintain in the redesign.</strong></div>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg4img1} className='pg4img'/>
-            <p className='pg4img-text'>Keep modular layout (components encased in a white background)</p>
+            <p className='pg4img-text'>Keep modular layout (components encased in a white background to model a learning module).</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
-            <p className='pg4img-text'>Keep the blue subheading and make consistent across all the views</p>
+            <p className='pg4img-text'>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
             <img src={pg4img2} className='pg4img'/>
           </div>
         </div>
@@ -146,33 +149,39 @@ const CASMM = () => {
 
       <div className='casmm-yellow'>
         <div className='casmm-content-container-pg4'>
-          <p className='animation-element slide-left casmm-title'>Mentor View Before & After</p>
+          <p className='animation-element slide-left casmm-title'>Solution: Mentor View</p>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg5img1} className='pg4img'/> 
-            <p className='pg4img-text'>This was the Mentor view before any changes were made; the white box represents a classroom while 
-              the grey box is a button.</p>
+            <p className='pg4img-text'>BEFORE: This was the Mentor view before any changes were made to the design. The afforance
+              for the buttons is poor. The grey color and shape is not consistent with other applications, making it difficult to distinguish 
+              and its functionality ambiguous. The text within the box is also small and not readable.</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
-            <p className='pg4img-text'>The card was redesigned to allow Mentors to quickly find the information they need. The Join Code and number
-              of students are more visible, making it easier to read.</p>
+            <p className='pg4img-text'>AFTER: The card was redesigned to improve readability, so Mentors can quickly find the information they need with the
+              content being divided into sections. The accessibility was also improved, as Mentors can now click on the Join Code, a popup to display the code itself, and locate the button with more ease.</p>
             <img src={pg5img2} className='pg4img'/>
           </div>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg5img3} className='pg4img'/>
-            <p className='pg4img-text'>The Join Code was also implemented into a button to provide more access for Mentors.</p>
+            <p className='pg4img-text'>Image of the clickable Join Code.</p>
           </div>
         </div>
       </div>
        
       <div className='casmm-yellow'>
         <div className='casmm-content-container-pg4'>
-          <p className='animation-element slide-left casmm-title'>Roster View Before & After</p>
+          <p className='animation-element slide-left casmm-title'>Solution: Roster View</p>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg6img1} className='pg4img'/>
-            <p className='pg4img-text'>The Roster view contains a grid of cards containing information for each student.</p>
+            <p className='pg4img-text'>BEFORE: The Roster view contains a grid of cards containing information for each student. As observed from the image,
+              the Roster view share a similar issue with the Mentor view in regard to the buttons: difficult to distinguish. In this case,
+              the cards are not responsive, causing the overlap which makes the button indecipherable and inaccessible. Content is small, making
+              it hard to locate information.</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
-            <p className='pg4img-text'>The redesign improved the responsiveness of the page and the layout of the information.</p>
+            <p className='pg4img-text'>AFTER: The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
+            with the yellow to represent the header (this usually include the icon and name). The size of the icon 
+            was also increased, allowing Mentors to distinguish the animal associated better. </p>
             <img src={pg6img2} className='pg4img'/>
           </div>
         </div>

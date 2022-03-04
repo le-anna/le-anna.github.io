@@ -1,15 +1,16 @@
 import React from 'react'
 import $ from 'jquery'
-import pg2img1 from '../assets/MHA/2-1.png'
-import pg3img1 from '../assets/MHA/3-1.png'
-import pg3img2 from '../assets/MHA/3-2.png'
-import pg4img2 from '../assets/MHA/4-2.png'
-import pg5img1 from '../assets/MHA/5-1.png'
-import pg5img2 from '../assets/MHA/5-2.png'
+import Home from '../assets/MHA/Home.png'
+import AddEntry from '../assets/MHA/AddEntry.png'
+import AddEntry2 from '../assets/MHA/AddEntry2.png'
+import ViewEntry from '../assets/MHA/ViewEntry.png'
+import Statistics from '../assets/MHA/Statistics.png'
+import Search from '../assets/MHA/Search.png'
+import SearchDetail from '../assets/MHA/SearchDetail.png'
 import idea from '../assets/MHA/idea.png'
-import pg6img1 from '../assets/MHA/6-1.png'
-import pg7img1 from '../assets/MHA/7-1.png'
-import pg7img2 from '../assets/MHA/7-2.png'
+import TechArt from '../assets/MHA/TechArt.png'
+import InitialDesign from '../assets/MHA/InitialDesign.png'
+import InitialDesign2 from '../assets/MHA/InitialDesign2.png'
 import One from '../assets/MHA/1.png'
 import './MHA.scss'
 import GoToTop from '../components/GoToTop'
@@ -69,7 +70,7 @@ const MHA = () => {
               </ul>
             </div>
             <div className='mha-right-container' >
-              <img src={pg2img1} className='mha-right-img'/>
+              <img src={Home} className='mha-right-img'/>
             </div>
           </div>
         </div>
@@ -85,8 +86,23 @@ const MHA = () => {
                 A section for notes is included at the bottom.</p>
             </div>
             <div className='mha-right-container' >
-              <img src={pg3img1} className='mha-right-img'/>
-              <img src={pg3img2} className='mha-right-img'/>
+              <img src={AddEntry} className='mha-right-img'/>
+              <img src={AddEntry2} className='mha-right-img'/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='mha-blue'>
+        <div className='mha-content-container'>
+          <div className='animation-element slide-left mha-info-container'>
+            <div className='mha-left-container'>
+              <p className='animation-element slide-left mha-title'>View Entry</p>
+              <p className='mha-left-text'>View Entry allows users to view a dropdown containing a list of their 
+                logged entries for ease of access.</p>
+            </div>
+            <div className='mha-right-container' >
+              <img src={ViewEntry} className='mha-right-img'/>
             </div>
           </div>
         </div>
@@ -101,7 +117,7 @@ const MHA = () => {
                 Functionalities include the ability to view a line graph of selected moods and a bar graph of multiple selected moods. </p>
             </div>
             <div className='mha-right-container' >
-              <img src={pg4img2} className='mha-right-img'/>
+              <img src={Statistics} className='mha-right-img'/>
             </div>
           </div>
         </div>
@@ -115,8 +131,8 @@ const MHA = () => {
               <p className='mha-left-text'>Search allows users to locate past logs. Clicking on a search result pulls up the entire entry.</p>
             </div>
             <div className='mha-right-container' >
-              <img src={pg5img1} className='mha-right-img'/>
-              <img src={pg5img2} className='mha-right-img'/>
+              <img src={Search} className='mha-right-img'/>
+              <img src={SearchDetail} className='mha-right-img'/>
             </div>
           </div>
         </div>
@@ -131,6 +147,8 @@ const MHA = () => {
           </div>
           <div className='animation-element slide-left mha-info-container'>
             <p>
+            Date: August 2020 - December 2020
+            <br/><br/>
             The Mental Health App was developed through the Women in Computer Science & Engineering (WiCSE) Shadowing Programing. 
             As part of the program, students are paired with an industry professional to create a project; in this case, a mentor from Opie Software.
             <br/><br/>
@@ -171,7 +189,7 @@ const MHA = () => {
             </div>
 
             <div className='mha-right-'>
-              <img src={pg6img1} className='mha-pg6-img'/>
+              <img src={TechArt} className='mha-pg6-img'/>
             </div>
 
           </div>
@@ -183,23 +201,25 @@ const MHA = () => {
         <div className='mha-content-container'>
           <div className='animation-element slide-left mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title'>Initial Concept</p>
+              <p className='animation-element slide-left mha-title'>Initial Concept Problem</p>
               <br/>
-              <p><strong>Overview</strong></p>
+              <p><strong>Problem with initial design</strong></p>
                 <ul className='ul'>
-                  <li>Not visually appealing</li>
-                  <li>Components (dropdown and input) not consistent</li>
+                  <li>Not visually appealing due to singular color</li>
+                  <li>Components (dropdown and input) are not consistent</li>
+                  <li>Overall design not welcoming despite being a Mental Health App (needs to feel warmer)</li>
                 </ul>
                 <br/>
-                <p> <strong>Issues</strong></p>
+                <p> <strong>Goal for next steps</strong></p>
                 <ul className='ul'>
-                  <li>Work with more challenging colors and improve interface design </li>
+                  <li>Work with more challenging colors</li>
+                  <li>Improve interface design and make app appear less cold (darker colors)</li>
                   <br/>
                 </ul>
             </div>
             <div className='mha-right-container' >
-              <img src={pg7img1} className='mha-right-img'/>
-              <img src={pg7img2} className='mha-right-img'/>
+              <img src={InitialDesign} className='mha-right-img'/>
+              <img src={InitialDesign2} className='mha-right-img'/>
             </div>
           </div>
         </div>
@@ -209,18 +229,18 @@ const MHA = () => {
         <div className='mha-content-container'>
           <div className='animation-element slide-left mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title'>Challenges</p>
+              <p className='animation-element slide-left mha-title'>Challenges in the beginning</p>
               <br/>
                 <ul className='ul'>
-                  <li>No prior experience with frontend development and designing apps</li>
-                  <li>Have not developed a full-stack application before </li>
+                  <li>No prior experience with frontend development and designing apps (daunting at first)</li>
+                  <li>Have not developed a full-stack application before and new to technologies</li>
                 </ul>
                 <br/><br/>
-                <p className='animation-element slide-left mha-title'>Accomplishments</p>
+                <p className='animation-element slide-left mha-title'>Accomplishments at the end</p>
                  <br/>
                 <ul className='ul'>
                   <li>First full stack application</li>
-                  <li>Improved design skills and developed interest in frontend work</li>
+                  <li>Improved design skills and developed an interest in frontend work</li>
                   <li>Presented final product to company members at Opie Software</li>
                   <br/>
                 </ul>
