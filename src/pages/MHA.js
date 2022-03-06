@@ -85,7 +85,7 @@ const MHA = () => {
           <div className='animation-element slide-left mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>Add Entry</p>
-              <p className='mha-left-text'>This page allows users to fill out a daily log. 
+              <p className='mha-left-text'>Add Entry allows users to complete a daily log. 
                 Users have the choice of inputting a newly defined mood or choosing an option from a list of previous ones. 
                 A section for notes is included at the bottom.</p>
             </div>
@@ -102,8 +102,8 @@ const MHA = () => {
           <div className='animation-element slide-left mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>View Entry</p>
-              <p className='mha-left-text'>View Entry allows users to view a dropdown containing a list of their 
-                logged entries for ease of access.</p>
+              <p className='mha-left-text'>View Entry provides users with access to a dropdown containing the dates of their 
+                logged entries.</p>
             </div>
             <div className='mha-right-container' >
               <img src={ViewEntry} className='mha-right-img'/>
@@ -117,8 +117,8 @@ const MHA = () => {
           <div className='animation-element slide-left mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>Statistics</p>
-              <p className='mha-left-text'>Statistics provides users with the option of viewing data to track trends in their overall health. 
-                Functionalities include the ability to view a line graph of selected moods and a bar graph of multiple selected moods. </p>
+              <p className='mha-left-text'>Statistics provides users with visual features to track trends in their overall health. 
+                Functionalities include the ability to view a line graph of selected moods or a bar graph of multiple selected moods. </p>
             </div>
             <div className='mha-right-container' >
               <img src={Statistics} className='mha-right-img'/>
@@ -154,9 +154,9 @@ const MHA = () => {
             Date: August 2020 - December 2020
             <br/><br/>
             The Mental Health App was developed through the Women in Computer Science & Engineering (WiCSE) Shadowing Programing. 
-            As part of the program, students are paired with an industry professional to create a project; in this case, a mentor from Opie Software.
+            As part of the program, students are paired with an industry professional to create a project. For my project, I recieved the opportunity of working with a mentor from Opie Software.
             <br/><br/>
-            The inspiration for the project was to develop a full-stack application that allows users to track the progression of their mental health through daily logs and statistics.
+            The inspiration for the project was to develop a full-stack application that allows users to track the progression of their mental health.
             </p>
           </div>
         </div>
@@ -209,9 +209,9 @@ const MHA = () => {
               <br/>
               <p><strong>Initial design problems</strong></p>
                 <ul className='ul'>
-                  <li>The app was not visually appealing due to use of a singular color.</li>
-                  <li>Components (dropdown and input) are not consistent.</li>
-                  <li>Overall design was not welcoming despite being a Mental Health App (needs to feel warmer).</li>
+                  <li>The app was not visually appealing due to usage of a singular color.</li>
+                  <li>Components, such as the dropdown and input, are not consistent.</li>
+                  <li>Design was not inviting despite being a Mental Health App.</li>
                 </ul>
                 <br/>
                 <p> <strong>Goals for next steps</strong></p>
@@ -249,7 +249,7 @@ const MHA = () => {
               <p className='animation-element slide-left mha-title'>Challenges in the beginning</p>
               <br/>
                 <ul className='ul'>
-                  <li>No prior experience with frontend development and designing apps (daunting at first).</li>
+                  <li>No prior experience with frontend development and designing apps.</li>
                   <li>Have not created a full-stack application before and new to the technologies used.</li>
                 </ul>
                 <br/><br/>

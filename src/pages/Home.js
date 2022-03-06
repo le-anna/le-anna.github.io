@@ -9,7 +9,7 @@ const Home = () => {
     <div className='Home'>
         <Landing/>
         <ProjectOverview type='Work' title='Choices' role='UX/UI Designer & Frontend Developer' 
-                description='Design and implement the website for Choices, an educational platform for individuals with Sickle Cell Disease or Traits' 
+                description='Design and implement the interface for Choices, an educational platform for individuals with Sickle Cell Disease or Traits' 
                 link='/Choices' img='Choices'/>
         <ProjectOverview type='Work' title='CaSMM' role='Frontend Developer' description='Re-designed the interface for CaSMM, a block-based
                 programming environment for K-12 students to learn how to code Arduinos' link='/CASMM' img='CASMM'/>

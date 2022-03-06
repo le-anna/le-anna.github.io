@@ -93,8 +93,8 @@
     width: 50%;
     height: 50%;
     &:hover {
-      animation: tada;
-      animation-duration: 1s;
+      animation: headShake;
+      animation-duration: 2s;
     }
   }
 
@@ -103,8 +103,8 @@
     width: 100%;
     height: 100%;
     &:hover {
-      animation: tada;
-      animation-duration: 1s;
+      animation: headShake;
+      animation-duration: 2s;
     }
   }
 }
