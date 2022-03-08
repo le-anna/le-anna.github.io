@@ -10,11 +10,11 @@ export const photos = [
         height: 2
       },
       {
-        src: 'https://lh3.googleusercontent.com/ImFQD5kDjaNPHOr3ibVHVzQOYF4hQSvurPntbvaao0I-wGpNN3zqjHY0g005vKhGBzYWNLxtu17DLLImnKBqzITjoRh6VqiRu4htX3MgnP7TkGN7dIQq11ekMyZuBDqMZojLeG1Lng=w2400',
+        src: 'https://lh3.googleusercontent.com/RTpe1YBKv9IlK9FNoaDmhjwpDATu2_76RG-iC1iwTgOcXdQ8lBXDIBBUoWr695w4t66zmtcsYqKjPfXv8ra2SAgs0jvUL9IoIwuPFnsD4aTJJV4Hss3K2l6lxH-pe90UmQ0jT3qXtQ=w2400',
         width: 1.4,
         height: 1
       },    {
-        src: 'https://lh3.googleusercontent.com/od39GX2-3UUiSlfuu4kljEY7jnBNYKE2tVUd19jXRKV3tSchozQzt9BZBLCJO8YyJZqQLcU-dJjaIUMAmOBU-AQr0qp7fPDTaSEOoHLPzBlRH5IavwOkl6v_UxaD_In59fYcW4zaCw=w2400',
+        src: 'https://lh3.googleusercontent.com/q110wKpmLbGojrUhTr-LaiIfElGYqqxet3tMvIktoQAcftnwBEvcZWJ9gg9VI5Nw8jPjQKYWC81jav98j7b6Oc6MZttL1hwyS9xJj-r67_WNbinctj8-CKCfVfxYczOk4CpxNZuPRw=w2400',
         width: 1.4,
         height: 1
       },
