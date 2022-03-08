@@ -9,5 +9,14 @@ export const photos = [
         width: 0.8,
         height: 2
       },
+      {
+        src: 'https://lh3.googleusercontent.com/ImFQD5kDjaNPHOr3ibVHVzQOYF4hQSvurPntbvaao0I-wGpNN3zqjHY0g005vKhGBzYWNLxtu17DLLImnKBqzITjoRh6VqiRu4htX3MgnP7TkGN7dIQq11ekMyZuBDqMZojLeG1Lng=w2400',
+        width: 1.4,
+        height: 1
+      },    {
+        src: 'https://lh3.googleusercontent.com/od39GX2-3UUiSlfuu4kljEY7jnBNYKE2tVUd19jXRKV3tSchozQzt9BZBLCJO8YyJZqQLcU-dJjaIUMAmOBU-AQr0qp7fPDTaSEOoHLPzBlRH5IavwOkl6v_UxaD_In59fYcW4zaCw=w2400',
+        width: 1.4,
+        height: 1
+      },
   ];
   
