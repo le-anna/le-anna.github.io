@@ -62,9 +62,7 @@ const CASMM = () => {
             Collaborate in the development of a block-based programming environment 
             for K-12 students to learn how to code Arduinos
           <br/><br/>
-            Showcasing some of the UX/UI improvements that I contributed to the project
-            <br/><br/>
-            https://www.casmm.org/
+            Showcasing some of the improvements that I have contributed to the project
           </p>   
           <br/>
         </div>
@@ -135,12 +133,23 @@ const CASMM = () => {
             the Principle Investigator wanted to maintain in the redesign.</strong></div>
           <div className='animation-element slide-left pg4img-container'>
             <img src={pg4img1} className='pg4img'/>
-            <p className='pg4img-text'>Keep modular layout (components encased in a white background to model a learning module).</p>
+            <p className='pg4img-text'>Keep the color scheme and modular layout (components encased in a white background to model a learning module).</p>
           </div>
           <div className='animation-element slide-left pg4img-container'>
             <p className='pg4img-text'>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
             <img src={pg4img2} className='pg4img'/>
           </div>
+        </div>
+      </div>
+
+      <div className='casmm-yellow'>
+        <div className='casmm-content-container-pg4'>
+          <p className='animation-element slide-left casmm-title'>Process</p>
+          <div className='animation-element slide-left note'>Brighter colors are more engaging, especially to the specific target audience, which are 5th 
+          and 6th grade students.
+          As part of the design solution, I proposed implementing an accent color in the new style guide. Research on various educational platforms for children highlight a common theme:
+          the use of vibrant colors. In order to maintain the current color scheme, I suggested implementing yellow. 
+          Further, to emphasize components, I implemented box shadows in the designs for the buttons and cards.</div>
         </div>
       </div>
 

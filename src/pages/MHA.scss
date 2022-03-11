@@ -109,6 +109,16 @@
   }
 }
 
+.mha-img-delete {
+  width: 15%;
+  margin: 0 4vw;
+  &:hover {
+    animation: headShake;
+    animation-duration: 2s;
+  }
+}
+
+
 .mha-info-img {
   width: 25%;
   height: 25%;
@@ -121,7 +131,6 @@
   justify-content: center;
   margin: 10vh 10vw;
 }
-
 
 .animation-element.slide-left.mha-title {
   font-size: 5vh;
@@ -221,6 +230,14 @@
       .mha-right-img {
         width: 80%;
         margin: 1vw 0;
+      }
+    }
+
+    .mha-img-delete {
+      width: 60%;
+      &:hover {
+        animation: headShake;
+        animation-duration: 2s;
       }
     }
 

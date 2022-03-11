@@ -15,6 +15,7 @@ import idea from '../assets/MHA/idea.png'
 import TechArt from '../assets/MHA/TechArt.png'
 import InitialDesign from '../assets/MHA/InitialDesign.png'
 import InitialDesign2 from '../assets/MHA/InitialDesign2.png'
+import InitialDesign3 from '../assets/MHA/InitialDesign3.png'
 import One from '../assets/MHA/1.png'
 import './MHA.scss'
 import GoToTop from '../components/GoToTop'
@@ -211,7 +212,7 @@ const MHA = () => {
                 <ul className='ul'>
                   <li>The app was not visually appealing due to usage of a singular color.</li>
                   <li>Components, such as the dropdown and input, are not consistent.</li>
-                  <li>Design was not inviting despite being a Mental Health App.</li>
+                  <li>Feedback highlighted an issue with the button affordance, as the x icon looks like errors than delete.</li>
                 </ul>
                 <br/>
                 <p> <strong>Goals for next steps</strong></p>
@@ -225,6 +226,8 @@ const MHA = () => {
               <img src={InitialDesign} className='mha-right-img'/>
               <img src={InitialDesign2} className='mha-right-img'/>
             </div>
+            <img src={InitialDesign3} className='mha-img-delete'/>
+
           </div>
         </div>
       </div>
