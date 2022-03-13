@@ -67,8 +67,6 @@
     }
 
     .info-container {
-        // display: flex;
-        // flex-direction: column;
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
         align-items: center;
@@ -77,8 +75,8 @@
         .description {
             width: 100%;
             font-weight: 400;
-            font-size: 4vw;
-            line-height: 5vw;
+            font-size: 6vw;
+            line-height: 7.5vw;
             text-align: center;
         }
     

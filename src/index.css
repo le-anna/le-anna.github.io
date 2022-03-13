@@ -9,6 +9,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {flex-direction: row;}
+
 .ul {
     margin-left: 40px;
 }
