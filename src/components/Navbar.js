@@ -58,7 +58,7 @@ const Navbar = () => {
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}>
                   <div className='link'> 
-                    Experiences <FaAngleDown className='caret-down' /> 
+                    Experiences <FaAngleDown/> 
                   </div>
                   {dropdown && <Dropdown />}
                 </li>

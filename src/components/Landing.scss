@@ -5,11 +5,19 @@
     background-color: #fff;
 }
 
+
 #info-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
     width: 70%;
     align-items: center;
+
+
+    #msg-icon  {
+        animation: fadeIn;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+    }
 
     #description {
         font-size: 2.8vw;
