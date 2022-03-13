@@ -26,7 +26,8 @@
       color:#000000;
   
       .name {
-        font-family: 'Gloria Hallelujah', cursive;
+        // font-family: 'Gloria Hallelujah', cursive;
+        font-size: 20px;
         padding-left: 10px;
         padding-right: 10px;
         margin-left: 5px;
@@ -41,12 +42,9 @@
     
     &:hover {
       .name {
-        font-size: 26px;
-      }
-
-      .icon {
-        width: 42px;
-        height: 42px;
+        background-color: #F8EBB2;
+        border-radius: 4px;
+        transition: 1s;
       }
     }
   }
@@ -70,6 +68,7 @@
     &:hover {
       background-color: #F8EBB2;
       border-radius: 4px;
+      transition: 1s;
     }
 
     .link {

@@ -48,7 +48,7 @@ const Navbar = () => {
             <div className='navbar-container'>
               <Link to='/' className='nav-profile-container'>
                 <img src={Profile} className='icon'/>
-                <h1 className='name'>ANNA LE</h1>
+                <p className='name'>ANNA LE</p>
               </Link>
               <div className={isOpen ? 'mobile-icon-open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>
                 <FaBars /> 

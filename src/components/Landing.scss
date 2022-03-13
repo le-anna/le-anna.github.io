@@ -1,24 +1,29 @@
 
 
 .landing {
-    min-height: 80vh;
+    min-height: 100vh;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;  
+    flex-direction: column;
 }
 
 .info-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    margin: 0 15%;
-    width: 100%;
+    width: 70%;
+    align-items: center;
 
     .description {
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    #description-animation {
+        width: fit-content;
     }
 
     .landing-image-container {
@@ -27,13 +32,12 @@
 
         .photo {
             grid-area: 'photo';
-            width: 300px;
-            height: 300px;
+            width: 400px;
         }
         
         .stars {
             position: relative;
-            left: -80px;
+            left: -100px;
             grid-area: 'stars';
             width: 100px;
             color: rgb(214, 214, 47);
@@ -41,16 +45,12 @@
     }
 }
 
-@keyframes rotate {
-	0% {
-		opacity: 0;
-        transform:scale(0.3);
-	}
-	50% {
-        ransform: rotate(60deg);
-        
-	}
+#down-icon {
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
     .stars {
@@ -62,18 +62,21 @@
 
 @media screen and (max-width: 960px) {
 
+    .landing {
+        height: 100vh;
+    }
+
     .info-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 0 5%;
 
         .description {
-            width: 70%;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 30px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 4vw;
+            line-height: 5vw;
             margin: 20px 0;
             text-align: center;
         }
@@ -82,17 +85,24 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 40px;
+            margin: 20px 0;
 
             .photo {
-            
+                width: 70%;
+                height: auto;
+                margin-left: 50px;
             }
         
             .stars {
-                bottom: 90px;
-                width: 80px;
+                left: -60px;
+                bottom: 70px;
+                width: 60px;
                 color: rgb(214, 214, 47);
             }
         }
+    }
+
+    #down-icon {
+        bottom: -30px;
     }
 }
