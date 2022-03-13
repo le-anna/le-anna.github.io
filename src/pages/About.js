@@ -7,7 +7,7 @@ const About = () => {
 
   function Mailto({ email, subject, body, ...props }) {
     return (
-      <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+      <a id='email' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
         {props.children}
       </a>
     );
@@ -32,8 +32,10 @@ const About = () => {
             minoring in Mass Communications at the University of Florida.
             My expected graduation date is December 2022.
             <br/><br/>
+            I made this portfolio with React.JS and CSS (SASS) to showcase some of my work.
+            <br/><br/>
             After participating in the Women in Computer Science & Engineering
-            Shadowing Program, I developed a passion for developing frontend solutions. 
+            Shadowing Program, I developed a passion for creating frontend solutions. 
             <br/><br/>
             This has lead to my involvement in a few research labs, as I am interested in understanding how
             research can be used to learn more about the users and their needs. 
@@ -49,12 +51,11 @@ const About = () => {
             <br/><br/> 
             <strong>Interests:</strong> wireframing, prototyping, style guides, UX design, frontend development
             <br/><br/> 
-            <strong>Contact:</strong> annale1501@gmail.com
+            <Mailto email='annale1501@gmail.com' subject='' body=''>
+              <strong>Email me!</strong>
+            </Mailto>
           </p>
 
-          <Mailto email='annale1501@gmail.com' subject="Hello" body="Hello world!">
-    Mail me!
-  </Mailto>,
         </div>
     </div>
   );
