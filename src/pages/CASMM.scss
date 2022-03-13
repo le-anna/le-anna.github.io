@@ -249,7 +249,7 @@
     
         .animation-element.slide-left.pg4img-container {
             display: flex;
-        flex-direction: column;
+            flex-direction: column;
             align-items: center;
             width: 100%;
             height: 40%;
@@ -270,6 +270,10 @@
                 font-size: 18px;
             }
         }
+    }
+
+    #mobile-reverse {
+        flex-direction: column-reverse;
     }
 
     .role-description {

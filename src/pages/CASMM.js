@@ -161,7 +161,7 @@ const CASMM = () => {
             <p className='pg4img-text'>BEFORE: This was the Mentor view before any changes were made to the design. The afforance
               for the buttons is poor. The grey color and rectangular shape of the button is not consistent with other designs for buttons found in other applications, making the functionality ambiguous. The text within the box is also small and not readable.</p>
           </div>
-          <div className='animation-element slide-left pg4img-container'>
+          <div className='animation-element slide-left pg4img-container' id='mobile-reverse'>
             <p className='pg4img-text'>AFTER: The card was redesigned to improve readability. The content was divided up into sections, allowing Mentors to quickly find the information they need. The accessibility was also improved, as Mentors can now click on the Join Code (a popup to display the code in classrooms for students) 
               instead of having to click on the View button to access it on another page.</p>
             <img src={pg5img2} className='pg4img'/>
@@ -182,7 +182,7 @@ const CASMM = () => {
               the Roster view shares a similar issue with the Mentor view in regard to the buttons: poor affordance. The cards are also not responsive, 
               causing the features to overlap which makes the text indecipherable.</p>
           </div>
-          <div className='animation-element slide-left pg4img-container'>
+          <div className='animation-element slide-left pg4img-container' id='mobile-reverse'>
             <p className='pg4img-text'>AFTER: The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
             with the yellow color to represent the header. The size of the icon was also increased, so Mentors can identify the image better. </p>
             <img src={pg6img2} className='pg4img'/>
