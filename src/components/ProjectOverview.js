@@ -44,7 +44,7 @@ const ProjectOverview = ({title, role, type, description, link, img}) => {
       });
 
   return (
-    <div className='project-overview'>
+    <div className='container row' id='project-overview'>
       <div className='animation-element slide-left project-container'>
         <div className='prj-info-container'>
           <p className='type'>{type}</p>

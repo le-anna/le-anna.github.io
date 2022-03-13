@@ -1,5 +1,8 @@
 import React from 'react';
-import './About.css'
+import './About.scss'
+import Resume from '../assets/Anna Le Resume (Spring 2022).pdf';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import Typewriter from 'typewriter-effect';
 // typewriter effect source: https://github.com/tameemsafi/typewriterjs
 
@@ -7,7 +10,7 @@ const About = () => {
 
   function Mailto({ email, subject, body, ...props }) {
     return (
-      <a id='email' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+      <a className='about-btn' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
         {props.children}
       </a>
     );
@@ -30,32 +33,25 @@ const About = () => {
           <p className='about-description'>
             Hi! My name is Anna, and I'm a Computer Science student
             minoring in Mass Communications at the University of Florida.
-            My expected graduation date is December 2022.
-            <br/><br/>
-            I made this portfolio with React.JS and CSS (SASS) to showcase some of my work.
+            My expected graduation date is December 2022. I made this portfolio with React.JS and CSS (SASS) to showcase some of my work!
             <br/><br/>
             After participating in the Women in Computer Science & Engineering
             Shadowing Program, I developed a passion for creating frontend solutions. 
             <br/><br/>
             This has lead to my involvement in a few research labs, as I am interested in understanding how
             research can be used to learn more about the users and their needs. 
-            As of current, I am working as a UX/UI designer and frontend developer for Choices, a project in the
-            Sickle Cell Disease & Traits Lab.
-            My work in CaSMM, a project in the Engaging Learning Lab, involves
-            improving the existing interface for 5th and 6th grade students to learn how to code Arduinos.
-            As these applications are designed for a specific target audience,
-            much attention is given to developing optimal UX solutions. I am also a Coordinator in the Peggy Borum 
-            Ketogenic Therapy Lab, in which I am creating website content and a style guide for the software.
-            <br/><br/> 
-            <strong>Relevant courses:</strong> UX Design and Human-Computer Interaction (in progress)
-            <br/><br/> 
-            <strong>Interests:</strong> wireframing, prototyping, style guides, UX design, frontend development
-            <br/><br/> 
-            <Mailto email='annale1501@gmail.com' subject='' body=''>
-              <strong>Email me!</strong>
-            </Mailto>
+            <br/><br></br>
           </p>
-
+          <div className='container row' id='about-btn-container'>
+            <a href = {Resume} target = "_blank" className='about-btn'>
+              <FontAwesomeIcon icon={faFilePdf}/>
+              <p>Resume</p>
+            </a>
+            <Mailto email='annale1501@gmail.com' subject='' body=''>
+              <FontAwesomeIcon icon={faEnvelope}/>
+              <p>Email</p>
+            </Mailto>
+          </div>
         </div>
     </div>
   );

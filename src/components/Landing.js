@@ -11,10 +11,10 @@ import Typewriter from 'typewriter-effect';
 const Landing = () => {
 
   return (
-    <div className='landing'>
-        <div className='info-container'>
-            <div className='description'>
-              <strong>incoming messages:</strong>
+    <div className='container column' id='landing'>
+        <div id='info-container'>
+            <div id='description'>
+              <strong>incoming message</strong>
               <Typewriter
                 options={{
                   strings: ['hi! my name is anna', 'i\'m a computer science student', 'i\'m also minoring in mass communications',
@@ -26,9 +26,9 @@ const Landing = () => {
                 }}
               />
             </div>
-            <div className='landing-image-container'>
-              <img src={Drawing} className='photo'/>
-              <img src={StarSvg} className='stars'/>
+            <div id='landing-img-container'>
+              <img src={Drawing} id='photo'/>
+              <img src={StarSvg} id='stars'/>
             </div>
         </div>
         <div id='down-icon'><FaChevronDown/></div>
