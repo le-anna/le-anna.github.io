@@ -18,6 +18,8 @@ import InitialDesign2 from '../assets/MHA/InitialDesign2.png'
 import InitialDesign3 from '../assets/MHA/InitialDesign3.png'
 import One from '../assets/MHA/1.png'
 import './MHA.scss'
+import Typewriter from 'typewriter-effect';
+// typewriter effect source: https://github.com/tameemsafi/typewriterjs
 import GoToTop from '../components/GoToTop'
 
 const MHA = () => {
@@ -59,7 +61,17 @@ const MHA = () => {
   return (
     <div className='MHA'>
       <div className='MHA-landing'>
-        <div className='MHA-title'>Mental Health App</div>
+        <div className='MHA-title'>
+          <Typewriter 
+            options={{
+              strings: ['Mental Health App'],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 6
+            }}
+            />
+        </div>
+        {/* <div className='MHA-title'>Mental Health App</div> */}
         <img src={One} className='MHA-img'/>
       </div>
 

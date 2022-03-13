@@ -1,11 +1,32 @@
 import React from 'react';
 import './About.css'
+import Typewriter from 'typewriter-effect';
+// typewriter effect source: https://github.com/tameemsafi/typewriterjs
 
 const About = () => {
+
+  function Mailto({ email, subject, body, ...props }) {
+    return (
+      <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+        {props.children}
+      </a>
+    );
+  }
+
+
   return (
     <div className='about'>
         <div className='about-content'>
-          <p className='about-title'>About Me</p>
+          <div className='about-title'>
+           <Typewriter 
+              options={{
+                strings: ['About Me'],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 6
+              }}
+              />
+          </div>
           <p className='about-description'>
             Hi! My name is Anna, and I'm a Computer Science student
             minoring in Mass Communications at the University of Florida.
@@ -30,6 +51,10 @@ const About = () => {
             <br/><br/> 
             <strong>Contact:</strong> annale1501@gmail.com
           </p>
+
+          <Mailto email='annale1501@gmail.com' subject="Hello" body="Hello world!">
+    Mail me!
+  </Mailto>,
         </div>
     </div>
   );
