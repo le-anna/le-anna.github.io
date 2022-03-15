@@ -2,7 +2,7 @@ import { React } from 'react';
 import $ from 'jquery'
 import { Link } from 'react-router-dom';
 import 'animate.css'
-import './ProjectOverview.css'
+import './ProjectOverview.scss'
 import CASMM from '../assets/CASMM/casmm.png'
 import MHA from '../assets/MHA/MHA.png'
 import retrofi from '../assets/retrofi.png'
@@ -44,25 +44,27 @@ const ProjectOverview = ({title, role, type, description, link, img}) => {
       });
 
   return (
-    <div className='container row' id='project-overview'>
-      <div className='animation-element slide-left project-container'>
-        <div className='prj-info-container'>
-          <p className='type'>{type}</p>
-          <h1 className='title'>{title}</h1>
-          <p className='prj-role'>{role}</p>
-          <p className='prj-description'>{description}</p>
-          <div className ='prj-link-container'>
+    <div className='container row' id='prj'>
+      <div className='animation-element slide-left container' id='prj-container'>
+        <div className='container-left column' id='prj-info-container'>
+          <p id='prj-type'>{type}</p>
+          <h1 id='prj-title'>{title}</h1>
+          <p id='prj-role'>{role}</p>
+          <p id='prj-description'>{description}</p>
+          <div id ='prj-link'>
             {
-              link === 'retrofi' ? <a href='https://devpost.com/software/retrofi' className='prj-button'>Link</a> :
-              <Link to={link} className='prj-button'>Read More</Link>
+              link === 'retrofi' ? 
+                <a href='https://devpost.com/software/retrofi' className='button' id='prj-btn'>Link</a> 
+                :
+              < Link to={link} className='button' id='prj-btn'>Read More</Link>
             }
           </div>
         </div>
-        <div className='prj-image-container'>
+        <div id='prj-img-container'>
           {
-            img === 'CASMM' ? <img src={CASMM} className='prj-img'/> : 
-            img === 'retrofi' ? <img src={retrofi} className='prj-img'/> : 
-            img === 'MHA' ? <img src={MHA} className='prj-img'/> : 
+            img === 'CASMM' ? <img src={CASMM} id='prj-img'/> : 
+            img === 'retrofi' ? <img src={retrofi} id='prj-img'/> : 
+            img === 'MHA' ? <img src={MHA} id='prj-img'/> : 
             <div className='choices-status'>Currently in UX design process</div>
           }
         </div>

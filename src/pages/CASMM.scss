@@ -62,7 +62,7 @@
     margin: 10vh 6vw;
 }
 
-.animation-element.slide-left.casmm-info-container{
+.casmm-info-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -92,7 +92,7 @@
     }
 }
 
-.animation-element.slide-left.casmm-title {
+.casmm-title {
     font-size: 6.5vh;
     font-weight: 500;
     float: left;
@@ -100,24 +100,24 @@
   }
 
 
-.casmm-content-container-pg4 {
+.casmm-content-container-updates {
     display: flex;
     flex-direction: column;
     margin: 10vh 6vw;
     height: fit-content;
 
-    .animation-element.slide-left.note {
+    .note {
         font-size: 2.5vh;
     }
 
-    .animation-element.slide-left.pg4img-container {
+    .updatesimg-container {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 40%;
         margin: 4vh 0;
     
-        .pg4img {
+        .updatesimg {
             width: 60%;
             height: auto;
             border-radius: 8px;
@@ -129,7 +129,7 @@
             }
         }
         
-        .pg4img-text {
+        .updatesimg-text {
             display: flex;
             align-items: center;
             width: 30%;
@@ -187,16 +187,15 @@
         }
     }
 
-
     .casmm-blue {
         height: fit-content;
     }
 
-    .animation-element.slide-left.casmm-title {
+    .casmm-title {
         font-size: 24px;
     }
 
-    .animation-element.slide-left.casmm-info-container {
+    .casmm-info-container {
         display: flex;
         flex-direction: column;
         font-size: 18px;
@@ -226,36 +225,36 @@
         }
     }
 
-    .casmm-content-container-pg4 {
+    .casmm-content-container-updates {
         display: flex;
         flex-direction: column;
         margin: 10vh 6vw;
         height: fit-content;
     
-        .animation-element.slide-left.note {
+        .note {
             font-size: 18px;
             line-height: 26px;
         }
     
-        .animation-element.slide-left.pg4img-container {
+        .updatesimg-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
             height: 40%;
             
-            .pg4img {
+            .updatesimg {
                 width: 100%;
                 height: auto;
                 margin: 2vh 0;
                 border-radius: 4px;
             }
             
-            .pg4img-text {
+            .updatesimg-text {
                 display: flex;
                 align-items: center;
-                text-align: center;
-                width: 100%;
+                text-align:justify;
+                width: 90%;
                 margin: 0;
                 font-size: 18px;
             }

@@ -1,6 +1,6 @@
 import React from 'react'
 import GoToTop from '../components/GoToTop'
-import './Choices.css'
+import './Choices.scss'
 
 const Choices = () => {
   return (

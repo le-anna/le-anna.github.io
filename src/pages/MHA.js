@@ -81,6 +81,7 @@ const MHA = () => {
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>Navigation</p>
               <ul className='ul'>
+                <li className='li'>Add Entry</li>
                 <li className='li'>View Entry</li>
                 <li className='li'>Statistics</li>
                 <li className='li'>Search</li>

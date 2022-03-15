@@ -6,8 +6,8 @@ import Logo from '../assets/CASMM/casmm_logo.png'
 import pg2img1 from '../assets/CASMM/2-1.png'
 import pg3img1 from '../assets/CASMM/3-1.png'
 import pg3img2 from '../assets/CASMM/3-2.png'
-import pg4img1 from '../assets/CASMM/4-1.png'
-import pg4img2 from '../assets/CASMM/4-2.png'
+import updatesimg1 from '../assets/CASMM/4-1.png'
+import updatesimg2 from '../assets/CASMM/4-2.png'
 import pg5img1 from '../assets/CASMM/5-1.png'
 import pg5img2 from '../assets/CASMM/5-2.png'
 import pg5img3 from '../assets/CASMM/5-3.png'
@@ -127,23 +127,23 @@ const CASMM = () => {
       </div>
 
       <div className='casmm-yellow'>
-        <div className='casmm-content-container-pg4'>
+        <div className='casmm-content-container-updates'>
           <p className='animation-element slide-left casmm-title'>Requirements</p>
           <div className='animation-element slide-left note'><strong>Some features from the original design that 
             the Principle Investigator wanted to maintain in the redesign.</strong></div>
-          <div className='animation-element slide-left pg4img-container'>
-            <img src={pg4img1} className='pg4img'/>
-            <p className='pg4img-text'>Keep the color scheme and modular layout (components encased in a white background to model a learning module).</p>
+          <div className='animation-element slide-left updatesimg-container'>
+            <img src={updatesimg1} className='updatesimg'/>
+            <p className='updatesimg-text'>Keep the color scheme and modular layout (components encased in a white background to model a learning module).</p>
           </div>
-          <div className='animation-element slide-left pg4img-container'>
-            <p className='pg4img-text'>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
-            <img src={pg4img2} className='pg4img'/>
+          <div className='animation-element slide-left updatesimg-container'>
+            <p className='updatesimg-text'>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
+            <img src={updatesimg2} className='updatesimg'/>
           </div>
         </div>
       </div>
 
       <div className='casmm-yellow'>
-        <div className='casmm-content-container-pg4'>
+        <div className='casmm-content-container-updates'>
           <p className='animation-element slide-left casmm-title'>Process</p>
           <div className='animation-element slide-left note'>Brighter colors are more engaging, especially to the specific target audience, which are 5th 
           and 6th grade students.
@@ -154,38 +154,38 @@ const CASMM = () => {
       </div>
 
       <div className='casmm-yellow'>
-        <div className='casmm-content-container-pg4'>
+        <div className='casmm-content-container-updates'>
           <p className='animation-element slide-left casmm-title'>Solution: Mentor View</p>
-          <div className='animation-element slide-left pg4img-container'>
-            <img src={pg5img1} className='pg4img'/> 
-            <p className='pg4img-text'>BEFORE: This was the Mentor view before any changes were made to the design. The afforance
-              for the buttons is poor. The grey color and rectangular shape of the button is not consistent with other designs for buttons found in other applications, making the functionality ambiguous. The text within the box is also small and not readable.</p>
+          <div className='animation-element slide-left updatesimg-container'>
+            <img src={pg5img1} className='updatesimg'/> 
+            <p className='updatesimg-text'>BEFORE: This was the Mentor view before any changes were made to the design. The afforance
+              for the buttons is poor. The grey color and rectangular shape of the button is not consistent with other designs for buttons found in other applications, which makes the functionality ambiguous. The text within the box is also small and not readable.</p>
           </div>
-          <div className='animation-element slide-left pg4img-container' id='mobile-reverse'>
-            <p className='pg4img-text'>AFTER: The card was redesigned to improve readability. The content was divided up into sections, allowing Mentors to quickly find the information they need. The accessibility was also improved, as Mentors can now click on the Join Code (a popup to display the code in classrooms for students) 
+          <div className='animation-element slide-left updatesimg-container' id='mobile-reverse'>
+            <p className='updatesimg-text'>AFTER: The card was redesigned to improve readability. The content was divided up into sections, allowing Mentors to quickly find the information they need. The accessibility was also improved, as Mentors can now click on the Join Code (a popup to display the code in classrooms for students) 
               instead of having to click on the View button to access it on another page.</p>
-            <img src={pg5img2} className='pg4img'/>
+            <img src={pg5img2} className='updatesimg'/>
           </div>
-          <div className='animation-element slide-left pg4img-container'>
-            <img src={pg5img3} className='pg4img'/>
-            <p className='pg4img-text'>Image of the clickable Join Code.</p>
+          <div className='animation-element slide-left updatesimg-container'>
+            <img src={pg5img3} className='updatesimg'/>
+            <p className='updatesimg-text'>Image of the clickable Join Code.</p>
           </div>
         </div>
       </div>
        
       <div className='casmm-yellow'>
-        <div className='casmm-content-container-pg4'>
+        <div className='casmm-content-container-updates'>
           <p className='animation-element slide-left casmm-title'>Solution: Roster View</p>
-          <div className='animation-element slide-left pg4img-container'>
-            <img src={pg6img1} className='pg4img'/>
-            <p className='pg4img-text'>BEFORE: The Roster view contains a grid of cards with information for each student. As observed from the image,
+          <div className='animation-element slide-left updatesimg-container'>
+            <img src={pg6img1} className='updatesimg'/>
+            <p className='updatesimg-text'>BEFORE: The Roster view contains a grid of cards with information for each student. As observed from the image,
               the Roster view shares a similar issue with the Mentor view in regard to the buttons: poor affordance. The cards are also not responsive, 
               causing the features to overlap which makes the text indecipherable.</p>
           </div>
-          <div className='animation-element slide-left pg4img-container' id='mobile-reverse'>
-            <p className='pg4img-text'>AFTER: The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
+          <div className='animation-element slide-left updatesimg-container' id='mobile-reverse'>
+            <p className='updatesimg-text'>AFTER: The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
             with the yellow color to represent the header. The size of the icon was also increased, so Mentors can identify the image better. </p>
-            <img src={pg6img2} className='pg4img'/>
+            <img src={pg6img2} className='updatesimg'/>
           </div>
         </div>
       </div>

@@ -14,4 +14,9 @@ export const MenuItems = [
     path: '/MentalHealthApp',
     cName: 'dropdown-link'
   },
+  {
+    title: 'RetroFi',
+    path: '/MentalHealthApp',
+    cName: 'dropdown-link'
+  },
 ];

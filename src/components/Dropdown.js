@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MenuItems } from './MenuItems';
-import './Dropdown.css';
+import './Dropdown.scss';
 import { Link } from 'react-router-dom';
 
 const Dropdown = () => {
@@ -17,13 +17,18 @@ const handleClick = () => setClick(!click);
             {MenuItems.map((item, index) => {
                 return (
                     <li key={index}>
-                    <Link
-                        className={item.cName}
-                        to={item.path}
-                        onClick={() => setClick(false)}
-                    >
-                        {item.title}
-                    </Link>
+                     {
+                        item.title === 'RetroFi' ? 
+                        <a href='https://devpost.com/software/retrofi' className='dropdown-link'>RetroFi</a>
+                        : 
+                        <Link
+                            className={item.cName}
+                            to={item.path}
+                            onClick={() => setClick(false)}
+                        >
+                            {item.title}
+                        </Link> 
+                     }
                     </li>
                 );
             })}
