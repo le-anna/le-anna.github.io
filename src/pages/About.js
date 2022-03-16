@@ -34,14 +34,15 @@ const About = () => {
           <p id='about-description'>
             Hi! My name is Anna, and I'm a Computer Science student
             minoring in Mass Communications at the University of Florida.
-            My expected graduation date is December 2022. I made this portfolio with React.JS and CSS (SASS) to showcase some of my work!
+            My expected graduation date is December 2022. <br/><br/>
+            I made this portfolio with React.JS and CSS (SASS) to showcase some of my work!
+            <br/><br/>
               <a href='https://github.com/le-anna/portfolio' id='nested-link'>
                 Click here to view the Github for my portfolio. 
               </a>
             <br/><br/>
             After participating in the Women in Computer Science & Engineering
             Shadowing Program, I developed a passion for creating frontend solutions. 
-            <br/><br/>
             This has lead to my involvement in a few research labs, as I am interested in understanding how
             research can be used to learn more about the users and their needs. 
             <br/><br></br>
