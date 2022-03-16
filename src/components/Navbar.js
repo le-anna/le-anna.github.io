@@ -48,7 +48,7 @@ export const Navbar = () => {
         <div class='container' id='navbar-container'>
           <Link to='/' className='container row' id='nav-profile-container'>
             <img src={Profile} id='icon'/>
-            <p id='name'>ANNA LE</p>
+            <p id='name'>ANNA N. LE</p>
           </Link>
           <div className={isOpen ? 'mobile-icon open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>
             <FaBars /> 
@@ -101,7 +101,7 @@ export const Footer = () => {
   return (
     <div class='container' id='footer'>
       <div id='footer-content'>
-        <p>Made by Anna</p>
+        <p>Made by Anna N. Le</p>
         <a href='https://linkedin.com/in/anna-le-7130181ba'>
           <FontAwesomeIcon id='footer-icon' icon={faLinkedin}/>
         </a>

@@ -60,8 +60,8 @@ const MHA = () => {
 
   return (
     <div className='MHA'>
-      <div className='MHA-landing'>
-        <div className='MHA-title'>
+      <div className='container' id='mha-landing'>
+        <div id='mha-title'>
           <Typewriter 
             options={{
               strings: ['Mental Health App'],
@@ -72,22 +72,22 @@ const MHA = () => {
             />
         </div>
         {/* <div className='MHA-title'>Mental Health App</div> */}
-        <img src={One} className='MHA-img'/>
+        <img src={One} id='mha-img'/>
       </div>
 
       <div className='mha-peach'>
-        <div className='mha-content-container'>
-          <div className='animation-element slide-left mha-info-container'>
+        <div className='container mha-content'>
+          <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>Navigation</p>
-              <ul className='ul'>
-                <li className='li'>Add Entry</li>
-                <li className='li'>View Entry</li>
-                <li className='li'>Statistics</li>
-                <li className='li'>Search</li>
+              <ul className='mha-left-text'>
+                <li className='li mha-nav'>Add Entry</li>
+                <li className='li mha-nav'>View Entry</li>
+                <li className='li mha-nav'>Statistics</li>
+                <li className='li mha-nav'>Search</li>
               </ul>
             </div>
-            <div className='mha-right-container' >
+            <div className='container mha-right-container' >
               <img src={Home} className='mha-right-img'/>
             </div>
           </div>
@@ -95,15 +95,15 @@ const MHA = () => {
       </div>
 
       <div className='mha-blue'>
-        <div className='mha-content-container'>
-          <div className='animation-element slide-left mha-info-container'>
+        <div className='container mha-content'>
+          <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>Add Entry</p>
               <p className='mha-left-text'>Add Entry allows users to complete a daily log. 
                 Users have the choice of inputting a newly defined mood or choosing an option from a list of previous ones. 
                 A section for notes is included at the bottom.</p>
             </div>
-            <div className='mha-right-container' >
+            <div className='container mha-right-container' >
               <img src={AddEntry} className='mha-right-img'/>
               <img src={AddEntry2} className='mha-right-img'/>
             </div>
@@ -112,14 +112,14 @@ const MHA = () => {
       </div>
 
       <div className='mha-blue'>
-        <div className='mha-content-container'>
-          <div className='animation-element slide-left mha-info-container'>
+        <div className='container mha-content'>
+          <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>View Entry</p>
               <p className='mha-left-text'>View Entry provides users with access to a dropdown containing the dates of their 
                 logged entries.</p>
             </div>
-            <div className='mha-right-container' >
+            <div className='container mha-right-container' >
               <img src={ViewEntry} className='mha-right-img'/>
             </div>
           </div>
@@ -127,14 +127,14 @@ const MHA = () => {
       </div>
 
       <div className='mha-blue'>
-        <div className='mha-content-container'>
-          <div className='animation-element slide-left mha-info-container'>
+        <div className='container mha-content'>
+          <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>Statistics</p>
               <p className='mha-left-text'>Statistics provides users with visual features to track trends in their overall health. 
                 Functionalities include the ability to view a line graph of selected moods or a bar graph of multiple selected moods. </p>
             </div>
-            <div className='mha-right-container' >
+            <div className='container mha-right-container' >
               <img src={Statistics} className='mha-right-img'/>
             </div>
           </div>
@@ -142,13 +142,13 @@ const MHA = () => {
       </div>
 
       <div className='mha-blue'>
-        <div className='mha-content-container'>
-          <div className='animation-element slide-left mha-info-container'>
+        <div className='container mha-content'>
+          <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>Search</p>
               <p className='mha-left-text'>Search allows users to locate past logs. Clicking on a search result pulls up the entire entry.</p>
             </div>
-            <div className='mha-right-container' >
+            <div className='container mha-right-container' >
               <img src={Search} className='mha-right-img'/>
               <img src={SearchDetail} className='mha-right-img'/>
             </div>
@@ -158,11 +158,8 @@ const MHA = () => {
 
       
       <div className='mha-green'>
-        <div className='mha-green-content-container'>
-          <div className='title-container'>
+        <div className='container column mha-content'>
             <p className='animation-element slide-left mha-title'>Description</p>
-            <img src={idea} className='idea'/>
-          </div>
           <div className='animation-element slide-left mha-info-container'>
             <p>
             Date: August 2020 - December 2020
@@ -177,11 +174,11 @@ const MHA = () => {
       </div>
 
       <div className='mha-green'>
-        <div className='mha-green-content-container'>
+        <div className='container column mha-content'>
           <p className='animation-element slide-left mha-title'>Technologies</p>
           <br/>
-          <div className='animation-element slide-left mha-container-pg6'>
-            <div className='tech-container'>
+          <div className='animation-element slide-left container column' id='tech-container'>
+            <div className='container row tech-items'>
               <ul className='tech-item'> 
                   <h3><strong>Languages</strong></h3>
                   <div className='list'>
@@ -205,21 +202,17 @@ const MHA = () => {
                   </div>
               </ul>
             </div>
-
-            <div className='mha-right-'>
-              <img src={TechArt} className='mha-pg6-img'/>
-            </div>
-
+              <img src={TechArt} id='tech-img'/>
           </div>
         </div>
       </div>
 
 
       <div className='mha-green'>
-        <div className='mha-content-container'>
-          <div className='animation-element slide-left mha-info-container'>
+        <div className='container column mha-content'>
+          <p className='animation-element slide-left mha-title'>Midpoint Project Status</p>
+          <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title'>Midpoint Project Status</p>
               <br/>
               <p><strong>Initial design problems</strong></p>
                 <ul className='ul'>
@@ -235,32 +228,31 @@ const MHA = () => {
                   <br/>
                 </ul>
             </div>
-            <div className='mha-right-container' >
+            <div className='container mha-right-container' >
               <img src={InitialDesign} className='mha-right-img'/>
               <img src={InitialDesign2} className='mha-right-img'/>
             </div>
             <img src={InitialDesign3} className='mha-img-delete'/>
-
           </div>
         </div>
       </div>
 
       <div className='mha-blue'>
-        <div className='mha-content-container'>
-          <div className='animation-element slide-left mha-info-container'>
+        <div className='container mha-content'>
+          <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>The Final Product</p>
             </div>
-            <div className='mha-right-container' >
-              <img src={MHAPreview} className='mha-right-img-product'/>
+            <div className='container mha-right-container' >
+              <img src={MHAPreview} className='mha-right-img'id='product-img' />
             </div>
           </div>
         </div>
       </div>
 
       <div className='mha-green'>
-        <div className='mha-content-container'>
-          <div className='animation-element slide-left mha-info-container'>
+        <div className='container mha-content'>
+          <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
               <p className='animation-element slide-left mha-title'>Challenges in the beginning</p>
               <br/>
@@ -278,7 +270,7 @@ const MHA = () => {
                   <br/>
                 </ul>
             </div>
-            <div className='mha-right-container'></div>
+            <div className='container mha-right-container'></div>
           </div>
         </div>
       </div>

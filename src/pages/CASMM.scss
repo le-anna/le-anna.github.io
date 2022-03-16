@@ -5,18 +5,14 @@
     width: 100%;
 }
 
-.casmm-landing {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+#casmm-landing {
     height: 100vh;
     background-color: #3d5c82;
     color: #fff;
     font-size: 3vh;
     line-height: 4.5vh;
 
-    .casmm-one-description {
+    #casmm-landing-description {
         width: 40%;
         margin: 0px 0px 0px 2vw;
     }
@@ -26,7 +22,7 @@
         height: 100%;
     }
 
-    .logo {
+    #casmm-logo {
         width: 30%;
         height: auto;
         left: 14vw;
@@ -55,25 +51,28 @@
     color: #000;
 }
 
-.casmm-content-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.casmm-container {
     margin: 10vh 6vw;
-}
 
-.casmm-info-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    float: left;
-    font-size: 2.5vh;
-    line-height: 4vh;
+    .casmm-info-container{
+        font-size: 2.5vh;
+        line-height: 4vh;
 
-    .casmm-text-container {
+    .casmm-info-content {
         display: flex;
         flex-direction: column;
         width: 60%;
+
+        #color-container {
+            width: 30%;
+            height: auto;    
+        
+            #color-img {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
     }
     
     .casmm-info-img {
@@ -81,15 +80,6 @@
         height: 20%;
     }
   }
-
-.casmm-info-img-2 {
-    width: 30%;
-    height: auto;    
-
-    .casmm-color-container {
-        width: 100%;
-       text-align: center;
-    }
 }
 
 .casmm-title {
@@ -100,9 +90,7 @@
   }
 
 
-.casmm-content-container-updates {
-    display: flex;
-    flex-direction: column;
+.casmm-container-updates {
     margin: 10vh 6vw;
     height: fit-content;
 
@@ -110,9 +98,7 @@
         font-size: 2.5vh;
     }
 
-    .updatesimg-container {
-        display: flex;
-        justify-content: center;
+    .updates-img-container {
         width: 100%;
         height: 40%;
         margin: 4vh 0;
@@ -144,88 +130,58 @@
 }
 
 
-.next-btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .link {
-        font-size: 18px;
-        font-weight: 500;
-        text-decoration: none;
-        color: #000;
-        padding: 2vw 0;
-
-        &:hover {
-            color: #F8EBB2;
-            transform: scale(1.2);
-        }
-    }
-}
-
-
   @media screen and (max-width: 960px) { 
-    .casmm-landing {
-        display: flex;
+    #casmm-landing {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 4vw;
         font-size: 18px;
         line-height: 26px;
-        height: 10%;
-        padding: 6vh 0;
+        height: 70vh;
 
-        .casmm-one-description {
+        #casmm-landing-description {
             width: 70%;
         }
 
-        .logo {
+        #casmm-logo {
             width: 50%;
             height: auto;
             margin: 4vh 0;
         }
     }
 
-    .casmm-blue {
-        height: fit-content;
-    }
-
     .casmm-title {
-        font-size: 24px;
+        font-size: 30px;
     }
 
-    .casmm-info-container {
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        line-height: 26px;
-        float: left;
-        width: 100%;
-        
-      .casmm-text-container {
-        font-size: 18px;
-        line-height: 26px;
-        width: 100%;
-        }
-
-        .casmm-info-img {
-            width: 80%;
-            height: auto;
-            margin: 6vh 0;
-        }
-  
-       .casmm-info-img-2 {
-            width: 50%;
-            height: auto;    
+    .casmm-container {
+        .casmm-info-container {
+            flex-direction: column;
+            font-size: 18px;
+            line-height: 26px;
+            width: 100%;
             
-            .casmm-color-container {
-              width: 100%;
-          }
+            .casmm-info-content {
+                width: 100%;
+
+                #color-container {
+                    width: 50%;
+                    height: auto;    
+                    
+                    #color-img {
+                      width: 100%;
+                  }
+                }
+            }
+    
+            .casmm-info-img {
+                width: 80%;
+                height: auto;
+                margin: 6vh 0;
+            }
         }
     }
 
-    .casmm-content-container-updates {
+
+    .casmm-container-updates {
         display: flex;
         flex-direction: column;
         margin: 10vh 6vw;
@@ -236,10 +192,8 @@
             line-height: 26px;
         }
     
-        .updatesimg-container {
-            display: flex;
+        .updates-img-container {
             flex-direction: column;
-            align-items: center;
             width: 100%;
             height: 40%;
             
@@ -253,9 +207,8 @@
             .updatesimg-text {
                 display: flex;
                 align-items: center;
-                text-align:justify;
+                text-align: left;
                 width: 90%;
-                margin: 0;
                 font-size: 18px;
             }
         }
@@ -267,10 +220,5 @@
 
     .role-description {
         margin-top: 2vh;
-    }
-
-    .next-btn-container {
-        text-align: center;
-        margin: 4vw 0;
     }
   }

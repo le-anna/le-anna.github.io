@@ -54,10 +54,9 @@ const CASMM = () => {
 
   return (
     <div className='casmm'>
-
-      <div className='casmm-landing'>
-        <img src={Logo} className='logo'/>
-        <div className='casmm-one-description'>
+      <div className='container row' id='casmm-landing'>
+        <img src={Logo} id='casmm-logo'/>
+        <div id='casmm-landing-description'>
           <p>
             Collaborate in the development of a block-based programming environment 
             for K-12 students to learn how to code Arduinos
@@ -69,11 +68,11 @@ const CASMM = () => {
       </div>
 
       <div className='casmm-blue'>
-        <div className='casmm-content-container'>
+        <div className='container column casmm-container'>
           <p className='animation-element slide-left casmm-title'>Description</p>
-          <div className='animation-element slide-left casmm-info-container'>
+          <div className='animation-element slide-left container row casmm-info-container'>
             <br/>
-            <div className='casmm-text-container'>
+            <div className='casmm-info-content'>
               <p>
                 Date: April 2021 - Present
                 <br/><br/>
@@ -103,11 +102,11 @@ const CASMM = () => {
       </div>
 
       <div className='casmm-white'>
-        <div className='casmm-content-container'>
+        <div className='container column casmm-container'>
           <p className='animation-element slide-left casmm-title'>Problems</p>
-          <div className='animation-element slide-left casmm-info-container'>
+          <div className='animation-element slide-left container casmm-info-container'>
             <br/>
-            <div className='casmm-text-container'>
+            <div className='casmm-info-content'>
                 <p> <strong>Issues</strong></p>
                 <ul className='ul'>
                   <li>Color palette was monotonous and lacked an accent color.</li>
@@ -115,8 +114,8 @@ const CASMM = () => {
                   <li>Components were simple shapes.</li>
                   <li>There was a lack of responsiveness among components, resulting in overlap.</li>
                   <br/>
-                  <div className='casmm-color-container'>
-                    <img src={pg3img2} className='casmm-info-img-2'/>
+                  <div id='color-container'>
+                    <img src={pg3img2} id='color-img' />
                     <p>Inital Color Palette</p>
                   </div>
                 </ul>
@@ -127,15 +126,15 @@ const CASMM = () => {
       </div>
 
       <div className='casmm-yellow'>
-        <div className='casmm-content-container-updates'>
+        <div className='container column casmm-container-updates'>
           <p className='animation-element slide-left casmm-title'>Requirements</p>
           <div className='animation-element slide-left note'><strong>Some features from the original design that 
             the Principle Investigator wanted to maintain in the redesign.</strong></div>
-          <div className='animation-element slide-left updatesimg-container'>
+          <div className='animation-element slide-left container row updates-img-container'>
             <img src={updatesimg1} className='updatesimg'/>
             <p className='updatesimg-text'>Keep the color scheme and modular layout (components encased in a white background to model a learning module).</p>
           </div>
-          <div className='animation-element slide-left updatesimg-container'>
+          <div className='animation-element slide-left container row updates-img-container'>
             <p className='updatesimg-text'>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
             <img src={updatesimg2} className='updatesimg'/>
           </div>
@@ -143,7 +142,7 @@ const CASMM = () => {
       </div>
 
       <div className='casmm-yellow'>
-        <div className='casmm-content-container-updates'>
+        <div className='container column casmm-container-updates'>
           <p className='animation-element slide-left casmm-title'>Process</p>
           <div className='animation-element slide-left note'>Brighter colors are more engaging, especially to the specific target audience, which are 5th 
           and 6th grade students.
@@ -154,19 +153,19 @@ const CASMM = () => {
       </div>
 
       <div className='casmm-yellow'>
-        <div className='casmm-content-container-updates'>
+        <div className='container column casmm-container-updates'>
           <p className='animation-element slide-left casmm-title'>Solution: Mentor View</p>
-          <div className='animation-element slide-left updatesimg-container'>
+          <div className='animation-element slide-left container row updates-img-container'>
             <img src={pg5img1} className='updatesimg'/> 
             <p className='updatesimg-text'>BEFORE: This was the Mentor view before any changes were made to the design. The afforance
               for the buttons is poor. The grey color and rectangular shape of the button is not consistent with other designs for buttons found in other applications, which makes the functionality ambiguous. The text within the box is also small and not readable.</p>
           </div>
-          <div className='animation-element slide-left updatesimg-container' id='mobile-reverse'>
+          <div className='animation-element slide-left container row updates-img-container' id='mobile-reverse'>
             <p className='updatesimg-text'>AFTER: The card was redesigned to improve readability. The content was divided up into sections, allowing Mentors to quickly find the information they need. The accessibility was also improved, as Mentors can now click on the Join Code (a popup to display the code in classrooms for students) 
               instead of having to click on the View button to access it on another page.</p>
             <img src={pg5img2} className='updatesimg'/>
           </div>
-          <div className='animation-element slide-left updatesimg-container'>
+          <div className='animation-element slide-left container row updates-img-container'>
             <img src={pg5img3} className='updatesimg'/>
             <p className='updatesimg-text'>Image of the clickable Join Code.</p>
           </div>
@@ -174,15 +173,15 @@ const CASMM = () => {
       </div>
        
       <div className='casmm-yellow'>
-        <div className='casmm-content-container-updates'>
+        <div className='container column casmm-container-updates'>
           <p className='animation-element slide-left casmm-title'>Solution: Roster View</p>
-          <div className='animation-element slide-left updatesimg-container'>
+          <div className='animation-element slide-left container updates-img-container'>
             <img src={pg6img1} className='updatesimg'/>
             <p className='updatesimg-text'>BEFORE: The Roster view contains a grid of cards with information for each student. As observed from the image,
               the Roster view shares a similar issue with the Mentor view in regard to the buttons: poor affordance. The cards are also not responsive, 
               causing the features to overlap which makes the text indecipherable.</p>
           </div>
-          <div className='animation-element slide-left updatesimg-container' id='mobile-reverse'>
+          <div className='animation-element slide-left container row  updates-img-container' id='mobile-reverse'>
             <p className='updatesimg-text'>AFTER: The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
             with the yellow color to represent the header. The size of the icon was also increased, so Mentors can identify the image better. </p>
             <img src={pg6img2} className='updatesimg'/>
