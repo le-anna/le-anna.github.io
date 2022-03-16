@@ -80,6 +80,9 @@ export const Navbar = () => {
             <li id='nav-item' onClick={closeMenu}>
               <Link to='/Design' id='link'>UI Designs</Link>
             </li>
+            <li id='nav-item' onClick={closeMenu}>
+              <Link to='/ABout' id='link'>About</Link>
+            </li>
 
           </ul>
         </div>
