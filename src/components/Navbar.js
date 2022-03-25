@@ -47,7 +47,7 @@ export const Navbar = () => {
     <nav id='navbar'>
         <div class='container' id='navbar-container'>
           <Link to='/' className='container row' id='nav-profile-container'>
-            <img src={Profile} id='icon'/>
+            <img src={Profile} id='icon' alt='Profile Icon'/>
             <p id='name'>ANNA N. LE</p>
           </Link>
           <div className={isOpen ? 'mobile-icon open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>

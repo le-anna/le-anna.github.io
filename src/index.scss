@@ -53,17 +53,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 8vw;
 
-  .link {
+  .link, a {
       font-size: 18px;
       font-weight: 500;
       text-decoration: none;
       color: #000;
-      padding: 2vw 0;
+      padding: 3vw 0;
+  
 
       &:hover {
           color: #F8EBB2;
-          transform: scale(1.2);
       }
   }
 }

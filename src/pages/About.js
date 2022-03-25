@@ -4,7 +4,7 @@ import Resume from '../assets/Anna Le Resume (Spring 2022).pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
 import Typewriter from 'typewriter-effect';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons' 
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons' 
 // typewriter effect source: https://github.com/tameemsafi/typewriterjs
 
 const About = () => {
@@ -48,7 +48,7 @@ const About = () => {
             <br/><br></br>
           </p>
           <div className='container row' id='about-btn-container'>
-            <a href={Resume} target = "_blank" class='button' id='about-btn'>
+            <a href={Resume} target = "_blank" rel="noreferrer" class='button' id='about-btn'>
               <FontAwesomeIcon icon={faFilePdf}/>
               <p>Resume</p>
             </a>

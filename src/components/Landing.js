@@ -1,6 +1,6 @@
 import React from 'react';
 import './Landing.scss';
-import StarSvg from '../assets/stars.svg';
+// import StarSvg from '../assets/stars.svg';
 import Drawing from '../assets/drawing.PNG'
 import { FaChevronDown } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,7 +23,7 @@ const Landing = () => {
               <Typewriter
                 options={{
                   strings: ['hi, i\'m anna!', 'i\'m a computer science student', 'i\'m also minoring in mass communications',
-                 , 'i\'m interested in frontend development and ux/ui design!'],
+                  'i\'m interested in frontend development and ux/ui design!'],
                   autoStart: true,
                   loop: true,
                   delay: 60,
@@ -32,8 +32,8 @@ const Landing = () => {
               />
             </div>
             <div id='landing-img-container'>
-              <img src={Drawing} id='photo'/>
-              <img src={StarSvg} id='stars'/>
+              <img src={Drawing} id='photo' alt='Landing Character'/>
+              {/* <img src={StarSvg} id='stars'/> */}
             </div>
         </div>
         <div id='down-icon'><FaChevronDown/></div>

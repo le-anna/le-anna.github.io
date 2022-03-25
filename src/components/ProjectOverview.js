@@ -62,9 +62,9 @@ const ProjectOverview = ({title, role, type, description, link, img}) => {
         </div>
         <div id='prj-img-container'>
           {
-            img === 'CASMM' ? <img src={CASMM} id='prj-img'/> : 
-            img === 'retrofi' ? <img src={retrofi} id='prj-img'/> : 
-            img === 'MHA' ? <img src={MHA} id='prj-img'/> : 
+            img === 'CASMM' ? <img src={CASMM} id='prj-img' alt='CaSMM'/> : 
+            img === 'retrofi' ? <img src={retrofi} id='prj-img' alt='RetroFi'/> : 
+            img === 'MHA' ? <img src={MHA} id='prj-img' alt='Mental Health App'/> : 
             <div className='choices-status'>Currently in UX design process</div>
           }
         </div>

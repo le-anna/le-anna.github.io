@@ -1,7 +1,6 @@
 import React from 'react'
 import $ from 'jquery'
-import { Link } from 'react-router-dom';
-import { FaArrowAltCircleRight } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import 'animate.css'
 import Home from '../assets/MHA/Home.png'
 import MHAPreview from '../assets/MHA/MHA.png'
@@ -11,7 +10,6 @@ import ViewEntry from '../assets/MHA/ViewEntry.png'
 import Statistics from '../assets/MHA/Statistics.png'
 import Search from '../assets/MHA/Search.png'
 import SearchDetail from '../assets/MHA/SearchDetail.png'
-import idea from '../assets/MHA/idea.png'
 import TechArt from '../assets/MHA/TechArt.png'
 import InitialDesign from '../assets/MHA/InitialDesign.png'
 import InitialDesign2 from '../assets/MHA/InitialDesign2.png'
@@ -72,7 +70,7 @@ const MHA = () => {
             />
         </div>
         {/* <div className='MHA-title'>Mental Health App</div> */}
-        <img src={One} id='mha-img'/>
+        <img src={One} id='mha-img' alt='Mental Health App'/>
       </div>
 
       <div className='mha-peach'>
@@ -88,7 +86,7 @@ const MHA = () => {
               </ul>
             </div>
             <div className='container mha-right-container' >
-              <img src={Home} className='mha-right-img'/>
+              <img src={Home} className='mha-right-img' alt='Mental Health App'/>
             </div>
           </div>
         </div>
@@ -104,8 +102,8 @@ const MHA = () => {
                 A section for notes is included at the bottom.</p>
             </div>
             <div className='container mha-right-container' >
-              <img src={AddEntry} className='mha-right-img'/>
-              <img src={AddEntry2} className='mha-right-img'/>
+              <img src={AddEntry} className='mha-right-img' alt='Mental Health App'/>
+              <img src={AddEntry2} className='mha-right-img' alt='Mental Health App'/>
             </div>
           </div>
         </div>
@@ -120,7 +118,7 @@ const MHA = () => {
                 logged entries.</p>
             </div>
             <div className='container mha-right-container' >
-              <img src={ViewEntry} className='mha-right-img'/>
+              <img src={ViewEntry} className='mha-right-img' alt='Mental Health App'/>
             </div>
           </div>
         </div>
@@ -135,7 +133,7 @@ const MHA = () => {
                 Functionalities include the ability to view a line graph of selected moods or a bar graph of multiple selected moods. </p>
             </div>
             <div className='container mha-right-container' >
-              <img src={Statistics} className='mha-right-img'/>
+              <img src={Statistics} className='mha-right-img' alt='Mental Health App'/>
             </div>
           </div>
         </div>
@@ -149,8 +147,8 @@ const MHA = () => {
               <p className='mha-left-text'>Search allows users to locate past logs. Clicking on a search result pulls up the entire entry.</p>
             </div>
             <div className='container mha-right-container' >
-              <img src={Search} className='mha-right-img'/>
-              <img src={SearchDetail} className='mha-right-img'/>
+              <img src={Search} className='mha-right-img' alt='Mental Health App'/>
+              <img src={SearchDetail} className='mha-right-img' alt='Mental Health App'/>
             </div>
           </div>
         </div>
@@ -160,7 +158,8 @@ const MHA = () => {
       <div className='mha-green'>
         <div className='container column mha-content'>
             <p className='animation-element slide-left mha-title'>Description</p>
-          <div className='animation-element slide-left mha-info-container'>
+          <div className='animation-element slide-left container row mha-info-container'>
+          <br/>
             <p>
             Date: August 2020 - December 2020
             <br/><br/>
@@ -176,7 +175,6 @@ const MHA = () => {
       <div className='mha-green'>
         <div className='container column mha-content'>
           <p className='animation-element slide-left mha-title'>Technologies</p>
-          <br/>
           <div className='animation-element slide-left container column' id='tech-container'>
             <div className='container row tech-items'>
               <ul className='tech-item'> 
@@ -202,7 +200,7 @@ const MHA = () => {
                   </div>
               </ul>
             </div>
-              <img src={TechArt} id='tech-img'/>
+              <img src={TechArt} id='tech-img' alt='Mental Health App'/>
           </div>
         </div>
       </div>
@@ -229,10 +227,10 @@ const MHA = () => {
                 </ul>
             </div>
             <div className='container mha-right-container' >
-              <img src={InitialDesign} className='mha-right-img'/>
-              <img src={InitialDesign2} className='mha-right-img'/>
+              <img src={InitialDesign} className='mha-right-img' alt='Mental Health App'/>
+              <img src={InitialDesign2} className='mha-right-img' alt='Mental Health App'/>
             </div>
-            <img src={InitialDesign3} className='mha-img-delete'/>
+            <img src={InitialDesign3} className='mha-img-delete' alt='Mental Health App'/>
           </div>
         </div>
       </div>
@@ -244,7 +242,7 @@ const MHA = () => {
               <p className='animation-element slide-left mha-title'>The Final Product</p>
             </div>
             <div className='container mha-right-container' >
-              <img src={MHAPreview} className='mha-right-img'id='product-img' />
+              <img src={MHAPreview} className='mha-right-img'id='product-img' alt='Mental Health App'/>
             </div>
           </div>
         </div>
@@ -258,7 +256,7 @@ const MHA = () => {
               <br/>
                 <ul className='ul'>
                   <li>No prior experience with frontend development and designing apps.</li>
-                  <li>Have not created a full-stack application before and new to the technologies used.</li>
+                  <li>New to the technologies used.</li>
                 </ul>
                 <br/><br/>
                 <p className='animation-element slide-left mha-title'>Accomplishments at the end</p>
@@ -275,7 +273,8 @@ const MHA = () => {
         </div>
       </div>
       <div className='next-btn-container'>
-         <Link to='/CaSMM' className='link'> Click to view my next experience: CaSMM <FaArrowAltCircleRight/></Link>
+         {/* <Link to='/CaSMM' className='link'>View next: CaSMM<FaArrowRight/></Link> */}
+        <a href='https://devpost.com/software/retrofi'>View next: RetroFi <FaArrowRight/></a>
       </div>
       <GoToTop />
     </div>
