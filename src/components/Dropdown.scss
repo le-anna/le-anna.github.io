@@ -5,7 +5,8 @@
     top: 43px;
     list-style: none;
     text-align: start;
-    box-shadow:  5px 5px 5px #7e7e7e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
     background-color: white;
 
     li {
@@ -13,6 +14,7 @@
 
       &:hover {
         background-color: #F8EBB2;
+        border-radius: 20px;
       }
     }
 
