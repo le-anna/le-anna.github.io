@@ -4,7 +4,6 @@
 #prj {
     background-color: #DEEBFD;
     height: 50vh;
-    font-family: 'Source Code Pro', monospace;
     padding: 2vw 0;
 }
 
@@ -17,24 +16,23 @@
         width: 40%;
         color: #000;
     
-        #prj-type {
-            font-size: 20px;
-        }
-    
         #prj-title {
             font-weight: 700;
          }     
     
         #prj-role {
             font-weight: 500;
-            font-size: 2.5vh;
+            font-size: 1.2em;
         }
     
         #prj-description {
             width: 90%;
-            font-size: 20px;
-            line-height: 28px;
+            font-size: 1.1em;
             padding: 1vh 0;
+        }
+
+        #prj-tech {
+           font-size: 0.9em;
         }
     }
 

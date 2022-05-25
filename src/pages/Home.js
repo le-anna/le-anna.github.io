@@ -8,15 +8,19 @@ const Home = () => {
   return (
     <div className='Home'>
         <Landing/>
-        <ProjectOverview type='Work' title='Choices' role='UX/UI Designer & Frontend Developer' 
+        {/* <ProjectOverview title='My Portfolio' role='' 
+                description='Designed and built a personal portfolio to showcase my work' 
+                tech='React, HTML, CSS (Sass)' link='/Choices' img='Choices'/> */}
+        <ProjectOverview title='Choices' role='UX/UI Designer & Frontend Developer' 
                 description='Design and implement the interface for Choices, an educational platform for people with Sickle Cell Disease or Traits' 
-                link='/Choices' img='Choices'/>
-        <ProjectOverview type='Work' title='CaSMM' role='Frontend Developer' description='Improved interface for CaSMM, a block-based
-                programming environment for K-12 students to learn how to code Arduinos' link='/CASMM' img='CASMM'/>
-        <ProjectOverview type='Shadowing Program' role='Mentee'  title='Mental Health App' description='Developed Mental Health App with  Opie Software
-                through the Women in Computer Science & Engineering (WiCSE) Shadowing Program' link='/MentalHealthApp' img='MHA'/>
-         <ProjectOverview type='Hackathon' title='RetroFi' role='Team Member' description='Won Capital One category for development of retro-themed
-                financial application at SwampHacks (University of Florida)' link='retrofi' img='retrofi'/>
+                tech='JavaScript, HTML, CSS (Sass)' link='/Choices' img='Choices'/>
+        <ProjectOverview title='CaSMM' role='Frontend Developer' description='Improved interface for CaSMM, a block-based
+                programming environment for K-12 students to learn how to code Arduinos' tech='React, CSS (less)' link='/CASMM' img='CASMM'/>
+        <ProjectOverview title='Mental Health App' role='Shadowing Program Mentee' description='Developed Mental Health App with  Opie Software
+                through the Women in Computer Science & Engineering (WiCSE) Shadowing Program' tech='Java, React Native, Hibernate, Spring Boot, SQL'
+                link='/MentalHealthApp' img='MHA'/>
+         <ProjectOverview title='RetroFi' role='Hackthon Team Member' description='Won Capital One category for development of retro-themed
+                financial application at SwampHacks (University of Florida)' tech='React, CSS' link='retrofi' img='retrofi'/>
         <GoToTop />
   </div>
   

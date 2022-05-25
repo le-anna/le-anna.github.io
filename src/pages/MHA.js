@@ -159,7 +159,6 @@ const MHA = () => {
         <div className='container column mha-content'>
             <p className='animation-element slide-left mha-title'>Description</p>
           <div className='animation-element slide-left container row mha-info-container'>
-          <br/>
             <p>
             Date: August 2020 - December 2020
             <br/><br/>
@@ -173,35 +172,34 @@ const MHA = () => {
       </div>
 
       <div className='mha-green'>
-        <div className='container column mha-content'>
+        <div className='container-left column mha-content'>
           <p className='animation-element slide-left mha-title'>Technologies</p>
-          <div className='animation-element slide-left container column' id='tech-container'>
-            <div className='container row tech-items'>
-              <ul className='tech-item'> 
-                  <h3><strong>Languages</strong></h3>
-                  <div className='list'>
-                    <li>JavaScript</li>
-                    <li>Java</li>
-                    <li>SQL Script</li>
-                  </div>
-              </ul>
-              <ul className='tech-item'> 
-                  <h3><strong>Frontend</strong></h3>
-                  <div className='list'>
-                    <li>React Native</li>
-                  </div>
-              </ul>
-              <ul className='tech-item'> 
-                  <h3><strong>Backend</strong></h3>
-                  <div className='list'>
-                    <li>Spring Boot</li>
-                    <li>Hibernate</li>
-                    <li>SQL Database</li>
-                  </div>
-              </ul>
-            </div>
-              <img src={TechArt} id='tech-img' alt='Mental Health App'/>
-          </div>
+          <div className='container-left column tech-items'>
+            <ul className='tech-item'> 
+                <p><strong>Languages</strong></p>
+                <div className='list'>
+                  <li>JavaScript</li>
+                  <li>Java</li>
+                </div>
+            </ul>
+            <ul className='tech-item'> 
+                <p><strong>Frontend</strong></p>
+                <div className='list'>
+                  <li>React Native</li>
+                </div>
+            </ul>
+            <ul className='tech-item'> 
+                <p><strong>Backend</strong></p>
+                <div className='list'>
+                  <li>Spring Boot</li>
+                  <li>Hibernate</li>
+                  <li>SQL Database</li>
+                </div>
+            </ul>
+          </div>           
+        </div>
+        <div className='container mha-right-container' >
+          <img src={TechArt} id='tech-img' alt='Mental Health App'/>
         </div>
       </div>
 
@@ -211,7 +209,6 @@ const MHA = () => {
           <p className='animation-element slide-left mha-title'>Midpoint Project Status</p>
           <div className='animation-element slide-left container row mha-info-container'>
             <div className='mha-left-container'>
-              <br/>
               <p><strong>Initial design problems</strong></p>
                 <ul className='ul'>
                   <li>The app was not visually appealing due to usage of a singular color.</li>

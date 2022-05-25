@@ -7,7 +7,7 @@ import CASMM from '../assets/CASMM/casmm.png'
 import MHA from '../assets/MHA/MHA.png'
 import retrofi from '../assets/retrofi.png'
 
-const ProjectOverview = ({title, role, type, description, link, img}) => {
+const ProjectOverview = ({title, role, tech, description, link, img}) => {
 
       // https://codepen.io/simoncodrington/pen/Mwgqqd for animation
       $(document).ready(function() {
@@ -47,10 +47,10 @@ const ProjectOverview = ({title, role, type, description, link, img}) => {
     <div className='container row' id='prj'>
       <div className='animation-element slide-left container' id='prj-container'>
         <div className='container-left column' id='prj-info-container'>
-          <p id='prj-type'>{type}</p>
           <h1 id='prj-title'>{title}</h1>
           <p id='prj-role'>{role}</p>
           <p id='prj-description'>{description}</p>
+          <p id='prj-tech'>{tech}</p>
           <div id ='prj-link'>
             {
               link === 'retrofi' ? 
@@ -65,7 +65,7 @@ const ProjectOverview = ({title, role, type, description, link, img}) => {
             img === 'CASMM' ? <img src={CASMM} id='prj-img' alt='CaSMM'/> : 
             img === 'retrofi' ? <img src={retrofi} id='prj-img' alt='RetroFi'/> : 
             img === 'MHA' ? <img src={MHA} id='prj-img' alt='Mental Health App'/> : 
-            <div className='choices-status'>Currently in UX design process</div>
+            <div className='choices-status'>Currently in development </div>
           }
         </div>
       </div>

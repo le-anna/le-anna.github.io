@@ -104,7 +104,7 @@ export const Footer = () => {
   return (
     <div class='container' id='footer'>
       <div id='footer-content'>
-        <p>Made by Anna N. Le</p>
+        <p>Built and designed by Anna N. Le</p>
         <a href='https://linkedin.com/in/anna-le-7130181ba'>
           <FontAwesomeIcon id='footer-icon' icon={faLinkedin}/>
         </a>

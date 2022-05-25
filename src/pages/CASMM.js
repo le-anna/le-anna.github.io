@@ -59,31 +59,24 @@ const CASMM = () => {
         <div id='casmm-landing-description'>
           <p>
             Collaborate in the development of a block-based programming environment 
-            for K-12 students to learn how to code Arduinos
+            for K-12 students to learn how to code Arduinos.
           <br/><br/>
-            Showcasing some of the improvements that I have contributed to the project
+            Showcasing some of the improvements that I have contributed to the project.
           </p>   
           <br/>
         </div>
       </div>
 
       <div className='casmm-blue'>
-        <div className='container column casmm-container'>
+        <div className='casmm-container'>
           <p className='animation-element slide-left casmm-title'>Description</p>
           <div className='animation-element slide-left container row casmm-info-container'>
             <div className='casmm-info-content'>
               <p>
                 CaSMM is developed by the University of Florida and Texas A&M with support from 
-                the National Science Foundation and is currently undergoing testing/research in classrooms.
+                the National Science Foundation and is currently undergoing testing/research in classrooms. Users consist of 5th and 6th graders, content
+                creators, mentors, and researchers.
               </p>
-              <br/>
-              <p><strong>Users consist of</strong></p>
-              <ul className='ul'>
-                <li>5th and 6th graders</li>
-                <li>Content Creators: develop the learning content</li>
-                <li>Mentors: teach the content</li>
-                <li>Researchers</li>
-              </ul>
               <br/>
               <p> <strong>Frontend technologies</strong></p>
               <ul className='ul'>
@@ -96,20 +89,21 @@ const CASMM = () => {
                 <li>April 2021 - Present</li>
               </ul>
             </div>
-            <img src={pg2img1} className='casmm-info-img' alt='CaSMM'/>
+            <div className='casmm-info-img'>
+              <img src={pg2img1} alt='CaSMM'/>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className='casmm-white'>
-        <div className='container column casmm-container'>
+      <div className='casmm-yellow'>
+        <div className='casmm-container'>
           <p className='animation-element slide-left casmm-title'>Problems</p>
           <div className='animation-element slide-left container casmm-info-container'>
             <div className='casmm-info-content'>
-                <p> <strong>Issues</strong></p>
                 <ul className='ul'>
-                  <li>Color palette was monotonous and lacked an accent color.</li>
-                  <li>Buttons were gray and did not stand out against other features, making them difficult to identify.</li>
+                  <li>Color palette lacked an accent color, which can be important in helping elements stand out.</li>
+                  <li>Buttons were gray, making them difficult to identify.</li>
                   <li>Components were simple shapes.</li>
                   <li>There was a lack of responsiveness among components, resulting in overlap.</li>
                   <br/>
@@ -119,16 +113,18 @@ const CASMM = () => {
                   </div>
                 </ul>
             </div>
-            <img src={pg3img1} className='casmm-info-img' alt='CaSMM'/>
+            <div className='casmm-info-img'>
+              <img src={pg3img1} alt='CaSMM'/>
+            </div>
           </div>
         </div>
       </div>
 
       <div className='casmm-yellow'>
-        <div className='container column casmm-container-updates'>
+        <div className='casmm-container-updates'>
           <p className='animation-element slide-left casmm-title'>Requirements</p>
-          <div className='animation-element slide-left note'><strong>Some features from the original design that 
-            the Principle Investigator wanted to maintain in the redesign.</strong></div>
+          <div className='animation-element slide-left note'>Some features from the original design that 
+            the Principle Investigator wanted to maintain in the redesign.</div>
           <div className='animation-element slide-left container row updates-img-container'>
             <img src={updatesimg1} className='updatesimg' alt='CaSMM'/>
             <p className='updatesimg-text'>Keep the color scheme and modular layout (components encased in a white background to model a learning module).</p>
@@ -141,18 +137,23 @@ const CASMM = () => {
       </div>
 
       <div className='casmm-yellow'>
-        <div className='container column casmm-container-updates'>
+        <div className='casmm-container-updates'>
           <p className='animation-element slide-left casmm-title'>Process</p>
-          <div className='animation-element slide-left note'>Brighter colors are more engaging, especially to the specific target audience; in this case, 5th 
+          <div className='animation-element slide-left note'>Research on various educational platforms for children highlight a common theme: the use of vibrant colors.  Brighter colors are more engaging, especially to the specific target audience; in this case, 5th 
           and 6th grade students.
-          As part of the design solution, I proposed implementing an accent color in the new style guide. Research on various educational platforms for children highlight a common theme:
-          the use of vibrant colors.
-          Further, to emphasize components, I implemented box shadows in the designs for the buttons and cards. The rest of my work involved improving the UI to fit the style guide.</div>
+          <br/> <br/> 
+          I paid particular attention to several <strong> UX Design Principles: Consistency, Affordance, and Discoverability.</strong>
+          <br/> <br/> 
+          In the design solution, I proposed implementing an accent color in the new style guide. 
+          An accent color used specifically to denote clickable items would improve the discoverability of the element. As well, the change in button style would
+          make it more consistent to buttons found in other applications. During development, much discussion revolved around ensuring the affordance of elements, so students could easily identify them.
+          The rest of my work involved improving the UI to fit the style guide.
+          </div>
         </div>
       </div>
 
       <div className='casmm-yellow'>
-        <div className='container column casmm-container-updates'>
+        <div className='casmm-container-updates'>
           <p className='animation-element slide-left casmm-title'>Solution: Mentor View</p>
           <div className='animation-element slide-left container row updates-img-container'>
             <img src={pg5img1} className='updatesimg' alt='CaSMM'/> 
@@ -172,7 +173,7 @@ const CASMM = () => {
       </div>
        
       <div className='casmm-yellow'>
-        <div className='container column casmm-container-updates'>
+        <div className='casmm-container-updates'>
           <p className='animation-element slide-left casmm-title'>Solution: Roster View</p>
           <div className='animation-element slide-left container updates-img-container'>
             <img src={pg6img1} className='updatesimg' alt='CaSMM'/>

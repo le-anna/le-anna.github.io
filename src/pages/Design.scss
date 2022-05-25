@@ -6,21 +6,21 @@
 
     h1 {
         font-weight: 500;
+        font-size: 1.2em;
     }
 }
 
 #design-title {
     display: flex;
     justify-content: center;
-    font-size: 6vh;
+    font-size: 1.4em;
     font-weight: 500;
 }
 
 #design-info {
     margin: 0;
     padding: 10px 0px;
-    font-size: 2.5vh;
-    line-height: 4vh;
+    font-size: 1.1em;
 }
 
 #gallery-row {
@@ -34,13 +34,13 @@
             height: 100%;
             position: relative;
             margin: auto;
-            overflow: hidden;        
+            overflow: hidden; 
           }
 
         .content-overlay {
             height: 100%;
             width: 100%;
-            border-radius: 30px;
+            border-radius: 20px;
             background: rgba(255, 255, 255, 0.638);
             position: absolute;
             left: 0;
@@ -59,15 +59,14 @@
           .content-details {
             position: absolute;
             text-align: center;
-            padding-left: 1em;
-            padding-right: 1em;
+            padding: 0 1em;
             width: 80%;
             top: 50%;
             left: 50%;
             opacity: 0;
             transform: translate(-50%, -50%);
             transition: all 0.3s ease-in-out 0s;
-            font-size: 1.2em;
+            font-size: 1.1em;
           }
           
           .content:hover .content-details{
@@ -75,6 +74,10 @@
             left: 50%;
             opacity: 1;
           }
+
+        img {
+            width: 300px;        
+        }
     }
 
     
@@ -83,24 +86,21 @@
 
 @media screen and (max-width: 960px) { 
     #design {
-        margin: 10% 14%;
-
-        h1 {
-            font-size: 24px;
-        }
+        margin: 10% 0;
     }
 
     #design-info {
-        margin: 0;
-        font-size: 18px;
-        line-height: 26px;
+        display: flex;
+        justify-content: center;
+        width: 90%;
     }
 
     #gallery-row {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 70%;
+        width: 60%;
+        margin: 0;
 
         .gallery-row-item {
             margin: 1vh 0;
@@ -113,11 +113,6 @@
                 border-radius: 10px;
             }
 
-            .content-details {
-                font-size: 1em;
-            }
         }
-
-       
     }
 }

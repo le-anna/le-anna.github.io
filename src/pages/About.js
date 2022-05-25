@@ -32,19 +32,26 @@ const About = () => {
               />
           </div>
           <p id='about-description'>
-            Hi! My name is Anna, and I'm a Computer Science student
-            minoring in Mass Communications at the University of Florida.
-            My expected graduation date is December 2022. <br/><br/>
-            I made this portfolio with React.JS and CSS (SASS) to showcase some of my work!
+            Hi! My name is Anna. I'm a Computer Science student
+            minoring in Mass Communications at the University of Florida with a plan to graduate in December 2022. 
+            I believe that mass communication plays a prominent role in today's
+            digital age. As such, I decided to a pursue a minor in Mass Communiations along with my Computer Science degree.
             <br/><br/>
-              <a href='https://github.com/le-anna/portfolio' id='nested-link'>
-                Click here to view the Github for my portfolio. 
-              </a>
+            After participating in the Women in Computer Science & Engineering (WiCSE)
+            Shadowing Program in 2020, I developed a passion for frontend development and UX design. 
+            This has prompted my involvement in a few research labs, as I am interested in understanding how
+            research can be used to learn more about the users and their needs. Currently, I am working on the development of
+            a website for the Sickle Cell Disease & Traits Lab.
             <br/><br/>
-            After participating in the Women in Computer Science & Engineering
-            Shadowing Program, I developed a passion for creating frontend solutions. 
-            This has lead to my involvement in a few research labs, as I am interested in understanding how
-            research can be used to learn more about the users and their needs. 
+            I made this portfolio with React and CSS (Sass) to showcase some of my frontend work.
+            <a href='https://github.com/le-anna/portfolio' id='nested-link'>
+              Here's my Github for the portfolio!
+            </a>
+              <br/><br/>
+             <p><strong>Technologies that I have been working with:</strong></p>
+              JavaScript, C++, Java, HTML, CSS (preprocessors Sass and Less)
+              <br/>
+              React, React Native, Figma
             <br/><br></br>
           </p>
           <div className='container row' id='about-btn-container'>
