@@ -15,7 +15,7 @@ const Home = () => {
                 description='Design and implement the interface for Choices, an educational platform for people with Sickle Cell Disease or Traits' 
                 tech='JavaScript, HTML, CSS (Sass)' link='/Choices' img='Choices'/>
         <ProjectOverview title='CaSMM' role='Frontend Developer' description='Improved interface for CaSMM, a block-based
-                programming environment for K-12 students to learn how to code Arduinos' tech='React, CSS (less)' link='/CASMM' img='CASMM'/>
+                programming environment for K-12 students to learn how to code Arduinos' tech='React, CSS (Less)' link='/CASMM' img='CASMM'/>
         <ProjectOverview title='Mental Health App' role='Shadowing Program Mentee' description='Developed Mental Health App with  Opie Software
                 through the Women in Computer Science & Engineering (WiCSE) Shadowing Program' tech='Java, React Native, Hibernate, Spring Boot, SQL'
                 link='/MentalHealthApp' img='MHA'/>

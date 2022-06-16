@@ -103,9 +103,9 @@ const CASMM = () => {
             <div className='casmm-info-content'>
                 <ul className='ul'>
                   <li>Color palette lacked an accent color, which can be important in helping elements stand out.</li>
-                  <li>Buttons were gray, making them difficult to identify.</li>
+                  <li>Buttons were gray, making their functionality difficult to identify.</li>
                   <li>Components were simple shapes.</li>
-                  <li>There was a lack of responsiveness among components, resulting in overlap.</li>
+                  <li>There was a lack of responsiveness among components, which resulted in overlap.</li>
                   <br/>
                   <div id='color-container'>
                     <img src={pg3img2} id='color-img' alt='CaSMM'/>

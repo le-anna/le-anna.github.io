@@ -49,7 +49,7 @@ const About = () => {
             </a>
               <br/><br/>
              <p><strong>Technologies that I have been working with:</strong></p>
-              JavaScript, C++, Java, HTML, CSS (preprocessors Sass and Less)
+              JavaScript, TypeScript, C++, Java, HTML, CSS (preprocessors Sass and Less)
               <br/>
               React, React Native, Figma
             <br/><br></br>
