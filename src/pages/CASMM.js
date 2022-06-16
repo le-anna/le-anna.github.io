@@ -60,7 +60,7 @@ const CASMM = () => {
           <p>
             Collaborate in the development of a block-based programming environment 
             for K-12 students to learn how to code Arduinos.
-          <br/><br/>
+            <br/><br/>
             Showcasing some of the improvements that I have contributed to the project.
           </p>   
           <br/>
@@ -69,7 +69,7 @@ const CASMM = () => {
 
       <div className='casmm-blue'>
         <div className='casmm-container'>
-          <p className='animation-element slide-left casmm-title'>Description</p>
+          <h2 className='animation-element slide-left'>Project Overview</h2>
           <div className='animation-element slide-left container row casmm-info-container'>
             <div className='casmm-info-content'>
               <p>
@@ -79,15 +79,10 @@ const CASMM = () => {
               </p>
               <br/>
               <p> <strong>Frontend technologies</strong></p>
-              <ul className='ul'>
-                <li>React.js and CSS (.less)</li>
-              </ul>
+              <p>React.js and CSS (.less)</p>
               <br/>
               <p> <strong>Role</strong></p>
-              <ul className='ul'>
-                <li>Frontend Developer</li>
-                <li>April 2021 - Present</li>
-              </ul>
+              <p>Frontend Developer <br/> April 2021 - May 2022</p>
             </div>
             <div className='casmm-info-img'>
               <img src={pg2img1} alt='CaSMM'/>
@@ -98,7 +93,7 @@ const CASMM = () => {
 
       <div className='casmm-yellow'>
         <div className='casmm-container'>
-          <p className='animation-element slide-left casmm-title'>Problems</p>
+          <h2 className='animation-element slide-left'>Problems</h2>
           <div className='animation-element slide-left container casmm-info-container'>
             <div className='casmm-info-content'>
                 <ul className='ul'>
@@ -122,9 +117,9 @@ const CASMM = () => {
 
       <div className='casmm-yellow'>
         <div className='casmm-container-updates'>
-          <p className='animation-element slide-left casmm-title'>Requirements</p>
-          <div className='animation-element slide-left note'>Some features from the original design that 
-            the Principle Investigator wanted to maintain in the redesign.</div>
+          <h2 className='animation-element slide-left'>Requirements</h2>
+          <p className='animation-element slide-left'>Some features from the original design that 
+            the Principle Investigator wanted to maintain in the redesign.</p>
           <div className='animation-element slide-left container row updates-img-container'>
             <img src={updatesimg1} className='updatesimg' alt='CaSMM'/>
             <p className='updatesimg-text'>Keep the color scheme and modular layout (components encased in a white background to model a learning module).</p>
@@ -138,8 +133,8 @@ const CASMM = () => {
 
       <div className='casmm-yellow'>
         <div className='casmm-container-updates'>
-          <p className='animation-element slide-left casmm-title'>Process</p>
-          <div className='animation-element slide-left note'>Research on various educational platforms for children highlight a common theme: the use of vibrant colors.  Brighter colors are more engaging, especially to the specific target audience; in this case, 5th 
+          <h2 className='animation-element slide-left'>Process</h2>
+          <p className='animation-element slide-left'>Research on various educational platforms for children highlight a common theme: the use of vibrant colors.  Brighter colors are more engaging, especially to the specific target audience; in this case, 5th 
           and 6th grade students.
           <br/> <br/> 
           I paid particular attention to several <strong> UX Design Principles: Consistency, Affordance, and Discoverability.</strong>
@@ -148,13 +143,13 @@ const CASMM = () => {
           An accent color used specifically to denote clickable items would improve the discoverability of the element. As well, the change in button style would
           make it more consistent to buttons found in other applications. During development, much discussion revolved around ensuring the affordance of elements, so students could easily identify them.
           The rest of my work involved improving the UI to fit the style guide.
-          </div>
+          </p>
         </div>
       </div>
 
       <div className='casmm-yellow'>
         <div className='casmm-container-updates'>
-          <p className='animation-element slide-left casmm-title'>Solution: Mentor View</p>
+          <h2 className='animation-element slide-left'>Solution: Mentor View</h2>
           <div className='animation-element slide-left container row updates-img-container'>
             <img src={pg5img1} className='updatesimg' alt='CaSMM'/> 
             <p className='updatesimg-text'>BEFORE: This was the Mentor view before any changes were made to the design. The afforance
@@ -174,7 +169,7 @@ const CASMM = () => {
        
       <div className='casmm-yellow'>
         <div className='casmm-container-updates'>
-          <p className='animation-element slide-left casmm-title'>Solution: Roster View</p>
+          <h2 className='animation-element slide-left'>Solution: Roster View</h2>
           <div className='animation-element slide-left container updates-img-container'>
             <img src={pg6img1} className='updatesimg' alt='CaSMM'/>
             <p className='updatesimg-text'>BEFORE: The Roster view contains a grid of cards with information for each student. As observed from the image,

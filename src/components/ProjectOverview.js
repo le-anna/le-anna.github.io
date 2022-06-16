@@ -5,6 +5,7 @@ import 'animate.css'
 import './ProjectOverview.scss'
 import CASMM from '../assets/CASMM/casmm.png'
 import MHA from '../assets/MHA/MHA.png'
+import Choices from '../assets/Choices/choices.png'
 import retrofi from '../assets/retrofi.png'
 
 const ProjectOverview = ({title, role, tech, description, link, img}) => {
@@ -65,6 +66,7 @@ const ProjectOverview = ({title, role, tech, description, link, img}) => {
             img === 'CASMM' ? <img src={CASMM} id='prj-img' alt='CaSMM'/> : 
             img === 'retrofi' ? <img src={retrofi} id='prj-img' alt='RetroFi'/> : 
             img === 'MHA' ? <img src={MHA} id='prj-img' alt='Mental Health App'/> : 
+            img === 'Choices' ? <img src={Choices} id='prj-img' alt='Choices'/> : 
             <div className='choices-status'>Currently in development </div>
           }
         </div>

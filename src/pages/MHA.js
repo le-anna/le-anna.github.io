@@ -75,9 +75,9 @@ const MHA = () => {
 
       <div className='mha-peach'>
         <div className='container mha-content'>
-          <div className='animation-element slide-left container row mha-info-container'>
+          <div className='animation-side-left container row mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title' id='app-title'>Navigation</p>
+              <p className='animation-side-left mha-title' id='app-title'>Navigation</p>
               <ul className='mha-left-text'>
                 <li className='li mha-nav'>Add Entry</li>
                 <li className='li mha-nav'>View Entry</li>
@@ -94,9 +94,9 @@ const MHA = () => {
 
       <div className='mha-blue'>
         <div className='container mha-content'>
-          <div className='animation-element slide-left container row mha-info-container'>
+          <div className='animation-side-left container row mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title' id='app-title'>Add Entry</p>
+              <p className='animation-side-left mha-title' id='app-title'>Add Entry</p>
               <p className='mha-left-text'>Add Entry allows users to complete a daily log. 
                 Users have the choice of inputting a newly defined mood or choosing an option from a list of previous ones. 
                 A section for notes is included at the bottom.</p>
@@ -111,9 +111,9 @@ const MHA = () => {
 
       <div className='mha-blue'>
         <div className='container mha-content'>
-          <div className='animation-element slide-left container row mha-info-container'>
+          <div className='animation-side-left container row mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title' id='app-title'>View Entry</p>
+              <p className='animation-side-left mha-title' id='app-title'>View Entry</p>
               <p className='mha-left-text'>View Entry provides users with access to a dropdown containing the dates of their 
                 logged entries.</p>
             </div>
@@ -126,9 +126,9 @@ const MHA = () => {
 
       <div className='mha-blue'>
         <div className='container mha-content'>
-          <div className='animation-element slide-left container row mha-info-container'>
+          <div className='animation-side-left container row mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title' id='app-title'>Statistics</p>
+              <p className='animation-side-left mha-title' id='app-title'>Statistics</p>
               <p className='mha-left-text'>Statistics provides users with visual features to track trends in their overall health. 
                 Functionalities include the ability to view a line graph of selected moods or a bar graph of multiple selected moods. </p>
             </div>
@@ -141,9 +141,9 @@ const MHA = () => {
 
       <div className='mha-blue'>
         <div className='container mha-content'>
-          <div className='animation-element slide-left container row mha-info-container'>
+          <div className='animation-side-left container row mha-info-container'>
             <div className='mha-left-container'>
-              <p className='animation-element slide-left mha-title' id='app-title'>Search</p>
+              <p className='animation-side-left mha-title' id='app-title'>Search</p>
               <p className='mha-left-text'>Search allows users to locate past logs. Clicking on a search result pulls up the entire entry.</p>
             </div>
             <div className='container mha-right-container' >
@@ -157,8 +157,8 @@ const MHA = () => {
       
       <div className='mha-green'>
         <div className='container column mha-content'>
-            <p className='animation-element slide-left mha-title'>Description</p>
-          <div className='animation-element slide-left container row mha-info-container'>
+            <p className='animation-side-left mha-title'>Project Overview</p>
+          <div className='animation-side-left container row mha-info-container'>
             <p>
             Date: August 2020 - December 2020
             <br/><br/>
@@ -173,7 +173,7 @@ const MHA = () => {
 
       <div className='mha-green'>
         <div className='container-left column mha-content'>
-          <p className='animation-element slide-left mha-title'>Technologies</p>
+          <p className='animation-side-left mha-title'>Technologies</p>
           <div className='container-left column tech-items'>
             <ul className='tech-item'> 
                 <p><strong>Languages</strong></p>
@@ -206,8 +206,8 @@ const MHA = () => {
 
       <div className='mha-green'>
         <div className='container column mha-content'>
-          <p className='animation-element slide-left mha-title'>Midpoint Project Status</p>
-          <div className='animation-element slide-left container row mha-info-container'>
+          <p className='animation-side-left mha-title'>Midpoint Project Status</p>
+          <div className='animation-side-left container row mha-info-container'>
             <div className='mha-left-container'>
               <p><strong>Initial design problems</strong></p>
                 <ul className='ul'>
@@ -234,9 +234,9 @@ const MHA = () => {
 
       <div className='mha-blue'>
         <div className='container mha-content'>
-          <div className='animation-element slide-left container row mha-info-container'>
+          <div className='animation-side-left container row mha-info-container'>
             <div className='mha-left-container' id='final-left'>
-              <p className='animation-element slide-left mha-title'>The Final Product</p>
+              <p className='animation-side-left mha-title'>The Final Product</p>
             </div>
             <div className='container mha-right-container' >
               <img src={MHAPreview} className='mha-right-img'id='product-img' alt='Mental Health App'/>
@@ -247,8 +247,8 @@ const MHA = () => {
 
       {/* <div className='mha-green'>
         <div className='container column mha-content'>
-        <p className='animation-element slide-left mha-title'>Initial Challenges</p>
-          <div className='animation-element slide-left container row mha-info-container'>
+        <p className='animation-side-left mha-title'>Initial Challenges</p>
+          <div className='animation-side-left container row mha-info-container'>
               <ul className='ul'>
                 <li>No prior experience with frontend development and designing apps.</li>
                 <li>New to the technologies used.</li>
@@ -259,8 +259,8 @@ const MHA = () => {
 
       <div className='mha-green'>
         <div className='container column mha-content'>
-        <p className='animation-element slide-left mha-title'>Accomplishments</p>
-          <div className='animation-element slide-left container row mha-info-container'>
+        <p className='animation-side-left mha-title'>Accomplishments</p>
+          <div className='animation-side-left container row mha-info-container'>
                 <ul className='ul'>
                   <li>Developed full stack application.</li>
                   <li>Improved design skills and developed an interest in frontend work.</li>
