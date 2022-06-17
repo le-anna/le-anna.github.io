@@ -53,7 +53,7 @@ export const Navbar = () => {
           <div className={isOpen ? 'mobile-icon open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>
             <FaBars /> 
           </div>
-          <ul className={isOpen ? 'nav-menu active' : 'nav-menu'} ref={myRef}>
+          <ul className={isOpen ? 'nav-menu-active' : 'close'} ref={myRef}>
             <li id='nav-item' onClick={closeMenu} 
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}>
@@ -102,7 +102,7 @@ export const Footer = () => {
   };
   
   return (
-    <div class='container' id='footer'>
+    <div className='container' id='footer'>
       <div id='footer-content'>
         <p>Built and designed by Anna N. Le</p>
         <a href='https://linkedin.com/in/anna-le-7130181ba'>

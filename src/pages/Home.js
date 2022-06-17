@@ -11,7 +11,7 @@ const Home = () => {
         {/* <ProjectOverview title='My Portfolio' role='' 
                 description='Designed and built a personal portfolio to showcase my work' 
                 tech='React, HTML, CSS (Sass)' link='/Choices' img='Choices'/> */}
-        <ProjectOverview title='Choices' role='UX/UI Designer & Frontend Developer' 
+        <ProjectOverview title='Choices' role='UX Designer & Frontend Developer' 
                 description='Design and implement the interface for Choices, an educational platform for people with Sickle Cell Disease or Traits' 
                 tech='JavaScript, HTML, CSS (Sass)' link='/Choices' img='Choices'/>
         <ProjectOverview title='CaSMM' role='Frontend Developer' description='Improved interface for CaSMM, a block-based

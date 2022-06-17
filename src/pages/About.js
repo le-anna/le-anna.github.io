@@ -11,7 +11,7 @@ const About = () => {
 
   function Mailto({ email, subject, body, ...props }) {
     return (
-      <a class='button' id='about-btn' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+      <a className='button' id='about-btn' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
         {props.children}
       </a>
     );
@@ -55,11 +55,11 @@ const About = () => {
             <br/><br></br>
           </p>
           <div className='container row' id='about-btn-container'>
-            <a href={Resume} target = "_blank" rel="noreferrer" class='button' id='about-btn'>
+            <a href={Resume} target = "_blank" rel="noreferrer" className='button' id='about-btn'>
               <FontAwesomeIcon icon={faFilePdf}/>
               <p>Resume</p>
             </a>
-            <a href='https://linkedin.com/in/anna-le-7130181ba' class='button' id='about-btn'>
+            <a href='https://linkedin.com/in/anna-le-7130181ba' className='button' id='about-btn'>
               <FontAwesomeIcon icon={faLinkedin}/>
               <p>LinkedIn</p>
             </a>
