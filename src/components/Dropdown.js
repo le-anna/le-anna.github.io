@@ -19,7 +19,7 @@ const handleClick = () => setClick(!click);
                     <li key={index}>
                      {
                         item.title === 'RetroFi' ? 
-                        <a href='https://devpost.com/software/retrofi' className='dropdown-link'>RetroFi</a>
+                        <a href='https://devpost.com/software/retrofi' className='dropdown-link'>RetroFi (Link)</a>
                         : 
                         <Link
                             className={item.cName}

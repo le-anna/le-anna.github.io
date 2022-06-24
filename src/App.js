@@ -2,11 +2,11 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import { Navbar, Footer } from './components/Navbar';
-import About from './pages/About';
+import CASMM from './pages/experiences/CASMM';
+import MentalHealthApp from './pages/experiences/MHA';
+import Choices from './pages/experiences/Choices';
 import Design from './pages/Design';
-import CASMM from './pages/CASMM';
-import MentalHealthApp from './pages/MHA';
-import Choices from './pages/Choices';
+import About from './pages/About';
 import './App.css'
 
 const App = () => {
