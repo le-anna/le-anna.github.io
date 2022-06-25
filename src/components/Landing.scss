@@ -2,16 +2,15 @@
 
 #landing {
     min-height: 100vh;
+    height: 100%;
     background-color: #fff;
 }
-
 
 #info-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
     width: 70%;
     align-items: center;
-
 
     #msg-icon  {
         animation: fadeIn;
@@ -20,7 +19,7 @@
     }
 
     #description {
-        font-size: 2em;
+        font-size: 2.4rem;
     }
 
     #description-animation {
@@ -35,13 +34,6 @@
             grid-area: 'photo';
             width: 400px;
         }
-        
-        #stars {
-            position: relative;
-            left: -100px;
-            grid-area: 'stars';
-            width: 100px;
-        }
     }
 }
 
@@ -51,21 +43,7 @@
     font-size: 150%;
 }
 
-
-// @media (prefers-reduced-motion: no-preference) {
-//     .stars {
-//         animation: rotate;
-//         animation-duration: 1s;
-//         animation-iteration-count: infinite;
-//     }
-//   }
-
 @media screen and (max-width: 960px) {
-
-    #landing {
-        height: 100vh;
-    }
-
     #info-container {
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
@@ -74,9 +52,6 @@
 
         #description {
             width: 100%;
-            font-weight: 400;
-            font-size: 8vw;
-            line-height: 10vw;
             text-align: center;
         }
     
@@ -86,16 +61,12 @@
             align-items: center;
 
             #photo {
-                width: 80%;
-            }
-        
-            #stars {
-                display: none;
+                width: 70%;
             }
         }
     }
 
     #down-icon {
-        bottom: 0px;
+        bottom: -20px;
     }
 }

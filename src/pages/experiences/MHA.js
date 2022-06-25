@@ -1,6 +1,5 @@
 import React from 'react'
 import $ from 'jquery'
-import { FaArrowRight } from 'react-icons/fa';
 import 'animate.css'
 import Home from '../../assets/MHA/Home.png'
 import MHAPreview from '../../assets/MHA/MHA.png'
@@ -200,7 +199,7 @@ const MHA = () => {
     </div>
 
       <div className='next-btn-container'>
-        <a href='https://devpost.com/software/retrofi'>View next: RetroFi <FaArrowRight/></a>
+        <a href='https://devpost.com/software/retrofi'>View next: RetroFi -></a>
       </div>
       <GoToTop />
     </div>
