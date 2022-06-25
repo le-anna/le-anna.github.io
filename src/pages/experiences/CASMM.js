@@ -1,7 +1,6 @@
 import React from 'react'
 import $ from 'jquery'
 import { Link } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
 import Logo from '../../assets/CASMM/casmm_logo.png'
 import pg2img1 from '../../assets/CASMM/2-1.png'
 import pg3img1 from '../../assets/CASMM/3-1.png'
@@ -200,7 +199,7 @@ const CASMM = () => {
         </div>
       </div>
       <div className='next-btn-container'>
-         <Link to='/MentalHealthApp' className='link'>View next: Mental Health App <FaArrowRight/></Link>
+         <Link to='/MentalHealthApp' className='link'>View next: Mental Health App -></Link>
       </div>
       <GoToTop />
     </div>

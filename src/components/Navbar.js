@@ -45,7 +45,7 @@ export const Navbar = () => {
 
   return (
     <nav id='navbar'>
-        <div class='container' id='navbar-container'>
+        <div className='container' id='navbar-container'>
           <Link to='/' className='container row' id='nav-profile-container'>
             <img src={Profile} id='icon' alt='Profile Icon'/>
             <p id='name'>ANNA N. LE</p>

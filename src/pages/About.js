@@ -29,29 +29,36 @@ const About = () => {
             }}
             />
         </div>
-        <p id='about-description'>
+        <h3>Introduction</h3>
+        <p>
           Hi! My name is Anna. I'm a Computer Science student
-          minoring in Mass Communications at the University of Florida with a plan to graduate in December 2022. 
+          minoring in Mass Communications at the University of Florida with a graduation date in December 2022. 
           I believe that mass communication plays a prominent role in today's
-          digital age. As such, I decided to a pursue a minor in Mass Communiations along with my Computer Science degree.
-          <br/><br/>
+          digital age. As such, I decided to pursue a minor in this along with my Computer Science degree.
+        </p>
+        <br/>
+        <h3>Motivation</h3>
+        <p>
           After participating in the Women in Computer Science & Engineering (WiCSE)
           Shadowing Program in 2020, I developed a passion for frontend development and UX design. 
           This has prompted my involvement in a few research labs, as I am interested in understanding how
           research can be used to learn more about the users and their needs. Currently, I am working on the development of
           a website for the Sickle Cell Disease & Traits Lab.
-          <br/><br/>
-          I made this portfolio with React and CSS (Sass) to showcase some of my frontend work. I was inspired to to create a portfolio that 
-          highlights the individual experiences - each page mirroring the theme of the project.
-          <a href='https://github.com/le-anna/portfolio' id='nested-link'>->Here's my Github for the portfolio!</a>  
         </p>
-        <h3>Technologies that I have been working with:</h3>
+        <br/>
+        <h3>Personal Portfolio</h3>
+        <p>
+          I made this portfolio with React and CSS (Sass) to showcase some of my frontend work and UI designs. I was inspired to create a portfolio that 
+          highlights my individual experiences - each page mirroring the theme of the project. 
+          <a href='https://github.com/le-anna/portfolio' id='nested-link'>-> Here's my Github for the portfolio!</a>  
+        </p>
+        <br/>
+        <h3>Current technologies!</h3>
         <p> 
           JavaScript, TypeScript, C++, Java, HTML, CSS (preprocessors Sass and Less)
           <br/>
           React, React Native, Figma
-          <br/>
-          <br/>
+          <br/><br/><br/>
         </p>
         <div className='container row' id='about-btn-container'>
           <a href={Resume} target = "_blank" rel="noreferrer" className='button' id='about-btn'>
