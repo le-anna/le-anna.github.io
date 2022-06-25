@@ -1,24 +1,15 @@
 
 .casmm {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-
-    h2 {
-        font-weight: 500;
-    }
-
-    h3 {
-        font-weight: 500;
-    }
-
+    h2 { font-weight: 500; }
+    h3 { font-weight: 500; }
     p { font-size: 1.1rem; }
-
     ul { font-size: 1.1rem; }
 }
 
 #casmm-landing {
     height: 100vh;
+    width: 100%;
     background-color: #3d5c82;
     color: #fff;
 
@@ -44,9 +35,6 @@
 }
 
 .casmm-blue {
-    display: flex;
-    align-items: center;
-    height: 100vh;
     background-color: #3d5c82;
     color: #fff;
 }
@@ -60,8 +48,12 @@
 }
 
 .casmm-container {
-    margin: 10vh 6vw;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 90%;
+    align-items: left;
     .casmm-info-container{
         line-height: auto;
 
@@ -79,7 +71,6 @@
                 text-align: center;
             }
         }
-        
     }
     
     .casmm-info-img {
@@ -116,16 +107,14 @@
         .updatesimg-text {
             display: flex;
             align-items: center;
+            flex-direction: column;
             width: 30%;
             margin: 0 2vw;
         }
     }
 }
 
-.role-description {
-    margin-top: 1vh;
-}
-
+.role-description { margin-top: 1vh; }
 
   @media screen and (max-width: 960px) { 
     #casmm-landing {
@@ -190,10 +179,9 @@
             }
             
             .updatesimg-text {
-                display: flex;
-                align-items: center;
                 text-align: left;
                 width: 100%;
+                margin-bottom: 20px;
             }
         }
     }

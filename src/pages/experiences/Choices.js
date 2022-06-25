@@ -1,27 +1,27 @@
 import React from 'react'
-import GoToTop from '../components/GoToTop'
+import GoToTop from '../../components/GoToTop'
 import { Link } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
 import './Choices.scss'
-import InitialColor from '../assets/Choices/Choices-initial-colors.png'
-import NewColor from '../assets/Choices/Choices-new-colors.png'
-import Old1 from '../assets/Choices/Choices-Old-1.png'
-import Old2 from '../assets/Choices/Choices-Old-2.png'
-import Mockup1 from '../assets/Choices/Choices-Mockup-1.png'
-import Mockup2 from '../assets/Choices/Choices-Mockup-2.png'
-import Mockup3 from '../assets/Choices/Choices-Mockup-3.png'
-import Mockup4 from '../assets/Choices/Choices-Mockup-4.png'
-import Login from '../assets/Choices/Choices-Login.png'
-import Final1 from '../assets/Choices/Choices-Final-1.png'
-import Final2 from '../assets/Choices/Choices-Final-2.png'
-import Final3 from '../assets/Choices/Choices-Final-3.png'
+import InitialColor from '../../assets/Choices/Choices-initial-colors.png'
+import NewColor from '../../assets/Choices/Choices-new-colors.png'
+import Old1 from '../../assets/Choices/Choices-Old-1.png'
+import Old2 from '../../assets/Choices/Choices-Old-2.png'
+import Mockup1 from '../../assets/Choices/Choices-Mockup-1.png'
+import Mockup2 from '../../assets/Choices/Choices-Mockup-2.png'
+import Mockup3 from '../../assets/Choices/Choices-Mockup-3.png'
+import Mockup4 from '../../assets/Choices/Choices-Mockup-4.png'
+import Login from '../../assets/Choices/Choices-Login.png'
+import Final1 from '../../assets/Choices/Choices-Final-1.png'
+import Final2 from '../../assets/Choices/Choices-Final-2.png'
+import Final3 from '../../assets/Choices/Choices-Final-3.png'
+import Final4 from '../../assets/Choices/Choices-Final-4.png'
 
 const Choices = () => {
   return (
     <div className='container column choices'>
        <div>
         <div className='choices-container'>
-          <h2>Project Overview</h2>
+          <h2>Choices Project Overview</h2>
           <p>Choices is an educational platform developed through the University of Florida's Sickle Cell Disease and Traits Research Lab
             for people with Sickle Cell Disease and Traits. The application serves as a learning tool for people participating in the Choices study.
             <br/><br/>Some notes: (I) The <strong>study </strong> is currently <strong>ongoing</strong>; thus, some of the images/elements in the designs have been blurred
@@ -38,7 +38,7 @@ const Choices = () => {
         </div>
         <div className='choices-container'>
           <h2>Previous Design & Problems ❌</h2>
-          <p>The previous application was developed around 2008 before being developed again in 2022; thus, some of the pages contained outdated styling. 
+          <p>The previous application was developed around 2008 before being developed again in 2022; thus, some of the pages contained outdated styling as shown below. 
           </p>
           <div className='img-container choices-old-design'>
             <img src={Old1} alt='Choices Initial Design'/>
@@ -86,7 +86,7 @@ const Choices = () => {
       <div className='choices-container'>
         <h2>Solutions 💡</h2>
           <p>
-            [RE: Old Color Scheme] I propsed various ideas for color combinations that were similar to the old color scheme.
+            [RE: Old Color Scheme] I proposed various ideas for color combinations that were similar to the old color scheme.
             The row with the star was the one that was decided upon; however, during designing, we decided that there was not a need for a yellow color. 
           </p>
           <div className='img-container choices-color'>
@@ -110,7 +110,7 @@ const Choices = () => {
             <img src={Mockup1} alt='Choices Initial Design'/>
           </div>
           <p>
-            The simplistic background and card for the question was designed to maintain a user's focus on the content. The cards were designed into two sections
+            The simplistic background and card to contain the question & answers were designed to maintain a user's focus on the content. The cards were designed into two sections
             to make the question and answer portion stand out from each other.
           </p>
           <div className='img-container app-img'>
@@ -134,16 +134,16 @@ const Choices = () => {
           </p>
           <br/>
           <p>
-            In order to streamline the development process, I developed one main .Sass (CSS Preprocessor) file to standardize all the tags that would be used in the application.
+            In order to streamline the development process, I developed one main Sass (CSS Preprocessor) file to standardize all the tags that would be used in the application.
             Standardizing the tags ensured <strong>consistency</strong> throughout the application.
           </p>
           <br/>
           <h3>Road Bumps Encountered</h3>
           <p>
-            To assist in the learning process, the use of virtual human videos were implemented in the application. A video needed to be included
+            To assist in the learning process, the use of virtual human videos were implemented in the application. A video had to be included
             in all the informational and question pages. It was tricky finding the best positioning for the virtual human, especially because the video should
-            not be distracting to users, as its purpose is to supplement. I developed several mockups of potential placements. After feedback and suggestions from the team, it was decided that the text should
-            wrap the virtual human at the bottom of the pages with content .
+            not be distracting to users, as its purpose is to supplement the material. I developed several mockups of potential placements. After feedback and suggestions from the team, it was decided that the text should
+            wrap the virtual human at the bottom of the pages with content.
             <br/><br/>
             Another bump I experienced was writing some of the code with HTML. The backend portion of the project used specific technologies that made it difficult to
             implement frontend services like React; thus, I used HTML and CSS to create the layout. HTML made it difficult to create components and pass information between pages/components.
@@ -152,7 +152,7 @@ const Choices = () => {
         <div className='choices-container'>
           <h2>Finish Line (Concluding Work) 🏁</h2>
             <p>
-              After the designs and implementation of the website was completed, the rest of the work involved modifying the styling to adapt to actual content from the database.
+              After the designs and implementation of the website were completed, the rest of the work involved modifying the styling to adapt to real data from the database.
               Some other features (not in mockups) needed to be developed, as content continued to be approved and reviewed for the study.
               The final application differed from the mockups in minimal ways (added navigation bar and removed arrow to slide out navigation), as we adjusted to new user needs
               accordingly.
@@ -174,6 +174,9 @@ const Choices = () => {
           </div>
           <div className='img-container app-img'>
             <img src={Final1} alt='Choices Final Design'/>
+          </div>
+          <div className='img-container app-img'>
+            <img src={Final4} alt='Choices Final Design'/>
           </div>
           <div className='img-container mobile-img'>
             <img src={Final3} alt='Choices Final Design'/>
@@ -204,9 +207,11 @@ const Choices = () => {
             despite the mockups taking more time to create.
           </p>
         </div>
-        <Link to='/CaSMM' className='link'>Click to View: CaSMM <FaArrowRight/></Link>
         </div>
-        <GoToTop />
+      <div className='next-btn-container'>
+         <Link to='/CaSMM' className='link'>View next: CaSMM -></Link>
+      </div>
+      <GoToTop />
     </div>
   )
 }

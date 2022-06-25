@@ -13,7 +13,7 @@ const ProjectOverview = ({title, role, tech, description, link, img}) => {
       // https://codepen.io/simoncodrington/pen/Mwgqqd for animation
       $(document).ready(function() {
 
-        var animation_elements = $.find('.animation-element');
+        var animation_elements = $.find('.animation');
         var web_window = $(window);
       
         function check_if_in_view() {
@@ -41,12 +41,11 @@ const ProjectOverview = ({title, role, tech, description, link, img}) => {
           })
   
         $(window).trigger('scroll');
-      
       });
 
   return (
     <div className='container row' id='prj'>
-      <div className='animation-element slide-left container' id='prj-container'>
+      <div className='animation slide container' id='prj-container'>
         <div className='container-left column' id='prj-info-container'>
           <h1 id='prj-title'>{title}</h1>
           <p id='prj-role'>{role}</p>

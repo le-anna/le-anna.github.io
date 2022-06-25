@@ -16,23 +16,23 @@
         width: 40%;
         color: #000;
     
-        #prj-title {
-            font-weight: 700;
-         }     
+        #prj-title { 
+            font-weight: 700; 
+        }     
     
         #prj-role {
             font-weight: 500;
-            font-size: 1.2em;
+            font-size: 1.2rem;
         }
     
         #prj-description {
             width: 90%;
-            font-size: 1.1em;
+            font-size: 1.1rem;
             padding: 1vh 0;
         }
 
         #prj-tech {
-           font-size: 0.9em;
+           font-size: 0.9rem;
         }
     }
 
@@ -71,6 +71,7 @@
 
     #prj {
         display: flex;
+        min-height: 100vh;
         height: auto;
     }
 
@@ -87,13 +88,8 @@
     
             #prj-role {
                 font-weight: 500;
-                font-size: 20px;
             }
         
-            #prj-description {
-                font-size: 18px;
-                line-height: 26px;
-            }
         }
 
         #prj-img-container {

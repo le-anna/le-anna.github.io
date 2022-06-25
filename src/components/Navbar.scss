@@ -116,7 +116,8 @@ nav {
     display: block;
     position: absolute;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+    margin: 0;
     height: 40vh;
     top: 60px;
     left: 0;
@@ -125,8 +126,7 @@ nav {
     background: white;
     z-index: 2;
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+
 
     #nav-item {
       padding: 0;
@@ -147,7 +147,7 @@ nav {
 
     #experience-item {
       margin-top: 8px;
-      padding-left: 20px;
+      // padding-left: 20px;
       display: block;
       line-height: 24px;
       width: 100%;
