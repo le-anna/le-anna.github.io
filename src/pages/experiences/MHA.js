@@ -73,12 +73,10 @@ const MHA = () => {
       <div className='mha-container animation slide'>
         <div className='mha-container-left'>
           <h2 className='animation slide'>Navigation</h2>
-          <ul>
-            <li className='li mha-nav'>Add Entry</li>
-            <li className='li mha-nav'>View Entry</li>
-            <li className='li mha-nav'>Statistics</li>
-            <li className='li mha-nav'>Search</li>
-          </ul>
+            <p>Add Entry</p>
+            <p>View Entry</p>
+            <p>Statistics</p>
+            <p>Search</p>
         </div>
         <div className='container mha-container-right' >
           <img src={Home} alt='Mental Health App'/>
@@ -140,7 +138,7 @@ const MHA = () => {
       </div>
     </div>
 
-    <div className='container mha-green'>
+    <div className='container mha-peach'>
       <div className='mha-container mha-content animation slide'>
         <div className='mha-container-left mha-left-full'>
           <h2 className='animation slide'>Project Overview</h2>
@@ -164,7 +162,7 @@ const MHA = () => {
     <div className='container column mha-green'>
       <div className='mha-container mha-content animation slide' id='mha-content-column'>
         <div className='mha-left-container'>
-          <h2 className='animation slide'>Midpoint Project Status</h2>
+          <h2 className='animation slide'>Midpoint Status</h2>
           <h3>Initial design problems</h3>
             <ul className='ul'>
               <li> App not visually appealing due to usage of a singular color.</li>

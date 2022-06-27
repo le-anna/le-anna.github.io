@@ -34,18 +34,8 @@
     }
 }
 
-.casmm-blue {
-    background-color: #3d5c82;
-    color: #fff;
-}
-
-.casmm-yellow {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #ffde59;
-    color: #000;
-}
+.casmm-blue { background-color: #3d5c82; color: #fff;}
+.casmm-yellow { background-color: #ffde59; color: #000; }
 
 .casmm-container {
     display: flex;
@@ -54,33 +44,32 @@
     min-height: 100vh;
     width: 90%;
     align-items: left;
+
     .casmm-info-container{
-        line-height: auto;
+        .casmm-info-content {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
 
-    .casmm-info-content {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-
-        #color-container {
-            width: 30%;
-            height: auto;    
+            #color-container {
+                width: 30%;
+                height: auto;    
+            
+                #color-img {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
         
-            #color-img {
-                width: 100%;
-                text-align: center;
+        .casmm-info-img {
+            width: 30%;
+            img {
+                width: 90%;
+                float: right;
             }
         }
     }
-    
-    .casmm-info-img {
-        width: 30%;
-        img {
-            width: 90%;
-            float: right;
-        }
-    }
-  }
 }
 
 .casmm-container-updates {
@@ -117,9 +106,16 @@
 .role-description { margin-top: 1vh; }
 
   @media screen and (max-width: 960px) { 
+    .casmm{
+        h2 { font-size: 1.4rem; line-height: 2rem; }
+        h3 { font-size: 1.1rem; }
+        p { font-size: 1rem; }
+        ul { font-size: 1rem; }
+    }
+
     #casmm-landing {
         flex-direction: column;
-        height: 70vh;
+        height: 100vh;
 
         #casmm-landing-description {
             width: 80%;
@@ -133,9 +129,13 @@
     }
 
     .casmm-container {
+        width: 80%;
+        margin: 22% 0;
+        min-height: fit-content;
+
         .casmm-info-container {
             flex-direction: column;
-            width: 90%;
+            width: 100%;
             height: fit-content;
             
             .casmm-info-content {
@@ -163,7 +163,8 @@
     .casmm-container-updates {
         display: flex;
         flex-direction: column;
-        margin: 3vh 8vw;
+        margin: 0 0 22% 0;
+        width: 80%;
     
         .updates-img-container {
             flex-direction: column;

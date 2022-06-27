@@ -29,6 +29,7 @@ const About = () => {
             }}
             />
         </div>
+        <br/>
         <h3>Introduction</h3>
         <p>
           Hi! My name is Anna. I'm a Computer Science student

@@ -7,7 +7,7 @@
   h2, h3 { font-weight: 500; }
   p { font-size: 1.1rem; }
   ul { margin-left: 20px; font-size: 1.1rem; }
-  strong { color: #fff5ec; }
+  strong { color: #f4ca74; }
 }
 
 #mha-landing {
@@ -44,7 +44,7 @@
     width: 50%;
   }
 
-  #proudct-text { 
+  #product-text { 
     p, ul { font-size: 1.2rem; }
   }
 
@@ -68,11 +68,23 @@
 }
 
 #product-img { width: 100%; }
-#mha-content-column { flex-direction: column; }
 
-  @media screen and (max-width: 960px) { 
+#mha-content-column { 
+  display: flex; flex-direction: column; 
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) { 
+
+  .MHA {
+    h2 { font-size: 1.4rem; line-height: 2rem; }
+    h3 { font-size: 1.1rem; }
+    p { font-size: 1rem; }
+    ul { font-size: 1rem; }
+  }
+
     #mha-landing #mha-title {
-      font-size: 5vh;
+      font-size: 1.6rem;
     }
 
   .mha-container {
@@ -80,11 +92,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    height: 100%;
-    width: 80vw;
-    padding: 40px 0;
-    margin: 5px 0;
+    min-height: fit-content;
+    width: 80%;
+    margin: 18% 0;
   
     .mha-container-left {
       display: flex;
@@ -113,5 +123,10 @@
     margin-left: 50px;
     img { width: 60%; margin-bottom: 10px;
     }
+  }
+
+  #initial-img { 
+    margin-left: 0; 
+    img {  width: 50%;}
   }
  }

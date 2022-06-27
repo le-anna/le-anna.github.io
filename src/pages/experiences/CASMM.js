@@ -174,7 +174,7 @@ const CASMM = () => {
         </div>
       </div>
        
-      <div className='casmm-yellow'>
+      <div className='container casmm-yellow'>
         <div className='casmm-container-updates'>
           <h2 className='animation slide'>Solution: Roster View</h2>
           <div className='animation slide container updates-img-container'>
