@@ -1,13 +1,14 @@
 #landing {
     min-height: 100vh;
-    height: 100%;
+    height: fit-content;
     background-color: #fff;
 }
 
 #info-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    width: 70%;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    width: 75%;
     align-items: center;
 
     #msg-icon  {
@@ -18,19 +19,13 @@
 
     #description {
         font-size: 2.1em;
-    }
-
-    #description-animation {
-        width: fit-content;
+        margin-right: 20px;
+        width: 80%;
     }
 
     #landing-img-container {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-
         #photo {
-            grid-area: 'photo';
-            width: 400px;
+            width: 100%;
         }
     }
 }
@@ -43,18 +38,19 @@
 
 @media screen and (max-width: 960px) {
 
-    #landing { height: 100vh; }
+    #landing { }
 
     #info-container {
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
         align-items: center;
         justify-content: center;
+        gap: 30px;
 
         #description {
             width: 100%;
             text-align: center;
             font-size: 1.5rem;
+            margin-left: 0;
         }
     
         #landing-img-container {
@@ -63,7 +59,7 @@
             align-items: center;
 
             #photo {
-                width: 70%;
+                width: 100%;
             }
         }
     }

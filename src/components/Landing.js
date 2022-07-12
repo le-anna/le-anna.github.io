@@ -1,8 +1,8 @@
 import React from 'react';
 import './Landing.scss';
-// import StarSvg from '../assets/stars.svg';
+import LandingPhoto from '../assets/landing.png';
 import Drawing from '../assets/drawing.PNG'
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
 import '../pages/Home.js'
@@ -15,9 +15,12 @@ const Landing = () => {
   return (
     <div className='container column' id='landing'>
         <div id='info-container'>
+            <div id='landing-img-container'>
+              <img src={LandingPhoto} id='photo' alt='Landing Character'/>
+            </div>
             <div id='description'>
               <span>
-              <strong> anna is typing </strong>
+                <strong> anna is typing </strong>
                 <FontAwesomeIcon id='msg-icon' icon={faCommentDots}/>
               </span>
               <Typewriter
@@ -31,10 +34,7 @@ const Landing = () => {
                 }}
               />
             </div>
-            <div id='landing-img-container'>
-              <img src={Drawing} id='photo' alt='Landing Character'/>
-              {/* <img src={StarSvg} id='stars'/> */}
-            </div>
+          
         </div>
         <div id='down-icon'><FaChevronDown/></div>
     </div>

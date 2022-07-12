@@ -23,7 +23,7 @@ const Design = () => {
         />
     </div>
     <div className='container' id='design-info'>
-      <p>This is a gallery showcasing my UI designs; these were created using Figma and have not been implemented. 
+      <p>This is a gallery showcasing my UI designs that I made for fun! Note: these were created using Figma and have not been implemented. 
         For designs that I have programmed, feel free to check out my projects under the Experiences tab!
       </p>    
     </div>

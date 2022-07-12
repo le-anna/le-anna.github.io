@@ -71,8 +71,16 @@ const CASMM = () => {
             <div className='casmm-info-content'>
               <p>
                 CaSMM is developed by the University of Florida and Texas A&M with support from 
-                the National Science Foundation and is currently undergoing testing/research in classrooms. Users consist of 5th and 6th graders, content
-                creators, mentors, and researchers.
+                the National Science Foundation and is currently undergoing testing/research in classrooms. Users consist of several roles: 5th and 6th graders, content
+                creators, mentors, and researchers. Our work on the project was done during implementation in classrooms and breaks. The team members working on the research for the project
+                provided feedback, allowing for the project to be continuously expanded upon.
+                <br/><br/>
+                
+                For context: CaSMM was already an in-progress project when I joined. The main focus on the project
+                had been developing features and working on the functionality; thus, I became part of the team to help with 
+                improving the user interface design. During my time on the project, I progressively worked on making the UI changes to the application 
+                (focusing on a role at a time) and added any needed features in the UI and improving the styling. I included images of some of the work I did below.
+              <br/><br/>
               </p>
               <br/>
               <p> <strong>Frontend technologies</strong></p>
@@ -93,17 +101,21 @@ const CASMM = () => {
           <h2 className='animation slide'>Problems</h2>
           <div className='animation slide container casmm-info-container'>
             <div className='casmm-info-content'>
-                <ul className='ul'>
-                  <li>Color palette lacked an accent color, which can be important in helping elements stand out.</li>
-                  <li>Buttons were gray, making their functionality difficult to identify.</li>
-                  <li>Components were simple shapes.</li>
-                  <li>There was a lack of responsiveness among components, which resulted in overlap.</li>
-                  <br/>
-                  <div id='color-container'>
-                    <img src={pg3img2} id='color-img' alt='CaSMM'/>
-                    <p>Inital Color Palette</p>
-                  </div>
-                </ul>
+             <p>
+              Here are some problems I identified in the intial design:
+             </p>
+             <br/>
+              <ul className='ul'>
+                <li>Color palette lacked an accent color, which can be important in helping elements stand out.</li>
+                <li>Buttons were gray, making their functionality difficult to identify.</li>
+                <li>Components were simple shapes.</li>
+                <li>There was a lack of responsiveness among components, which resulted in overlap.</li>
+                <br/>
+                <div id='color-container'>
+                  <img src={pg3img2} id='color-img' alt='CaSMM'/>
+                  <p>Inital Color Palette</p>
+                </div>
+              </ul>
             </div>
             <div className='casmm-info-img'>
               <img src={pg3img1} alt='CaSMM'/>
@@ -119,7 +131,7 @@ const CASMM = () => {
             the Principle Investigator wanted to maintain in the redesign.</p>
           <div className='animation slide container row updates-img-container'>
             <img src={updatesimg1} className='updatesimg' alt='CaSMM'/>
-            <p className='updatesimg-text'>Keep the color scheme and modular layout (components encased in a white background to model a learning module).</p>
+            <p className='updatesimg-text'>Keep the existing color scheme and modular layout (components encased in a white background to model a learning module).</p>
           </div>
           <div className='animation slide container row updates-img-container'>
             <p className='updatesimg-text'>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
