@@ -71,15 +71,15 @@ const CASMM = () => {
             <div className='casmm-info-content'>
               <p>
                 CaSMM is developed by the University of Florida and Texas A&M with support from 
-                the National Science Foundation and is currently undergoing testing/research in classrooms. Users consist of several roles: 5th and 6th graders, content
-                creators, mentors, and researchers. Our work on the project was done during implementation in classrooms and breaks. The team members working on the research for the project
-                provided feedback, allowing for the project to be continuously expanded upon.
+                the National Science Foundation and is currently undergoing testing/research in classrooms. Users include 5th and 6th graders, content
+                creators, mentors, and researchers. Our work on the project was done during implementation in classrooms and breaks. 
+                Collaboration in the team occured between researchers and developers. 
                 <br/><br/>
                 
-                For context: CaSMM was already an in-progress project when I joined. The main focus on the project
-                had been developing features and working on the functionality; thus, I became part of the team to help with 
-                improving the user interface design. During my time on the project, I progressively worked on making the UI changes to the application 
-                (focusing on a role at a time) and added any needed features in the UI and improving the styling. I included images of some of the work I did below.
+                CaSMM was an in-progress project when I joined. The main focus on the project
+                had been developing features and working on the functionality; thus, I became part of the team to 
+                improve the user interface. During my time on the project, I progressively worked on making the UI changes to the application 
+                (focusing on a role at a time) and added any needed features/styling. 
               <br/><br/>
               </p>
               <br/>

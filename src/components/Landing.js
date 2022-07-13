@@ -20,13 +20,13 @@ const Landing = () => {
             </div>
             <div id='description'>
               <span>
-                <strong> anna is typing </strong>
+                <strong> anna is typing 👩🏻‍💻 </strong>
                 <FontAwesomeIcon id='msg-icon' icon={faCommentDots}/>
               </span>
               <Typewriter
                 options={{
                   strings: ['hi, i\'m anna!', 'i\'m a computer science student', 'i\'m also minoring in mass communications',
-                  'i\'m interested in frontend development and ux/ui design!'],
+                  'i enjoy frontend development and ux/ui design!'],
                   autoStart: true,
                   loop: true,
                   delay: 60,

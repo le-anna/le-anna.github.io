@@ -74,14 +74,14 @@ export const Navbar = () => {
               <Link to='/MentalHealthApp' id='link'>Mental Health App</Link>
             </li>
             <li id='experience-item' onClick={closeMenu}>
-              <a href='https://devpost.com/software/retrofi' id='link'>RetroFi</a> 
+              <a href='https://devpost.com/software/retrofi' id='link'>RetroFi (Link)</a> 
             </li>
 
             <li id='nav-item' onClick={closeMenu}>
               <Link to='/Design' id='link'>UI Designs</Link>
             </li>
             <li id='nav-item' onClick={closeMenu}>
-              <Link to='/ABout' id='link'>About</Link>
+              <Link to='/About' id='link'>About</Link>
             </li>
 
           </ul>
@@ -93,27 +93,10 @@ export const Navbar = () => {
 
 export const Footer = () => {
 
-  function Mailto({ email, subject, body, ...props }) {
-    return (
-      <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
-        {props.children}
-      </a>
-    );
-  };
-  
   return (
     <div className='container' id='footer'>
       <div id='footer-content'>
-        <p>Built and designed by Anna N. Le</p>
-        <a href='https://linkedin.com/in/anna-le-7130181ba'>
-          <FontAwesomeIcon id='footer-icon' icon={faLinkedin}/>
-        </a>
-        <a href='https://github.com/le-anna/portfolio'>
-          <FontAwesomeIcon id='footer-icon' icon={faGithub}/>
-        </a>
-        <Mailto email='annale1501@gmail.com'>
-          <FontAwesomeIcon id='footer-icon'icon={faEnvelope}/>
-        </Mailto>
+        <p>Made with 💛 + ☕️ by Anna Le</p>
       </div>
     </div>
   )

@@ -21,12 +21,15 @@ const Choices = () => {
     <div className='container column choices'>
        <div>
         <div className='choices-container'>
-          <h2>Choices Project Overview</h2>
+          <h2>Choices Case Study</h2>
           <p>Choices is an educational platform developed through the University of Florida's Sickle Cell Disease and Traits Research Lab
-            for people with Sickle Cell Disease and Traits. The application serves as a learning tool for people participating in the Choices study.
+            for people with Sickle Cell Disease and Traits. The application serves as a learning tool for people participating in the Choices study. The group 
+            working on the project consists of many people from various academic disciplines. I primarily worked with a smaller team for the development. 
+            The application is one piece to the study, so I want to acknowledge that it contains curated content and work that many other members have put much time and 
+            dedication into!
             <br/><br/>Some notes: (I) The <strong>study </strong> is currently <strong>ongoing</strong>; thus, some of the images/elements in the designs have been blurred
              out OR replaced by a placeholder due to the sensitivity of the information. 
-             (II) Not all designs developed for the application will be shown.
+             (II) Not all designs developed for the application are shown.
           </p>
           <br/>
           <h3>Frontend technologies</h3>
@@ -38,7 +41,7 @@ const Choices = () => {
         </div>
         <div className='choices-container'>
           <h2>Previous Design & Problems ❌</h2>
-          <p>The previous application was developed around 2008 before being developed again in 2022; thus, some of the pages contained outdated styling as shown below. 
+          <p>The previous application was developed around 2008 before being redeveloped in 2022, so some pages contained outdated styling.
           </p>
           <div className='img-container choices-old-design'>
             <img src={Old1} alt='Choices Initial Design'/>
@@ -49,7 +52,7 @@ const Choices = () => {
           <br/>
           <h3>Problems</h3>
           <ul>
-            <li>Color scheme is not cohesive, as the green/yellow shade does not pair well with the other two colors.</li>
+            <li>Color scheme is not cohesive; the green/yellow shade does not pair well with the other two colors.</li>
             <li>Navigation bar does not clearly depict an application that follows a sequential mode of learning; 
               the names on the tabs also do not fit well.
             </li>
@@ -74,13 +77,14 @@ const Choices = () => {
           <p>
             Research was conducted on developing an inclusive design for people with Sickle Cell Disease. People with Sickle Cell Disease
             are more likely to experience vision problems. Thus, focus was placed on the web application’s <strong>readability and accessibility</strong>. When developing
-            prototypes, several font types, font sizes, and line spacings were examined to develop the most optimal solution.
+            prototypes, several font types, font sizes, and line spacings were examined to create the most optimal solution. During implementation, the <strong>reponsiveness </strong> 
+            of features with zooming in and out were tested to ensure content was <strong>readable</strong>.
           </p>
           <br/>
           <h3>High-fidelity Mockups</h3>
           <p>
-            I developed <strong>high-fidelity</strong> mockups with <strong>Figma</strong> for desktop and mobile views. High-fidelity mockups were developed because of their details, 
-            as this would accurately represent the final solution and consequently allow a better analysis of the application's readability. 
+            I developed <strong>high-fidelity</strong> mockups with <strong>Figma</strong> for desktop and mobile views. High-fidelity mockups were developed because of their attention to detail; 
+            these mockups would more accurately represent the final solution and consequently allow for a better analysis of the application. 
             Mockups underwent several iterations to consider the placement and appearance of all elements within a page.
             Review sessions were conducted several times a week to discuss the mockups. Approximately <strong>40 mockups</strong> were developed during this stage.
           </p>
@@ -90,13 +94,13 @@ const Choices = () => {
         <p>
           For my solution, I decided on a <strong>minimalistic design</strong> for the application to <strong>centralize user focus on the tasks & content</strong>. This contrasts with 
           the prior design and helps eliminate distractions for the user. Moreover,
-          the project needed to be complete within a <strong>fast-paced timeframe</strong> in time for the study to begin. 
+          the project had to be complete within a <strong>fast-paced timeframe</strong> for the study to begin on time. 
           As such, a minimal design permits more time for debugging and further development of any additional features.
         </p>
         <br/>
         <p>
-          [RE: Old Color Scheme] I proposed various ideas for color combinations that were similar to the old color scheme.
-          The row with the star was agreed upon; however, during designing, we decided that there was not a need for a yellow color. 
+          [RE: Old Color Scheme] I proposed color combinations options that were similar to the old color scheme.
+          The row with the star was agreed upon (yellow ended up being unused). 
         </p>
         <div className='img-container choices-color'>
           <img src={NewColor} alt='Choices Initial Color Scheme'/>
@@ -111,15 +115,15 @@ const Choices = () => {
         </p>
         <br/>
         <p>
-          The circles to the left indicate several progress modes: <span id='green'>green = complete</span>, <span id='yellow'>yellow = in progress</span>, 
+          Left cirlces indicate progress modes: <span id='green'>green = complete</span>, <span id='yellow'>yellow = in progress</span>, 
           and <span id='gray'>gray = not available</span>.
         </p>
         <div className='img-container app-img'>
           <img src={Mockup1} alt='Choices Initial Design'/>
         </div>
         <p>
-          The simplistic background and card to contain the question & answers were designed to maintain a user's focus on the content. The cards were designed into two sections
-          to make the question and answer portion stand out from each other.
+          The simplistic background and card were designed to maintain a user's focus on the content. The cards consists of two sections, allowing
+          the question and answer to stand out from each other.
         </p>
         <div className='img-container app-img'>
           <img src={Mockup2} alt='Choices Initial Design'/>
@@ -136,43 +140,43 @@ const Choices = () => {
         </div>
       </div>
       <div className='choices-container'>
-        <h2>Development Process 💻</h2>
-        <p>Key note: Information would be pulled from the database; this meant that the designs needed to be developed as a template. As I was writing the code for the
-          styling, I had to ensure that, once the information was pulled from the database, the template would apply the styling correctly. In total, this meant about <strong>100 pages</strong> of content.
+        <h2>Development Process 👩🏻‍💻</h2>
+        <p>Information had to be pulled from the database, which meant that the designs should work as a template.
+           In total, this was about <strong>100 pages</strong> of content. Along with different page layouts,
+           styling also had to created to consider data formats. A question, for instance, could have a 
+           number input, free response, or table with nested buttons. For another example, some content required media content while others did not - these
+           all had to be considered and styling had to be made to accomodate.
         </p>
         <br/>
         <p>
           In order to streamline the development process, I developed one main Sass (CSS Preprocessor) file to standardize all the tags that would be used in the application.
-          Standardizing the tags ensured <strong>consistency</strong> throughout the application.
+          Standardizing the tags ensured <strong>consistency</strong> throughout the application. I placed much focus on the <strong>responsiveness</strong> of the design.
         </p>
         <br/>
         <h3>Road Bumps Encountered</h3>
         <p>
-          To assist in the learning process, the use of virtual human videos were implemented in the application. A video had to be included
-          in all the informational and question pages. It was tricky finding the best positioning for the virtual human, especially because the video should
-          not be distracting to users, as its purpose is to supplement the material. I developed several mockups of potential placements. After feedback and suggestions from the team, it was decided that the text should
-          wrap the virtual human at the bottom of the pages with content.
+          Virtual human videos were implemented to assist in the learning process for participants of the study. A video had to be
+          included in all the informational and question pages with autoplay. It was tricky finding the best positioning for the virtual human video, as the purpose was to supplement the material but not distract. I developed several mockups of potential placements. After feedback and suggestions from the team, it was decided that the text should
+          wrap the virtual human video at the bottom.
           <br/><br/>
-          Another bump I experienced was writing some of the code with HTML. The backend portion of the project used specific technologies that made it difficult to
-          implement frontend services like React; thus, I used HTML and CSS to create the layout. HTML made it difficult to create components and pass information between pages/components.
+          Another bump I experienced was writing the code with HTML. The backend portion of the project used specific technologies that did not integrate well with
+          frontend services like React. As such, I used HTML and Sass, which were not as ideal for creating components and passing data between pages/elements.
         </p>
       </div>
       <div className='choices-container'>
         <h2>Finish Line (Concluding Work) 🏁</h2>
           <p>
-            After the designs and implementation of the website were completed, the rest of the work involved modifying the styling to adapt to real data from the database.
-            Some other features (not in mockups) needed to be developed, as content continued to be approved and reviewed for the study.
-            The final application differed from the mockups in minimal ways (added navigation bar and removed arrow to slide out navigation), as we adjusted to new user needs
-            accordingly.
+            After the designs and implementation were completed, the rest of the work involved modifying the styling to adapt to real data from the database.
+            Some other features (not in mockups) needed to be developed, as content was progressively approved for the study.
           </p>
           <br/>
-          <h3>Features I developed:</h3>
+          <h3>Some features I made:</h3>
           <p>
-            Desktop and mobile screens.<br/>
-            Registration and Login page.<br/>
-            Navigation that displays users’ progress.<br/>
-            Card layout for questions.<br/>
-            Video popups, including a mask overlay.<br/>
+            Desktop and mobile screens<br/>
+            Registration and Login page<br/>
+            Navigation that shows users’ progress<br/>
+            Card layout for questions<br/>
+            Video popups with mask overlay<br/>
           </p>
         </div>
         <div className='choices-container'>
@@ -193,26 +197,27 @@ const Choices = () => {
         <div className='choices-container'>
           <h2>Learning Outcomes & Successes ✅</h2>
           <h3>Coding Conventions & Templates</h3>
-          <p>Working on the project, I learned better coding conventions and how to write styling code efficiently. For instance,
-            I created a main stylesheet that standardized the formatting and styling of typography tags and components. 
-            I had not worked with an application that used such a large amount of information before or one that required templates, 
-            so I was initially unsure of how to implement the designs in a way that would allow them to serve as templates for the information.
-            Just like developing reusable components in React, the same principle applied here with creating the web pages.
+          <p>From the project, I learned better coding conventions and how to write stylistic code efficiently. 
+            I had not worked with an application that used such a large amount of information before, 
+            so I was initially unsure of how to turn the designs into templates.
+            Because pure HTML/CSS was being used, it was not possible to create custom components. However, I still wanted to be as organized as possible.
+            As a solution, I decided to create a main stylesheet that standardized the styling of the HTML DOM elements.
           </p>
           <br/>
           <h3>UX Process & Team</h3>
           <p>
-            Aside from the development of the application, the process of this project taught me a lot about UX Design. There were many conversations 
-            revolving around things such as the most optimal placement or the design of an element. 
-            The design process placed emphasis on ensuring that the content was accessible, and the team referenced many research papers about web application design. Additionally, this project consists of many people 
+            The process of working on this project taught me a lot about UX Design. There were many conversations 
+            about things such as the most optimal placement or design of an element. 
+            The design process placed emphasis on ensuring accessible content, and the team referenced 
+            research papers about web application design. Additionally, this project consists of many people 
             (I worked on the Development Team as the only frontend developer), so it was
             a great learning experience when it came to coming up with ideas and presenting them to the team for a final decision.
           </p>
           <br/>
           <h3>Mockups -> Code</h3>
           <p>
-            I was really excited to see how well I was able to translate my mockups to actual code! Developing high-fidelity mockups made the process of writing the code much faster,
-            despite the mockups taking more time to create.
+            I was really excited to see how well I was able to translate my mockups into actual code! Developing 
+            high-fidelity mockups made the process of writing the code much faster.
           </p>
         </div>
         </div>

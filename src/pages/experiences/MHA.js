@@ -143,7 +143,7 @@ const MHA = () => {
         <div className='mha-container-left mha-left-full'>
           <h2 className='animation slide'>Project Overview</h2>
           <p>The Mental Health App was developed through the <strong>Women in Computer Science & Engineering (WiCSE) Shadowing Programing</strong>. 
-            As part of the program, students are paired with an industry professional to create a project. For my project, I recieved the opportunity of working with a mentor from <strong>Opie Software</strong>.</p>
+            As part of the program, students were paired with an industry professional to create a project. For my project, I recieved the opportunity of working with a mentor from <strong>Opie Software</strong>.</p>
           <br/>
           <p>The inspiration for the project was to develop a <strong>full-stack application</strong> that allows users to track the progression of their mental health. </p>
           <br/>
@@ -164,17 +164,17 @@ const MHA = () => {
         <div className='mha-container-left mha-left-full'>
           <h2 className='animation slide'>Process</h2>
           <p>
-            The Mental Health project was an enlightening project for me. This was my first full-stack project, so there was a lot to learn 
-            in the initial stages. My mentor provided great support, guiding me towards technologies that I could use. 
+            The Mental Health project was an enlightening experience for me. This was my first full-stack project, so there was a lot to learn 
+            in the initial stages.
             <br/>
             <br/>
            </p>
            <h3>Languages? Technologies?</h3>
            <p>
-            To start, I knew I wanted to use a <strong>relational database</strong>, so this led to me deciding on using SQL.
-            For my backend language, I chose Java, because I wanted to develop a stronger understanding of the language. 
-            With Java and SQL decided upon, I added Hibernate and Spring Boot to the remaining technologies to make the backend of my project;
-            Hibernate to map my Java objects to the SQL database, and Spring Boot for REST services. 
+            To start, I used SQL for my database, as I wanted to work with a <strong>relational database</strong>.
+            I chose Java for my backend langauge to develop a stronger understanding of it. 
+            With Java and SQL decided upon, I added Hibernate and Spring Boot as the remaining technologies to my backend tech stack;
+            Hibernate to map my Java objects to the SQL database, and Spring Boot for its REST services. 
             <br/><br/>
             For my frontend technologies, I used React Native (JavaScript), which provides tools to create mobile applications. 
           </p>
@@ -188,29 +188,29 @@ const MHA = () => {
           <h2 className='animation slide'>Midpoint Status</h2>
           <h3>Initial design problems</h3>
           <p>This project posed a new challenge that I had not expected: design. I struggled with
-            coming up with an idea for the design - I had no knowledge of how to even approach this. And the only thing I knew was the functionalities I needed to add. 
-            My experience with UI design was little to none at this point. As such, I chose a singular accent color, changed the border-radius, and kept it minimal. I thought that it 
-            would simply be enough to maintain the standard styling of these elements. 
+            coming up with an idea for the look and feel of the project.
+            My experience with UI design was little to none at this point. As such, I chose a singular accent color, changed the border-radius, and kept it minimal. 
+            I thought that it would be enough just to change those few properties, believing that it would pass off as minimal. 
+            <br/><br/>
+            I soon came to realize: it was not.
           </p>
           <br/>
           <h3>Analysis of Initial Design</h3>
             <ul className='ul'>
-              <li>App not visually appealing due to singular color. The pages feel flat and do not seem engaging.</li>
-              <li>Several issues related to <strong>consistency</strong>: [1] the dropdown and input components have different stylings (border presence, border color, and background color vary); 
+              <li>App was not visually appealing due to singular color; pages felt flat and did not encourage engagement.</li>
+              <li>There were several issues related to <strong>consistency</strong>: [1] the dropdown and input components have different stylings (border presence, border color, and background color vary); 
               [2] green elements use both black and white as a text color; [3] buttons change in size across different pages.</li>
               <li>Feedback highlighted an issue with the button affordance, as the x icon looks like an error rather than delete.</li>
             </ul>
             <br/>
             <h3>New Goal</h3>
-            <p>After re-evaluating my current progress, I decided to allot more focus on improving the design of the app. This meant working with more
-              challenging colors and improving the interface appearance.
+            <p>After re-evaluating my current progress, I decided to allot more attention to improving the design of the app. 
             </p>
             <br/>
             <h3>How To Achieve Goal? Research?</h3>
-            <p>To achieve this goal, I dedicated time to researching mobile apps and identifying different design approaches. For instance,
-              I looked at a plethora of UI designs for different kinds of applications and noted any common themes that I observed from them. From this research, 
-              I learned a <strong>key takeaway</strong>: the importance of the design in app development: how design can attract users 
-              and keep them engaged with an application. Design plays an equally significant role as functionality does. Through analyzing my initial design, I gained more knowledge about UI design.
+            <p>To achieve this goal, I dedicated time to researching mobile apps and identifying various design approaches. For instance,
+              I reviewed a plethora of UI designs for different applications and made note of any reoccuring themes that I liked. From this research, 
+              I gained a <strong>key takeaway</strong>: design is important. 
             </p>
             <br/><br/>
         </div>
@@ -226,11 +226,9 @@ const MHA = () => {
       <div className='mha-container mha-content animation slide'>
         <div className='mha-container-left mha-left-full'>
           <h2 className='animation slide'>Conclusion</h2>
-          <p>Overall, I felt proud of what I created by the end of the project. Learning how to create a full-stack application
-            was daunting to me at first - I couldn't comprehend how everything was interconnected; however, by the end, I learned a lot about the
-            process of backend and frontend development. Through the process of this project, I challenged myself and gained
-            much knowledge about app development. I am grateful for WiCSE's Shadowing Program and my mentor for presenting me with this 
-            opportunity.
+          <p>Overall, I felt proud of what I created by the end. Learning how to create a full-stack application
+            was daunting at first - I couldn't comprehend how everything was interconnected. I began the Mental Health project feeling intimidated by design to 
+            uncovering a newfound passion for it. I am grateful for WiCSE's Shadowing Program for this opportunity.
           </p>
         </div>
       </div>
