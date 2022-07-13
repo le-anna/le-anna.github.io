@@ -47,7 +47,7 @@ const Design = () => {
             <div className='content-overlay'></div> 
             <img src={PawMates2} className='gallery-img' alt='Gallery'/>
             <div className='content-details'>
-              <p>Second design show a grid of the user's saved pets.</p>
+              <p>Second design shows a grid of the user's saved pets.</p>
             </div>
           </div>
         </div>

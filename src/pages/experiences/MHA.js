@@ -189,7 +189,7 @@ const MHA = () => {
           <h3>Initial design problems</h3>
           <p>This project posed a new challenge that I had not expected: design. I struggled with
             coming up with an idea for the look and feel of the project.
-            My experience with UI design was little to none at this point. As such, I chose a singular accent color, changed the border-radius, and kept it minimal. 
+            My experience with UI design was little to none at this point. As a consequence, I chose a singular accent color, changed the border-radius, and kept it minimal. 
             I thought that it would be enough just to change those few properties, believing that it would pass off as minimal. 
             <br/><br/>
             I soon came to a realization: it was not.
@@ -246,7 +246,7 @@ const MHA = () => {
     </div>
 
       <div className='next-btn-container'>
-        <a href='https://devpost.com/software/retrofi'>View next: RetroFi -></a>
+        <a href='https://devpost.com/software/retrofi'>View next: RetroFi (Link) -></a>
       </div>
       <GoToTop />
     </div>

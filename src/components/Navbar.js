@@ -1,21 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaAngleDown } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons' 
 import './Navbar.scss';
-import Profile from '../assets/profile.jpg'
+import Profile from '../assets/profile.jpg';
 import Dropdown from './Dropdown';
+import { debounce } from './helper';
 
 export const Navbar = () => {
   const myRef = useRef();
   const myRef2 = useRef();
-
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
   const [dropdown, setDropdown] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -43,8 +42,21 @@ export const Navbar = () => {
     }
   };
 
+  // https://www.devtwins.com/blog/sticky-navbar-hides-scroll
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+    setPrevScrollPos(currentScrollPos);
+  }, 90);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
+
+
   return (
-    <nav id='navbar'>
+    <nav id='navbar' style={{top: visible ? '0' : '-60px' }}>
         <div className='container' id='navbar-container'>
           <Link to='/' className='container row' id='nav-profile-container'>
             <img src={Profile} id='icon' alt='Profile Icon'/>

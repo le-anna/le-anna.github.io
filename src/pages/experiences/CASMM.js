@@ -78,8 +78,9 @@ const CASMM = () => {
                 
                 CaSMM was an in-progress project when I joined. The main focus on the project
                 had been developing features and working on the functionality; I became part of the team to 
-                improve the user interface. During my time on the project, I progressively worked on making the UI changes to the application 
-                (focusing on a role at a time) and added any needed features/styling. 
+                improve the user interface.
+                During my time on the project, I worked on applying the style guide I created to the rest of the 
+                UI in the application and developing the styling of any new features. .
               <br/><br/>
               </p>
               <br/>
@@ -143,15 +144,19 @@ const CASMM = () => {
       <div className='container casmm-yellow'>
         <div className='casmm-container-updates'>
           <h2 className='animation slide'>Process</h2>
-          <p className='animation slide'>Research on various educational platforms for children highlight a common theme: the use of vibrant colors.  Brighter colors are more engaging, especially to the specific target audience; in this case, 5th 
-          and 6th grade students.
+          <p className='animation slide'>Research on various educational platforms for children highlight a common theme: the use of vibrant colors. Brighter colors can feel more engaging, especially for 
+          the main target audience of the application: 5th and 6th grade students.
           <br/> <br/> 
           I paid particular attention to several <strong> UX Design Principles: Consistency, Affordance, and Discoverability.</strong>
           <br/> <br/> 
           In the design solution, I proposed implementing an accent color in the new style guide. 
-          An accent color used specifically to denote action items would improve the <strong>discoverability</strong> of the element. As well, the change in button style would
-          make it more <strong>consistent</strong> with buttons found in other applications. During development, much discussion revolved around ensuring the <strong>affordance</strong> of elements, so the students could easily identify them and know their immediate use.
-          The remainder of my work involved improving the UI to fit the style guide.
+          An accent color used specifically to denote action items would improve the <strong>discoverability</strong> of the element. 
+          In the original logo, a neon yellow was used in the design, so I pulled inspiration from that and used a duller yellow - eye-catching but not distracting.
+          The Principle Investigator had also wanted to maintain the color scheme, so yellow felt like a good solution
+          to make the application feel more welcoming. Further, a change in button color and style would
+          make it more <strong>consistent</strong> with buttons found in other applications. During development, much discussion revolved around 
+          ensuring the <strong>affordance</strong> of elements, so the students could easily identify them and know their immediate use. Functionality of tools and elements had to be visibly evident.
+          
           </p>
         </div>
       </div>
@@ -165,7 +170,9 @@ const CASMM = () => {
               <h3>before</h3>
               <p>
                 This was the Mentor view before any changes were made to the design. The afforance 
-                for the buttons is poor. The grey color and rectangular shape of the button are not consistent with other designs for buttons found in other applications, which makes the functionality ambiguous. The text within the box is also small and not readable.
+                for the buttons is poor. The grey color and rectangular shape of the button are not consistent with button designs found in other applications, which makes the functionality ambiguous. 
+                Further, the button takes up a large portion of the card, which is a poor use of the space.
+                The text within the card is also small and not readable.
               </p>
             </div>
           </div>
@@ -173,8 +180,10 @@ const CASMM = () => {
             <div className='updatesimg-text'>
               <h3>after</h3>
               <p>
-                The card was redesigned to improve readability. The content was divided up into sections, allowing Mentors to quickly find the information they need. The accessibility was also improved, as Mentors can now click on the Join Code (a popup to display the code in classrooms for students) 
-                instead of having to click on the View button to access it on another page.
+                The card was redesigned to improve readability. The content was divided up into sections, allowing Mentors to quickly find the information they need. 
+                The accessibility was also improved, as Mentors can now click on the Join Code (a popup to display the code in classrooms for students) 
+                instead of having to click on the View button to access it on another page. The new design of the card also adds more dimension to it, making it more identifiable as a card component
+                 and not just a simple shape.
               </p>
             </div>
             <img src={pg5img2} className='updatesimg' alt='CaSMM'/>
@@ -195,7 +204,8 @@ const CASMM = () => {
               <h3>before</h3>
               <p>The Roster view contains a grid of cards with information for each student. As observed from the image,
               the Roster view shares a similar issue with the Mentor view in regard to the buttons: poor affordance. The cards are also not responsive, 
-              causing the features to overlap which makes the text indecipherable and buttons unusable.
+              causing the features to overlap which makes the text indecipherable and buttons unusable. The animal icon (which students use to login) 
+              is small, making it difficult to recognize the animal associated with the student.
               </p>
             </div>
           </div>
@@ -203,8 +213,7 @@ const CASMM = () => {
             <div className='updatesimg-text'>
               <h3>after</h3>
               <p>The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
-              with the yellow color to represent the header. The size of the icon was also increased so Mentors can identify it better, as icons are used
-              for students to login.
+              with the yellow color to represent the card header. The icon size was increased so mentors can depict the animal used better.
               </p>
             </div>
             <img src={pg6img2} className='updatesimg' alt='CaSMM'/>

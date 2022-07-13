@@ -31,7 +31,7 @@
     }
 
     #landing-img-container {
-        height: auto;
+        // height: auto;
 
         #photo {
             width: 100%;
@@ -67,15 +67,15 @@
         }
     
         #landing-img-container {
+            margin-top: 60px; // navbar height
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 60vw;
-            width: 90%;
+            width: 85vw;
+            height: auto;
 
             #photo {
-                width: auto;
-                height: 100%;
+                width: 100%;
             }
         }
     }

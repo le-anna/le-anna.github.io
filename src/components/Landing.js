@@ -25,7 +25,7 @@ const Landing = () => {
               </span>
               <Typewriter
                 options={{
-                  strings: ['welcome to my portfolio! :)', 'i\'m anna!', 'i\'m a computer science student', 'i\'m also minoring in mass communications',
+                  strings: ['welcome to my portfolio :)', 'i\'m anna!', 'i\'m a computer science student', 'i\'m also minoring in mass communications',
                   'i enjoy frontend development and ux/ui design!'],
                   autoStart: true,
                   loop: true,

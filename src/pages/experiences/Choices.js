@@ -6,6 +6,8 @@ import InitialColor from '../../assets/Choices/Choices-initial-colors.png'
 import NewColor from '../../assets/Choices/Choices-new-colors.png'
 import Old1 from '../../assets/Choices/Choices-Old-1.png'
 import Old2 from '../../assets/Choices/Choices-Old-2.png'
+import Landing from '../../assets/Choices/Choices-Landing.png'
+import RecruitmentLanding from '../../assets/Choices/Choices-Recruitment-Landing.png'
 import Mockup1 from '../../assets/Choices/Choices-Mockup-1.png'
 import Mockup2 from '../../assets/Choices/Choices-Mockup-2.png'
 import Mockup3 from '../../assets/Choices/Choices-Mockup-3.png'
@@ -15,6 +17,7 @@ import Final1 from '../../assets/Choices/Choices-Final-1.png'
 import Final2 from '../../assets/Choices/Choices-Final-2.png'
 import Final3 from '../../assets/Choices/Choices-Final-3.png'
 import Final4 from '../../assets/Choices/Choices-Final-4.png'
+import Final5 from '../../assets/Choices/Choices-Final-5.png'
 
 const Choices = () => {
   return (
@@ -22,11 +25,11 @@ const Choices = () => {
        <div>
         <div className='choices-container'>
           <h2>Choices Case Study</h2>
-          <p>Choices is an educational platform developed through the University of Florida's Sickle Cell Disease and Traits Research Lab
-            for people with Sickle Cell Disease and Traits. The application serves as a learning tool for people participating in the Choices study. The group 
-            working on the project consists of many people from various academic disciplines. I primarily worked with a smaller team for the development. 
-            The application is one piece to the study, so I want to acknowledge that it contains curated content and work that many other members have put much time and 
-            dedication into!
+          <p>Choices is an educational tool developed through a research lab at the University of Florida
+            for people with Sickle Cell Disease and Traits participating in the study. The group working on the project consists of people from various academic disciplines, 
+            many of whom have dedicated much time and work into curating the content in the application (which is just one piece of the study). 
+            I primarily worked with a smaller team for the development. 
+            
             <br/><br/>Some notes: (I) The <strong>study </strong> is currently <strong>ongoing</strong>; thus, some of the images/elements in the designs have been blurred
              out OR replaced by a placeholder due to the sensitivity of the information. 
              (II) Not all designs developed for the application are shown.
@@ -40,7 +43,7 @@ const Choices = () => {
           <p>February 2022 - Present</p>
         </div>
         <div className='choices-container'>
-          <h2>Previous Design & Problems ❌</h2>
+          <h2>Previous Design Problems ❌</h2>
           <p>The previous application was developed around 2008 before being redeveloped in 2022, so some pages contained outdated styling.
           </p>
           <div className='img-container choices-old-design'>
@@ -94,8 +97,8 @@ const Choices = () => {
         <p>
           For my solution, I decided on a <strong>minimalistic design</strong> for the application to <strong>centralize user focus on the tasks & content</strong>. This contrasts with 
           the previous design, as it helps eliminate distractions for the user and makes the pages feel less busy. Moreover,
-          the project had to be completed within a <strong>fast-paced timeframe</strong> for the study to begin on time. 
-          As such, a minimal design permits more time for debugging and further development of any additional features.
+          the project had to be completed within a <strong>fast timeframe</strong> for the study to begin on time. 
+          Accordingly, a minimal design permits more time for debugging and further development of any additional features.
         </p>
         <br/>
         <p>
@@ -126,26 +129,35 @@ const Choices = () => {
           the question and answer to stand out from each other.
         </p>
         <div className='img-container app-img'>
-          <img src={Mockup2} alt='Choices Initial Design'/>
+          <img src={Mockup2} alt='Choices Design'/>
         </div>
         <h3>More designs</h3>
         <div className='img-container app-img'>
-          <img src={Login} alt='Choices Initial Design'/>
+          <img src={Landing} alt='Choices Design'/>
         </div>
         <div className='img-container app-img'>
-          <img src={Mockup3} alt='Choices Initial Design'/>
+          <img src={RecruitmentLanding} alt='Choices Design'/>
+        </div>
+        <div className='img-container app-img'>
+          <img src={Login} alt='Choices Design'/>
+        </div>
+        <div className='img-container app-img'>
+          <img src={Mockup3} alt='Choices Design'/>
         </div>
         <div className='img-container mobile-img'>
-          <img src={Mockup4} alt='Choices Initial Design'/>
+          <img src={Mockup4} alt='Choices Design'/>
         </div>
       </div>
       <div className='choices-container'>
-        <h2>Development Process 👩🏻‍💻</h2>
-        <p>Information had to be pulled from the database, which meant that the designs should work as a template.
-           In total, this meant about <strong>100 pages</strong> of content. Along with different page layouts,
-           styling also had to created to consider data formats. A question, for instance, could have a 
-           number input, free response, or table with nested buttons. As another example, some content required media content while others did not - these
-           all had to be considered and styling had to apply correctly.
+        <h2>Implementation 👩🏻‍💻</h2>
+        <h3>Process</h3>
+        <p>Data had to be pulled from the database, which meant that the designs had to work as a template.
+           Along with different page layouts, I had to create styling for different types of data. A question, for instance, could have a 
+           number input, free response, or table with nested buttons. As another example, some content required media content while others did not.
+           <br/><br/>
+          The overall implementation of the application did not take much time due to the high-fidelity prototypes. I spent more time on refining the layout
+          and debugging issues after testing with real data. A page could contain different typography elements, lists, popups, nested content, media, etc. 
+          Ergo, all the data had to be defined by HTML DOM elements - in total, this meant about <strong>100 pages</strong> of content. 
         </p>
         <br/>
         <p>
@@ -155,13 +167,14 @@ const Choices = () => {
         <br/>
         <h3>Road Bumps Encountered</h3>
         <p>
-          Virtual human videos were implemented to assist in the learning process for participants of the study. A video had to be
-          included in all the informational and question pages with autoplay. It was tricky finding the best positioning for the virtual human video, as the purpose was to supplement the material but not distract. I developed several mockups of potential placements. After feedback and suggestions from the team, it was decided that the text should
+          Virtual human videos were implemented to assist in the learning process for participants of the study. It was tricky finding the best positioning for the video, as the purpose was to supplement the material but not distract. 
+          I developed several mockups of potential placements. After feedback from the team, it was decided that the text should
           wrap the virtual human video at the bottom.
           <br/><br/>
           Another bump I experienced was writing the code with HTML. The backend portion of the project used specific technologies that did not integrate well with
-          frontend services like React. As such, I used HTML and Sass, which were not as ideal for creating components and passing data between pages/elements.
+          frontend services like React. As a result, I used HTML and Sass, which were not as ideal for creating components and passing data between pages/elements.
         </p>
+        <br/>
       </div>
       <div className='choices-container'>
         <h2>Finish Line (Concluding Work) 🏁</h2>
@@ -189,6 +202,9 @@ const Choices = () => {
           </div>
           <div className='img-container app-img'>
             <img src={Final4} alt='Choices Final Design'/>
+          </div>
+          <div className='img-container app-img'>
+            <img src={Final5} alt='Choices Final Design'/>
           </div>
           <div className='img-container mobile-img'>
             <img src={Final3} alt='Choices Final Design'/>
