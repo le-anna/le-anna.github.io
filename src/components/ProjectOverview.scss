@@ -3,8 +3,10 @@
 
 #prj {
     background-color: #DEEBFD;
-    height: 50vh;
+    min-height: 52vh;
+    height: fit-content;
     padding: 2vw 0;
+
 }
 
 #prj-container {
@@ -72,7 +74,6 @@
     #prj {
         display: flex;
         min-height: 100vh;
-        height: auto;
     }
 
     #prj-container {

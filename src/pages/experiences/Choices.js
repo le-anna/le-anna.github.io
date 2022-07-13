@@ -93,29 +93,29 @@ const Choices = () => {
         <h2>Solutions 💡</h2>
         <p>
           For my solution, I decided on a <strong>minimalistic design</strong> for the application to <strong>centralize user focus on the tasks & content</strong>. This contrasts with 
-          the prior design and helps eliminate distractions for the user. Moreover,
-          the project had to be complete within a <strong>fast-paced timeframe</strong> for the study to begin on time. 
+          the previous design, as it helps eliminate distractions for the user and makes the pages feel less busy. Moreover,
+          the project had to be completed within a <strong>fast-paced timeframe</strong> for the study to begin on time. 
           As such, a minimal design permits more time for debugging and further development of any additional features.
         </p>
         <br/>
         <p>
-          [RE: Old Color Scheme] I proposed color combinations options that were similar to the old color scheme.
-          The row with the star was agreed upon (yellow ended up being unused). 
+          [RE: Old Color Scheme] I proposed 3 options for color combinations that were similar to the old color scheme.
+          The row with the star was agreed upon (yellow ended up being unneeded). 
         </p>
         <div className='img-container choices-color'>
           <img src={NewColor} alt='Choices Initial Color Scheme'/>
         </div>
         <p>
-          [RE: Buttons] The buttons were redesigned to follow a more modern and simplistic style, reducing the busyness on a page. 
+          [RE: Buttons] Buttons were redesigned to follow a more modern and minimal style.
         </p>
         <br/>
         <p>
-          [RE: Navigation] To demonstrate the sequential nature of the application, the navigation menu was redesigned. As observed in the image below, the new navigation menu
+          [RE: Navigation] To demonstrate the sequential nature of the learning, the navigation menu was redesigned. As shown in the image below, the new navigation menu
           models a learning module. 
         </p>
         <br/>
         <p>
-          Left cirlces indicate progress modes: <span id='green'>green = complete</span>, <span id='yellow'>yellow = in progress</span>, 
+          Left cirlces indicate 3 progress modes: <span id='green'>green = complete</span>, <span id='yellow'>yellow = in progress</span>, 
           and <span id='gray'>gray = not available</span>.
         </p>
         <div className='img-container app-img'>
@@ -142,15 +142,15 @@ const Choices = () => {
       <div className='choices-container'>
         <h2>Development Process 👩🏻‍💻</h2>
         <p>Information had to be pulled from the database, which meant that the designs should work as a template.
-           In total, this was about <strong>100 pages</strong> of content. Along with different page layouts,
+           In total, this meant about <strong>100 pages</strong> of content. Along with different page layouts,
            styling also had to created to consider data formats. A question, for instance, could have a 
-           number input, free response, or table with nested buttons. For another example, some content required media content while others did not - these
-           all had to be considered and styling had to be made to accomodate.
+           number input, free response, or table with nested buttons. As another example, some content required media content while others did not - these
+           all had to be considered and styling had to apply correctly.
         </p>
         <br/>
         <p>
-          In order to streamline the development process, I developed one main Sass (CSS Preprocessor) file to standardize all the tags that would be used in the application.
-          Standardizing the tags ensured <strong>consistency</strong> throughout the application. I placed much focus on the <strong>responsiveness</strong> of the design.
+          In order to streamline the development process, I developed one main Sass (CSS Preprocessor) file to customize the HTML DOM elements used in the application.
+          Standardizing the elements ensured <strong>consistency</strong> throughout the application. 
         </p>
         <br/>
         <h3>Road Bumps Encountered</h3>

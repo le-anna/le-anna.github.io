@@ -192,7 +192,7 @@ const MHA = () => {
             My experience with UI design was little to none at this point. As such, I chose a singular accent color, changed the border-radius, and kept it minimal. 
             I thought that it would be enough just to change those few properties, believing that it would pass off as minimal. 
             <br/><br/>
-            I soon came to realize: it was not.
+            I soon came to a realization: it was not.
           </p>
           <br/>
           <h3>Analysis of Initial Design</h3>

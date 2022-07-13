@@ -72,12 +72,12 @@ const CASMM = () => {
               <p>
                 CaSMM is developed by the University of Florida and Texas A&M with support from 
                 the National Science Foundation and is currently undergoing testing/research in classrooms. Users include 5th and 6th graders, content
-                creators, mentors, and researchers. Our work on the project was done during implementation in classrooms and breaks. 
+                creators, mentors, and researchers. Our work on the project was done during implementation in classrooms and on breaks. 
                 Collaboration in the team occured between researchers and developers. 
                 <br/><br/>
                 
                 CaSMM was an in-progress project when I joined. The main focus on the project
-                had been developing features and working on the functionality; thus, I became part of the team to 
+                had been developing features and working on the functionality; I became part of the team to 
                 improve the user interface. During my time on the project, I progressively worked on making the UI changes to the application 
                 (focusing on a role at a time) and added any needed features/styling. 
               <br/><br/>
@@ -107,9 +107,9 @@ const CASMM = () => {
              <br/>
               <ul className='ul'>
                 <li>Color palette lacked an accent color, which can be important in helping elements stand out.</li>
-                <li>Buttons were gray, making their functionality difficult to identify.</li>
-                <li>Components were simple shapes.</li>
-                <li>There was a lack of responsiveness among components, which resulted in overlap.</li>
+                <li>Buttons were gray, making their functionality difficult to identify. The shape and style of the buttons also made them indistinguishable as action elements.</li>
+                <li>Components, such as the cards and modules, were simple shapes.</li>
+                <li>There was a lack of responsiveness among components, which resulted in them overlapping.</li>
                 <br/>
                 <div id='color-container'>
                   <img src={pg3img2} id='color-img' alt='CaSMM'/>
@@ -149,9 +149,9 @@ const CASMM = () => {
           I paid particular attention to several <strong> UX Design Principles: Consistency, Affordance, and Discoverability.</strong>
           <br/> <br/> 
           In the design solution, I proposed implementing an accent color in the new style guide. 
-          An accent color used specifically to denote clickable items would improve the discoverability of the element. As well, the change in button style would
-          make it more consistent to buttons found in other applications. During development, much discussion revolved around ensuring the affordance of elements, so students could easily identify them.
-          The rest of my work involved improving the UI to fit the style guide.
+          An accent color used specifically to denote action items would improve the <strong>discoverability</strong> of the element. As well, the change in button style would
+          make it more <strong>consistent</strong> with buttons found in other applications. During development, much discussion revolved around ensuring the <strong>affordance</strong> of elements, so the students could easily identify them and know their immediate use.
+          The remainder of my work involved improving the UI to fit the style guide.
           </p>
         </div>
       </div>
@@ -164,8 +164,8 @@ const CASMM = () => {
             <div className='updatesimg-text'>
               <h3>before</h3>
               <p>
-                This was the Mentor view before any changes were made to the design. The afforance
-                for the buttons is poor. The grey color and rectangular shape of the button is not consistent with other designs for buttons found in other applications, which makes the functionality ambiguous. The text within the box is also small and not readable.
+                This was the Mentor view before any changes were made to the design. The afforance 
+                for the buttons is poor. The grey color and rectangular shape of the button are not consistent with other designs for buttons found in other applications, which makes the functionality ambiguous. The text within the box is also small and not readable.
               </p>
             </div>
           </div>
@@ -195,7 +195,7 @@ const CASMM = () => {
               <h3>before</h3>
               <p>The Roster view contains a grid of cards with information for each student. As observed from the image,
               the Roster view shares a similar issue with the Mentor view in regard to the buttons: poor affordance. The cards are also not responsive, 
-              causing the features to overlap which makes the text indecipherable.
+              causing the features to overlap which makes the text indecipherable and buttons unusable.
               </p>
             </div>
           </div>
@@ -203,7 +203,8 @@ const CASMM = () => {
             <div className='updatesimg-text'>
               <h3>after</h3>
               <p>The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
-              with the yellow color to represent the header. The size of the icon was also increased, so Mentors can identify the image better.
+              with the yellow color to represent the header. The size of the icon was also increased so Mentors can identify it better, as icons are used
+              for students to login.
               </p>
             </div>
             <img src={pg6img2} className='updatesimg' alt='CaSMM'/>

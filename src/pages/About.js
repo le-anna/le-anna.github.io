@@ -54,7 +54,7 @@ const About = () => {
           <a href='https://github.com/le-anna/portfolio' id='nested-link'>-> Here's my Github for the portfolio!</a>  
         </p>
         <br/>
-        <h3>Current technologies!</h3>
+        <h3>Current technologies</h3>
         <p> 
           JavaScript, C++, Java, HTML, CSS (preprocessors Sass and Less)
           <br/>

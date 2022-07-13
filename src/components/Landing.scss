@@ -11,6 +11,10 @@
     width: 75%;
     align-items: center;
 
+    #opening {
+        white-space: nowrap;
+    }
+
     #msg-icon  {
         animation: fadeIn;
         animation-duration: 2.5s;
@@ -20,11 +24,15 @@
     #description {
         font-size: 2.1em;
         margin-right: 20px;
-        width: 80%;
+        min-width: 80%;
+        width: fit-content;
+        min-height: 24vh;
         height: fit-content;
     }
 
     #landing-img-container {
+        height: auto;
+
         #photo {
             width: 100%;
             animation: bounceInLeft 2s;
@@ -43,6 +51,8 @@
     #landing { }
 
     #info-container {
+        display: flex;
+        flex-direction: column;
         grid-template-columns: none;
         align-items: center;
         justify-content: center;
@@ -53,15 +63,19 @@
             text-align: center;
             font-size: 1.5rem;
             margin-left: 0;
+            height: fit-content;
         }
     
         #landing-img-container {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 60vw;
+            width: 90%;
 
             #photo {
-                width: 100%;
+                width: auto;
+                height: 100%;
             }
         }
     }
