@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+#prj {
+  background-color: #DEEBFD;
+  min-height: 52vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2vw 0;
+}
+
+#prj-container {
+  height: 90%;
+  width: 90%;
+  margin: 0 10%;
+}
+
+#prj-container #prj-info-container {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 40%;
+  color: #000;
+}
+
+#prj-container #prj-info-container #prj-title {
+  font-weight: 700;
+}
+
+#prj-container #prj-info-container #prj-role {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+#prj-container #prj-info-container #prj-description {
+  width: 90%;
+  font-size: 1.1rem;
+  padding: 1vh 0;
+}
+
+#prj-container #prj-info-container #prj-tech {
+  font-size: 0.9rem;
+}
+
+#prj-container #prj-img-container {
+  width: 30%;
+  height: 30vh;
+}
+
+#prj-container #prj-img-container #prj-img {
+  width: 80%;
+  height: auto;
+}
+
+.choices-status {
+  text-align: center;
+  color: #000;
+}
+
+#prj-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#prj-btn {
+  margin: 20px 0px 0px;
+}
+
+@media screen and (max-width: 960px) {
+  #prj {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+  }
+  #prj-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding-top: 40px;
+  }
+  #prj-container #prj-info-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    text-align: center;
+  }
+  #prj-container #prj-info-container #prj-title {
+    font-size: 1.6rem;
+  }
+  #prj-container #prj-info-container #prj-role {
+    font-size: 1.1rem;
+  }
+  #prj-container #prj-info-container #prj-description {
+    font-size: 1rem;
+  }
+  #prj-container #prj-info-container #prj-tech {
+    font-size: 0.8rem;
+  }
+  #prj-container #prj-img-container {
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 6vh;
+  }
+  #prj-container #prj-img-container #prj-img {
+    width: 100%;
+  }
+}

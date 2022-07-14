@@ -19,8 +19,8 @@ const About = () => {
 
   return (
     <div id='about'>
-      <div id='about-content'>
-        <div id='about-title'>
+      <div className='flex column' id='about-content'>
+        <h2 id='about-title'>
           <Typewriter 
             options={{
               strings: ['About Me'],
@@ -29,7 +29,7 @@ const About = () => {
               deleteSpeed: 6
             }}
             />
-        </div>
+        </h2>
         <br/>
         <h3>Introduction</h3>
         <p>

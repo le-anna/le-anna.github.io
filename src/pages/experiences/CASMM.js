@@ -12,6 +12,7 @@ import pg5img2 from '../../assets/CASMM/5-2.png'
 import pg5img3 from '../../assets/CASMM/5-3.png'
 import pg6img1 from '../../assets/CASMM/6-1.png'
 import pg6img2 from '../../assets/CASMM/6-2.png'
+import NewColor from '../../assets/CASMM/new-palette.png'
 import './CASMM.scss'
 import GoToTop from '../../components/GoToTop'
 
@@ -63,19 +64,17 @@ const CASMM = () => {
           <br/>
         </div>
       </div>
-
       <div className='container casmm-blue'>
         <div className='casmm-container'>
           <h2 className='animation slide'>Project Overview</h2>
-          <div className='animation slide container row casmm-info-container'>
-            <div className='casmm-info-content'>
+          <div className='container row animation slide mobile'>
+            <div className='flex column casmm-info'>
               <p>
                 CaSMM is developed by the University of Florida and Texas A&M with support from 
                 the National Science Foundation and is currently undergoing testing/research in classrooms. Users include 5th and 6th graders, content
                 creators, mentors, and researchers. Our work on the project was done during implementation in classrooms and on breaks. 
                 Collaboration in the team occured between researchers and developers. 
                 <br/><br/>
-                
                 CaSMM was an in-progress project when I joined. The main focus on the project
                 had been developing features and working on the functionality; I became part of the team to 
                 improve the user interface.
@@ -96,12 +95,11 @@ const CASMM = () => {
           </div>
         </div>
       </div>
-
       <div className='container casmm-yellow'>
         <div className='casmm-container'>
           <h2 className='animation slide'>Problems</h2>
-          <div className='animation slide container casmm-info-container'>
-            <div className='casmm-info-content'>
+          <div className='container animation slide mobile'>
+            <div className='flex column casmm-info'>
              <p>
               Here are some problems I identified in the intial design:
              </p>
@@ -124,19 +122,18 @@ const CASMM = () => {
           </div>
         </div>
       </div>
-
       <div className='container casmm-yellow'>
         <div className='casmm-container-updates'>
           <h2 className='animation slide'>Requirements</h2>
           <p className='animation slide'>Some features from the original design that 
             the Principle Investigator wanted to maintain in the redesign.</p>
-          <div className='animation slide container row updates-img-container'>
-            <img src={updatesimg1} className='updatesimg' alt='CaSMM'/>
-            <p className='updatesimg-text'>Keep the existing color scheme and modular layout (components encased in a white background to model a learning module).</p>
+          <div className='animation slide container row updates-imgs'>
+            <img src={updatesimg1} className='update-img' alt='CaSMM'/>
+            <p flex-justify column update-text>Keep the existing color scheme and modular layout (components encased in a white background to model a learning module).</p>
           </div>
-          <div className='animation slide container row updates-img-container'>
-            <p className='updatesimg-text'>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
-            <img src={updatesimg2} className='updatesimg' alt='CaSMM'/>
+          <div className='animation slide container row updates-imgs'>
+            <p flex-justify column update-text>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
+            <img src={updatesimg2} className='update-img' alt='CaSMM'/>
           </div>
         </div>
       </div>
@@ -156,17 +153,22 @@ const CASMM = () => {
           to make the application feel more welcoming. Further, a change in button color and style would
           make it more <strong>consistent</strong> with buttons found in other applications. During development, much discussion revolved around 
           ensuring the <strong>affordance</strong> of elements, so the students could easily identify them and know their immediate use. Functionality of tools and elements had to be visibly evident.
-          
           </p>
+          <br/>
+          <p>Image of color palette from style guide: </p>
+          <div id='new-palette'>
+            <img src={NewColor} />
+          </div>
+          <br/>
+          <p>Style guide included: color palette, typography, walkthrough of different roles, and explanation of UI decisions. </p>
         </div>
       </div>
-
       <div className='container casmm-yellow'>
         <div className='casmm-container-updates'>
           <h2 className='animation slide'>Solution: Mentor View</h2>
-          <div className='animation slide container row updates-img-container'>
-            <img src={pg5img1} className='updatesimg' alt='CaSMM'/> 
-            <div className='updatesimg-text'>
+          <div className='animation slide container row updates-imgs'>
+            <img src={pg5img1} className='update-img' alt='CaSMM'/> 
+            <div className='flex-justify column update-text'>
               <h3>before</h3>
               <p>
                 This was the Mentor view before any changes were made to the design. The afforance 
@@ -176,8 +178,8 @@ const CASMM = () => {
               </p>
             </div>
           </div>
-          <div className='animation slide container row updates-img-container' id='mobile-reverse'>
-            <div className='updatesimg-text'>
+          <div className='animation slide container row updates-imgs' id='mobile-reverse'>
+            <div className='flex-justify column update-text'>
               <h3>after</h3>
               <p>
                 The card was redesigned to improve readability. The content was divided up into sections, allowing Mentors to quickly find the information they need. 
@@ -186,21 +188,20 @@ const CASMM = () => {
                  and not just a simple shape.
               </p>
             </div>
-            <img src={pg5img2} className='updatesimg' alt='CaSMM'/>
+            <img src={pg5img2} className='update-img' alt='CaSMM'/>
           </div>
-          <div className='animation slide container row updates-img-container'>
-            <img src={pg5img3} className='updatesimg' alt='CaSMM'/>
-            <p className='updatesimg-text'>Image of the clickable Join Code.</p>
+          <div className='animation slide container row updates-imgs'>
+            <img src={pg5img3} className='update-img' alt='CaSMM'/>
+            <p className='flex-justify column update-text'>Image of the clickable Join Code.</p>
           </div>
         </div>
       </div>
-       
       <div className='container casmm-yellow'>
         <div className='casmm-container-updates'>
           <h2 className='animation slide'>Solution: Roster View</h2>
-          <div className='animation slide container updates-img-container'>
-            <img src={pg6img1} className='updatesimg' alt='CaSMM'/>
-            <div className='updatesimg-text'>
+          <div className='animation slide container updates-imgs'>
+            <img src={pg6img1} className='update-img' alt='CaSMM'/>
+            <div className='flex-justify column update-text'>
               <h3>before</h3>
               <p>The Roster view contains a grid of cards with information for each student. As observed from the image,
               the Roster view shares a similar issue with the Mentor view in regard to the buttons: poor affordance. The cards are also not responsive, 
@@ -209,14 +210,14 @@ const CASMM = () => {
               </p>
             </div>
           </div>
-          <div className='animation slide container row updates-img-container' id='mobile-reverse'>
-            <div className='updatesimg-text'>
+          <div className='animation slide container row updates-imgs' id='mobile-reverse'>
+            <div className='flex-justify column update-text't>
               <h3>after</h3>
               <p>The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
               with the yellow color to represent the card header. The icon size was increased so mentors can depict the animal used better.
               </p>
             </div>
-            <img src={pg6img2} className='updatesimg' alt='CaSMM'/>
+            <img src={pg6img2} className='update-img' alt='CaSMM'/>
           </div>
         </div>
       </div>

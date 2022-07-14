@@ -12,7 +12,7 @@ const Design = () => {
   
   return (
   <div className='container column' id='design'>
-    <div id='design-title'>
+    <h2 className='flex column'>
       <Typewriter 
         options={{
           strings: ['UI Designs'],
@@ -21,14 +21,14 @@ const Design = () => {
           deleteSpeed: 6
         }}
         />
-    </div>
+    </h2>
     <div className='container' id='design-info'>
       <p>This is a gallery showcasing the UI designs that I made for fun! These were created using Figma and have not been implemented. 
         For designs that I have programmed, feel free to check out my projects under the Experiences tab!
       </p>    
     </div>
     <div className='container column' id='gallery'>
-      <h1>PawMates</h1>
+      <h3>PawMates</h3>
       <div className='container row' id='gallery-row'>
         <div className='container row gallery-row-item'>
           <div className='content'>
@@ -41,7 +41,6 @@ const Design = () => {
             </div>
           </div>
         </div>
-
         <div className='container row gallery-row-item'>
           <div className='content'>
             <div className='content-overlay'></div> 
@@ -52,8 +51,7 @@ const Design = () => {
           </div>
         </div>
       </div>
-
-      <h1>TuneIn</h1>
+      <h3>TuneIn</h3>
       <div className='container row' id='gallery-row'>
         <div className='container row gallery-row-item'>
           <div className='content'>
@@ -67,8 +65,7 @@ const Design = () => {
           </div>
         </div>
       </div>
-
-      <h1>Create an account</h1>
+      <h3>Create an account</h3>
       <div className='container row' id='gallery-row'>
         <div className='container row gallery-row-item'>
           <div className='content'>
@@ -80,11 +77,7 @@ const Design = () => {
           </div>
         </div>
       </div>
-
     </div>
-    {/* <div id='design-gallery'>
-      <Gallery photos={photos} direction={"column"} />
-    </div> */}
     <GoToTop />
   </div>
   )

@@ -23,7 +23,7 @@ const Choices = () => {
   return (
     <div className='container column choices'>
        <div>
-        <div className='choices-container'>
+        <div className='flex-justify column choices-container'>
           <h2>Choices Case Study</h2>
           <p>Choices is an educational tool developed through a research lab at the University of Florida
             for people with Sickle Cell Disease and Traits participating in the study. The group working on the project consists of people from various academic disciplines, 
@@ -42,14 +42,14 @@ const Choices = () => {
           <p><strong>UX Designer</strong> and <strong>Frontend Developer</strong></p>
           <p>February 2022 - Present</p>
         </div>
-        <div className='choices-container'>
+        <div className='flex-justify column choices-container'>
           <h2>Previous Design Problems ❌</h2>
           <p>The previous application was developed around 2008 before being redeveloped in 2022, so some pages contained outdated styling.
           </p>
-          <div className='img-container choices-old-design'>
+          <div className='flex-justify img-container  choices-old-design'>
             <img src={Old1} alt='Choices Initial Design'/>
           </div>
-          <div className='img-container choices-old-design'>
+          <div className='flex-justify img-container  choices-old-design'>
             <img src={Old2} alt='Choices Initial Design'/>
           </div>
           <br/>
@@ -69,12 +69,12 @@ const Choices = () => {
                feel busy, taking away from the actual content.
             </li>
           </ul>
-          <div className='img-container choices-color'>
+          <div className='flex-justify img-container  choices-color'>
             <img src={InitialColor} alt='Choices Initial Color Scheme'/>
           </div>
           <br/>
         </div>
-        <div className='choices-container'>
+        <div className='flex-justify column choices-container'>
           <h2>Design Process & High-fidelity Mockups 🎨</h2>
           <h3>User Research</h3>
           <p>
@@ -92,7 +92,7 @@ const Choices = () => {
             Review sessions were conducted several times a week to discuss the mockups. Approximately <strong>40 mockups</strong> were developed during this stage.
           </p>
         </div>
-      <div className='choices-container'>
+      <div className='flex-justify column choices-container'>
         <h2>Solutions 💡</h2>
         <p>
           For my solution, I decided on a <strong>minimalistic design</strong> for the application to <strong>centralize user focus on the tasks & content</strong>. This contrasts with 
@@ -105,7 +105,7 @@ const Choices = () => {
           [RE: Old Color Scheme] I proposed 3 options for color combinations that were similar to the old color scheme.
           The row with the star was agreed upon (yellow ended up being unneeded). 
         </p>
-        <div className='img-container choices-color'>
+        <div className='flex-justify img-container  choices-color'>
           <img src={NewColor} alt='Choices Initial Color Scheme'/>
         </div>
         <p>
@@ -121,34 +121,34 @@ const Choices = () => {
           Left cirlces indicate 3 progress modes: <span id='green'>green = complete</span>, <span id='yellow'>yellow = in progress</span>, 
           and <span id='gray'>gray = not available</span>.
         </p>
-        <div className='img-container app-img'>
+        <div className='flex-justify img-container  app-img'>
           <img src={Mockup1} alt='Choices Initial Design'/>
         </div>
         <p>
           The simplistic background and card were designed to maintain a user's focus on the content. The cards consists of two sections, allowing
           the question and answer to stand out from each other.
         </p>
-        <div className='img-container app-img'>
+        <div className='flex-justify img-container  app-img'>
           <img src={Mockup2} alt='Choices Design'/>
         </div>
         <h3>More designs</h3>
-        <div className='img-container app-img'>
+        <div className='flex-justify img-container  app-img'>
           <img src={Landing} alt='Choices Design'/>
         </div>
-        <div className='img-container app-img'>
+        <div className='flex-justify img-container  app-img'>
           <img src={RecruitmentLanding} alt='Choices Design'/>
         </div>
-        <div className='img-container app-img'>
+        <div className='flex-justify img-container  app-img'>
           <img src={Login} alt='Choices Design'/>
         </div>
-        <div className='img-container app-img'>
+        <div className='flex-justify img-container  app-img'>
           <img src={Mockup3} alt='Choices Design'/>
         </div>
-        <div className='img-container mobile-img'>
+        <div className='flex-justify img-container  mobile-img'>
           <img src={Mockup4} alt='Choices Design'/>
         </div>
       </div>
-      <div className='choices-container'>
+      <div className='flex-justify column choices-container'>
         <h2>Implementation 👩🏻‍💻</h2>
         <h3>Process</h3>
         <p>Data had to be pulled from the database, which meant that the designs had to work as a template.
@@ -176,7 +176,7 @@ const Choices = () => {
         </p>
         <br/>
       </div>
-      <div className='choices-container'>
+      <div className='flex-justify column choices-container'>
         <h2>Finish Line (Concluding Work) 🏁</h2>
           <p>
             After the designs and implementation were completed, the rest of the work involved modifying the styling to adapt to real data from the database.
@@ -192,25 +192,25 @@ const Choices = () => {
             Video popups with mask overlay<br/>
           </p>
         </div>
-        <div className='choices-container'>
+        <div className='flex-justify column choices-container'>
           <h2>Final Product 🎉 </h2>
-          <div className='img-container app-img'>
+          <div className='flex-justify img-container  app-img'>
             <img src={Final2} alt='Choices Final Design'/>
           </div>
-          <div className='img-container app-img'>
+          <div className='flex-justify img-container  app-img'>
             <img src={Final1} alt='Choices Final Design'/>
           </div>
-          <div className='img-container app-img'>
+          <div className='flex-justify img-container  app-img'>
             <img src={Final4} alt='Choices Final Design'/>
           </div>
-          <div className='img-container app-img'>
+          <div className='flex-justify img-container  app-img'>
             <img src={Final5} alt='Choices Final Design'/>
           </div>
-          <div className='img-container mobile-img'>
+          <div className='flex-justify img-container  mobile-img'>
             <img src={Final3} alt='Choices Final Design'/>
           </div>
         </div>
-        <div className='choices-container'>
+        <div className='flex-justify column choices-container'>
           <h2>Learning Outcomes & Successes ✅</h2>
           <h3>Coding Conventions & Templates</h3>
           <p>From the project, I learned better coding conventions and how to write stylistic code efficiently. 

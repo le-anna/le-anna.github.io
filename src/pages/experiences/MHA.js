@@ -54,7 +54,7 @@ const MHA = () => {
     });
 
   return (
-    <div className='MHA'>
+    <div id='mha'>
       <div className='container' id='mha-landing'>
         <div id='mha-title'>
           <Typewriter 
@@ -68,79 +68,74 @@ const MHA = () => {
         </div>
         <img src={One} id='mha-img' alt='Mental Health App'/>
       </div>
-      
     <div className='container mha-peach'>
-      <div className='mha-container animation slide'>
-        <div className='mha-container-left'>
+      <div className='flex row mha-container animation slide'>
+        <div className='mha-left'>
           <h2 className='animation slide'>Navigation</h2>
             <p>Add Entry</p>
             <p>View Entry</p>
             <p>Statistics</p>
             <p>Search</p>
         </div>
-        <div className='container mha-container-right' >
+        <div className='container mha-right' >
           <img src={Home} alt='Mental Health App'/>
         </div>
       </div>
     </div>
-  
     <div className='container mha-blue'>
-      <div className='mha-container animation slide'>
-        <div className='mha-container-left'>
+      <div className='flex row mha-container animation slide'>
+        <div className='mha-left'>
           <h2 className='animation slide'>Add Entry</h2>
           <p>Add Entry allows users to complete a daily log. 
             Users have the choice of inputting a newly defined mood or choosing an option from a list of previous ones. 
             A section for notes is included at the bottom.</p>
         </div>
-        <div className='container mha-container-right'>
+        <div className='container mha-right'>
           <img src={AddEntry} alt='Mental Health App'/>
           <img src={AddEntry2} alt='Mental Health App'/>
         </div>
       </div>
     </div>
-
     <div className='container mha-blue'>
-      <div className='mha-container animation slide'>
-        <div className='mha-container-left'>
+      <div className='flex row mha-container animation slide'>
+        <div className='mha-left'>
           <h2 className='animation slide'>View Entry</h2>
           <p>View Entry provides users with access to a dropdown containing the dates of their 
             logged entries.</p>
         </div>
-        <div className='container mha-container-right' >
+        <div className='container mha-right' >
           <img src={ViewEntry} alt='Mental Health App'/>
         </div>
       </div>
     </div>
 
     <div className='container mha-blue'>
-      <div className='mha-container animation slide'>
-        <div className='mha-container-left'>
+      <div className='flex row mha-container animation slide'>
+        <div className='mha-left'>
           <h2 className='animation slide'>Statistics</h2>
           <p>Statistics provides users with visual features to track trends in their overall health. 
             Functionalities include the ability to view a line graph of selected moods or a bar graph of multiple selected moods. </p>
         </div>
-        <div className='container mha-container-right' >
+        <div className='container mha-right' >
           <img src={Statistics} alt='Mental Health App'/>
         </div>
       </div>
     </div>
-
     <div className='container mha-blue'>
-      <div className='mha-container animation slide'>
-        <div className='mha-container-left'>
+      <div className='flex row mha-container animation slide'>
+        <div className='mha-left'>
           <h2 className='animation slide'>Search</h2>
           <p>Search allows users to locate past logs. Clicking on a search result pulls up the entire entry.</p>
         </div>
-        <div className='container mha-container-right' >
+        <div className='container mha-right' >
           <img src={Search} alt='Mental Health App'/>
           <img src={SearchDetail} alt='Mental Health App'/>
         </div>
       </div>
     </div>
-
     <div className='container mha-peach'>
-      <div className='mha-container mha-content animation slide'>
-        <div className='mha-container-left mha-left-full'>
+      <div className='flex row mha-container mha-content animation slide'>
+        <div className='mha-left mha-left-full'>
           <h2 className='animation slide'>Project Overview</h2>
           <p>The Mental Health App was developed through the <strong>Women in Computer Science & Engineering (WiCSE) Shadowing Programing</strong>. 
             As part of the program, students were paired with an industry professional to create a project. For my project, I recieved the opportunity of working with a mentor from <strong>Opie Software</strong>.</p>
@@ -158,10 +153,9 @@ const MHA = () => {
         </div>
       </div>
     </div>
-
     <div className='container mha-peach'>
-      <div className='mha-container mha-content animation slide'>
-        <div className='mha-container-left mha-left-full'>
+      <div className='flex row mha-container mha-content animation slide'>
+        <div className='mha-left mha-left-full'>
           <h2 className='animation slide'>Process</h2>
           <p>
             The Mental Health project was an enlightening experience for me. This was my first full-stack project, so there was a lot to learn 
@@ -181,10 +175,9 @@ const MHA = () => {
         </div>
       </div>
     </div>
-
     <div className='container column mha-peach'>
-      <div className='mha-container mha-content animation slide' id='mha-content-column'>
-        <div className='mha-left-container'>
+      <div className='flex row mha-container mha-content animation slide' id='mha-content-column'>
+        <div className='mha-left'>
           <h2 className='animation slide'>Midpoint Status</h2>
           <h3>Initial design problems</h3>
           <p>This project posed a new challenge that I had not expected: design. I struggled with
@@ -221,10 +214,9 @@ const MHA = () => {
         </div>
       </div>
     </div>
-
     <div className='container mha-peach'>
-      <div className='mha-container mha-content animation slide'>
-        <div className='mha-container-left mha-left-full'>
+      <div className='flex row mha-container mha-content animation slide'>
+        <div className='mha-left mha-left-full'>
           <h2 className='animation slide'>Conclusion</h2>
           <p>Overall, I felt proud of what I created by the end. Learning how to create a full-stack application
             was daunting at first - I couldn't comprehend how everything was interconnected. I began the Mental Health project feeling intimidated by design to 
@@ -233,18 +225,16 @@ const MHA = () => {
         </div>
       </div>
     </div>
-
     <div className='container mha-blue'>
-      <div className='mha-container animation slide'>
-        <div className='mha-container-left'>
+      <div className='flex row mha-container animation slide'>
+        <div className='mha-left'>
           <h2 className='animation slide'>The Final Product</h2>
         </div>
-        <div className='container mha-container-right' >
+        <div className='container mha-right' >
           <img src={MHAPreview} id='product-img' alt='Mental Health App'/>
         </div>
       </div>
     </div>
-
       <div className='next-btn-container'>
         <a href='https://devpost.com/software/retrofi'>View next: RetroFi (Link) -></a>
       </div>

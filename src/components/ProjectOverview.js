@@ -46,7 +46,7 @@ const ProjectOverview = ({title, role, tech, description, link, img}) => {
   return (
     <div className='container row' id='prj'>
       <div className='animation slide container' id='prj-container'>
-        <div className='container-left column' id='prj-info-container'>
+        <div className='flex column' id='prj-info-container'>
           <h1 id='prj-title'>{title}</h1>
           <p id='prj-role'>{role}</p>
           <p id='prj-description'>{description}</p>
@@ -60,7 +60,7 @@ const ProjectOverview = ({title, role, tech, description, link, img}) => {
             }
           </div>
         </div>
-        <div id='prj-img-container'>
+        <div className='container' id='prj-img-container'>
           {
             img === 'CASMM' ? <img src={CASMM} id='prj-img' alt='CaSMM'/> : 
             img === 'retrofi' ? <img src={retrofi} id='prj-img' alt='RetroFi'/> : 

@@ -1,0 +1,217 @@
+.casmm {
+  width: 100%;
+}
+
+.casmm-blue {
+  background-color: #3d5c82;
+  color: #fff;
+}
+
+.casmm-yellow {
+  background-color: #ffde59;
+  color: #000;
+}
+
+#casmm-landing {
+  height: 100vh;
+  width: 100%;
+  background-color: #3d5c82;
+  color: #fff;
+}
+
+#casmm-landing #casmm-landing-description {
+  width: 40%;
+  margin: 0px 0px 0px 2vw;
+}
+
+#casmm-landing .casmm-img {
+  width: 100%;
+  height: 100%;
+}
+
+#casmm-landing #casmm-logo {
+  width: 30%;
+  height: auto;
+  -webkit-animation-duration: 3s bounce infinite;
+          animation-duration: 3s bounce infinite;
+}
+
+.casmm-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  width: 90%;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.casmm-container .casmm-info {
+  width: 70%;
+}
+
+.casmm-container .casmm-info #color-container {
+  width: 30%;
+  height: auto;
+}
+
+.casmm-container .casmm-info #color-container #color-img {
+  width: 100%;
+  text-align: center;
+}
+
+.casmm-container .casmm-info-img {
+  width: 30%;
+}
+
+.casmm-container .casmm-info-img img {
+  width: 90%;
+  float: right;
+}
+
+.casmm-container-updates {
+  margin: 10vh 6vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.casmm-container-updates .updates-imgs {
+  width: 100%;
+  height: 40%;
+  margin: 4vh 0;
+}
+
+.casmm-container-updates .updates-imgs .update-img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 5px #50505080;
+          box-shadow: 5px 5px 5px #50505080;
+}
+
+.casmm-container-updates .updates-imgs .update-img:hover {
+  -webkit-animation: headShake 2s;
+          animation: headShake 2s;
+}
+
+.casmm-container-updates .updates-imgs .update-text {
+  width: 30%;
+  margin: 0 2vw;
+}
+
+.casmm-container-updates #new-palette {
+  margin-top: 30px;
+  width: 30%;
+}
+
+.casmm-container-updates #new-palette img {
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  #casmm-landing {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+  #casmm-landing #casmm-landing-description {
+    width: 80%;
+  }
+  #casmm-landing #casmm-logo {
+    width: 50%;
+    height: auto;
+    margin: 4vh 0;
+  }
+  .casmm-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 22% 0;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .casmm-container .mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .casmm-container .casmm-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .casmm-container .casmm-info #color-container {
+    width: 50%;
+    height: auto;
+  }
+  .casmm-container .casmm-info #color-container #color-img {
+    width: 100%;
+  }
+  .casmm-container .casmm-info-img {
+    width: 80%;
+    height: auto;
+    margin: 6vh 0;
+  }
+  .casmm-container-updates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 22% 0;
+    width: 80%;
+  }
+  .casmm-container-updates .updates-imgs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 40%;
+    margin: 0;
+  }
+  .casmm-container-updates .updates-imgs .update-img {
+    width: 100%;
+    height: auto;
+    margin: 2vh 0;
+    border-radius: 4px;
+  }
+  .casmm-container-updates .updates-imgs .update-text {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .casmm-container-updates #new-palette {
+    width: 80%;
+  }
+  .casmm-container-updates #new-palette img {
+    width: 100%;
+  }
+  #mobile-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}

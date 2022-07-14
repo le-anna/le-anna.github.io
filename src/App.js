@@ -7,7 +7,7 @@ import MentalHealthApp from './pages/experiences/MHA';
 import Choices from './pages/experiences/Choices';
 import Design from './pages/Design';
 import About from './pages/About';
-import './App.css'
+import './App.scss'
 
 const App = () => {
   return (

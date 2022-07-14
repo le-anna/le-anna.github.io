@@ -6,45 +6,36 @@
     min-height: 52vh;
     height: fit-content;
     padding: 2vw 0;
-
 }
 
 #prj-container {
     height: 90%;
     width: 90%;
     margin: 0 10%;
-
     #prj-info-container {
+        align-items: left;
         width: 40%;
         color: #000;
-    
         #prj-title { 
             font-weight: 700; 
         }     
-    
         #prj-role {
             font-weight: 500;
             font-size: 1.2rem;
         }
-    
         #prj-description {
             width: 90%;
             font-size: 1.1rem;
             padding: 1vh 0;
         }
-
         #prj-tech {
            font-size: 0.9rem;
         }
     }
 
     #prj-img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 30%;
         height: 30vh;
-    
         #prj-img {
             width: 80%;
             height: auto;
@@ -80,27 +71,20 @@
         flex-direction: column;
         height: auto;
         padding-top: 40px;
-
         #prj-info-container {
             display: flex;
             align-items: center;
             width: 90%;
             text-align: center;
-    
             #prj-title { font-size: 1.6rem; }     
             #prj-role { font-size: 1.1rem; }
             #prj-description { font-size: 1rem; }
             #prj-tech { font-size: 0.8rem; }
         }
-
         #prj-img-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             width: 80%;
             height: fit-content;
             margin: 6vh;
-    
             #prj-img {
                 width: 100%;
             }

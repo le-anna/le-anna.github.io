@@ -25,7 +25,6 @@ export const Navbar = () => {
     document.addEventListener('mousedown', handleClickOutside);
   }, [myRef]);
 
-
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false);
@@ -54,60 +53,58 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
 
-
   return (
     <nav id='navbar' style={{top: visible ? '0' : '-60px' }}>
-        <div className='container' id='navbar-container'>
-          <Link to='/' className='container row' id='nav-profile-container'>
-            <img src={Profile} id='icon' alt='Profile Icon'/>
-            <p id='name'>ANNA N. LE</p>
-          </Link>
-          <div className={isOpen ? 'mobile-icon open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>
-            <FaBars /> 
-          </div>
-          <ul className={isOpen ? 'nav-menu-active' : 'close'} ref={myRef}>
-            <li id='nav-item' onClick={closeMenu} 
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}>
-              <div conainter='container' id='link'> 
-                Experiences <FaAngleDown/> 
+      <div className='container' id='navbar-container'>
+        <Link to='/' className='container row' id='nav-profile-container'>
+          <img src={Profile} id='icon' alt='Profile Icon'/>
+          <p id='name'>ANNA N. LE</p>
+        </Link>
+        <div className={isOpen ? 'mobile-icon open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>
+          <FaBars /> 
+        </div>
+        <ul className={isOpen ? 'nav-menu-active' : 'close'} ref={myRef}>
+          <li 
+            className='nav-item' 
+            onClick={closeMenu} 
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}>
+              <div className='container link'> 
+                Experiences <FaAngleDown/>
               </div>
               {dropdown && <Dropdown />}
-            </li>
+          </li>
 
-            {/* experience dropdown items */}
-            <li id='experience-item' onClick={closeMenu}>
-              <Link to='/Choices' id='link'>Choices</Link>
-            </li>
-            <li id='experience-item' onClick={closeMenu}>
-              <Link to='/CaSMM' id='link'>CaSMM</Link>
-            </li>
-            <li id='experience-item' onClick={closeMenu}>
-              <Link to='/MentalHealthApp' id='link'>Mental Health App</Link>
-            </li>
-            <li id='experience-item' onClick={closeMenu}>
-              <a href='https://devpost.com/software/retrofi' id='link'>RetroFi (Link)</a> 
-            </li>
+          {/* experience dropdown items */}
+          <li className='experience-item' onClick={closeMenu}>
+            <Link to='/Choices' className='link'>Choices</Link>
+          </li>
+          <li className='experience-item' onClick={closeMenu}>
+            <Link to='/CaSMM' className='link'>CaSMM</Link>
+          </li>
+          <li className='experience-item' onClick={closeMenu}>
+            <Link to='/MentalHealthApp' className='link'>Mental Health App</Link>
+          </li>
+          <li className='experience-item' onClick={closeMenu}>
+            <a href='https://devpost.com/software/retrofi' className='link'>RetroFi (Link)</a> 
+          </li>
 
-            <li id='nav-item' onClick={closeMenu}>
-              <Link to='/Design' id='link'>UI Designs</Link>
-            </li>
-            <li id='nav-item' onClick={closeMenu}>
-              <Link to='/About' id='link'>About</Link>
-            </li>
-
-          </ul>
-        </div>
+          <li className='nav-item' onClick={closeMenu}>
+            <Link to='/Design' className='link'>UI Designs</Link>
+          </li>
+          <li className='nav-item' onClick={closeMenu}>
+            <Link to='/About' className='link'>About</Link>
+          </li>
+        </ul>
+      </div>
     </nav>
-    // </div>
   );
 };
 
 export const Footer = () => {
-
   return (
     <div className='container' id='footer'>
-      <div id='footer-content'>
+      <div className='flex row' id='footer-content'>
         <p>Made with 💛 + ☕️ by Anna Le</p>
       </div>
     </div>
