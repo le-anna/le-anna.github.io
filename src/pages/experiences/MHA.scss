@@ -49,7 +49,11 @@
 }
 
 #product-img { width: 100%; }
-#mha-content-column {  @include container-content; }
+
+#mha-content-column {  
+  @include container-content; 
+  .mha-left { width: 100%;}  
+}
 
 @media screen and (max-width: 960px) { 
   #mha-landing #mha-title { font-size: 1.6rem; margin-top: 50px; }

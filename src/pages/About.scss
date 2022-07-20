@@ -9,40 +9,12 @@
     margin: 5% 10%;
     min-height: 100vh;
     height: fit-content;
-    #about-title {
-        text-align: center;
-    }
-}
-
-#nested-link {
-    font-weight: 500;
-    margin-left: 5px;
-    display: inline-block;
-    position: relative;
-    font-style: italic;
-   &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: #F8EBB2;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-   }
-   &:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+    #about-title { text-align: center; }
 }
 
 #about-btn-container { justify-content: space-evenly; }
 
-#about-btn {
-    p { margin: 0 10px; }
-}
+#about-btn p { margin: 0 10px; }
 
 @media screen and (max-width: 960px) {
     #about {

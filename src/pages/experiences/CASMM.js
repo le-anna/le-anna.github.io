@@ -156,11 +156,11 @@ const CASMM = () => {
           </p>
           <br/>
           <p>Image of color palette from style guide: </p>
-          <div id='new-palette'>
+          <div className='animation slide' id='new-palette'>
             <img src={NewColor} />
           </div>
           <br/>
-          <p>Style guide included: color palette, typography, walkthrough of different roles, and explanation of UI decisions. </p>
+          <p className='animation slide'>Style guide included: color palette, typography, walkthrough of different roles, and explanation of UI decisions. </p>
         </div>
       </div>
       <div className='container casmm-yellow'>

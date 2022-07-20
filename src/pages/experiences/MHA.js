@@ -165,7 +165,7 @@ const MHA = () => {
            </p>
            <h3>Languages? Technologies?</h3>
            <p>
-            To start, I used SQL for my database, as I wanted to work with a <strong>relational database</strong>.
+            To start, I used SQL for my database, as I wanted to work with a relational database.
             I chose Java for my backend langauge to develop a stronger understanding of it. 
             With Java and SQL decided upon, I added Hibernate and Spring Boot as the remaining technologies to my backend tech stack;
             Hibernate to map my Java objects to the SQL database, and Spring Boot for its REST services. 

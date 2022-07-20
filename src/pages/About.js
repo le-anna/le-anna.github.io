@@ -41,17 +41,15 @@ const About = () => {
         <p>
           After participating in the Women in Computer Science & Engineering (WiCSE)
           Shadowing Program, I developed a passion for frontend development and UX/UI design. 
-          This prompted my involvement in a few research labs, because I became interested in understanding how
-          research can be used to learn more about the users and their needs. Currently, I am working on the development of
+          This prompted my involvement in a few research labs, because I became interested in learning more about developing apps
+          for users with regard to their needs. Currently, I am working on the development of
           a website for the Sickle Cell Disease & Traits Lab.
         </p>
         <br/>
         <h3>Portfolio</h3>
         <p>
           I made this portfolio with React and CSS (Sass) to showcase some of my frontend work and UI designs. I was inspired to create a portfolio that 
-          highlights my individual experiences - each page mirroring the theme of the project. I also made a page to show the<Link to='/design' id='nested-link'>UI Designs</Link> that I made for fun! 
-          
-          <a href='https://github.com/le-anna/portfolio' id='nested-link'>-> Here's my Github for the portfolio!</a>  
+          highlights my individual experiences - each page mirroring the theme of the project. I also made a page to show the<Link to='/design' className='nested-link'>UI Designs</Link> that I made for fun. <a href='https://github.com/le-anna/portfolio' className='nested-link'>   -> Here's my Github for the portfolio!</a>  
         </p>
         <br/>
         <h3>Current tech</h3>

@@ -8,7 +8,7 @@
     padding: 10px 0px;
 }
 
-#gallery-row {
+.gallery-row {
     width: 80%;
     .gallery-row-item {
         margin: 4vh 1vw;
@@ -30,7 +30,7 @@
             transition: all 0.3s ease-in-out 0s;
             backdrop-filter: blur(10px);
         }
-        .content:hover .content-overlay{ opacity: 1  }
+        .content:hover .content-overlay { opacity: 1  }
         .content-details {
             position: absolute;
             text-align: center;
@@ -48,6 +48,7 @@
             opacity: 1;
         }
         img { width: 300px; }
+        .desktop-img {width: 100%; }
     }
 }
 
@@ -61,7 +62,7 @@
         margin-bottom: 20px;
     }
 
-    #gallery-row {
+    .gallery-row {
         display: flex;
         flex-direction: column;
         justify-content: center;
