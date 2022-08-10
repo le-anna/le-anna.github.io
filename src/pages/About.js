@@ -3,15 +3,21 @@ import './About.scss'
 import { Link } from 'react-router-dom';
 // import Resume from '../assets/Anna Le Resume (Spring 2022).pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons' 
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { TbMathSymbols } from 'react-icons/tb'; 
+import { FiSettings } from 'react-icons/fi'; 
+import { FaLaptopCode, FaRegUser } from 'react-icons/fa'
+import { GiArtificialIntelligence } from 'react-icons/gi'
+import { BiCodeAlt, BiData, BiCodeCurly } from 'react-icons/bi'; 
+import { SiMatrix } from 'react-icons/si';
 import Typewriter from 'typewriter-effect';
 // typewriter effect source: https://github.com/tameemsafi/typewriterjs
 
 const About = () => {
   function Mailto({ email, subject, body, ...props }) {
     return (
-      <a className='button' id='about-btn' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+      <a className='container column clickable' href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
         {props.children}
       </a>
     );
@@ -37,7 +43,6 @@ const About = () => {
           minoring in Mass Communications at the University of Florida with a graduation date in December 2022. 
         </p>
         <br/>
-        <h3>Motivation</h3>
         <p>
           After participating in the Women in Computer Science & Engineering (WiCSE)
           Shadowing Program, I developed a passion for frontend development and UX/UI design. 
@@ -49,33 +54,93 @@ const About = () => {
         <h3>Portfolio</h3>
         <p>
           I made this portfolio with React and CSS (Sass) to showcase some of my frontend work and UI designs. I was inspired to create a portfolio that 
-          highlights my individual experiences - each page mirroring the theme of the project. I also made a page to show the<Link to='/design' className='nested-link'>UI Designs</Link> that I made for fun. <a href='https://github.com/le-anna/portfolio' className='nested-link'>   -> Here's my Github for the portfolio!</a>  
+          highlights my individual experiences - each page mirroring the theme of the project. I also made a page to show the <Link to='/design' className='nested-link'>UI Designs</Link> that I made for fun. <a href='https://github.com/le-anna/portfolio' className='nested-link'>   -> Here's my Github for the portfolio!</a>  
         </p>
         <br/>
         <h3>Current tech</h3>
         <p> 
-          JavaScript, TypeScript, C++, Java, HTML, CSS (Sass and Less)
+          JavaScript, TypeScript, C++, Java, Python, HTML, CSS/CSS Preprocessors (Sass, Less)
           <br/>
           React, React Native, Figma
           <br/><br/><br/>
         </p>
-        <div className='container row' id='about-btn-container'>
-          {/* <a href={Resume} target = "_blank" rel="noreferrer" className='button' id='about-btn'>
-            <FontAwesomeIcon icon={faFilePdf}/>
-            <p>Resume</p>
-          </a> */}
-          <a href='https://github.com/le-anna/portfolio' className='button' id='about-btn'>
-            <FontAwesomeIcon icon={faGithub}/>
-            <p>Github</p>
-          </a>
-          <a href='https://linkedin.com/in/anna-le-7130181ba' className='button' id='about-btn'>
-            <FontAwesomeIcon icon={faLinkedin}/>
-            <p>LinkedIn</p>
+        <h3>Links</h3>
+        <div className='container row tech'>
+          <a href='https://github.com/le-anna/portfolio' className='container column clickable'>
+            <div className='container icon-container'><FontAwesomeIcon className='icon' icon={faGithub}/></div>
+            <div className='container label-container'>
+              <p>Github</p>
+            </div>
           </a>
           <Mailto email='annale1501@gmail.com' subject='' body=''>
-            <FontAwesomeIcon icon={faEnvelope}/>
-            <p>Email</p>
+            <div className='container icon-container'><FontAwesomeIcon className='icon' icon={faEnvelope}/></div>
+            <div className='container label-container'>
+              <p>annale1501@gmail</p>
+            </div>
           </Mailto>
+          <a href='https://linkedin.com/in/anna-le-7130181ba' className='container column clickable'>
+            <div className='container icon-container'><FontAwesomeIcon className='icon' icon={faLinkedin}/></div>
+            <div className='container label-container'>
+              <p>LinkedIn</p>
+            </div>
+          </a>
+        </div>
+        <h3>Relevant Courses</h3>
+        <div className='container row tech'>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><FaLaptopCode className='icon'/></div>
+              <div className='container label-container'>
+                <p>UX Design</p>
+              </div>
+            </div>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><FaRegUser className='icon'/></div>
+              <div className='container label-container'>
+                <p>Human-Computer Interaction</p>
+              </div>
+            </div>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><BiCodeCurly className='icon'/></div>
+              <div className='container label-container'>
+                <p>Intro to Software Engineering</p>
+              </div>
+            </div>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><FiSettings className='icon'/></div>
+              <div className='container label-container'>
+                <p>Operating Systems</p>
+              </div>
+            </div>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><GiArtificialIntelligence className='icon'/></div>
+              <div className='container label-container'>
+                <p>Applied Machine Learning</p>
+              </div>
+            </div>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><BiCodeAlt className='icon'/></div>
+              <div className='container label-container'>
+                <p>Programming 1 & 2</p>
+              </div>
+            </div>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><BiData className='icon'/></div>
+              <div className='container label-container'>
+                <p>Data Structures</p>
+              </div>
+            </div>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><TbMathSymbols className='icon'/></div>
+              <div className='container label-container'>
+                <p>Discrete Mathematics</p>
+              </div>
+            </div>
+            <div className='container column tech-item'>
+              <div className='container icon-container'><SiMatrix className='icon'/></div>
+              <div className='container label-container'>
+                <p>Linear Algebra</p>
+              </div>
+            </div>
         </div>
       </div>
    </div>

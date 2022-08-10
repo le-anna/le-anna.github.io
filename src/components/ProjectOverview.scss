@@ -3,13 +3,13 @@
 
 #prj {
     background-color: #DEEBFD;
-    min-height: 52vh;
+    min-height: 40vh;
     height: fit-content;
     padding: 2vw 0;
 }
 
 #prj-container {
-    height: 90%;
+    height: fit-content;
     width: 90%;
     margin: 0 10%;
     #prj-info-container {
@@ -18,26 +18,28 @@
         color: #000;
         #prj-title { 
             font-weight: 700; 
+            font-size: 1.6rem;
         }     
         #prj-role {
             font-weight: 500;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
         #prj-description {
             width: 90%;
-            font-size: 1.1rem;
+            font-size: 1rem;
             padding: 1vh 0;
         }
         #prj-tech {
-           font-size: 0.9rem;
+           font-size: 0.8rem;
+           font-style: italic;
         }
     }
 
     #prj-img-container {
         width: 30%;
-        height: 30vh;
+        height: fit-content;
         #prj-img {
-            width: 80%;
+            width: 18rem;
             height: auto;
         }
     }

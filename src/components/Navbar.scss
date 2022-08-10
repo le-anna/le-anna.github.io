@@ -13,17 +13,18 @@ nav {
     justify-content: space-between;
     height: 60px;
     margin: 0 20px;
-    #nav-profile-container #name {
-        font-family: 'Gloria Hallelujah', cursive;
-        font-size: 1.2rem;
-        font-weight: 600;
-        padding: 0 10px;
-        margin-left: 5px;
-      }
-      #icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 12px;
+  #nav-profile-container {
+    #name {
+      font-family: 'Gloria Hallelujah', cursive;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 0 10px;
+      margin-left: 5px;
+    }
+    #icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
     }
     &:hover {
       #name {
@@ -32,7 +33,7 @@ nav {
         transition: 0.5s;
       }
     }
-  
+  }
 }
 
 .mobile-icon { display: none; }
@@ -52,7 +53,7 @@ nav {
     .link {
       display: inline-block;
       position: relative;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
   .experience-item { display: none; }

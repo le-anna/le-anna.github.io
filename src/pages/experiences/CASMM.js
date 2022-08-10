@@ -52,7 +52,7 @@ const CASMM = () => {
 
   return (
     <div className='casmm container column'>
-      <div className='container row' id='casmm-landing'>
+      <div className='container casmm-blue row' id='casmm-landing'>
         <img src={Logo} id='casmm-logo' alt='CaSMM Logo'/>
         <div id='casmm-landing-description'>
           <p>
@@ -65,9 +65,9 @@ const CASMM = () => {
         </div>
       </div>
       <div className='container casmm-blue'>
-        <div className='casmm-container'>
-          <h2 className='animation slide'>Project Overview</h2>
-          <div className='container row animation slide mobile'>
+        <div className='animation slide casmm-container'>
+          <h2 >Project Overview</h2>
+          <div className='container row mobile'>
             <div className='flex column casmm-info'>
               <p>
                 CaSMM is developed by the University of Florida and Texas A&M with support from 
@@ -78,8 +78,8 @@ const CASMM = () => {
                 CaSMM was an in-progress project when I joined. The main focus on the project
                 had been developing features and working on the functionality; I became part of the team to 
                 improve the user interface.
-                During my time on the project, I worked on applying the style guide I created to the rest of the 
-                UI in the application and developing the styling of any new features. .
+                During my time, I worked on applying the style guide I created to 4 user roles
+                in the application and developing the styling of any new features.
               <br/><br/>
               </p>
               <br/>
@@ -96,13 +96,11 @@ const CASMM = () => {
         </div>
       </div>
       <div className='container casmm-yellow'>
-        <div className='casmm-container'>
-          <h2 className='animation slide'>Problems</h2>
-          <div className='container animation slide mobile'>
+        <div className='animation slide casmm-container'>
+          <h2>Problems</h2>
+          <div className='container mobile'>
             <div className='flex column casmm-info'>
-             <p>
-              Here are some problems I identified in the intial design:
-             </p>
+             <p>Here are some problems I identified in the intial design:</p>
              <br/>
               <ul className='ul'>
                 <li>Color palette lacked an accent color, which can be important in helping elements stand out.</li>
@@ -123,25 +121,29 @@ const CASMM = () => {
         </div>
       </div>
       <div className='container casmm-yellow'>
-        <div className='casmm-container-updates'>
-          <h2 className='animation slide'>Requirements</h2>
-          <p className='animation slide'>Some features from the original design that 
-            the Principle Investigator wanted to maintain in the redesign.</p>
-          <div className='animation slide container row updates-imgs'>
+        <div className='animation slide casmm-container-updates'>
+          <h2>Requirements</h2>
+          <p>Some features from the original design that the Principle Investigator wanted to maintain in the redesign.</p>
+          <div className='container row updates-imgs'>
             <img src={updatesimg1} className='update-img' alt='CaSMM'/>
-            <p flex-justify column update-text>Keep the existing color scheme and modular layout (components encased in a white background to model a learning module).</p>
+            <div className='update-text'>
+              <p flex-justify column update-text>Keep the existing color scheme and modular layout (components encased in a white background to model a learning module).</p>
+            </div>
           </div>
-          <div className='animation slide container row updates-imgs'>
-            <p flex-justify column update-text>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
+          <div className='container row updates-imgs'>
+            <div className='update-text'>
+              <p>Keep the blue subheading and make this consistent across all the views (located in some of the pages at this times).</p>
+            </div>
             <img src={updatesimg2} className='update-img' alt='CaSMM'/>
           </div>
         </div>
       </div>
 
       <div className='container casmm-yellow'>
-        <div className='casmm-container-updates'>
-          <h2 className='animation slide'>Process</h2>
-          <p className='animation slide'>Research on various educational platforms for children highlight a common theme: the use of vibrant colors. Brighter colors can feel more engaging, especially for 
+        <div className='animation slide casmm-container-updates'>
+          <h2>Process</h2>
+          <h3>Redesign</h3>
+          <p>Research on various educational platforms for children highlight a common theme: the use of vibrant colors. Brighter colors can feel more engaging, especially for 
           the main target audience of the application: 5th and 6th grade students.
           <br/> <br/> 
           I paid particular attention to several <strong> UX Design Principles: Consistency, Affordance, and Discoverability.</strong>
@@ -153,20 +155,25 @@ const CASMM = () => {
           to make the application feel more welcoming. Further, a change in button color and style would
           make it more <strong>consistent</strong> with buttons found in other applications. During development, much discussion revolved around 
           ensuring the <strong>affordance</strong> of elements, so the students could easily identify them and know their immediate use. Functionality of tools and elements had to be visibly evident.
+          <br/> <br/>
+          Image of color palette from style guide: 
           </p>
-          <br/>
-          <p>Image of color palette from style guide: </p>
-          <div className='animation slide' id='new-palette'>
+          <div id='new-palette'>
             <img src={NewColor} />
           </div>
           <br/>
-          <p className='animation slide'>Style guide included: color palette, typography, walkthrough of different roles, and explanation of UI decisions. </p>
+          <p>Style guide included: color palette, typography, walkthrough of different roles, and explanation of UI decisions.</p>
+          <br/>
+          <h3>New features</h3>
+          <p> In regard to developing new features, I worked closely with one of the researchers on the team. One of the features we worked on included 
+             adding nested modals, which would allow content creators to create a new lesson within the subwindow.
+          </p>
         </div>
       </div>
       <div className='container casmm-yellow'>
-        <div className='casmm-container-updates'>
-          <h2 className='animation slide'>Solution: Mentor View</h2>
-          <div className='animation slide container row updates-imgs'>
+        <div className='animation slide casmm-container-updates'>
+          <h2>Solution: Mentor View</h2>
+          <div className='container row updates-imgs'>
             <img src={pg5img1} className='update-img' alt='CaSMM'/> 
             <div className='flex-justify column update-text'>
               <h3>before</h3>
@@ -178,7 +185,7 @@ const CASMM = () => {
               </p>
             </div>
           </div>
-          <div className='animation slide container row updates-imgs' id='mobile-reverse'>
+          <div className='container row updates-imgs' id='mobile-reverse'>
             <div className='flex-justify column update-text'>
               <h3>after</h3>
               <p>
@@ -190,16 +197,16 @@ const CASMM = () => {
             </div>
             <img src={pg5img2} className='update-img' alt='CaSMM'/>
           </div>
-          <div className='animation slide container row updates-imgs'>
+          <div className='container row updates-imgs'>
             <img src={pg5img3} className='update-img' alt='CaSMM'/>
             <p className='flex-justify column update-text'>Image of the clickable Join Code.</p>
           </div>
         </div>
       </div>
       <div className='container casmm-yellow'>
-        <div className='casmm-container-updates'>
-          <h2 className='animation slide'>Solution: Roster View</h2>
-          <div className='animation slide container updates-imgs'>
+        <div className='animation slide casmm-container-updates'>
+          <h2>Solution: Roster View</h2>
+          <div className='container updates-imgs'>
             <img src={pg6img1} className='update-img' alt='CaSMM'/>
             <div className='flex-justify column update-text'>
               <h3>before</h3>
@@ -210,7 +217,7 @@ const CASMM = () => {
               </p>
             </div>
           </div>
-          <div className='animation slide container row updates-imgs' id='mobile-reverse'>
+          <div className='container row updates-imgs' id='mobile-reverse'>
             <div className='flex-justify column update-text't>
               <h3>after</h3>
               <p>The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page

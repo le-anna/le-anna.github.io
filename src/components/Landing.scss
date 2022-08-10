@@ -1,7 +1,7 @@
 #landing {
     min-height: 100vh;
     height: fit-content;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 #info-container {
@@ -9,19 +9,21 @@
     align-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 90px;
-    width: 75%;
+    width: fit-content;
     #opening { white-space: nowrap; }
     #msg-icon  { animation: fadeIn 2.5s infinite; }
     #description {
-        font-size: 2.1em;
+        font-size: 2em;
         margin-right: 20px;
-        min-width: 80%;
-        width: fit-content;
+        width: 30vw;
         min-height: 24vh;
         height: fit-content;
     }
     #landing-img-container {
-        #photo { width: 100%; animation: bounceInLeft 2s;
+        justify-self: center;
+        height: 100%;
+        #photo {  
+            width: 30rem; 
         }
     }
 }
@@ -34,29 +36,22 @@
 
 @media screen and (max-width: 960px) {
     #info-container {
-        display: flex;
         flex-direction: column;
-        grid-template-columns: none;
-        align-items: center;
-        justify-content: center;
+        grid-template-columns: none;   
         gap: 30px;
         #description {
-            width: 100%;
-            text-align: center;
             font-size: 1.5rem;
-            margin-left: 0;
-            height: fit-content;
+            margin-right: 0;
+            justify-self: center;
+            width: 80%;
+            text-align: center;
         }
         #landing-img-container {
             margin-top: 60px; // navbar height
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 85vw;
             height: auto;
-            #photo { width: 100%; }
+            justify-self: center;
+            #photo { width: 20rem; }
         }
     }
-
     #down-icon { display: none; }
 }

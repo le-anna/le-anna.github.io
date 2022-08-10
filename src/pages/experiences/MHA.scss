@@ -33,7 +33,7 @@
   }
   .mha-right {
     width: 50%;
-    img { width: 40%; margin-right: 5px; }
+    img { width: 14rem; margin-right: 5px; }
   }
 }
 
@@ -45,10 +45,10 @@
 #initial-img { 
   width: 100%; 
   margin-left: 50px; 
-  img { width: 15%; }
+  img { width: 12rem; }
 }
 
-#product-img { width: 100%; }
+#product-img { width: 30rem; }
 
 #mha-content-column {  
   @include container-content; 
