@@ -26,11 +26,13 @@ nav {
       height: 40px;
       border-radius: 12px;
     }
-    &:hover {
+    @media (hover: hover) { 
+      &:hover {
       #name {
         background-color: #F8EBB2;
         border-radius: 10px;
         transition: 0.5s;
+        }
       }
     }
   }
@@ -45,10 +47,12 @@ nav {
     width: auto;
     padding: 0 10px;
     list-style-type: none;
-    &:hover {
-      background-color: #F8EBB2;
-      border-radius: 10px;
-      transition: 0.25s linear;
+    @media (hover: hover) { 
+      &:hover {
+        background-color: #F8EBB2;
+        border-radius: 10px;
+        transition: 0.25s linear;
+      }
     }
     .link {
       display: inline-block;
@@ -66,10 +70,6 @@ nav {
   p { font-size: 0.85rem; }
   #footer-content {
     justify-content: space-between;
-    #footer-icon {
-      margin-left: 15px;
-      &:hover { color: #F8EBB2; }
-    }
   }
 }
 
@@ -77,8 +77,8 @@ nav {
   #navbar-container {
     height: 50px;
     #nav-profile-container #icon {
-        width: 35px;
-        height: 35px;
+      width: 35px;
+      height: 35px;
     }
   }
     
@@ -147,5 +147,4 @@ nav {
     cursor: pointer;
     color: #F8EBB2;
   }
-
 }

@@ -10,9 +10,11 @@
     background-color: white;
     li {
       cursor: pointer;
-      &:hover {
-        background-color: #F8EBB2;
-        border-radius: 20px;
+      @media (hover: hover) { 
+        &:hover {
+          background-color: #F8EBB2;
+          border-radius: 20px;
+        }
       }
     }
     #external-link { background-color: none; }
@@ -27,11 +29,9 @@
     padding: 16px;
     font-size: 1rem;
   }
-
   
   @media screen and (max-width: 960px) {
     .caret-down { display: none; }
-
     .dropdown-menu {
       width: 100%;
       border-radius: 0;

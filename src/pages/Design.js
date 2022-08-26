@@ -39,7 +39,6 @@ const Design = () => {
             <img src={PawMates} alt='Gallery'/>
             <div className='content-details'>
               <p>Design for a Pet Adoption App that people can use to find their pet mate! 
-                Swipe left to skip or right to save.
                 This design shows the preview users see for the pets when swiping.</p>
             </div>
           </div>

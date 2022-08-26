@@ -12,21 +12,26 @@
 
     .pill {
         background-color: #F8EBB2;
+        color: #000;
         border: none;
         padding: 6px 16px;
         border-radius: 20px;
         font-weight: 500;
-        &:hover {
-            background-color: #e0d49f;
-            cursor: pointer;
-            transition: 0.4s;
+        @media (hover: hover) { 
+            &:hover {
+                background-color: #e0d49f;
+                cursor: pointer;
+                transition: 0.4s;
+            }
         }
     }
 
     #selected {
         background-color: rgba(170, 170, 170, 0.65);
-        &:hover {
-            background-color: rgb(170, 170, 170);
+        @media (hover: hover) { 
+            &:hover {
+                background-color: rgb(170, 170, 170);
+            }
         }
     }
 }
@@ -40,12 +45,6 @@
 }
 
 @media screen and (max-width: 960px) {
-
-    .filter {
-        padding-top: 60px;
-    }
-
-    #projects {
-        gap: 70px;
-    }
+    .filter { padding-top: 60px; }
+    #projects { gap: 70px; }
 }

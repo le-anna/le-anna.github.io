@@ -52,8 +52,10 @@
         @extend .tech-item;
         .icon-container { background-color: #fff9dc;}
         .icon { color: #ffe574; }
-        &:hover {
-            border: 3px solid #F8EBB2;
+        @media (hover: hover) { 
+            &:hover {
+                border: 3px solid #F8EBB2;
+            }
         }
     }
 }

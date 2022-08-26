@@ -57,7 +57,10 @@
     text-decoration: none;
     color: #000;
     padding: 3vw 0;
-    &:hover { color: #F8EBB2; }
+    @media (hover: hover) {
+      &:hover { color: #F8EBB2; }
+    }
+   
   }
 }
 
@@ -73,11 +76,13 @@
   background-color: #F8EBB2;
   text-align: left;
   text-decoration: none;
-  &:hover {
-    transform: scale(0.8); 
-    cursor: pointer;
-    transition: 0.5s;
-    background-color: #e0d49f;
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(0.8); 
+      cursor: pointer;
+      transition: 0.5s;
+      background-color: #e0d49f;
+    }
   }
 }
 
@@ -86,22 +91,24 @@
   display: inline-block;
   position: relative;
   font-style: italic;
- &:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 4px;
-  bottom: 0;
-  left: 0;
-  background-color: #F8EBB2;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
- }
- &:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #F8EBB2;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  @media (hover: hover) { 
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
 }
 
 // typography
