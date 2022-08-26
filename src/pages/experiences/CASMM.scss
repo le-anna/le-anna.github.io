@@ -68,7 +68,9 @@
             margin: 0 2vw;
         }
     }
-    #new-palette { margin-top: 30px; width: 30%; img { width: 20rem; } }
+    #new-palette { margin-top: 30px; width: 30%; 
+        img { width: 20rem; } 
+    }
 }
 
 @media screen and (max-width: 960px) { 
@@ -128,7 +130,7 @@
                 margin-bottom: 20px;
             }
         }
-        #new-palette { width: 80%; img { width: 100%} }
+        #new-palette { width: 40%; img { width: 100%} }
     }
     #mobile-reverse { flex-direction: column-reverse; }
 }

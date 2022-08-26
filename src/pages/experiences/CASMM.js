@@ -127,7 +127,7 @@ const CASMM = () => {
           <div className='container row updates-imgs'>
             <img src={updatesimg1} className='update-img' alt='CaSMM'/>
             <div className='update-text'>
-              <p flex-justify column update-text>Keep the existing color scheme and modular layout (components encased in a white background to model a learning module).</p>
+              <p className='flex-justify column update-text'>Keep the existing color scheme and modular layout (components encased in a white background to model a learning module).</p>
             </div>
           </div>
           <div className='container row updates-imgs'>
@@ -218,7 +218,7 @@ const CASMM = () => {
             </div>
           </div>
           <div className='container row updates-imgs' id='mobile-reverse'>
-            <div className='flex-justify column update-text't>
+            <div className='flex-justify column update-text'>
               <h3>after</h3>
               <p>The redesign improved the responsiveness of the page. Further, the cards model the layout of a profile page
               with the yellow color to represent the card header. The icon size was increased so mentors can depict the animal used better.

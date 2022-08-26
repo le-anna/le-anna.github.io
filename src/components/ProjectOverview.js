@@ -7,6 +7,7 @@ import CASMM from '../assets/CASMM/casmm.png'
 import MHA from '../assets/MHA/MHA.png'
 import Choices from '../assets/Choices/choices.png'
 import retrofi from '../assets/retrofi.png'
+import Mastercard from '../assets/mastercard.png'
 
 const ProjectOverview = ({title, role, tech, description, link, img}) => {
 
@@ -49,24 +50,31 @@ const ProjectOverview = ({title, role, tech, description, link, img}) => {
         <div className='flex column' id='prj-info-container'>
           <h1 id='prj-title'>{title}</h1>
           <p id='prj-role'>{role}</p>
-          <p id='prj-description'>{description}</p>
-          <p id='prj-tech'>{tech}</p>
-          <div id ='prj-link'>
-            {
-              link === 'retrofi' ? 
-                <a href='https://devpost.com/software/retrofi' className='button' id='prj-btn'>Link</a> 
-                :
-              < Link to={link} className='button' id='prj-btn'>Read More</Link>
-            }
+          <div className='flex column' id='prj-text'>
+            <p id='description'>{description}</p>
+            <p id='tech'>{tech}</p>
           </div>
+          { title != 'Mastercard' ? 
+            <div className='container' id ='prj-link'>
+              {
+                link === 'retrofi' ? 
+                  <a href='https://devpost.com/software/retrofi' className='button' id='prj-btn'>Link</a> 
+                  :
+                < Link to={link} className='button' id='prj-btn'>Read More</Link>
+              }
+            </div>
+            : null
+         }
+          
         </div>
         <div className='container' id='prj-img-container'>
           {
-            img === 'CASMM' ? <img src={CASMM} id='prj-img' alt='CaSMM'/> : 
-            img === 'retrofi' ? <img src={retrofi} id='prj-img' alt='RetroFi'/> : 
-            img === 'MHA' ? <img src={MHA} id='prj-img' alt='Mental Health App'/> : 
-            img === 'Choices' ? <img src={Choices} id='prj-img' alt='Choices'/> : 
-            <div className='choices-status'>Currently in development </div>
+            img === 'CASMM' ? <img src={CASMM} alt='CaSMM'/> : 
+            img === 'retrofi' ? <img src={retrofi} alt='RetroFi'/> : 
+            img === 'MHA' ? <img src={MHA} alt='Mental Health App'/> : 
+            img === 'Choices' ? <img src={Choices} alt='Choices'/> :
+            img === 'Mastercard' ? <img id='mastercard-logo' src={Mastercard} alt='Mastercard'/> :
+            null
           }
         </div>
       </div>

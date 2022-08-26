@@ -3,14 +3,10 @@
 
 #prj {
     background-color: #DEEBFD;
-    min-height: 40vh;
-    height: fit-content;
-    padding: 2vw 0;
 }
 
 #prj-container {
-    height: fit-content;
-    width: 90%;
+    align-items: flex-start;
     margin: 0 10%;
     #prj-info-container {
         align-items: left;
@@ -24,37 +20,34 @@
             font-weight: 500;
             font-size: 1.1rem;
         }
-        #prj-description {
-            width: 90%;
-            font-size: 1rem;
-            padding: 1vh 0;
-        }
-        #prj-tech {
-           font-size: 0.8rem;
-           font-style: italic;
+        #prj-text {
+            min-height: 14vh;
+            height: fit-content;
+            #description {
+                width: 90%;
+                text-overflow: ellipsis;
+                font-size: 1rem;
+                padding: 1vh 0;
+            }
+            #tech {
+               font-size: 0.8rem;
+               font-style: italic;
+            }
         }
     }
 
     #prj-img-container {
         width: 30%;
         height: fit-content;
-        #prj-img {
+        img {
             width: 18rem;
             height: auto;
         }
+        #mastercard-logo { width: 15rem; }
     }
 }
 
-
-.choices-status {
-    text-align: center;
-    color: #000;
-}
-
 #prj-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: fit-content;
 }
 
@@ -63,34 +56,30 @@
 }
 
 @media screen and (max-width: 960px) {
-
     #prj {
         display: flex;
-        min-height: 100vh;
+        height: fit-content;
     }
 
     #prj-container {
         flex-direction: column;
+        align-items: center;
         height: auto;
-        padding-top: 40px;
         #prj-info-container {
             display: flex;
             align-items: center;
             width: 90%;
             text-align: center;
-            #prj-title { font-size: 1.6rem; }     
-            #prj-role { font-size: 1.1rem; }
-            #prj-description { font-size: 1rem; }
-            #prj-tech { font-size: 0.8rem; }
+            #prj-text {
+                align-items: center;
+            }
         }
         #prj-img-container {
             width: 80%;
+            min-height: 26vh;
             height: fit-content;
-            margin: 6vh;
-            #prj-img {
-                width: 100%;
-            }
+            margin-top: 6vh;
+            #mastercard-logo { width: 14rem; }
         }
     }
-
   }

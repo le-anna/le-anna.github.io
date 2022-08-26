@@ -177,7 +177,7 @@ const MHA = () => {
     </div>
     <div className='container column mha-peach'>
       <div className='flex row mha-container mha-content animation slide' id='mha-content-column'>
-        <div className='mha-left'>
+        <div className='mha-left mha-left-full'>
           <h2 className='animation slide'>Midpoint Status</h2>
           <h3>Initial design problems</h3>
           <p>This project posed a new challenge that I had not expected: design. I struggled with

@@ -26,20 +26,28 @@
 .mha-container {
   min-height: 100vh;
   height: 100%;
-  width: 70vw;
+  width: 80vw;
   .mha-left {
+    p { width: 80%; }
     @include container-content;
     width: 50%;
   }
   .mha-right {
     width: 50%;
-    img { width: 14rem; margin-right: 5px; }
+    img { 
+      width: 14rem; 
+      margin-right: 5px; 
+      margin-left: 20px;
+    }
   }
 }
 
 .mha-content { 
   width: 90vw; 
-  .mha-left-full { width: 100%; }
+  .mha-left-full { 
+    width: 100%; 
+    p { width: 100%; }
+  }
 }
 
 #initial-img { 
@@ -56,8 +64,7 @@
 }
 
 @media screen and (max-width: 960px) { 
-  #mha-landing #mha-title { font-size: 1.6rem; margin-top: 50px; }
-
+  #mha-landing #mha-title { font-size: 1.8rem; margin-top: 50px; }
   .mha-container {
     @include container-content;
     align-items: center;
@@ -66,13 +73,14 @@
     margin: 18% 0;
     .mha-left {
       @include container-content;
+      p { width: 100%; }
       width: 100%;
       margin-bottom: 30px;
     }
     .mha-right {
       flex-direction: column;
       width: 100%;
-      img { width: 50%; margin: 0 0 10px 0;
+      img { width: 10rem; margin: 0 0 10px 0;
       }
     }
   }
@@ -85,4 +93,8 @@
     img { width: 60%; margin-bottom: 10px;
     }
   }
+
+  #product-img { width: 20rem; }
  }
+
+

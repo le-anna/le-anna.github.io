@@ -45,21 +45,27 @@ const About = () => {
         <br/>
         <p>
           After participating in the Women in Computer Science & Engineering (WiCSE)
-          Shadowing Program, I developed a passion for frontend development and UX/UI design. 
+          Shadowing Program, I gained excitement for frontend development and UX/UI design. 
           This prompted my involvement in a few research labs, because I became interested in learning more about developing apps
-          for users with regard to their needs. Currently, I am working on the development of
-          a website for the Sickle Cell Disease & Traits Lab.
+          for users with regard to their needs. 
         </p>
         <br/>
         <h3>Portfolio</h3>
         <p>
           I made this portfolio with React and CSS (Sass) to showcase some of my frontend work and UI designs. I was inspired to create a portfolio that 
-          highlights my individual experiences - each page mirroring the theme of the project. I also made a page to show the <Link to='/design' className='nested-link'>UI Designs</Link> that I made for fun. <a href='https://github.com/le-anna/portfolio' className='nested-link'>   -> Here's my Github for the portfolio!</a>  
+          highlights my individual experiences - each page mirroring the theme of the project. I also made a page to show the <Link to='/design' className='nested-link'>UI Designs</Link> that I made for fun. 
+        </p>
+        <br/>
+        <p id='highlight'>⭐️ While creating this portfolio, I focused on these aspects:</p>
+        <p>
+          [1] Creating a responsive application for both mobile and desktop views<br/>
+          [2] Simplifying the CSS by making a global stylesheet to reuse properties and reduce repetitiveness<br/><br/>
+          <a href='https://github.com/le-anna/portfolio' className='nested-link'>   -> Here's my Github for the portfolio!</a>  
         </p>
         <br/>
         <h3>Current tech</h3>
         <p> 
-          JavaScript, TypeScript, C++, Java, Python, HTML, CSS/CSS Preprocessors (Sass, Less)
+          JavaScript, C++, Java, Python, HTML, CSS/CSS Preprocessors (Sass, Less)
           <br/>
           React, React Native, Figma
           <br/><br/><br/>
@@ -75,7 +81,7 @@ const About = () => {
           <Mailto email='annale1501@gmail.com' subject='' body=''>
             <div className='container icon-container'><FontAwesomeIcon className='icon' icon={faEnvelope}/></div>
             <div className='container label-container'>
-              <p>annale1501@gmail</p>
+              <p>Email</p>
             </div>
           </Mailto>
           <a href='https://linkedin.com/in/anna-le-7130181ba' className='container column clickable'>
