@@ -60,7 +60,7 @@ const Home = () => {
       <div id='projects'>
         { 
           isAll ? projectsArray : 
-          isProject ? [projectsArray[2], projectsArray[3]] :
+          isProject ? [projectsArray[3], projectsArray[4]] :
           isWork ? [projectsArray[0], projectsArray[1], projectsArray[2]] : projectsArray
         }
       </div>
