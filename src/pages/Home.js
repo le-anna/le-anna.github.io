@@ -35,7 +35,7 @@ const Home = () => {
 
   const projectsArray = [
     <ProjectOverview title='Mastercard' role='Software Engineer Intern' 
-      description='Worked on design token integration to enable white labeling in the Connect website and Connect UI Library' 
+      description='Worked on design token integration to enable white labeling in the Connect website and Connect UI Library on Storybook' 
       tech='TypeScript, React' link='/Choices' img='Mastercard'/>,
     <ProjectOverview title='Choices' role='UX Designer & Frontend Developer' 
       description='Design and implement the interface for Choices, an educational platform for people with Sickle Cell Disease or Traits' 
