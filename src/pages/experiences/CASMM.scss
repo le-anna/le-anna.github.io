@@ -1,136 +1,195 @@
-
 @mixin container-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-  
-.casmm { width: 100%; }
-.casmm-blue { background-color: #3d5c82; color: #fff; width: 100%; }
-.casmm-yellow { background-color: #ffde59; color: #000; width: 100%; }
+
+.casmm {
+  width: 100%;
+}
+.blue {
+  background-color: #3d5c82;
+  gap: 120px;
+  width: 100%;
+}
+.yellow {
+  gap: 120px;
+  width: 100%;
+  background-color: #ffde59;
+}
+.casmm-blue {
+  color: #fff;
+  width: 100%;
+}
+.casmm-yellow {
+  color: #000;
+  width: 100%;
+}
+.casmm-yellow:first-of-type {
+  margin-top: 120px;
+}
+.casmm-yellow:last-of-type,
+.casmm-blue:last-of-type {
+  margin-bottom: 120px;
+}
 
 #casmm-landing {
-    height: 100vh;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  #casmm-landing-description {
+    width: 40%;
+    margin: 0px 0px 0px 2vw;
+  }
+  .casmm-img {
     width: 100%;
-    color: #fff;
-    #casmm-landing-description {
-        width: 40%;
-        margin: 0px 0px 0px 2vw;
-    }
-    .casmm-img {
-        width: 100%;
-        height: 100%;
-    }
-    #casmm-logo {
-        width: 30%;
-        height: auto;
-        animation-duration: 3s bounce infinite;
-    }
+    height: 100%;
+  }
+  #casmm-logo {
+    width: 30%;
+    height: auto;
+    animation-duration: 3s bounce infinite;
+  }
 }
 
 .casmm-container {
-   @include container-content;
-    min-height: 100vh;
-    width: 90%;
-    align-items: left;
-    .casmm-info {
-        width: 70%;
-        #color-container {
-            width: 30%;
-            height: auto;    
-            #color-img {
-                width: 100%;
-                text-align: center;
-            }
-        }
+  @include container-content;
+  // min-height: fi;
+  height: fit-content;
+  width: 80vw;
+  align-items: left;
+  .casmm-info {
+    width: 70%;
+    #color-container {
+      width: 30%;
+      height: auto;
+      #color-img {
+        width: 100%;
+        text-align: center;
+      }
     }
-    .casmm-info-img {
-        width: 30%;
-        img { width: 90%; float: right; }
+  }
+  .casmm-info-img {
+    width: 30%;
+    img {
+      width: 90%;
+      float: right;
     }
+  }
 }
 
 .casmm-container-updates {
-    margin: 10vh 6vw;
-    height: fit-content;
-    .updates-imgs {
-        width: 100%;
-        height: 40%;
-        margin: 4vh 0;
-        .update-img {
-            width: 40rem;
-            height: auto;
-            border-radius: 8px;
-            box-shadow:  5px 5px 5px #50505080;
-        }
-        .update-text {
-            width: 30%;
-            margin: 0 2vw;
-        }
+  width: 80vw;
+  height: fit-content;
+  .updates-imgs {
+    width: 100%;
+    height: 40%;
+    margin: 4vh 0;
+    .update-img {
+      width: 40rem;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 5px 5px 5px #50505080;
     }
-    #new-palette { margin-top: 30px; width: 30%; 
-        img { width: 20rem; } 
+    .update-text {
+      width: 30%;
+      margin: 0 2vw;
     }
+  }
+  #new-palette {
+    margin: 30px 0;
+    width: 30%;
+    img {
+      width: 20rem;
+    }
+  }
 }
 
-@media screen and (max-width: 960px) { 
-    #casmm-landing {
-        flex-direction: column;
-        height: 100vh;
-        #casmm-landing-description { width: 80%; }
-        #casmm-logo {
-            width: 50%;
-            height: auto;
-            margin: 4vh 0;
-        }
-    }
+@media screen and (max-width: 960px) {
+  .blue {
+    gap: 50px;
+  }
+  .yellow {
+    gap: 50px;
+  }
+  .casmm-yellow:first-of-type {
+    margin-top: 50px;
+  }
+  .casmm-yellow:last-of-type,
+  .casmm-blue:last-of-type {
+    margin-bottom: 50px;
+  }
 
-    .casmm-container {
-        display: flex;
-        width: 80%;
-        margin: 22% 0;
-        min-height: fit-content;
-        height: fit-content;
-        .mobile { flex-direction: column; }
-        .casmm-info {
-            flex-direction: column;
-            width: 100%;
-            #color-container {
-                width: 50%;
-                height: auto;    
-                #color-img { width: 100%; }
-            }
-        }
-        .casmm-info-img {
-            width: 80%;
-            height: auto;
-            margin: 6vh 0;
-        }
+  #casmm-landing {
+    flex-direction: column;
+    height: 100vh;
+    #casmm-landing-description {
+      width: 80%;
     }
+    #casmm-logo {
+      width: 50%;
+      height: auto;
+      margin: 4vh 0;
+    }
+  }
 
-    .casmm-container-updates {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 22% 0;
-        width: 80%;
-        .updates-imgs {
-            flex-direction: column;
-            width: 100%;
-            height: 40%;
-            margin: 0;
-            .update-img {
-                width: 100%;
-                height: auto;
-                margin: 2vh 0;
-                border-radius: 4px;
-            }
-            .update-text {
-                text-align: left;
-                width: 100%;
-                margin-bottom: 20px;
-            }
-        }
-        #new-palette { width: 40%; img { width: 100%} }
+  .casmm-container {
+    display: flex;
+    width: 80%;
+    margin: 22% 0;
+    min-height: fit-content;
+    height: fit-content;
+    .mobile {
+      flex-direction: column;
     }
-    #mobile-reverse { flex-direction: column-reverse; }
+    .casmm-info {
+      flex-direction: column;
+      width: 100%;
+      #color-container {
+        width: 50%;
+        height: auto;
+        #color-img {
+          width: 100%;
+        }
+      }
+    }
+    .casmm-info-img {
+      width: 80%;
+      height: auto;
+      margin: 6vh 0;
+    }
+  }
+
+  .casmm-container-updates {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 22% 0;
+    width: 80%;
+    .updates-imgs {
+      flex-direction: column;
+      width: 100%;
+      height: 40%;
+      margin: 0;
+      .update-img {
+        width: 100%;
+        height: auto;
+        margin: 2vh 0;
+        border-radius: 4px;
+      }
+      .update-text {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    #new-palette {
+      width: 40%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  #mobile-reverse {
+    flex-direction: column-reverse;
+  }
 }

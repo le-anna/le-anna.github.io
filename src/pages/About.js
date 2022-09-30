@@ -42,27 +42,20 @@ const About = () => {
           Hi! My name is Anna. I'm a Computer Science student
           minoring in Mass Communications at the University of Florida with a graduation date in December 2022. 
         </p>
-        <br/>
         <p>
           After participating in the Women in Computer Science & Engineering (WiCSE)
           Shadowing Program, I gained excitement for frontend development and UX/UI design. 
           This prompted my involvement in a few research labs, because I became interested in learning more about developing apps
           for users with regard to their needs. 
         </p>
-        <br/>
         <h3>Portfolio</h3>
         <p>
           I made this portfolio with React and CSS (Sass) to showcase some of my frontend work and UI designs. I was inspired to create a portfolio that 
           highlights my individual experiences - each page mirroring the theme of the project. I also made a page to show the <Link to='/design' className='nested-link'>UI Designs</Link> that I made for fun. 
         </p>
-        <br/>
-        <p id='highlight'>⭐️ While creating this portfolio, I focused on these aspects:</p>
         <p>
-          [1] Creating a responsive application for both mobile and desktop views<br/>
-          [2] Simplifying the CSS by making a global stylesheet to reuse properties and reduce repetitiveness<br/><br/>
           <a href='https://github.com/le-anna/portfolio' className='nested-link'>   -> Here's my Github for the portfolio!</a>  
         </p>
-        <br/>
         <h3>Current tech</h3>
         <p> 
           JavaScript, C++, Java, Python, HTML, CSS/CSS Preprocessors (Sass, Less)

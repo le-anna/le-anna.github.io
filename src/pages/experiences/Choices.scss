@@ -1,66 +1,87 @@
-
 .choices {
-    width: 100%;
-    height: 100%;
-    strong { color: #FA6E00; }
+  gap: 100px;
+  width: 100%;
+  height: 100%;
+  margin-top: 60px; // navbar
+  strong {
+    color: #fa6e00;
+  }
 }
 
 .choices-container {
-    align-items: left;
-    min-height: 100vh;
-    height: 100%;
-    width: 90vw;
+  align-items: left;
+  min-height: fit-content;
+  height: 100%;
+  width: 80vw;
 
-    #green { color: #169A00; font-weight: 600; }
-    #yellow { color: #FFD15A; font-weight: 600; }
-    #gray { color: #a6a6a6; font-weight: 600; }
+  #green {
+    color: #169a00;
+    font-weight: 600;
+  }
+  #yellow {
+    color: #ffd15a;
+    font-weight: 600;
+  }
+  #gray {
+    color: #a6a6a6;
+    font-weight: 600;
+  }
 
-    .img-container { margin: 20px 0; }
+  .choices-cover img {
+    width: 20rem;
+  }
 
-    .mobile-img img {
-        border: #fa6c0050 solid 10px;
-        width: 14rem;
-        border-radius: 10px;
-    }
-    
-    .choices-old-design img {
-        width: 36rem;
-        border-radius: 10px;
-    }
+  .img-container {
+    margin: 20px 0;
+  }
 
-    .choices-color img { width: 24rem; }
+  .mobile-img img {
+    border: #fa6c0050 solid 10px;
+    width: 14rem;
+    border-radius: 10px;
+  }
 
-    .app-img img {
-        border: #fa6c0050 solid 10px;
-        width: 36rem;
-        border-radius: 10px;
-    }
+  .choices-old-design img {
+    width: 32rem;
+    border-radius: 10px;
+  }
+
+  .choices-color img {
+    width: 24rem;
+  }
+
+  .app-img img {
+    border: #fa6c0050 solid 10px;
+    width: 32rem;
+    border-radius: 10px;
+  }
+}
+
+.choices-container:first-of-type {
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 960px) {
-    .choices-container {
-        width: 80vw;
-        min-height: fit-content;
-        margin: 22% 0; 
-
-        .mobile-img img {
-            border: #fa6c0050 solid 8px;
-            width: 50%;
-            border-radius: 10px;
-        }
-
-        .choices-old-design img {
-            width: 80%;
-            border-radius: 10px;
-        }
-
-        .choices-color img { width: 70%; }
-
-        .app-img img {
-            border: #fa6c0050 solid 8px;
-            width: 80%;
-            border-radius: 10px;
-        }
+  .choices-container {
+    .mobile-img img {
+      border: #fa6c0050 solid 8px;
+      width: 50%;
+      border-radius: 10px;
     }
-}
 
+    .choices-old-design img {
+      width: 80%;
+      border-radius: 10px;
+    }
+
+    .choices-color img {
+      width: 70%;
+    }
+
+    .app-img img {
+      border: #fa6c0050 solid 8px;
+      width: 80%;
+      border-radius: 10px;
+    }
+  }
+}

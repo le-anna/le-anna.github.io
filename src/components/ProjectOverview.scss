@@ -1,7 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-#prj { background-color: #DEEBFD; }
+#prj { 
+    background-color: #DEEBFD; 
+    p {
+        margin: 0;
+    }
+}
 
 #prj-container {
     align-items: flex-start;
@@ -24,11 +29,10 @@
             #description {
                 width: 90%;
                 text-overflow: ellipsis;
-                font-size: 1rem;
                 padding: 1vh 0;
             }
             #tech {
-               font-size: 0.8rem;
+               font-size: 0.9rem;
                font-style: italic;
             }
         }

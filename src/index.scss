@@ -1,18 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 // layout
-.flex { display: flex; }
-.column { flex-direction: column; }
-.row { flex-direction: row; }
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.two-column-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
 
 .container {
   display: flex;
@@ -30,7 +41,7 @@
   font-weight: 600;
 }
 
-.underline-effect-after {    
+.underline-effect-after {
   content: '';
   position: absolute;
   width: 100%;
@@ -38,7 +49,7 @@
   height: 4px;
   bottom: 0;
   left: 0;
-  background-color: #F8EBB2;
+  background-color: #f8ebb2;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -51,16 +62,18 @@
 .next-btn-container {
   @extend .container;
   margin: 0 8vw;
-  .link, a {
+  .link,
+  a {
     font-size: 1.1rem;
     font-weight: 500;
     text-decoration: none;
     color: #000;
     padding: 3vw 0;
     @media (hover: hover) {
-      &:hover { color: #F8EBB2; }
+      &:hover {
+        color: #f8ebb2;
+      }
     }
-   
   }
 }
 
@@ -73,12 +86,12 @@
   font-weight: 500;
   border-radius: 4px;
   color: #000;
-  background-color: #F8EBB2;
+  background-color: #f8ebb2;
   text-align: left;
   text-decoration: none;
   @media (hover: hover) {
     &:hover {
-      transform: scale(0.8); 
+      transform: scale(0.8);
       cursor: pointer;
       transition: 0.5s;
       background-color: #e0d49f;
@@ -99,11 +112,11 @@
     height: 4px;
     bottom: 0;
     left: 0;
-    background-color: #F8EBB2;
+    background-color: #f8ebb2;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
-  @media (hover: hover) { 
+  @media (hover: hover) {
     &:hover:after {
       transform: scaleX(1);
       transform-origin: bottom left;
@@ -112,12 +125,30 @@
 }
 
 // typography
-h2, h3 { font-weight: 500; }
-p { font-size: 1rem; }
-ul { font-size: 1rem; margin-left: 20px; }
-br { height: 3px; }
-a { text-decoration: none; color: #000; }
-strong { font-weight: 600; }
+h2,
+h3 {
+  font-weight: 700;
+}
+p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+ul {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+br {
+  height: 3px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+strong {
+  font-weight: 600;
+}
 
 // animation
 .animation.slide {
@@ -132,27 +163,62 @@ strong { font-weight: 600; }
 }
 
 @keyframes rotate {
-	0% { opacity: 0; transform:scale(0.3); }
-	50% { transform: rotate(60deg); }
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: rotate(60deg);
+  }
 }
 
 @keyframes bounce {
-  0%   { transform: scale(1,1)      translateY(0); }
-  10%  { transform: scale(1.1,.9)   translateY(0); }
-  30%  { transform: scale(.9,1.1)   translateY(-2vh); }
-  50%  { transform: scale(1.05,.95) translateY(0); }
-  57%  { transform: scale(1,1)      translateY(-7px); }
-  64%  { transform: scale(1,1)      translateY(0); }
-  100% { transform: scale(1,1)      translateY(0); }
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-2vh);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }
 
 @keyframes slidein {
-  0% { margin-left: 0%; }
-  50% { margin-left: 100px; }
-  100% { margin-left: 0%; }
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 100px;
+  }
+  100% {
+    margin-left: 0%;
+  }
 }
 
-@media screen and (max-width: 960px) { 
-  h2 { font-size: 1.4rem; line-height: 2rem; }
-  h3 { font-size: 1.1rem; }
+@media screen and (max-width: 960px) {
+  h2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .two-column-table {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
 }

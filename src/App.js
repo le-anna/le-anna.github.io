@@ -7,21 +7,21 @@ import MentalHealthApp from './pages/experiences/MHA';
 import Choices from './pages/experiences/Choices';
 import Design from './pages/Design';
 import About from './pages/About';
-import './App.scss'
+import './App.scss';
 
 const App = () => {
   return (
     <div>
-        <Navbar/>
-        <Routes>
-          <Route exact path='/' element={<Home />}/>
-          <Route exact path='/Design' element={<Design/>} />
-          <Route exact path='/About' element={<About/>} />
-          <Route exact path='/CASMM' element={<CASMM/>} />
-          <Route exact path='/Choices' element={<Choices/>} />
-          <Route exact path='/MentalHealthApp' element={<MentalHealthApp/>} />
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/Design" element={<Design />} />
+        <Route exact path="/About" element={<About />} />
+        <Route exact path="/CASMM" element={<CASMM />} />
+        <Route exact path="/Choices" element={<Choices />} />
+        <Route exact path="/MentalHealthApp" element={<MentalHealthApp />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
