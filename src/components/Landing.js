@@ -1,7 +1,6 @@
 import React from 'react';
 import './Landing.scss';
 import LandingPhoto from '../assets/landing.png';
-import Drawing from '../assets/drawing.PNG'
 import { FaChevronDown } from 'react-icons/fa'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'

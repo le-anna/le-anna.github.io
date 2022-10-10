@@ -14,6 +14,7 @@ import InitialDesign2 from '../../assets/MHA/InitialDesign2.png';
 import InitialDesign3 from '../../assets/MHA/InitialDesign3.png';
 import One from '../../assets/MHA/1.png';
 import './MHA.scss';
+import { BiLinkExternal } from 'react-icons/bi'
 import Typewriter from 'typewriter-effect';
 // typewriter effect source: https://github.com/tameemsafi/typewriterjs
 import GoToTop from '../../components/GoToTop';
@@ -259,7 +260,7 @@ const MHA = () => {
         </div>
       </div>
       <div className='next-btn-container'>
-        <a href='https://devpost.com/software/retrofi'>View next: RetroFi (Link) -></a>
+        <a href='https://devpost.com/software/retrofi'>View next: RetroFi <BiLinkExternal/>&nbsp;</a>
       </div>
       <GoToTop />
     </div>

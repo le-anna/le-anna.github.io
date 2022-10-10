@@ -23,8 +23,8 @@ const Home = () => {
 
   const showWork = () => {
     setWork(!isWork);
-    setAll(false);
     setProject(false);
+    setAll(false);
   };
 
   useEffect(() => {
@@ -96,10 +96,10 @@ const Home = () => {
       <div id='projects'>
         {isAll
           ? projectsArray
-          : isProject
-          ? [projectsArray[3], projectsArray[4]]
           : isWork
           ? [projectsArray[0], projectsArray[1], projectsArray[2]]
+          : isProject
+          ? [projectsArray[3], projectsArray[4]]
           : projectsArray}
       </div>
       <GoToTop />

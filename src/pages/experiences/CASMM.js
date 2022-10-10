@@ -59,7 +59,7 @@ const CASMM = () => {
           <div id='casmm-landing-description'>
             <h1>CaSMM</h1>
             <h2>
-              <em>Front-end developer @ Engaging Learning Lab</em>
+              <em>Front-end Developer @ Engaging Learning Lab</em>
             </h2>
             <p>
               Collaborate in the development of a block-based programming environment for K-12
@@ -106,14 +106,14 @@ const CASMM = () => {
       <div className='yellow container column'>
         <div className='container casmm-yellow'>
           <div className='animation slide casmm-container'>
-            <h2>Problems</h2>
+            <h2>Problems ❌</h2>
             <div className='container mobile'>
               <div className='flex column casmm-info'>
                 <p>Here are some problems I identified in the intial design:</p>
                 <ul className='ul'>
                   <li>
-                    Color palette lacked an accent color, which can be important in helping elements
-                    stand out.
+                    Color palette felt flat and lacked an accent color, which can be important in
+                    helping elements stand out.
                   </li>
                   <li>
                     Buttons were gray, making their functionality difficult to identify. The shape
@@ -167,16 +167,14 @@ const CASMM = () => {
         </div>
         <div className='container casmm-yellow'>
           <div className='animation slide casmm-container-updates'>
-            <h2>Process</h2>
-            <h3>User Research</h3>
+            <h2>UX Design Process</h2>
+            <h3>User Research 👩🏻‍💻</h3>
             <p>
               Users consists of 5th and 6th graders, content creators, mentors, and researchers.
-              Research on various educational platforms for children highlight a common theme: the
+              Research on various educational platforms for children highlighted a common theme: the
               use of vibrant colors. Brighter colors can feel more engaging, especially for the main
-              target audience of the application: 5th and 6th grade students.
-            </p>
-            <p>
-              I paid particular attention to several{' '}
+              target audience of the application: 5th and 6th grade students. During my research, I
+              paid particular attention to several{' '}
               <strong> UX Design Principles: Consistency, Affordance, and Discoverability.</strong>
             </p>
             <h3>Solutions 💡</h3>

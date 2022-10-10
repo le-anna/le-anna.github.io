@@ -1,82 +1,90 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-#prj { 
-    background-color: #DEEBFD; 
-    p {
-        margin: 0;
-    }
+#prj {
+  background-color: #deebfd;
+  p {
+    margin: 0;
+  }
 }
 
 #prj-container {
-    align-items: flex-start;
-    margin: 0 10%;
-    #prj-info-container {
-        align-items: left;
-        width: 40%;
-        color: #000;
-        #prj-title { 
-            font-weight: 700; 
-            font-size: 1.6rem;
-        }     
-        #prj-role {
-            font-weight: 500;
-            font-size: 1.1rem;
-        }
-        #prj-text {
-            min-height: 14vh;
-            height: fit-content;
-            #description {
-                width: 90%;
-                text-overflow: ellipsis;
-                padding: 1vh 0;
-            }
-            #tech {
-               font-size: 0.9rem;
-               font-style: italic;
-            }
-        }
+  align-items: flex-start;
+  width: 90%;
+  #prj-info-container {
+    align-items: left;
+    width: 40%;
+    color: #000;
+    #prj-title {
+      font-weight: 700;
+      font-size: 1.6rem;
     }
-
-    #prj-img-container {
-        width: 30%;
-        height: fit-content;
-        img {
-            width: 18rem;
-            height: auto;
-        }
-        #mastercard-logo { width: 15rem; }
+    #prj-role {
+      font-weight: 500;
+      font-size: 1.1rem;
     }
-}
-
-#prj-link { width: fit-content; }
-#prj-btn { margin: 20px 0px 0px; }
-
-@media screen and (max-width: 960px) {
-    #prj {
-        display: flex;
-        height: fit-content;
-    }
-
-    #prj-container {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        #prj-info-container {
-            display: flex;
-            align-items: center;
-            width: 90%;
-            text-align: center;
-            #prj-text {
-                align-items: center;
-            }
-        }
-        #prj-img-container {
-            width: 80%;
-            min-height: 26vh;
-            height: fit-content;
-            margin-top: 6vh;
-            #mastercard-logo { width: 14rem; }
-        }
+    #prj-text {
+      min-height: 14vh;
+      height: fit-content;
+      #description {
+        width: 90%;
+        text-overflow: ellipsis;
+        padding: 1vh 0;
+      }
+      #tech {
+        font-size: 0.9rem;
+        font-style: italic;
+      }
     }
   }
+
+  #prj-img-container {
+    width: 30%;
+    height: fit-content;
+    img {
+      width: 18rem;
+      height: auto;
+    }
+    #mastercard-logo {
+      width: 15rem;
+    }
+  }
+}
+
+#prj-link {
+  width: fit-content;
+}
+
+.prj-btn {
+  margin: 20px 0px 0px;
+}
+
+@media screen and (max-width: 960px) {
+  #prj {
+    display: flex;
+    height: fit-content;
+  }
+
+  #prj-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    #prj-info-container {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      text-align: center;
+      #prj-text {
+        align-items: center;
+      }
+    }
+    #prj-img-container {
+      width: 80%;
+      min-height: 26vh;
+      height: fit-content;
+      margin-top: 6vh;
+      #mastercard-logo {
+        width: 14rem;
+      }
+    }
+  }
+}

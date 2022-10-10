@@ -5,6 +5,7 @@ import './Navbar.scss';
 import Profile from '../assets/profile.jpg';
 import Dropdown from './Dropdown';
 import { debounce } from './helper';
+import { BiLinkExternal } from 'react-icons/bi'
 
 export const Navbar = () => {
   const myRef = useRef();
@@ -97,7 +98,7 @@ export const Navbar = () => {
           </li>
           <li className='experience-item' onClick={closeMenu}>
             <a href='https://devpost.com/software/retrofi' className='link'>
-              RetroFi (Link)
+              RetroFi&nbsp;<BiLinkExternal/>
             </a>
           </li>
 

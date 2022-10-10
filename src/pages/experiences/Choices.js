@@ -27,7 +27,7 @@ const Choices = () => {
       <div className='flex-justify column choices-container'>
         <h1>Choices</h1>
         <h2>
-          <em>UX Design & Front-end Developer @ Sickle Cell Disease Lab</em>
+          <em>UX Designer & Front-end Developer @ Sickle Cell Disease Lab</em>
         </h2>
         <div className='flex-justify choices-cover'>
           <img src={ChoicesCover} alt='Choices' />
@@ -43,23 +43,15 @@ const Choices = () => {
           placeholder due to the sensitivity of the information. (II) Not all designs developed are
           shown.
         </p>
-        <div className='two-column-table'>
-          <div>
-            <h3>Role</h3>
-            <p>
-              I had two roles in this project: UX Designer and Front-end Developer. I was
-              responsible for redesigning <em>and</em> implementing the interface.
-            </p>
-          </div>
-          <div>
-            <h3>Team</h3>
-            <p>
-              The team consists of people from various academic disciplines - collaboration taking
-              place between the College of Nursing and Computer and Information Science and
-              Engineering.
-            </p>
-          </div>
-        </div>
+        <h3>Role</h3>
+        <p>
+          I was responsible for redesigning <em>and</em> implementing the interface.
+        </p>
+        <h3>Team</h3>
+        <p>
+          Collaboration occurs between the College of Nursing and Computer and Information Science
+          and Engineering.
+        </p>
         <div className='two-column-table'>
           <div>
             <h3>Timeline</h3>
@@ -74,7 +66,7 @@ const Choices = () => {
       <div className='flex-justify column choices-container'>
         <h2>Previous Design Problems ❌</h2>
         <p>
-          The previous application was developed around 2008, so some pages contained outdated
+          The previous application was developed around 2008, so the pages contained outdated
           styling.
         </p>
         <div className='flex-justify img-container  choices-old-design'>
@@ -110,7 +102,8 @@ const Choices = () => {
         </div>
       </div>
       <div className='flex-justify column choices-container'>
-        <h2>User Research</h2>
+        <h2>UX Design Process</h2>
+        <h3>User Research 👩🏻‍💻</h3>
         <p>
           Research was conducted on developing an inclusive design for people with Sickle Cell
           Disease. People with Sickle Cell Disease are more likely to experience vision problems.
@@ -118,21 +111,9 @@ const Choices = () => {
           <strong>readability and accessibility</strong>. When developing prototypes, several font
           types, font sizes, and line spacings were examined to create the most optimal solution.
           During implementation, the <strong>reponsiveness </strong>
-          of features with zooming in and out were tested to ensure content was{' '}
-          <strong>readable</strong>.
+          of features were tested to ensure content was <strong>readable</strong>.
         </p>
-      </div>
-      <div className='flex-justify column choices-container'>
-        <h2>Solutions 💡 + High-fidelity Mockups 🎨</h2>
-        <p>
-          For my solution, I decided on a <strong>minimalistic design </strong>
-          to <strong>centralize user focus on the tasks & content</strong>. This contrasts with the
-          previous design, as it helps eliminate distractions for the user and makes the pages feel
-          less busy. Moreover, the project had to be completed within a{' '}
-          <strong>fast timeframe</strong>. Accordingly, a minimal design permits more time for
-          debugging and further development of any additional features.
-        </p>
-        <h3>High-fidelity Mockups</h3>
+        <h3>High-fidelity Mockups 🎨</h3>
         <p>
           I developed <strong>high-fidelity</strong> mockups with <strong>Figma</strong> for desktop
           and mobile views. Why high-fidelity? These mockups would more accurately represent the
@@ -141,19 +122,31 @@ const Choices = () => {
           within a page. Review sessions were conducted several times a week to discuss the mockups.
           Approximately <strong>40 mockups</strong> were developed during this stage.
         </p>
+        <h3>Solutions 💡</h3>
         <p>
-          [RE: Old Color Scheme] I proposed 3 options for color combinations that were similar to
-          the old color scheme. The row with the star was agreed upon (yellow ended up being
-          unneeded).
+          For my solution, I decided on a <strong>minimalistic design </strong>
+          to <strong>centralize user focus on the tasks & content</strong>. This contrasts with the
+          previous design, as it helps eliminate distractions for the user and makes the pages feel
+          less busy. Moreover, the project had to be completed within a{' '}
+          <strong>fast timeframe</strong>. Accordingly, a minimal design permits more time for
+          debugging and further development of any additional features.
+        </p>
+        <p>
+          <strong>[RE: Old Color Scheme]</strong> I proposed 3 options for color combinations that
+          were similar to the old color scheme. The row with the star was agreed upon (yellow ended
+          up being unneeded).
         </p>
         <div className='flex-justify img-container choices-color'>
           <img src={NewColor} alt='Choices Initial Color Scheme' />
         </div>
-        <p>[RE: Buttons] Buttons were redesigned to follow a more modern and minimal style.</p>
         <p>
-          [RE: Navigation] To demonstrate the sequential nature of the learning, the navigation menu
-          was redesigned. As shown in the image below, the new navigation menu models a learning
-          module.
+          <strong>[RE: Buttons]</strong> Buttons were redesigned to follow a more modern and minimal
+          style.
+        </p>
+        <p>
+          <strong>[RE: Navigation]</strong> To demonstrate the sequential nature of the learning,
+          the navigation menu was redesigned. As shown in the image below, the new navigation menu
+          models a learning module.
         </p>
         <p>
           Left cirlces indicate 3 progress modes: <span id='green'>green = complete</span>,{' '}
@@ -233,8 +226,8 @@ const Choices = () => {
         </p>
         <h3>Some features I made:</h3>
         <p>
-          Desktop and mobile screens, registration and Login page, navigation that shows users’
-          progress, card layout for questions, and video popups with mask overlay.
+          Registration page, login page, navigation that shows users’ progress, card layout for
+          questions, and content popups with mask overlay.
         </p>
       </div>
       <div className='flex-justify column choices-container'>
@@ -257,7 +250,7 @@ const Choices = () => {
       </div>
       <div className='flex-justify column choices-container'>
         <h2>Learning Outcomes & Successes ✅</h2>
-        <h3>Coding Conventions & Templates</h3>
+        <h3>Coding Conventions</h3>
         <p>
           From the project, I learned better coding conventions and how to write stylistic code
           efficiently. I had not worked with an application that used such a large amount of

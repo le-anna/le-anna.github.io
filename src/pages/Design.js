@@ -2,25 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Design.scss';
 import GoToTop from '../components/GoToTop';
-import Typewriter from 'typewriter-effect';
 import PawMates from '../assets/Designs/PawMates.png';
 import PawMates2 from '../assets/Designs/PawMates2.png';
 import CreateAccount from '../assets/Designs/CreateAccount.png';
 import TuneIn from '../assets/Designs/TuneIn.png';
 import Wireframe from '../assets/Designs/Wireframe.png';
+import Typewriter from 'typewriter-effect';
 // typewriter effect source: https://github.com/tameemsafi/typewriterjs
 
 const Design = () => {
   return (
     <div className='container column' id='design'>
       <h2 className='flex column'>
-        <Typewriter
-          options={{
-            strings: ['UI Designs'],
-            loop: true,
-            deleteSpeed: 6,
-          }}
-        />
+      <Typewriter 
+        options={{
+          strings: ['UI Designs'],
+          autoStart: true,
+          loop: true,
+          deleteSpeed: 6
+        }}
+      />
       </h2>
       <div className='container' id='design-info'>
         <p>
@@ -42,7 +43,7 @@ const Design = () => {
               <div className='content-details'>
                 <p>
                   Design for a Pet Adoption App that people can use to find their pet mate! This
-                  design shows the preview users see for the pets when swiping.
+                  design shows the preview users see for the pets.
                 </p>
               </div>
             </div>
@@ -52,7 +53,7 @@ const Design = () => {
               <div className='content-overlay'></div>
               <img src={PawMates2} alt='Gallery' />
               <div className='content-details'>
-                <p>Second design shows a grid of the user's saved pets.</p>
+                <p>Second design shows the user's saved pets.</p>
               </div>
             </div>
           </div>
@@ -79,7 +80,7 @@ const Design = () => {
               <div className='content-overlay'></div>
               <img src={CreateAccount} alt='Gallery' />
               <div className='content-details'>
-                <p>Simple idea for creating an account in a mobile app.</p>
+                <p>Dreamy theme for creating a new account.</p>
               </div>
             </div>
           </div>
