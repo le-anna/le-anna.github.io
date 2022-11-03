@@ -44,9 +44,7 @@ const Choices = () => {
           shown.
         </p>
         <h3>Role</h3>
-        <p>
-          I was responsible for redesigning <em>and</em> implementing the interface.
-        </p>
+        <p>I was responsible for redesigning and implementing the interface.</p>
         <h3>Team</h3>
         <p>
           Collaboration occurs between the College of Nursing and Computer and Information Science

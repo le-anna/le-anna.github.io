@@ -6,7 +6,7 @@
 .filter {
   background-color: #deebfd;
   height: 80px;
-  padding-top: 20px;
+  padding-top: 80px;
   gap: 10px;
 
   .pill {
@@ -26,7 +26,7 @@
   }
 
   #selected {
-    background-color: rgba(170, 170, 170, 0.65);
+    background-color: rgba(146, 146, 146, 0.65);
     @media (hover: hover) {
       &:hover {
         background-color: rgb(170, 170, 170);
