@@ -54,7 +54,6 @@
 
 .casmm-container {
   @include container-content;
-  // min-height: fi;
   height: fit-content;
   width: 80vw;
   align-items: left;
@@ -86,13 +85,15 @@
     margin: 4vh 0;
     .update-img {
       width: 40rem;
+      max-width: 60%;
       height: auto;
       border-radius: 8px;
       box-shadow: 5px 5px 5px #50505080;
     }
     .update-text {
       justify-content: left;
-      width: object-fit;
+      width: inherit;
+      min-width: 40%;
     }
     .update-text:nth-child(odd) {
       margin-right: 2vw;
@@ -177,6 +178,7 @@
       margin: 0;
       .update-img {
         width: 100%;
+        max-width: 100%;
         height: auto;
         margin: 2vh 0;
         border-radius: 4px;
@@ -184,6 +186,7 @@
       .update-text {
         text-align: left;
         width: 100%;
+        max-width: 100%;
         margin: 0 0 20px 0;
       }
       .update-text:nth-child(odd) {

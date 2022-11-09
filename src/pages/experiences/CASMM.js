@@ -59,13 +59,13 @@ const CASMM = () => {
           <div id='casmm-landing-description'>
             <h1>CaSMM</h1>
             <h2>
-              <em>Front-end Developer @ Engaging Learning Lab</em>
+              <em>Front-end Developer @ University of Florida | Engaging Learning Lab</em>
             </h2>
             <p>
               Collaborate in the development of a block-based programming environment for K-12
               students to learn how to code Arduinos.
             </p>
-            <p>Showcasing some of the improvements that I have contributed to the project.</p>
+            <p>Showcasing some of the contributions I made to the project.</p>
           </div>
         </div>
         <div className='container casmm-blue'>
@@ -139,10 +139,11 @@ const CASMM = () => {
         </div>
         <div className='container casmm-yellow'>
           <div className='animation slide casmm-container-updates'>
-            <h2>Existing Design Patterns</h2>
+            <h2>CaSMM Design System</h2>
             <p>
               The Principle Investigator expressed that certain features remain the same. While
-              working on the redesign, I made sure to follow these existing design patterns:
+              working on the redesign, I made sure to follow the existing design patterns that CaSMM
+              already had.
             </p>
             <div className='container row updates-imgs'>
               <img src={updatesimg1} className='update-img' alt='CaSMM' />
@@ -245,7 +246,9 @@ const CASMM = () => {
             </div>
             <div className='container row updates-imgs'>
               <img src={pg5img3} className='update-img' alt='CaSMM' />
-              <p className='flex-justify column update-text'>Image of the clickable Join Code.</p>
+              <p className='flex-justify column update-text'>
+                Image of the clickable Join Code in hover state.
+              </p>
             </div>
           </div>
         </div>
