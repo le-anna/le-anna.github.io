@@ -49,9 +49,8 @@ const About = () => {
         </h2>
         <br />
         <p>
-          I'm a recent graduate from the University of Florida (2022) with a B.S. in Computer
-          Science! I am from Florida, and I'll be based in NYC. I'm enthusiastic about development
-          and design, and I made this portfolio using
+          I recently graduated from the University of Florida (2022) with a B.S. in Computer
+          Science! I'm enthusiastic about development and design, and I made this portfolio using
           <strong> React and CSS (Sass)</strong> with the goal of showing some of my front-end work
           & UI Designs.
           <a href='https://github.com/le-anna/portfolio' className='nested-link'>
