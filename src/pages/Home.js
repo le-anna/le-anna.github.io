@@ -35,47 +35,47 @@ const Home = () => {
 
   const projectsArray = [
     <ProjectOverview
-      title="Mastercard"
-      role="Software Engineer Intern"
-      description="Worked on design token integration to enable white labeling in the Connect website and Connect UI Library on Storybook"
-      tech="TypeScript, React"
-      link="/Choices"
-      img="Mastercard"
+      title='Mastercard'
+      role='Software Engineer Intern'
+      description='Integrated design tokens into the Connect website and Connect UI library to provide white labeling and multilingual support.'
+      tech={['TypeScript', 'React']}
+      link='/Choices'
+      img='Mastercard'
     />,
     <ProjectOverview
-      title="Choices"
-      role="UX Designer & Frontend Developer"
-      description="Design and implement the interface for Choices, an educational platform for people with Sickle Cell Disease or Traits"
-      tech="JavaScript, HTML, CSS (Sass)"
-      link="/Choices"
-      img="Choices"
+      title='Choices'
+      role='UX Designer & Front-end Developer'
+      description='Designed and implemented the interface for Choices, an educational platform for people with Sickle Cell Disease or Traits. Developed under the Sickle Cell Lab at the College of Nursing, University of Florida, for use in studies.'
+      tech={['JavaScript', 'HTML', 'CSS']}
+      link='/Choices'
+      img='Choices'
     />,
     <ProjectOverview
-      title="CaSMM"
-      role="Frontend Developer"
-      description="Improved interface for CaSMM, a block-based
-      programming environment for K-12 students to learn how to code Arduinos"
-      tech="React, CSS (Less)"
-      link="/CASMM"
-      img="CASMM"
+      title='CaSMM'
+      role='Front-end Developer'
+      description='Improved the interface for CaSMM, a block-based
+      programming environment for 5th and 6th grade students to learn how to code Arduinos. Implemented into classrooms by the Engaging Learning Lab at the University of Florida.'
+      tech={['JavaScript', 'React', 'Less']}
+      link='/CASMM'
+      img='CASMM'
     />,
     <ProjectOverview
-      title="Mental Health App"
-      role="Shadowing Program Mentee"
-      description="Developed Mental Health App with  Opie Software
-      through the Women in Computer Science & Engineering Shadowing Program"
-      tech="Java, React Native, Hibernate, Spring Boot, SQL"
-      link="/MentalHealthApp"
-      img="MHA"
+      title='Mental Health App'
+      role='Shadowing Program Mentee'
+      description='Developed a full-stack application with Opie Software
+      through the Women in Computer Science & Engineering Shadowing Program. Built with idea of allowing users to track their mental health by analyzing trends.'
+      tech={['Java', 'React Native', 'Spring Boot']}
+      link='/MentalHealthApp'
+      img='MHA'
     />,
     <ProjectOverview
-      title="RetroFi"
-      role="Hackthon Team Member"
-      description="Won Capital One category for development of retro-themed
-      financial application at SwampHacks (University of Florida)"
-      tech="React, CSS"
-      link="retrofi"
-      img="retrofi"
+      title='RetroFi'
+      role='Hackthon Team Member'
+      description='Won the Capital One category for development of retro-themed
+      financial application at SwampHacks (University of Florida Hackathon). Created to address the financial illiteracy of college students.'
+      tech={['JavaScript', 'React', 'CSS']}
+      link='retrofi'
+      img='retrofi'
     />,
   ];
 
@@ -93,7 +93,7 @@ const Home = () => {
           Projects
         </button>
       </div>
-      <div id='projects'>
+      <div className='grid column' id='projects'>
         {isAll
           ? projectsArray
           : isWork

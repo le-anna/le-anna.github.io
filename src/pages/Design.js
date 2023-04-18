@@ -25,11 +25,10 @@ const Design = () => {
       </h2>
       <div className='container' id='design-info'>
         <p>
-          This is a gallery showcasing the UI designs that I made for fun! These were created using
-          Figma and have not been implemented. For designs that I have programmed, feel free to
-          check out my projects in{' '}
+          A gallery of UI designs created with Figma; these have not been implemented. For designs
+          that I have programmed, feel free to check out my projects{' '}
           <Link to='/Choices' className='nested-link'>
-            Experiences!{' '}
+            here!{' '}
           </Link>
         </p>
       </div>
@@ -51,15 +50,13 @@ const Design = () => {
             about shows & movies.
           </p>
           <p>
-            <strong>Motivation: </strong>Often, I see people talking about movies & shows across all
-            media apps - from Twitter to Reddit. I, myself, have also lurked on these apps, hoping
-            to find community over the grievances or drama of a new episode. Thus, I was motivated
-            to design an app that would simplify this, centralizing all communication to one place.
-          </p>
-          <p>
-            <strong>Design process:</strong> Because ideal users are people who watch movies &
-            shows, I thought a dark UI would suit best. People tend to be in dark or dim lighting;
-            thus, a bright UI design would be jarring on the eyes.
+            <strong>Motivation & Process: </strong>Often, I see people talking about movies & shows
+            across all media apps—from Twitter to Reddit. I, myself, have also lurked on these apps,
+            hoping to find community over the grievances or drama of a new episode. Thus, I was
+            motivated to design an app that would simplify this, centralizing all communication to
+            one place. Because ideal users are people who watch movies & shows, I thought a dark UI
+            would suit best. People tend to be in dark or dim lighting; thus, a bright UI design
+            would be jarring on the eyes.
           </p>
         </div>
         <h3>PawMates</h3>
@@ -73,9 +70,10 @@ const Design = () => {
           </p>
           <p>
             <strong>Motivation: </strong>
-            Adopting a pet is exciting! I felt that creating an engaging and vibrant UI was
-            necessary to couple with the excitement of finding a new family membe; thus, I placed
-            focus on choosing the right colors, as colors can influence how people feel.
+            Adopting a pet probably the most thrilling feeling ever! I felt that creating an
+            engaging and vibrant UI was necessary to couple with the feeling of adding a new family
+            member; thus, I placed focus on choosing the right colors during this, as colors can
+            influence how people feel.
           </p>
         </div>
         <h3>TuneIn</h3>
@@ -99,6 +97,10 @@ const Design = () => {
         <div className='design-description'>
           <p>
             <strong>Concept: </strong>Dreamy design to create an account in an app.
+          </p>
+          <p>
+            <strong>Motivation: </strong>I wanted to experiment with creating an exciting new
+            account screen.
           </p>
         </div>
       </div>

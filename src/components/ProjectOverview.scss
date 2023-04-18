@@ -1,90 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
 #prj {
-  background-color: #deebfd;
-  p {
+  p,
+  h2 {
     margin: 0;
   }
 }
 
 #prj-container {
-  align-items: flex-start;
-  width: 90%;
+  display: grid;
+  flex-direction: row;
+  grid-template-columns: 3fr 2fr;
+  gap: 0px;
+  margin: 0 200px;
   #prj-info-container {
-    align-items: left;
-    width: 40%;
-    color: #000;
-    #prj-title {
+    #title {
       font-weight: 700;
-      font-size: 1.6rem;
+      font-size: 2rem;
+      margin: 5px 0;
     }
-    #prj-role {
-      font-weight: 500;
+    #role {
       font-size: 1.1rem;
+      color: #7c7c7c;
     }
-    #prj-text {
-      min-height: 14vh;
-      height: fit-content;
-      #description {
-        width: 90%;
-        text-overflow: ellipsis;
-        padding: 1vh 0;
+    #tech-container {
+      gap: 10px;
+      margin: 20px 0;
+      #TypeScript {
+        background-color: #d59fff;
+        color: #9610ff;
       }
-      #tech {
-        font-size: 0.9rem;
-        font-style: italic;
+      #JavaScript {
+        background-color: rgb(253, 247, 162);
+        color: rgb(74, 69, 0);
       }
+      div[id='React Native'],
+      #React {
+        background-color: rgb(116, 225, 255);
+        color: rgb(22, 96, 117);
+      }
+      div[id='Spring Boot'] {
+        background-color: rgb(143, 211, 143);
+        color: rgb(46, 84, 46);
+      }
+      #HTML {
+        background-color: rgb(255, 182, 156);
+        color: rgb(97, 40, 19);
+      }
+      #CSS,
+      #Less {
+        background-color: rgba(0, 18, 221, 0.472);
+        color: rgb(35, 35, 101);
+      }
+      #Java {
+        background-color: rgba(255, 0, 0, 0.577);
+        color: rgb(80, 17, 17);
+      }
+    }
+    #description {
+      width: 90%;
+      text-overflow: ellipsis;
     }
   }
-
+  #desktop-link {
+    display: block;
+  }
+  #mobile-link {
+    display: none;
+  }
   #prj-img-container {
-    width: 30%;
-    height: fit-content;
+    justify-content: flex-end;
     img {
       width: 18rem;
       height: auto;
     }
-    #mastercard-logo {
-      width: 15rem;
-    }
   }
-}
-
-#prj-link {
-  width: fit-content;
-}
-
-.prj-btn {
-  margin: 20px 0px 0px;
 }
 
 @media screen and (max-width: 960px) {
-  #prj {
-    display: flex;
-    height: fit-content;
-  }
-
   #prj-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    margin: 0;
     #prj-info-container {
       display: flex;
       align-items: center;
-      width: 90%;
       text-align: center;
-      #prj-text {
-        align-items: center;
+      #tech-container {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+      #description {
+        width: 80%;
       }
     }
-    #prj-img-container {
-      width: 80%;
-      min-height: 26vh;
-      height: fit-content;
-      margin-top: 6vh;
-      #mastercard-logo {
-        width: 14rem;
-      }
+    #desktop-link {
+      display: none;
+    }
+    #mobile-link {
+      display: block;
+    }
+    #MHA-mobile-img {
+      margin: 50px 0;
+    }
+    #Mastercard-mobile-img {
+      margin-top: 50px;
     }
   }
 }

@@ -12,6 +12,7 @@ import { GiArtificialIntelligence } from 'react-icons/gi';
 import { BiCodeAlt, BiData, BiCodeCurly } from 'react-icons/bi';
 import { SiMatrix } from 'react-icons/si';
 import Typewriter from 'typewriter-effect';
+import MyPicture from '../assets/landing.png';
 // typewriter effect source: https://github.com/tameemsafi/typewriterjs
 
 const About = () => {
@@ -28,7 +29,14 @@ const About = () => {
 
   return (
     <div id='about'>
-      <div className='flex column' id='about-content'>
+      <div className='grid row about-opener'>
+        <img src={MyPicture} id='about-photo' />
+        <div id='intro-title'>
+          <h1>Hi there! My name is Anna.</h1>
+          <h2>Computer Science major & Mass Communications minor @University of Florida 🐊</h2>
+        </div>
+      </div>
+      <div id='about-description'>
         <h2 id='about-title'>
           <Typewriter
             options={{
@@ -40,34 +48,28 @@ const About = () => {
           />
         </h2>
         <br />
-        <h3>Introduction</h3>
         <p>
-          Hi! My name is Anna. I'm a Computer Science student minoring in Mass Communications at the
-          University of Florida with a graduation date in December 2022.
-        </p>
-        <p>
-          After participating in the Women in Computer Science & Engineering (WiCSE) Shadowing
-          Program, I gained excitement for frontend development and UX/UI design. This prompted my
-          involvement in a few research labs, because I became interested in learning more about
-          developing apps for users with regard to their needs.
-        </p>
-        <h3>Portfolio</h3>
-        <p>
-          I made this portfolio with React and CSS (Sass) to showcase some of my front-end work and
-          UI designs. I was inspired to create a portfolio that highlights my individual experiences
-          - each page mirroring the theme of the project. I also made a page to show the{' '}
-          <Link to='/design' className='nested-link'>
-            UI Designs
-          </Link>{' '}
-          that I made for fun.
-        </p>
-        <p>
+          I'm a recent graduate from the University of Florida (2022) with a B.S. in Computer
+          Science! I am from Florida, and I'll be based in NYC. I'm enthusiastic about development
+          and design, and I made this portfolio using
+          <strong> React and CSS (Sass)</strong> with the goal of showing some of my front-end work
+          & UI Designs.
           <a href='https://github.com/le-anna/portfolio' className='nested-link'>
-            {' '}
-            -> Here's my Github for the portfolio!
-          </a>
+            Here
+          </a>{' '}
+          is the Github for my portfolio if you're interested! I am constantly pursuing new
+          opportunities to learn and expand upon my skills, and I enjoy taking up new challenges and
+          side projects!
         </p>
-        <h3>Links</h3>
+        <p>
+          Aside from developing and designing, I love cooking and I spend <em>way</em> too much time
+          perusing for new food places on Yelp! And, as a <em>serious</em> part-time hobby, I take
+          many pictures of my dog—you'll find that my camera roll is 95% dog pictures!
+        </p>
+        <p>Please feel free to contact me anytime @ le.anna.ngy@gmail.com</p>
+      </div>
+      <div className='flex column' id='about-content'>
+        <h3>My Links</h3>
         <div className='container row tech'>
           <a href='https://github.com/le-anna/portfolio' className='container column clickable'>
             <div className='container icon-container'>
@@ -77,7 +79,7 @@ const About = () => {
               <p>Github</p>
             </div>
           </a>
-          <Mailto email='annale1501@gmail.com' subject='' body=''>
+          <Mailto email='le.anna.ngy@gmail.com' subject='' body=''>
             <div className='container icon-container'>
               <FontAwesomeIcon className='icon' icon={faEnvelope} />
             </div>

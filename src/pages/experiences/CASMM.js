@@ -15,6 +15,7 @@ import pg6img2 from '../../assets/CASMM/6-2.png';
 import NewColor from '../../assets/CASMM/new-palette.png';
 import './CASMM.scss';
 import GoToTop from '../../components/GoToTop';
+import { BsArrowRight } from 'react-icons/bs';
 
 const CASMM = () => {
   // https://codepen.io/simoncodrington/pen/Mwgqqd for animation
@@ -59,13 +60,15 @@ const CASMM = () => {
           <div id='casmm-landing-description'>
             <h1>CaSMM</h1>
             <h2>
-              <em>Front-end Developer @ University of Florida | Engaging Learning Lab</em>
+              Front-end Developer <br />
+              @University of Florida's Engaging Learning Lab
             </h2>
+            <br />
             <p>
-              Collaborate in the development of a block-based programming environment for K-12
-              students to learn how to code Arduinos.
+              Collaborated in the development of a block-based programming environment for K-12
+              students to learn how to code Arduinos. Showcasing some of the contributions I made to
+              the project.
             </p>
-            <p>Showcasing some of the contributions I made to the project.</p>
           </div>
         </div>
         <div className='container casmm-blue'>
@@ -80,19 +83,19 @@ const CASMM = () => {
                 </p>
                 <h3>Role</h3>
                 <p>
-                  My role was to redesign the app using the style guide I created to 4 user roles
-                  and develop the styling of any new features.
+                  My role was to redesign the app using the style guide I created in 4 user roles
+                  and develop styling for any new features.
                 </p>
                 <h3>Team</h3>
                 <p>The team consisted of researchers and student developers.</p>
                 <div className='two-column-table'>
                   <div>
                     <h3>Timeline</h3>
-                    <p>April 2021 - May 2022</p>
+                    <p>April 2021-May 2022</p>
                   </div>
                   <div>
                     <h3>Tech</h3>
-                    <p>React.js and CSS (Less)</p>
+                    <p>React and CSS (Less)</p>
                   </div>
                 </div>
               </div>
@@ -285,7 +288,7 @@ const CASMM = () => {
       </div>
       <div className='next-btn-container'>
         <Link to='/MentalHealthApp' className='link'>
-          View next: Mental Health App ->
+          View next: Mental Health App <BsArrowRight />
         </Link>
       </div>
       <GoToTop />
