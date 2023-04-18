@@ -1,41 +1,40 @@
-import React from 'react';
+import { React, useState } from 'react';
 import './Landing.scss';
-import LandingPhoto from '../assets/landing.png';
 import { FaChevronDown } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import '../pages/Home.js';
 import Typewriter from 'typewriter-effect';
 // typewriter effect source: https://github.com/tameemsafi/typewriterjs
 
 const Landing = () => {
+  const [message, setMessage] = useState();
+  const showMessage = () => {
+    setMessage(true);
+  };
   return (
     <div className='container column' id='landing'>
-      <div id='info-container'>
-        <div id='landing-img-container'>
-          <img src={LandingPhoto} id='photo' alt='Landing Character' />
-        </div>
-        <div id='description'>
-          <span id='opening'>
-            <strong> anna is typing 👩🏻‍💻 </strong>
-            <FontAwesomeIcon id='msg-icon' icon={faCommentDots} />
-          </span>
-          <Typewriter
-            options={{
-              strings: [
-                'welcome to my portfolio :)',
-                "i'm a computer science student",
-                "i'm also minoring in mass communications",
-                'i enjoy front-end development and ux/ui design!',
-              ],
-              autoStart: true,
-              loop: true,
-              delay: 60,
-              deleteSpeed: 6,
-            }}
-          />
-        </div>
+      <div className='flex column' id='landing-intro'>
+        <h1 id='landing-title'>Anna Le</h1>
+        <h2>Front-end Developer & UX Designer</h2>
       </div>
+      <div id='landing-content'>
+        <span id='opening'>
+          <span id='msg-title'>anna is typing 👩🏻‍💻</span>
+          <span id='msg-icon'>💬</span>
+        </span>
+        <Typewriter
+          options={{
+            strings: [
+              'welcome to my portfolio :)',
+              'i am passionate about development and design!',
+            ],
+            autoStart: true,
+            loop: true,
+            delay: 60,
+            deleteSpeed: 6,
+          }}
+        />
+      </div>
+      <div></div>
       <div id='down-icon'>
         <FaChevronDown />
       </div>

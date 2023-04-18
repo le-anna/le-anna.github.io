@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Encode+Sans+SC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
@@ -12,6 +12,9 @@
 // layout
 .flex {
   display: flex;
+}
+.grid {
+  display: grid;
 }
 .column {
   flex-direction: column;
@@ -79,7 +82,7 @@
 
 .button {
   @extend .container;
-  font-size: 1srem;
+  font-size: 1rem;
   width: 180px;
   height: 50px;
   border: none;
@@ -99,11 +102,24 @@
   }
 }
 
+.link {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  &:hover {
+    color: #7c7c7c;
+    cursor: pointer;
+  }
+}
+
 .nested-link {
-  font-weight: 600;
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 500;
+  color: rgb(142, 191, 255);
+  font-style: italic;
   display: inline-block;
   position: relative;
-  font-style: italic;
+  margin: 0 2px;
   &:after {
     content: '';
     position: absolute;
@@ -124,10 +140,27 @@
   }
 }
 
+.tag {
+  @extend .container;
+  padding: 5px 20px;
+  border-radius: 4px;
+  span {
+    font-size: 0.9rem;
+    text-overflow: ellipsis;
+  }
+}
+
 // typography
-h2,
+h1 {
+  font-family: 'Andika', sans-serif;
+}
+h2 {
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 500;
+}
 h3 {
-  font-weight: 700;
+  font-family: 'Encode Sans SC', sans-serif;
+  font-weight: 500;
 }
 p {
   font-size: 1.05rem;
@@ -146,6 +179,7 @@ br {
   height: 3px;
 }
 a {
+  font-family: 'Encode Sans SC', sans-serif;
   text-decoration: none;
   color: #000;
 }
@@ -214,7 +248,6 @@ strong {
 @media screen and (max-width: 960px) {
   h2 {
     font-size: 1.4rem;
-    line-height: 2rem;
   }
   h3 {
     font-size: 1.1rem;

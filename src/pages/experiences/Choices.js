@@ -20,6 +20,7 @@ import Final3 from '../../assets/Choices/Choices-Final-3.png';
 import Final4 from '../../assets/Choices/Choices-Final-4.png';
 import Final5 from '../../assets/Choices/Choices-Final-5.png';
 import ChoicesCover from '../../assets/Choices/choices.png';
+import { BsArrowRight } from 'react-icons/bs';
 // import { ChoicesCover } from '../../assets/assets'
 
 const Choices = () => {
@@ -28,35 +29,35 @@ const Choices = () => {
       <div className='flex-justify column choices-container'>
         <h1>Choices</h1>
         <h2>
-          <em>
-            UX Designer & Front-end Developer @ University of Florida, College of Nursing | Sickle
-            Cell Disease Lab
-          </em>
+          UX Designer & Front-end Developer <br />
+          @University of Florida (College of Nursing) Sickle Cell Disease Lab
         </h2>
+        <h3></h3>
         <div className='flex-justify choices-cover'>
           <img src={ChoicesCover} alt='Choices' />
         </div>
         <h3>Context</h3>
         <p>
           Choices is an educational tool developed through a research lab at the University of
-          Florida's College of Nursing for people with sickle cell disease and trait.
-        </p>
-        <p>
-          Some notes: (I) The study is currently ongoing; thus, some of the images/elements in the
-          designs have been blurred out OR replaced by a placeholder due to the sensitivity of the
-          information. (II) Not all designs developed are shown.
+          Florida's College of Nursing for people with sickle cell disease and trait. Some notes:
+          (I) The study is currently ongoing; thus, some of the images/elements in the designs have
+          been blurred out OR replaced by a placeholder due to the sensitivity of the information.
+          (II) Not all designs developed are shown.
         </p>
         <h3>Role</h3>
-        <p>I was responsible for redesigning and implementing the interface.</p>
+        <p>
+          I was the sole designer and developer, responsible for redesigning and implementing the
+          interface.
+        </p>
         <h3>Team</h3>
         <p>
-          Collaboration occurs between the College of Nursing and Computer and Information Science
-          and Engineering.
+          Collaboration occured between the College of Nursing and College of Computer and
+          Information Science and Engineering.
         </p>
         <div className='two-column-table'>
           <div>
             <h3>Timeline</h3>
-            <p>February 2022 - Present</p>
+            <p>February 2022-February 2023</p>
           </div>
           <div>
             <h3>Tech</h3>
@@ -70,7 +71,7 @@ const Choices = () => {
           The previous application was developed around 2008, so the pages contained outdated
           styling.
         </p>
-        <div className='flex-justify img-container  choices-old-design'>
+        <div className='flex-justify img-container choices-old-design'>
           <img src={Old1} alt='Choices Initial Design' />
         </div>
         <div className='flex-justify img-container  choices-old-design'>
@@ -286,7 +287,7 @@ const Choices = () => {
       </div>
       <div className='next-btn-container'>
         <Link to='/CaSMM' className='link'>
-          View next: CaSMM ->
+          View next: CaSMM <BsArrowRight />
         </Link>
       </div>
       <GoToTop />

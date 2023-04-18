@@ -14,7 +14,7 @@ import InitialDesign2 from '../../assets/MHA/InitialDesign2.png';
 import InitialDesign3 from '../../assets/MHA/InitialDesign3.png';
 import One from '../../assets/MHA/1.png';
 import './MHA.scss';
-import { BiLinkExternal } from 'react-icons/bi'
+import { BiLinkExternal } from 'react-icons/bi';
 import Typewriter from 'typewriter-effect';
 // typewriter effect source: https://github.com/tameemsafi/typewriterjs
 import GoToTop from '../../components/GoToTop';
@@ -239,11 +239,9 @@ const MHA = () => {
             <div className='mha-left mha-left-full'>
               <h2 className='animation slide'>Conclusion</h2>
               <p>
-                Overall, I felt proud of what I created by the end. Learning how to create a
-                full-stack application was daunting at first - I couldn't comprehend how everything
-                was interconnected. I began the Mental Health project feeling intimidated by design
-                to uncovering a newfound passion for it. I am grateful for WiCSE's Shadowing Program
-                for this opportunity.
+                Overall, I felt proud of the product I created at the end. Learning how to create a
+                full-stack application was daunting at first, but I uncovered my passion for app
+                design from this experience.
               </p>
             </div>
           </div>
@@ -260,7 +258,10 @@ const MHA = () => {
         </div>
       </div>
       <div className='next-btn-container'>
-        <a href='https://devpost.com/software/retrofi'>View next: RetroFi <BiLinkExternal/>&nbsp;</a>
+        <a href='https://devpost.com/software/retrofi'>
+          View next: RetroFi <BiLinkExternal />
+          &nbsp;
+        </a>
       </div>
       <GoToTop />
     </div>

@@ -5,7 +5,7 @@ import './Navbar.scss';
 import Profile from '../assets/profile.jpg';
 import Dropdown from './Dropdown';
 import { debounce } from './helper';
-import { BiLinkExternal } from 'react-icons/bi'
+import { BiLinkExternal } from 'react-icons/bi';
 
 export const Navbar = () => {
   const myRef = useRef();
@@ -62,7 +62,7 @@ export const Navbar = () => {
       <div className='container' id='navbar-container'>
         <Link to='/' className='container row' id='nav-profile-container'>
           <img src={Profile} id='icon' alt='Profile Icon' />
-          <h1 id='name'>ANNA N. LE</h1>
+          <h1 id='name'>Anna Le</h1>
         </Link>
         <div className={isOpen ? 'mobile-icon open' : 'mobile-icon'} ref={myRef2} onClick={toggle}>
           <FaBars />
@@ -74,7 +74,7 @@ export const Navbar = () => {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <div className='container link'>
+            <div className='container link' id='experiences-mobile'>
               Experiences <FaAngleDown />
             </div>
             {dropdown && <Dropdown />}
@@ -82,23 +82,24 @@ export const Navbar = () => {
 
           {/* experience dropdown items */}
           <li className='experience-item' onClick={closeMenu}>
-            <Link to='/Choices' className='link'>
+            <Link to='/Choices' className='link nav-link'>
               Choices
             </Link>
           </li>
           <li className='experience-item' onClick={closeMenu}>
-            <Link to='/CaSMM' className='link'>
+            <Link to='/CaSMM' className='link nav-link nav-link'>
               CaSMM
             </Link>
           </li>
           <li className='experience-item' onClick={closeMenu}>
-            <Link to='/MentalHealthApp' className='link'>
+            <Link to='/MentalHealthApp' className='link nav-link'>
               Mental Health App
             </Link>
           </li>
           <li className='experience-item' onClick={closeMenu}>
-            <a href='https://devpost.com/software/retrofi' className='link'>
-              RetroFi&nbsp;<BiLinkExternal/>
+            <a href='https://devpost.com/software/retrofi' className='link nav-link'>
+              RetroFi&nbsp;
+              <BiLinkExternal />
             </a>
           </li>
 
