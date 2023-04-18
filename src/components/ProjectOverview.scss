@@ -14,7 +14,6 @@
   #prj-info-container {
     #title {
       font-weight: 700;
-      font-size: 2rem;
       margin: 5px 0;
     }
     #role {
@@ -85,9 +84,15 @@
       display: flex;
       align-items: center;
       text-align: center;
+      #title {
+        font-size: 1.6rem;
+      }
+      #role {
+        font-size: 1rem;
+      }
       #tech-container {
         p {
-          font-size: 0.8rem;
+          font-size: 0.675rem;
         }
       }
       #description {
@@ -96,6 +101,12 @@
     }
     #desktop-link {
       display: none;
+    }
+    #prj-img-container {
+      img {
+        width: 14rem;
+        height: auto;
+      }
     }
     #mobile-link {
       display: block;
