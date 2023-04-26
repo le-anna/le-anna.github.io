@@ -21,8 +21,9 @@
       color: #7c7c7c;
     }
     #tech-container {
-      gap: 10px;
+      gap: 8px;
       margin: 20px 0;
+      overflow: hidden;
       #TypeScript {
         background-color: #d59fff;
         color: #9610ff;
@@ -30,6 +31,10 @@
       #JavaScript {
         background-color: rgb(253, 247, 162);
         color: rgb(74, 69, 0);
+      }
+      #Figma {
+        background-color: rgb(255, 104, 129);
+        color: rgb(106, 43, 54);
       }
       div[id='React Native'],
       #React {
@@ -90,7 +95,8 @@
       #role {
         font-size: 1rem;
       }
-      #tech-container {
+      #tech-container .tag {
+        padding: 5px 12px;
         p {
           font-size: 0.675rem;
         }
@@ -116,6 +122,15 @@
     }
     #Mastercard-mobile-img {
       margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #prj-container #prj-info-container #tech-container {
+    gap: 4px;
+    .tag {
+      padding: 5px 6px;
     }
   }
 }

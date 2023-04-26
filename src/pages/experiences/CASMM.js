@@ -72,7 +72,7 @@ const CASMM = () => {
           </div>
         </div>
         <div className='container casmm-blue'>
-          <div className='animation slide casmm-container'>
+          <div className='casmm-container'>
             <h2>Project Overview</h2>
             <div className='container row mobile'>
               <div className='flex column casmm-info'>
@@ -108,7 +108,7 @@ const CASMM = () => {
       </div>
       <div className='yellow container column'>
         <div className='container casmm-yellow'>
-          <div className='animation slide casmm-container'>
+          <div className='casmm-container'>
             <h2>Problems ❌</h2>
             <div className='container mobile'>
               <div className='flex column casmm-info'>
@@ -141,7 +141,7 @@ const CASMM = () => {
           </div>
         </div>
         <div className='container casmm-yellow'>
-          <div className='animation slide casmm-container-updates'>
+          <div className='casmm-container-updates'>
             <h2>CaSMM Design System</h2>
             <p>
               The Principle Investigator expressed that certain features remain the same. While
@@ -170,7 +170,7 @@ const CASMM = () => {
           </div>
         </div>
         <div className='container casmm-yellow'>
-          <div className='animation slide casmm-container-updates'>
+          <div className='casmm-container-updates'>
             <h2>UX Design Process</h2>
             <h3>User Research 👩🏻‍💻</h3>
             <p>
@@ -216,7 +216,7 @@ const CASMM = () => {
           </div>
         </div>
         <div className='container casmm-yellow'>
-          <div className='animation slide casmm-container-updates'>
+          <div className='casmm-container-updates'>
             <h2>Solution: Mentor View</h2>
             <div className='container row updates-imgs'>
               <img src={pg5img1} className='update-img' alt='CaSMM' />
@@ -256,7 +256,7 @@ const CASMM = () => {
           </div>
         </div>
         <div className='container casmm-yellow'>
-          <div className='animation slide casmm-container-updates'>
+          <div className='casmm-container-updates'>
             <h2>Solution: Roster View</h2>
             <div className='container updates-imgs'>
               <img src={pg6img1} className='update-img' alt='CaSMM' />

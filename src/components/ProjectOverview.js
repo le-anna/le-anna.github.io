@@ -8,6 +8,7 @@ import MHA from '../assets/MHA/MHA.png';
 import Choices from '../assets/Choices/choices.png';
 import retrofi from '../assets/retrofi.png';
 import Mastercard from '../assets/mastercard.png';
+import FilmClub from '../assets/filmclub.png';
 import { BiLinkExternal } from 'react-icons/bi';
 import { BsArrowRight } from 'react-icons/bs';
 
@@ -103,6 +104,8 @@ const ProjectOverview = ({ title, role, tech, description, link, img }) => {
             <img src={Choices} alt='Choices' />
           ) : img === 'Mastercard' ? (
             <img id='Mastercard-mobile-img' src={Mastercard} alt='Mastercard' />
+          ) : img === 'FilmClub' ? (
+            <img id='MHA-mobile-img' src={FilmClub} alt='FilmClub' />
           ) : null}
         </div>
         {showLink(true)}

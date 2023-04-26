@@ -35,17 +35,25 @@ const Home = () => {
 
   const projectsArray = [
     <ProjectOverview
-      title='Mastercard'
-      role='Software Engineer Intern'
-      description='Integrated design tokens into the Connect website and Connect UI library to provide white labeling and multilingual support.'
-      tech={['TypeScript', 'React']}
-      link='/Choices'
-      img='Mastercard'
+      title='Film Club'
+      role='UI Designer & Front-end Developer'
+      description=' Film Club serves as a platform for people to discuss and track their films or shows. Translated Figma prototypes into an mobile application using React Native.'
+      tech={['JavaScript', 'React', 'Figma']}
+      link='/FilmClub'
+      img='FilmClub'
     />,
+    // <ProjectOverview
+    //   title='Mastercard'
+    //   role='Software Engineer Intern'
+    //   description='Integrated design tokens into the Connect website and Connect UI library to provide white labeling and multilingual support.'
+    //   tech={['TypeScript', 'React']}
+    //   link='/Choices'
+    //   img='Mastercard'
+    // />,
     <ProjectOverview
       title='Choices'
       role='UX Designer & Front-end Developer'
-      description='Designed and implemented the interface for Choices, an educational platform for people with Sickle Cell Disease or Traits. Developed under the Sickle Cell Lab at the College of Nursing, University of Florida, for use in studies.'
+      description='Designed and implemented the interface for Choices, an educational platform for people with Sickle Cell Disease or Traits, with a focus on accessibility. Developed under the Sickle Cell Lab at the College of Nursing, University of Florida.'
       tech={['JavaScript', 'HTML', 'CSS']}
       link='/Choices'
       img='Choices'
@@ -64,7 +72,7 @@ const Home = () => {
       role='Shadowing Program Mentee'
       description='Developed a full-stack application with Opie Software
       through the Women in Computer Science & Engineering Shadowing Program. Built with idea of allowing users to track their mental health by analyzing trends.'
-      tech={['Java', 'React Native', 'Spring Boot']}
+      tech={['Java', 'JavaScript', 'React Native', 'Spring Boot']}
       link='/MentalHealthApp'
       img='MHA'
     />,
@@ -97,9 +105,9 @@ const Home = () => {
         {isAll
           ? projectsArray
           : isWork
-          ? [projectsArray[0], projectsArray[1], projectsArray[2]]
+          ? [projectsArray[1], projectsArray[2]]
           : isProject
-          ? [projectsArray[3], projectsArray[4]]
+          ? [projectsArray[0], projectsArray[4], projectsArray[3]]
           : projectsArray}
       </div>
       <GoToTop />

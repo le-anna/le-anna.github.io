@@ -74,7 +74,7 @@
     padding: 3vw 0;
     @media (hover: hover) {
       &:hover {
-        color: #f8ebb2;
+        color: #7c7c7c;
       }
     }
   }
@@ -142,11 +142,15 @@
 
 .tag {
   @extend .container;
-  padding: 5px 20px;
+  max-height: 20px;
+  padding: 5px 14px;
   border-radius: 4px;
-  span {
-    font-size: 0.9rem;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  p {
+    max-height: 20px;
+    font-size: 0.8rem;
   }
 }
 

@@ -14,7 +14,7 @@ const Landing = () => {
     <div className='container column' id='landing'>
       <div className='flex column' id='landing-intro'>
         <h1 id='landing-title'>Anna Le</h1>
-        <h2>Front-end Developer & UX Designer</h2>
+        <h2>Front-end Developer & UI Designer</h2>
       </div>
       <div id='landing-content'>
         <span id='opening'>
@@ -23,10 +23,7 @@ const Landing = () => {
         </span>
         <Typewriter
           options={{
-            strings: [
-              'welcome to my portfolio :)',
-              'i am passionate about development and design!',
-            ],
+            strings: ['welcome :)', "i'm enthusiastic about development and ux/ui design!"],
             autoStart: true,
             loop: true,
             delay: 60,

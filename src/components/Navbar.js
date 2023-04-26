@@ -82,6 +82,11 @@ export const Navbar = () => {
 
           {/* experience dropdown items */}
           <li className='experience-item' onClick={closeMenu}>
+            <Link to='/FilmClub' className='link nav-link'>
+              Film Club
+            </Link>
+          </li>
+          <li className='experience-item' onClick={closeMenu}>
             <Link to='/Choices' className='link nav-link'>
               Choices
             </Link>

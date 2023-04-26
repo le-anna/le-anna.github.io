@@ -149,10 +149,13 @@ const MHA = () => {
         </div>
       </div>
       <div className='mha-peach-wrapper container column'>
-        <div className='container '>
-          <div className='flex row mha-container mha-content animation slide'>
+        <div className='container'>
+          <div className='flex row mha-container mha-content'>
             <div className='mha-left mha-left-full'>
-              <h2 className='animation slide'>Project Overview</h2>
+              <h1>Mental Health App</h1>
+              <h2>Shadowing Program Mentee @WiCSE</h2>
+              <br />
+              <h3>Project Overview</h3>
               <p>
                 The Mental Health App was developed through the{' '}
                 <strong>
@@ -171,7 +174,7 @@ const MHA = () => {
               <div className='two-column-table'>
                 <div>
                   <h3>Timeline</h3>
-                  <p>August 2020 - December 2020</p>
+                  <p>August 2020-December 2020</p>
                 </div>
                 <div>
                   <h3>Tech Stack</h3>
@@ -182,12 +185,9 @@ const MHA = () => {
           </div>
         </div>
         <div className='container column '>
-          <div
-            className='flex row mha-container mha-content animation slide'
-            id='mha-content-column'
-          >
+          <div className='flex row mha-container mha-content' id='mha-content-column'>
             <div className='mha-left mha-left-full'>
-              <h2 className='animation slide'>Midpoint Status</h2>
+              <h2>Midpoint Status</h2>
               <p>
                 This project posed a new challenge that I had not expected: <em>design</em>. I
                 struggled with coming up with an idea for the look and feel of the project. My
@@ -234,10 +234,10 @@ const MHA = () => {
             </div>
           </div>
         </div>
-        <div className='container '>
-          <div className='flex row mha-container mha-content animation slide'>
+        <div className='container'>
+          <div className='flex row mha-container mha-content'>
             <div className='mha-left mha-left-full'>
-              <h2 className='animation slide'>Conclusion</h2>
+              <h2>Conclusion</h2>
               <p>
                 Overall, I felt proud of the product I created at the end. Learning how to create a
                 full-stack application was daunting at first, but I uncovered my passion for app

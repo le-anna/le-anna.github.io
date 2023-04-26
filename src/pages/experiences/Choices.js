@@ -32,7 +32,6 @@ const Choices = () => {
           UX Designer & Front-end Developer <br />
           @University of Florida (College of Nursing) Sickle Cell Disease Lab
         </h2>
-        <h3></h3>
         <div className='flex-justify choices-cover'>
           <img src={ChoicesCover} alt='Choices' />
         </div>
@@ -262,7 +261,7 @@ const Choices = () => {
         </div>
       </div>
       <div className='flex-justify column choices-container'>
-        <h2>Learning Outcomes & Successes ✅</h2>
+        <h2>Learning Outcomes ✅</h2>
         <h3>Coding Conventions</h3>
         <p>
           From the project, I learned better coding conventions and how to write stylistic code
